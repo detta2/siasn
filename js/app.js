@@ -379,26 +379,26 @@ function reviewHtml(qs,ans){
 
 /* ---------- MOTIVASI TOUGH-LOVE SAAT SALAH ---------- */
 var MOTIV=[
-"Salah lagi? Bangun. Ujian gak nunggu kamu siap.",
-"Soal kayak gini masih salah juga. Fokus, jangan asal tebak.",
-"Mau jadi ASN tapi males baca pembahasan? Lanjut mimpi aja.",
-"Topik yang sama, salah berkali-kali. Buka materinya. Sekarang.",
+"Tolol! Soal segini masih salah juga? Fokus, jangan asal tebak.",
+"Goblok boleh, tapi jangan dipelihara. Baca pembahasannya.",
+"Salah lagi? Otak dipakai, bukan dipajang.",
+"Mau jadi ASN tapi males baca pembahasan? Mimpi aja sana.",
+"Topik yang sama, salah berkali-kali. Bego itu kalau diulang terus.",
 "Kompetitormu lagi latihan soal yang sama. Kamu malah bengong.",
 "Ngantuk? Cuci muka, balik lagi. NIP gak samperin orang mager.",
-"Gini terus, yang lolos orang lain. Mau?",
+"Gini terus yang lolos orang lain. Mau?",
 "Jangan salahkan soalnya. Salahkan jarimu yang kegatelan nebak.",
-"Otak dipakai, bukan dipajang. Baca pembahasannya sampai nempel.",
-"Berhenti cari alasan. Satu-satunya jalan: paham, bukan hafal.",
+"Bangun! Ujian gak nunggu kamu siap.",
+"Berhenti cari alasan. Paham, bukan hafal. Titik.",
 "Soal ini barusan ngetawain kamu. Balas dendam: kuasai topiknya.",
 "Masih nebak-nebak? Itu namanya judi, bukan strategi.",
-"Capek? Pendaftar lain juga capek. Bedanya mereka terus jalan.",
-"Salah itu wajar. Salah di tempat yang sama tiga kali itu pilihan.",
-"Disiplin hari ini = nama di pengumuman besok. Titik.",
-"Salah di soal gampang? Itu tamparan. Jangan diulang.",
-"Baca soalnya pelan-pelan. Kebanyakan salah itu gara-gara ngebut.",
-"Kalau topik ini keluar di ujian dan kamu masih salah, siapa yang rugi?",
-"Latihan itu tempatnya salah. Tapi salah yang dipelajari, bukan diulang.",
-"Skor latihanmu cerminan usahamu. Jujur sama diri sendiri."
+"Capek? 3 juta pendaftar lain juga capek. Bedanya mereka terus jalan.",
+"Salah itu wajar. Salah di tempat yang sama tiga kali itu tolol.",
+"Disiplin hari ini = nama di pengumuman besok.",
+"Santai boleh, leha-leha jangan. Waktu ujian gak bisa diulang.",
+"Udah dikasih pembahasan masih salah juga? Catet polanya, goblok!",
+"Fokus 25 menit > scroll 3 jam. Pilih sekarang.",
+"Kalau gampang nyerah di latihan, di ruang ujian mau ngapain?"
 ];
 function pickMotiv(){
  var i;
