@@ -87,7 +87,7 @@ function vDash(){
   +'<div class="mmenu">'
   +'<button class="mitem" onclick="go(\'lat_cat\')"><span class="mtile blue">'+ICONS.pencil+'</span><span><b>Latihan Soal</b><span>Koreksi + pembahasan</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
   +'<button class="mitem" onclick="go(\'to_intro\')"><span class="mtile red">'+ICONS.stopwatch+'</span><span><b>Tryout SKD</b><span>Simulasi ujian asli</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
-  +'<button class="mitem" onclick="openMatList(\'TWK\')"><span class="mtile purple">'+ICONS.book+'</span><span><b>Materi</b><span>19 topik padat</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
+  +'<button class="mitem" onclick="openMatList(\'TWK\')"><span class="mtile purple">'+ICONS.book+'</span><span><b>Materi</b><span>Materi lengkap 19 topik</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
   +'<button class="mitem" onclick="go(\'mentor\')"><span class="mtile green">'+ICONS.robot+'</span><span><b>Mentor 3D</b><span>Tanya Nara</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
   +'</div>'
   +'<div class="card"><h2>'+ic("chart")+'Progresmu</h2>'+cards+'</div>'
