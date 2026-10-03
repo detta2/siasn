@@ -17,17 +17,18 @@ var LS="siasn_v1";
 function load(){try{var s=JSON.parse(localStorage.getItem(LS));if(s&&s.done)return s;}catch(e){}return{done:{},tryouts:[]};}
 function save(){try{localStorage.setItem(LS,JSON.stringify(ST));}catch(e){}}
 var ST=load();
-window.SIASN={BANK:BANK,ST:ST};
+window.SIASN={BANK:BANK,ST:ST,topicOf:topicOf,prepQ:prepQ};
 var S={view:"dash"};
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
 function fmtT(s){s=Math.max(0,s);var m=Math.floor(s/60),h=Math.floor(m/60);m=m%60;var ss=s%60;function p(x){return(x<10?"0":"")+x;}return(h>0?p(h)+":":"")+p(m)+":"+p(ss);}
 function head(inner){return '<div class="topbar"><div class="logo">'+ICONS.grad+'</div><div class="brand"><b>SiASN</b><span>Latihan SKD CPNS</span></div></div>'+inner;}
-function go(v){
+function go(v,arg){
  if(window.Mentor3D&&Mentor3D.active()){
   var cur=(S.view||"").indexOf("mentor")===0,nxt=(v||"").indexOf("mentor")===0;
   if(cur&&!nxt)Mentor3D.destroy();
  }
+ if(v==="latihan"&&arg){startLatPreset(arg);return;}
  S.view=v;render();window.scrollTo(0,0);
 }
 window.go=go;
@@ -84,6 +85,7 @@ function vDash(){
  }).join(""):'<div class="empty">Belum ada tryout. Yuk mulai yang pertama!</div>';
  return head(
   '<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal • 100 menit</span><h1>Siap jadi ASN?</h1><p>5.400 soal TWK, TIU, TKP dimodelkan dari pola soal CPNS tahun-tahun sebelumnya, plus tryout persis format SKD asli.</p></div>'
+  +pathBanner()
   +'<div class="mmenu">'
   +'<button class="mitem" onclick="go(\'lat_cat\')"><span class="mtile blue">'+ICONS.pencil+'</span><span><b>Latihan Soal</b><span>Koreksi + pembahasan</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
   +'<button class="mitem" onclick="go(\'to_intro\')"><span class="mtile red">'+ICONS.stopwatch+'</span><span><b>Tryout SKD</b><span>Simulasi ujian asli</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
@@ -272,11 +274,29 @@ function vLatCat(){
  });
  return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>'+ic("pencil")+'Latihan Soal</h2><p style="color:#6b7280;font-size:14px;margin-bottom:14px;font-weight:600">Pilih kategori. Jawaban langsung dikoreksi + pembahasan.</p>'+h+'</div>');
 }
+function startLatPreset(p){
+ p=p||{};
+ var idxs=[];
+ if(p.list){
+  p.list.forEach(function(it){
+   var arr=BANK[it.cat]||[];
+   for(var i=0;i<arr.length;i++)if(topicOf(it.cat,arr[i].q)===it.topic)idxs.push({cat:it.cat,i:i});
+  });
+ }else{
+  var arr2=BANK[p.cat]||[];
+  for(var j=0;j<arr2.length;j++)if(!p.topic||topicOf(p.cat,arr2[j].q)===p.topic)idxs.push({cat:p.cat,i:j});
+ }
+ if(!idxs.length){alert("Soal untuk filter ini belum tersedia.");return;}
+ idxs=shuffle(idxs);
+ if(p.n)idxs=idxs.slice(0,p.n);
+ S.lat={cat:p.cat||"MIX",order:idxs,pos:0,answered:false,pick:-1,hist:[],preset:p,mix:!!p.list,cur:null,curPos:-1};
+ go("lat");
+}
 window.startLat=function(c){
  if(!BANK[c].length){alert("Bank soal "+c+" belum siap.");return;}
- S.lat={cat:c,order:shuffle(BANK[c].map(function(_,i){return i;})),pos:0,answered:false,pick:-1,hist:[]};
- go("lat");
+ startLatPreset({cat:c});
 };
+window.restartLat=function(){startLatPreset((S.lat&&S.lat.preset)||{cat:(S.lat&&S.lat.cat)||"TWK"});};
 function prepQ(cat,qi){
  var q=BANK[cat][qi];
  if(cat==="TKP"){
@@ -288,8 +308,9 @@ function prepQ(cat,qi){
  return{id:q.id,cat:cat,q:q.q,opts:ord.map(function(i){return q.opts[i];}),a:na,ex:q.ex,isTKP:false};
 }
 function vLat(){
- var L=S.lat,q=prepQ(L.cat,L.order[L.pos]);
- L.cur=q;
+ var L=S.lat,it=L.order[L.pos],q;
+ if(L.cur&&L.curPos===L.pos){q=L.cur;}
+ else{q=prepQ(it.cat,it.i);L.cur=q;L.curPos=L.pos;}
  var total=L.order.length;
  var opts=q.opts.map(function(o,i){
   var txt=q.isTKP?o.t:o;
@@ -306,7 +327,7 @@ function vLat(){
   fb='<div class="explain"><div class="fb '+(good?"ok\">"+ic("check")+"Tepat!":"no\">"+ic("x")+"Kurang tepat.")+'</div> '+esc(q.ex)+'</div>';
  }
  return head('<button class="backlink" onclick="go(\'lat_cat\')">'+ic("back")+'Kategori</button><div class="card">'
-  +'<div class="qmeta"><span class="badge '+CATS[L.cat].cls+'">'+L.cat+'</span><span style="color:#6b7280;font-size:13px">Soal '+(L.pos+1)+' / '+total+'</span></div>'
+  +'<div class="qmeta"><span class="badge '+CATS[it.cat].cls+'">'+it.cat+'</span><span style="color:#6b7280;font-size:13px">Soal '+(L.pos+1)+' / '+total+'</span></div>'
   +'<div class="qtext">'+esc(q.q)+'</div><div class="opts">'+opts+'</div>'+fb
   +(L.answered?'<div class="qnav"><button class="btn plain" onclick="endLat()">Selesai</button><button class="btn" onclick="nextLat()">"+ic("chev")+"</button></div>':"")
   +'</div>');
@@ -314,10 +335,11 @@ function vLat(){
 window.ansLat=function(i){
  var L=S.lat;if(L.answered)return;
  L.answered=true;L.pick=i;
- var q=L.cur,good=q.isTKP?q.opts[i].s===5:i===q.a;
+ var it=L.order[L.pos],q=L.cur,good=q.isTKP?q.opts[i].s===5:i===q.a;
  var weak=q.isTKP?q.opts[i].s<=3:i!==q.a;
- L.hist.push({id:q.id,cat:L.cat,q:q.q,ok:!weak});
- ST.done[q.id]={c:L.cat,ok:good?1:0};save();
+ L.hist.push({id:q.id,cat:it.cat,q:q.q,ok:!weak});
+ ST.done[q.id]={c:it.cat,ok:good?1:0};save();
+ if(weak&&window.PathLib)PathLib.srsWrong(q.id);
  render();
 };
 window.nextLat=function(){
@@ -325,15 +347,19 @@ window.nextLat=function(){
  if(L.pos>=L.order.length){L.order=shuffle(L.order);L.pos=0;}
  L.answered=false;L.pick=-1;go("lat");
 };
-window.endLat=function(){go("lat_result");};
+window.endLat=function(){
+ if(window.PathLib&&S.lat&&S.lat.preset)PathLib.completeLatihan(S.lat.preset);
+ go("lat_result");
+};
 function vLatResult(){
  var L=S.lat,hist=L.hist||[],n=hist.length,ok=0;
  hist.forEach(function(x){if(x.ok)ok++;});
  var acc=n?Math.round(ok/n*100):0;
  var items=hist.map(function(x){return{cat:x.cat,q:x.q,weak:!x.ok};});
+ var clabel=L.mix?"Campuran":L.cat;
  return head('<button class="backlink" onclick="go(\'lat_cat\')">"+ic("back")+"Kategori</button><div class="card"><h2>Hasil Sesi Latihan</h2>'
-  +'<div class="grid4"><div class="stat"><b>'+n+'</b><span>Soal dijawab</span></div><div class="stat"><b>'+ok+'</b><span>Tepat</span></div><div class="stat"><b>'+acc+'%</b><span>Akurasi</span></div><div class="stat"><b>'+L.cat+'</b><span>Kategori</span></div></div>'
-  +'<button class="btn big" onclick="startLat(\''+L.cat+'\')">Latihan Lagi</button></div>'
+  +'<div class="grid4"><div class="stat"><b>'+n+'</b><span>Soal dijawab</span></div><div class="stat"><b>'+ok+'</b><span>Tepat</span></div><div class="stat"><b>'+acc+'%</b><span>Akurasi</span></div><div class="stat"><b>'+clabel+'</b><span>Kategori</span></div></div>'
+  +'<button class="btn big" onclick="restartLat()">Latihan Lagi</button></div>'
   +techPanelHtml(items));
 }
 
@@ -418,6 +444,16 @@ window.finishTo=function(ask){
  var d=new Date(),ds=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
  ST.tryouts.push({d:ds,twk:res.twk,tiu:res.tiu,tkp:res.tkp,total:res.total,pass:res.pass?1:0});
  save();
+ if(window.PathLib){
+  T.qs.forEach(function(q,i){
+   var an=T.ans[i],weak;
+   if(an<0)weak=true;
+   else if(q.isTKP)weak=q.opts[an].s<=3;
+   else weak=an!==q.a;
+   if(weak)PathLib.srsWrong(q.id);
+  });
+  PathLib.completeTryout();
+ }
  S.res={res:res,qs:T.qs,ans:T.ans};
  S.to=null;go("to_result");
 };
@@ -461,13 +497,27 @@ function vMatView(){
  var M=S.mat,arr=MAT[M.cat]||[],t=arr[M.idx];
  if(!t)return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><div class="empty">Materi tidak ditemukan.</div></div>');
  var prev=M.idx>0,next=M.idx<arr.length-1;
+ var readBtn="";
+ if(window.PathLib){
+  var done=false;
+  (window.PATH_STEPS||[]).forEach(function(s){if(s.kind==="materi"&&s.cat===M.cat&&s.topic===t.topic&&PathLib.stepDone(s))done=true;});
+  readBtn=done
+   ?'<button class="btn plain" style="width:100%;margin-top:14px" disabled>'+ic("check")+'Sudah dibaca ✓</button>'
+   :'<button class="btn" style="width:100%;margin-top:14px" onclick="markMatRead()">'+ic("check")+'Tandai sudah dibaca</button>';
+ }
  return head('<button class="backlink" onclick="go(\'mat_list\')">"+ic("back")+"Daftar Materi</button><div class="card">'
   +'<div class="qmeta"><span class="badge '+CATS[M.cat].cls+'">'+M.cat+'</span><span style="color:#6b7280;font-size:13px">Topik '+(M.idx+1)+' / '+arr.length+'</span></div>'
   +'<h2 style="margin:10px 0 14px;font-size:19px">'+esc(t.topic)+'</h2>'
   +'<div class="matbody">'+t.html+'</div>'
+  +readBtn
   +'<div class="qnav">'+(prev?'<button class="btn plain" onclick="matMove(-1)">"+ic("back")+"Sebelumnya</button>':"<span></span>")
   +(next?'<button class="btn" onclick="matMove(1)">Berikutnya "+ic("chev")+"</button>':"")+'</div></div>');
 }
+window.markMatRead=function(){
+ var M=S.mat,arr=MAT[M.cat]||[],t=arr[M.idx];
+ if(t&&window.PathLib)PathLib.completeMateri(M.cat,t.topic);
+ render();
+};
 
 /* ---------- MENTOR 3D ---------- */
 function naraSay(t){
@@ -572,6 +622,143 @@ function vMentorEx(){
  +'<div class="card">'+body+'</div>');
 }
 
+/* ---------- JALUR BELAJAR ---------- */
+function pathBanner(){
+ if(!window.PathLib)return "";
+ var PL=window.PathLib,po=PL.overall(),ns=PL.nextStep();
+ var inner='<div class="pbtop"><b>🛤️ Jalur Belajar</b><span>'+po.done+'/'+po.total+' langkah • '+po.pct+'%</span></div>'
+  +'<div class="bar"><i style="width:'+po.pct+'%"></i></div>';
+ if(ns)inner+='<button class="btn" onclick="event.stopPropagation();goNextStep()">▶ '+esc(PL.stepShort(ns))+'</button>';
+ else inner+='<div class="empty" style="padding:6px">Semua langkah selesai. Luar biasa! 🎉</div>';
+ return '<div class="pathbanner" onclick="go(\'jalur\')">'+inner+'</div>';
+}
+function goStep(s){
+ if(!s)return;
+ if(s.kind==="materi")window.openMat(s.cat,s.topic);
+ else if(s.kind==="latihan")go("latihan",{cat:s.cat,topic:s.topic,n:s.n});
+ else if(s.kind==="review")go("review");
+ else if(s.kind==="latihan_lemah"){
+  var w=window.PathLib.weakestTopics(3);
+  if(!w.length){alert("Belum ada data latihan yang cukup. Kerjakan latihan dulu ya!");return;}
+  go("latihan",{list:w.map(function(x){return{cat:x.cat,topic:x.topic};}),n:s.n});
+ }
+ else if(s.kind==="tryout")window.startTo();
+}
+window.goStep=goStep;
+window.goStepById=function(id){var s=window.PathLib?window.PathLib.stepById(id):null;if(s)goStep(s);};
+window.goNextStep=function(){
+ if(!window.PathLib){go("jalur");return;}
+ var s=window.PathLib.nextStep();
+ if(!s){go("jalur");return;}
+ goStep(s);
+};
+function vJalur(){
+ var PL=window.PathLib,steps=window.PATH_STEPS,fases=window.PATH_FASES,ns=PL.nextStep();
+ var h='<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button>';
+ h+='<div class="card"><h2>'+ic("layers")+'Jalur Belajar dari 0</h2>'
+  +'<p style="color:#6b7280;font-size:14px;font-weight:600;margin-bottom:12px">Ikuti langkahnya satu per satu — dari nol sampai siap tryout. Langkah yang sudah selesai bisa diulang kapan saja.</p>'
+  +(ns?'<button class="btn big" onclick="goNextStep()">▶ Lanjut: '+esc(PL.stepName(ns))+'</button>'
+      :'<div class="perfect">'+ic("trophy")+' <b>Semua langkah selesai!</b><p>Tinggal jaga ritme dengan tryout berkala dan review terjadwal.</p></div>')
+  +'</div>';
+ fases.forEach(function(f){
+  var fs=steps.filter(function(s){return s.fase===f.id;});
+  var dn=fs.filter(function(s){return PL.stepDone(s);}).length;
+  var pct=fs.length?Math.round(dn/fs.length*100):0;
+  h+='<div class="card"><h2>'+ic(f.icon)+esc(f.name)+'</h2><p style="color:#6b7280;font-size:13.5px;font-weight:600;margin-bottom:8px">'+esc(f.desc)+'</p>'
+   +'<div class="prow"><div class="lbl"><span>Progres fase</span><span>'+dn+'/'+fs.length+'</span></div><div class="bar"><i style="width:'+pct+'%"></i></div></div>';
+  fs.forEach(function(s,i){
+   var done=PL.stepDone(s),sub="";
+   if(s.kind==="review"){var dc=PL.dueCount();sub=dc?dc+" soal menunggu direview":"Antrean kosong — aman!";}
+   h+='<div class="steprow'+(done?" done":"")+'" onclick="goStepById(\''+s.id+'\')">'
+    +'<span class="stn">'+(done?ic("check"):(i+1))+'</span>'
+    +'<span style="flex:1">'+esc(PL.stepName(s))+(sub?'<small>'+sub+'</small>':"")+'</span>'
+    +(done?'<span class="pill ok">Selesai</span>':'<span class="mgo">'+ICONS.chev+'</span>')
+    +'</div>';
+  });
+  h+='</div>';
+ });
+ var best=PL.tryoutBest();
+ h+='<div class="card"><h2>'+ic("target")+'Pelacak Passing Grade</h2><p style="color:#6b7280;font-size:13.5px;font-weight:600;margin-bottom:10px">Skor terbaikmu per subtest vs passing grade. Garis merah = batas lulus.</p>';
+ ["TWK","TIU","TKP"].forEach(function(c){
+  var pg=PL.PG[c],mx=CATS[c].max,b=best[c.toLowerCase()];
+  var w=Math.min(100,Math.round(b/mx*100)),wm=Math.round(pg/mx*100);
+  h+='<div class="prow"><div class="lbl"><span><b>'+c+'</b> — '+esc(CATS[c].full)+'</span><span><b>'+b+'</b> / PG '+pg+' '+(b>=pg?'<span class="pill ok">LULUS</span>':'<span class="pill no">BELUM</span>')+'</span></div>'
+   +'<div class="bar pgbar"><i style="width:'+w+'%"></i><em style="left:'+wm+'%"></em></div></div>';
+ });
+ h+='</div>';
+ return head(h);
+}
+function fmtRel(ts){
+ var d=Math.ceil((ts-Date.now())/86400000);
+ if(d<=0)return"segera";
+ if(d===1)return"besok";
+ return"dalam "+d+" hari";
+}
+function vReview(){
+ var PL=window.PathLib,R=S.rev;
+ if(!R){
+  var due=shuffle(PL.dueList()).slice(0,20),items=[];
+  due.forEach(function(id){
+   var f=(window.Mentor3D&&window.Mentor3D.findQ(id))||null;
+   if(f)items.push({id:id,cat:f.cat,idx:f.idx});
+  });
+  if(!items.length){
+   var nxt=PL.nextDueAt();
+   return head('<button class="backlink" onclick="go(\'jalur\')">'+ic("back")+'Jalur Belajar</button>'
+    +'<div class="card"><h2>'+ic("check")+'Review Soal Salah</h2>'
+    +'<div class="perfect">'+ic("target")+' <b>Antrean kosong — tidak ada soal yang jatuh tempo! 🎉</b><p>'+(nxt?"Soal berikutnya jatuh tempo "+esc(fmtRel(nxt))+". Tetap jaga ritme belajarmu.":"Kamu belum punya soal yang salah. Pertahankan!")+'</p></div>'
+    +'<button class="btn big" onclick="go(\'jalur\')">Kembali ke Jalur</button></div>');
+  }
+  S.rev={items:items,pos:0,answered:false,pick:-1,cur:null,curPos:-1,res:{lulus:0,ulang:0}};
+  R=S.rev;
+ }
+ var it=R.items[R.pos];
+ if(!R.cur||R.curPos!==R.pos){R.cur=window.SIASN.prepQ(it.cat,it.idx);R.curPos=R.pos;}
+ var q=R.cur,total=R.items.length;
+ var opts=q.opts.map(function(o,i){
+  var txt=q.isTKP?o.t:o;
+  var cls="opt",dis=R.answered?"disabled":"";
+  if(R.answered){
+   if(q.isTKP){if(o.s===5)cls+=" correct";else if(i===R.pick)cls+=" wrong";}
+   else{if(i===q.a)cls+=" correct";else if(i===R.pick)cls+=" wrong";}
+  }
+  return '<button class="'+cls+'" '+dis+' onclick="ansRev('+i+')"><span class="k">'+String.fromCharCode(65+i)+'</span><span>'+esc(txt)+'</span></button>';
+ }).join("");
+ var fb="";
+ if(R.answered){
+  var good=q.isTKP?q.opts[R.pick].s===5:R.pick===q.a;
+  fb='<div class="explain"><div class="fb '+(good?"ok\">"+ic("check")+"Tepat!":"no\">"+ic("x")+"Kurang tepat.")+'</div> '+esc(q.ex)+'</div>';
+ }
+ return head('<button class="backlink" onclick="go(\'jalur\')">'+ic("back")+'Jalur Belajar</button><div class="card">'
+  +'<div class="qmeta"><span class="badge '+CATS[it.cat].cls+'">'+it.cat+'</span><span style="color:#6b7280;font-size:13px">Review '+(R.pos+1)+' / '+total+'</span></div>'
+  +'<div class="qtext">'+esc(q.q)+'</div><div class="opts">'+opts+'</div>'+fb
+  +(R.answered?'<div class="qnav"><button class="btn plain" onclick="endRev()">Selesai</button><button class="btn" onclick="nextRev()">Lanjut '+ic("chev")+'</button></div>':"")
+  +'</div>');
+}
+window.ansRev=function(i){
+ var R=S.rev;if(!R||R.answered)return;
+ R.answered=true;R.pick=i;
+ var q=R.cur,it=R.items[R.pos],good=q.isTKP?q.opts[i].s===5:i===q.a;
+ if(good){var r=window.PathLib.srsRight(it.id);if(r.lulus)R.res.lulus++;else R.res.ulang++;}
+ else{window.PathLib.srsWrong(it.id);R.res.ulang++;}
+ ST.done[it.id]={c:it.cat,ok:good?1:0};save();
+ render();
+};
+window.nextRev=function(){
+ var R=S.rev;if(!R)return;
+ R.pos++;R.answered=false;R.pick=-1;
+ if(R.pos>=R.items.length){window.endRev();return;}
+ go("review");
+};
+window.endRev=function(){S.revDone=S.rev;S.rev=null;go("rev_result");};
+function vRevResult(){
+ var PL=window.PathLib,R=S.revDone||{res:{lulus:0,ulang:0},items:[]};
+ return head('<button class="backlink" onclick="go(\'jalur\')">'+ic("back")+'Jalur Belajar</button><div class="card"><h2>Hasil Review</h2>'
+  +'<div class="grid4"><div class="stat"><b>'+R.items.length+'</b><span>Soal direview</span></div><div class="stat"><b>'+R.res.lulus+'</b><span>Lulus</span></div><div class="stat"><b>'+R.res.ulang+'</b><span>Dijadwal ulang</span></div><div class="stat"><b>'+PL.dueCount()+'</b><span>Sisa antrean</span></div></div>'
+  +'<div class="info"><b>Cara kerja review terjadwal:</b> soal yang benar 2x beruntun = lulus dan keluar dari jadwal. Yang belum lulus muncul lagi dengan interval 1 → 3 → 7 → 14 → 30 hari.</div>'
+  +'<button class="btn big" onclick="go(\'jalur\')">Kembali ke Jalur</button></div>');
+}
+
 /* ---------- RENDER ---------- */
 function render(){
  var el=document.getElementById("app"),h="";
@@ -586,6 +773,9 @@ function render(){
  else if(S.view==="mat_view")h=vMatView();
  else if(S.view==="mentor")h=vMentor();
  else if(S.view==="mentor_ex")h=vMentorEx();
+ else if(S.view==="jalur")h=vJalur();
+ else if(S.view==="review")h=vReview();
+ else if(S.view==="rev_result")h=vRevResult();
  el.innerHTML=h;
  if(window.Mentor3D){
   if(S.view==="mentor"){var c1=document.getElementById("m3d");if(c1&&Mentor3D.init(c1))Mentor3D.greet(naraSay);}

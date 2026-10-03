@@ -205,3 +205,21 @@ summary::-webkit-details-marker{display:none}
 .msen{border-radius:6px;padding:1px 2px;transition:background .25s}
 .msen.on{background:var(--yellow);box-shadow:0 0 0 3px var(--yellow-soft)}
 #naraCtl{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+
+/* jalur belajar */
+.pathbanner{background:var(--green-soft);border:var(--bd);border-radius:var(--r);padding:16px;margin:16px 0;box-shadow:var(--sh);cursor:pointer}
+.pathbanner:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+.pathbanner .pbtop{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.pathbanner .pbtop b{font-size:16px;letter-spacing:-.3px}
+.pathbanner .pbtop span{font-size:13px;color:var(--mut);font-weight:700}
+.pathbanner .bar{margin-bottom:12px;background:#fff}
+.pathbanner .btn{width:100%}
+.steprow{display:flex;align-items:center;gap:12px;padding:13px 14px;border:var(--bd);border-radius:16px;margin-bottom:10px;cursor:pointer;font-weight:700;font-size:14.5px;background:#fff;box-shadow:var(--sh-sm)}
+.steprow:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink)}
+.steprow small{display:block;font-weight:600;color:var(--mut);font-size:12px;margin-top:2px}
+.stn{width:34px;height:34px;border-radius:12px;background:#eef0f4;border:var(--bd);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;flex-shrink:0}
+.stn .icn svg{width:18px;height:18px}
+.steprow.done .stn{background:var(--green);color:#fff;border-color:var(--green-d)}
+.steprow.done{opacity:.88}
+.pgbar{position:relative}
+.pgbar em{position:absolute;top:-3px;bottom:-3px;width:4px;background:var(--red-d);border-radius:2px;transform:translateX(-2px)}
