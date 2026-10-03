@@ -6,7 +6,12 @@ var CATS={
  TIU:{name:"TIU",full:"Tes Intelegensia Umum",n:35,pg:80,max:175,cls:"tiu"},
  TKP:{name:"TKP",full:"Tes Karakteristik Pribadi",n:45,pg:166,max:225,cls:"tkp"}
 };
-var BANK={TWK:(window.QB_TWK||[]).concat(window.QB_TWK_B2||[]),TIU:(window.QB_TIU||[]).concat(window.QB_TIU_B2||[]),TKP:(window.QB_TKP||[]).concat(window.QB_TKP_B2||[])};
+var BANK={TWK:[],TIU:[],TKP:[]};
+["TWK","TIU","TKP"].forEach(function(c){
+ var arr=window["QB_"+c]||[];
+ for(var b=2;b<=11;b++){arr=arr.concat(window["QB_"+c+"_B"+b]||[]);}
+ BANK[c]=arr;
+});
 var LS="siasn_v1";
 function load(){try{var s=JSON.parse(localStorage.getItem(LS));if(s&&s.done)return s;}catch(e){}return{done:{},tryouts:[]};}
 function save(){try{localStorage.setItem(LS,JSON.stringify(ST));}catch(e){}}
