@@ -626,11 +626,14 @@ function vMentorEx(){
 function pathBanner(){
  if(!window.PathLib)return "";
  var PL=window.PathLib,po=PL.overall(),ns=PL.nextStep();
+ var ty=PL.schedToday(),tg=PL.schedTarget(),st=PL.schedStreak();
  var inner='<div class="pbtop"><b>🛤️ Jalur Belajar</b><span>'+po.done+'/'+po.total+' langkah • '+po.pct+'%</span></div>'
-  +'<div class="bar"><i style="width:'+po.pct+'%"></i></div>';
+  +'<div class="bar"><i style="width:'+po.pct+'%"></i></div>'
+  +'<div class="schedline">🎯 Hari ini <b>'+ty+'/'+tg+'</b> &nbsp;•&nbsp; 🔥 <b>'+st+'</b> hari beruntun</div>';
  if(ns)inner+='<button class="btn" onclick="event.stopPropagation();goNextStep()">▶ '+esc(PL.stepShort(ns))+'</button>';
  else inner+='<div class="empty" style="padding:6px">Semua langkah selesai. Luar biasa! 🎉</div>';
- return '<div class="pathbanner" onclick="go(\'jalur\')">'+inner+'</div>';
+ return '<div class="pathbanner" onclick="go(\'jalur\')">'+inner+'</div>'
+  +'<div class="trikbanner" onclick="go(\'trik\')"><b>⚡ Trik Cepat</b><span>50 jurus hemat waktu SKD</span><span class="mgo">'+ICONS.chev+'</span></div>';
 }
 function goStep(s){
  if(!s)return;
@@ -660,6 +663,15 @@ function vJalur(){
   +(ns?'<button class="btn big" onclick="goNextStep()">▶ Lanjut: '+esc(PL.stepName(ns))+'</button>'
       :'<div class="perfect">'+ic("trophy")+' <b>Semua langkah selesai!</b><p>Tinggal jaga ritme dengan tryout berkala dan review terjadwal.</p></div>')
   +'</div>';
+ /* --- Target Harian + Trik Cepat --- */
+ var ty=PL.schedToday(),tg=PL.schedTarget(),st=PL.schedStreak();
+ var tpct=tg?Math.min(100,Math.round(ty/tg*100)):0;
+ h+='<div class="card"><h2>'+ic("target")+'Target Harian</h2>'
+  +'<div class="prow"><div class="lbl"><span>🎯 Langkah selesai hari ini</span><span><b>'+ty+'</b> / '+tg+'</span></div><div class="bar"><i style="width:'+tpct+'%"></i></div></div>'
+  +'<div class="trow"><span>🔥 <b>'+st+' hari</b> beruntun memenuhi target</span>'
+  +'<span class="stepper"><button onclick="schedTargetChg(-1)">−</button><b>'+tg+'/hari</b><button onclick="schedTargetChg(1)">+</button></span></div>'
+  +'<p class="muted">Setiap langkah Jalur yang selesai menambah hitungan hari ini. Target bisa diubah 1–5.</p></div>';
+ h+='<button class="btn big" style="margin-bottom:14px" onclick="go(\'trik\')">⚡ Trik Cepat — 50 jurus hemat waktu</button>';
  fases.forEach(function(f){
   var fs=steps.filter(function(s){return s.fase===f.id;});
   var dn=fs.filter(function(s){return PL.stepDone(s);}).length;
@@ -759,6 +771,30 @@ function vRevResult(){
   +'<button class="btn big" onclick="go(\'jalur\')">Kembali ke Jalur</button></div>');
 }
 
+/* ---------- TRIK CEPAT ---------- */
+function vTrik(){
+ var groups=["TIU","TWK","TKP","UMUM"];
+ var gname={TIU:"Tes Intelegensia Umum",TWK:"Tes Wawasan Kebangsaan",TKP:"Tes Karakteristik Pribadi",UMUM:"Strategi Ujian SKD"};
+ var gcls={TIU:"tiu",TWK:"",TKP:"tkp",UMUM:""};
+ var h='<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button>'
+  +'<div class="card"><h2>⚡ Trik Cepat</h2><p style="color:#6b7280;font-size:14px;font-weight:600;margin-bottom:4px">50 jurus hemat waktu ala bimbel — esensi teknik tercepat per tipe soal + strategi hari-H. Ketuk kartunya untuk buka isinya.</p></div>';
+ groups.forEach(function(g){
+  var list=(window.TRIK||[]).filter(function(t){return t.cat===g;});
+  if(!list.length)return;
+  h+='<div class="card"><h2><span class="badge '+gcls[g]+'">'+g+'</span> '+esc(gname[g])+' <span class="wpill">'+list.length+' trik</span></h2>';
+  list.forEach(function(t){
+   h+='<details class="trik"><summary><b style="flex:1">'+esc(t.judul)+'</b><span class="ttopic">'+esc(t.topic)+'</span></summary><div class="trikbody">'+t.isi+'</div></details>';
+  });
+  h+='</div>';
+ });
+ return head(h);
+}
+window.schedTargetChg=function(d){
+ if(!window.PathLib)return;
+ PathLib.setTarget(PathLib.schedTarget()+d);
+ render();
+};
+
 /* ---------- RENDER ---------- */
 function render(){
  var el=document.getElementById("app"),h="";
@@ -774,6 +810,7 @@ function render(){
  else if(S.view==="mentor")h=vMentor();
  else if(S.view==="mentor_ex")h=vMentorEx();
  else if(S.view==="jalur")h=vJalur();
+ else if(S.view==="trik")h=vTrik();
  else if(S.view==="review")h=vReview();
  else if(S.view==="rev_result")h=vRevResult();
  el.innerHTML=h;

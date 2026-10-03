@@ -61,7 +61,7 @@ function save(){try{localStorage.setItem(LS,JSON.stringify(mem));}catch(e){}}
 /* ---------- PROGRESS ---------- */
 function stepById(id){for(var i=0;i<STEPS.length;i++)if(STEPS[i].id===id)return STEPS[i];return null;}
 function isDone(id){load();return !!mem.done[id];}
-function markDone(id){load();mem.done[id]=true;save();}
+function markDone(id){load();if(mem.done[id])return;mem.done[id]=true;schedBump();save();}
 
 function dueList(){
  load();var now=Date.now(),out=[];
@@ -149,6 +149,45 @@ function completeTryout(){
  }
 }
 
+/* ---------- JADWAL HARIAN + STREAK ---------- */
+var SLS="siasn_sched_v1";
+var sched=null;
+function localDay(d){
+ d=d||new Date();
+ return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);
+}
+function schedLoad(){
+ if(sched)return sched;
+ var s=null;
+ try{s=JSON.parse(localStorage.getItem(SLS));}catch(e){}
+ if(!s||typeof s!=="object")s={};
+ if(typeof s.target!=="number"||s.target<1||s.target>5)s.target=3;
+ if(!s.log||typeof s.log!=="object")s.log={};
+ sched=s;return sched;
+}
+function schedSave(){try{localStorage.setItem(SLS,JSON.stringify(sched));}catch(e){}}
+function schedBump(){
+ var s=schedLoad(),k=localDay();
+ s.log[k]=(s.log[k]||0)+1;schedSave();
+}
+function schedToday(){var s=schedLoad();return s.log[localDay()]||0;}
+function schedTarget(){return schedLoad().target;}
+function setTarget(n){
+ n=Math.round(Number(n));
+ if(isNaN(n))n=3;
+ n=Math.max(1,Math.min(5,n));
+ schedLoad().target=n;schedSave();return n;
+}
+function schedStreak(){
+ var s=schedLoad(),t=s.target,n=0,d=new Date();
+ if((s.log[localDay(d)]||0)<t)d.setDate(d.getDate()-1); /* hari ini belum memenuhi: mulai dari kemarin */
+ for(var guard=0;guard<370;guard++){
+  if((s.log[localDay(d)]||0)>=t){n++;d.setDate(d.getDate()-1);}
+  else break;
+ }
+ return n;
+}
+
 /* ---------- LABEL ---------- */
 function stepName(s){
  if(s.kind==="materi")return"Baca materi: "+s.topic;
@@ -180,6 +219,7 @@ window.PathLib={
  srsWrong:srsWrong,srsRight:srsRight,
  weakestTopics:weakestTopics,tryoutBest:tryoutBest,
  completeMateri:completeMateri,completeLatihan:completeLatihan,completeTryout:completeTryout,
- stepName:stepName,stepShort:stepShort
+ stepName:stepName,stepShort:stepShort,
+ schedToday:schedToday,schedTarget:schedTarget,setTarget:setTarget,schedStreak:schedStreak,localDay:localDay
 };
 })();
