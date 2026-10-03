@@ -17,12 +17,19 @@ var LS="siasn_v1";
 function load(){try{var s=JSON.parse(localStorage.getItem(LS));if(s&&s.done)return s;}catch(e){}return{done:{},tryouts:[]};}
 function save(){try{localStorage.setItem(LS,JSON.stringify(ST));}catch(e){}}
 var ST=load();
+window.SIASN={BANK:BANK,ST:ST};
 var S={view:"dash"};
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
 function fmtT(s){s=Math.max(0,s);var m=Math.floor(s/60),h=Math.floor(m/60);m=m%60;var ss=s%60;function p(x){return(x<10?"0":"")+x;}return(h>0?p(h)+":":"")+p(m)+":"+p(ss);}
 function head(inner){return '<div class="topbar"><div class="logo">A</div><div class="brand"><b>SiASN</b><span>Latihan SKD CPNS</span></div></div>'+inner;}
-function go(v){S.view=v;render();window.scrollTo(0,0);}
+function go(v){
+ if(window.Mentor3D&&Mentor3D.active()){
+  var cur=(S.view||"").indexOf("mentor")===0,nxt=(v||"").indexOf("mentor")===0;
+  if(cur&&!nxt)Mentor3D.destroy();
+ }
+ S.view=v;render();window.scrollTo(0,0);
+}
 window.go=go;
 
 /* ---------- DASHBOARD ---------- */
@@ -55,6 +62,7 @@ function vDash(){
   +'<div class="card"><h2>📖 Materi Pembelajaran</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px">Ringkasan padat per topik — langsung ke intinya.</p><div class="grid3">'
   +Object.keys(CATS).map(function(c){return '<div class="catchoice" onclick="openMatList(\''+c+'\')"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p><span class="badge '+CATS[c].cls+'">'+MAT[c].length+' topik</span></div>';}).join("")
   +'</div></div>'
+  +'<div class="card mentor-card" onclick="go(\'mentor\')"><h2>🤖 Mentor 3D — Nara</h2><p style="color:#6b7280;font-size:14px;margin:0">Tanya soal & materi, dijelasin pakai suara oleh avatar 3D.</p></div>'
   +'<div class="card"><h2>📝 Riwayat Tryout</h2>'+hist+'</div>'
   +'<div class="info"><b>Format SKD asli:</b> TWK 30 soal (PG 65) • TIU 35 soal (PG 80) • TKP 45 soal (PG 166) • Total 110 soal, 100 menit. Lulus = ketiga komponen mencapai passing grade masing-masing.</div>'
   +'<div class="footer">SiASN • soal latihan dimodelkan dari kisi-kisi & pola soal CPNS sebelumnya</div>'
@@ -430,6 +438,109 @@ function vMatView(){
   +(next?'<button class="btn" onclick="matMove(1)">Berikutnya →</button>':"")+'</div></div>');
 }
 
+/* ---------- MENTOR 3D ---------- */
+function naraSay(t){
+ var b=document.getElementById("naraSay");
+ if(b)b.innerHTML=t;
+}
+window.naraSay=naraSay;
+function askNara(){
+ var inp=document.getElementById("naraQ");
+ var q=inp?inp.value.trim():"";
+ if(!q){naraSay("Ketik dulu pertanyaanmu 🙂");return;}
+ var r=window.Mentor3D?Mentor3D.searchMentor(q):null;
+ if(!r){
+  naraSay("Hmm, aku belum paham itu. Coba tanya tentang <b>rumus matematika</b>, <b>deret angka</b>, <b>sejarah proklamasi</b>, atau <b>sinonim</b>…");
+  if(window.Mentor3D)Mentor3D.speak("Hmm, aku belum paham itu. Coba tanya hal lain ya.");
+  return;
+ }
+ if(r.kind==="topic"){S.mentor={kind:"topic",cat:r.cat,topic:r.topic};go("mentor_ex");}
+ else{S.mentor={kind:"q",cat:r.cat,idx:r.idx,id:r.id};go("mentor_ex");}
+}
+window.askNara=askNara;
+function naraAsk(q){var i=document.getElementById("naraQ");if(i)i.value=q;askNara();}
+window.naraAsk=naraAsk;
+function openMentorQ(id){
+ var f=window.Mentor3D?Mentor3D.findQ(id):null;
+ if(!f)return;
+ S.mentor={kind:"q",cat:f.cat,idx:f.idx,id:id};go("mentor_ex");
+}
+window.openMentorQ=openMentorQ;
+function stopExplain(){
+ if(window.Mentor3D)Mentor3D.stop();
+ naraSay("Oke, berhenti dulu. Tekan 🔊 kalau mau diulang.");
+}
+window.stopExplain=stopExplain;
+function replayExplain(){startExplain();}
+window.replayExplain=replayExplain;
+function startExplain(){
+ var Mc=S.mentor;if(!Mc||!window.Mentor3D)return;
+ var text;
+ if(Mc.kind==="topic")text=Mentor3D.materiSpeech(Mc.cat,Mc.topic);
+ else text=Mentor3D.soalSpeech(Mc.cat,Mc.idx);
+ naraSay("Nara lagi ngejelasin… dengerin ya 🙂");
+ Mentor3D.speak(text,{
+  onReady:function(sents){
+   var box=document.getElementById("naraText");
+   if(box)box.innerHTML=sents.map(function(s,i){return '<span class="msen" data-i="'+i+'">'+esc(s)+"</span>";}).join(" ");
+  },
+  onSentence:function(i){
+   var box=document.getElementById("naraText");if(!box)return;
+   var els=box.querySelectorAll(".msen"),k;
+   for(k=0;k<els.length;k++)els[k].classList.remove("on");
+   var el=box.querySelector('[data-i="'+i+'"]');
+   if(el){el.classList.add("on");try{el.scrollIntoView({block:"nearest"});}catch(e){}}
+  },
+  onDone:function(){naraSay("Gimana, paham? Tanya lagi kalau masih bingung 🙂");}
+ });
+}
+function mentorQHtml(cat,q){
+ var rows=q.opts.map(function(o,j){
+  var txt=cat==="TKP"?o.t:o,cls="ro";
+  if(cat==="TKP"){if(o.s===5)cls+=" cc";}
+  else{if(j===q.a)cls+=" cc";}
+  return '<div class="'+cls+'"><b>'+String.fromCharCode(65+j)+'.</b> '+esc(txt)+(cat==="TKP"?' <span style="color:#6b7280">('+o.s+')</span>':"")+'</div>';
+ }).join("");
+ return '<div class="qmeta"><span class="badge '+CATS[cat].cls+'">'+cat+'</span><span style="color:#6b7280;font-size:13px">'+esc(q.id)+'</span></div>'
+  +'<p style="font-size:15.5px;font-weight:600;margin:10px 0 12px;line-height:1.6">'+esc(q.q)+'</p>'+rows
+  +'<div class="explain"><b>Pembahasan:</b> '+esc(q.ex)+'</div>';
+}
+function vMentor(){
+ var wrong=window.Mentor3D?Mentor3D.wrongList(8):[];
+ var whtml=wrong.length?wrong.map(function(w){
+  var stem="",f=Mentor3D.findQ(w.id);
+  if(f){var q=Mentor3D.getQ(f.cat,f.idx);if(q)stem=q.q;}
+  return '<div class="mattopic" onclick="openMentorQ(\''+w.id+'\')"><span class="mn">'+w.cat+'</span><span style="font-weight:400;font-size:13.5px">'+esc(stem.slice(0,72))+'…</span><span class="mgo">→</span></div>';
+ }).join(""):'<div class="empty">Belum ada soal salah — pertahankan! 🎉<br><br><button class="btn" onclick="go(\'lat_cat\')">Mulai Latihan</button></div>';
+ var chips=["Rumus matematika","Deret angka","Sejarah proklamasi","Sinonim antonim","UUD 1945","Pelayanan publik"].map(function(c){
+  return '<button class="chip" onclick="naraAsk(\''+c+'\')">'+c+'</button>';
+ }).join("");
+ return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button>'
+ +'<div class="m3dwrap"><canvas id="m3d"></canvas><div class="narasay" id="naraSay">Halo! Aku <b>Nara</b> 🤖</div></div>'
+ +'<div class="card"><h2>💬 Tanya Nara</h2>'
+ +'<div class="msearch"><input id="naraQ" placeholder="cth: rumus deret angka…" onkeydown="if(event.key===\'Enter\')askNara()"><button class="btn" onclick="askNara()">Tanya</button></div>'
+ +'<div class="chips">'+chips+'</div></div>'
+ +'<div class="card"><h2>🎓 Soal yang pernah kamu salah</h2>'+whtml+'</div>');
+}
+function vMentorEx(){
+ var Mc=S.mentor;
+ if(!Mc)return head('<button class="backlink" onclick="go(\'mentor\')">← Mentor</button><div class="card"><div class="empty">Pilih dulu yang mau dijelasin.</div></div>');
+ var body="";
+ if(Mc.kind==="topic"){
+  var t=null,arr=MAT[Mc.cat]||[],i;
+  for(i=0;i<arr.length;i++)if(arr[i].topic===Mc.topic)t=arr[i];
+  body='<div class="qmeta"><span class="badge '+CATS[Mc.cat].cls+'">'+Mc.cat+'</span></div><h2 style="margin:10px 0 14px;font-size:19px">'+esc(Mc.topic)+'</h2><div class="matbody">'+(t?t.html:"")+'</div>';
+ }else{
+  var q=window.Mentor3D?Mentor3D.getQ(Mc.cat,Mc.idx):null;
+  body=q?mentorQHtml(Mc.cat,q):'<div class="empty">Soal tidak ditemukan.</div>';
+ }
+ return head('<button class="backlink" onclick="go(\'mentor\')">← Mentor</button>'
+ +'<div class="m3dwrap small"><canvas id="m3d2"></canvas><div class="narasay" id="naraSay">Siap ngejelasin…</div></div>'
+ +'<div class="card"><div id="naraCtl"><button class="btn" onclick="replayExplain()">🔊 Jelaskan</button> <button class="btn plain" onclick="stopExplain()">⏹ Berhenti</button></div>'
+ +'<div class="naraText" id="naraText"></div></div>'
+ +'<div class="card">'+body+'</div>');
+}
+
 /* ---------- RENDER ---------- */
 function render(){
  var el=document.getElementById("app"),h="";
@@ -442,7 +553,13 @@ function render(){
  else if(S.view==="to_result")h=vToResult();
  else if(S.view==="mat_list")h=vMatList();
  else if(S.view==="mat_view")h=vMatView();
+ else if(S.view==="mentor")h=vMentor();
+ else if(S.view==="mentor_ex")h=vMentorEx();
  el.innerHTML=h;
+ if(window.Mentor3D){
+  if(S.view==="mentor"){var c1=document.getElementById("m3d");if(c1&&Mentor3D.init(c1))Mentor3D.greet(naraSay);}
+  else if(S.view==="mentor_ex"){var c2=document.getElementById("m3d2");if(c2&&Mentor3D.init(c2))setTimeout(startExplain,400);}
+ }
 }
 render();
 })();
