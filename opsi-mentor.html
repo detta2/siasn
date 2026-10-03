@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pilih Mentor — SiASN</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
+body{background:radial-gradient(circle at 88% 6%,#e3f2fd 0 90px,transparent 91px),#fff;padding:20px;max-width:560px;margin:0 auto;color:#0b3d5c}
+h1{text-align:center;font-size:22px;margin:8px 0 4px}
+.sub{text-align:center;color:#5b7a8c;font-size:14px;margin-bottom:18px}
+.note{background:#fff;border:2px solid #0b3d5c;border-radius:14px;padding:14px;font-size:13px;color:#33566b;margin-bottom:20px;box-shadow:3px 3px 0 #0b3d5c}
+.mopt{background:#fff;border:2px solid #0b3d5c;border-radius:20px;margin-bottom:22px;overflow:hidden;box-shadow:4px 4px 0 #0b3d5c}
+.mopt .tag{background:#0b3d5c;color:#fff;font-weight:800;padding:10px 16px;font-size:16px;display:flex;justify-content:space-between;align-items:center}
+.mopt .tag small{font-weight:600;opacity:.75;font-size:12px}
+.mopt canvas{width:100%;display:block;touch-action:pan-y}
+.mopt .foot{display:flex;gap:10px;align-items:center;padding:12px 16px 16px}
+.mopt .foot p{font-size:13px;color:#5b7a8c;flex:1;font-weight:600}
+.sapa{border:2px solid #0b3d5c;background:#e0f9ff;border-radius:99px;padding:10px 18px;font-weight:800;font-size:14px;cursor:pointer;color:#0b3d5c;box-shadow:0 3px 0 #0b3d5c;font-family:inherit;white-space:nowrap}
+.sapa:active{transform:translateY(3px);box-shadow:none}
+</style>
+</head>
+<body>
+<h1>🤖 Pilih Mentor Barumu</h1>
+<p class="sub">4 avatar 3D — tap <b>👋 Sapa</b> buat lihat dia gerak + bersuara. Balas angka 1–4.</p>
+<div class="note">Yang kamu pilih bakal gantiin robot Nara jadi mentor utama di web — tetap bisa jelasin soal pakai suara + animasi bicara.</div>
+<div id="list"></div>
+<script src="js/vendor/three.min.js"></script>
+<script src="js/avatars.js"></script>
+<script>
+var ORDER=["orca","owl","cat","penguin"];
+var GOS={
+ orca:"Halo! Aku Orca, paus yang kalem tapi hafal semua rumus. Yuk belajar bareng!",
+ owl:"Halo! Aku Hoot, burung hantu penjaga teori. Tidak ada soal yang lolos dari mataku!",
+ cat:"Halo! Aku Kimo! Semangat belajarnya harus secerah buluku yang oren ini!",
+ penguin:"Halo! Aku Pingu. Kita kerjakan soal satu per satu dengan teliti, ya!"};
+function preview(canvas,key){
+ var av=window.AVATARS[key].build();
+ var w=canvas.parentNode.clientWidth||320, h=300;
+ var renderer;
+ try{renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});}
+ catch(e){return null;}
+ renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+ renderer.setSize(w,h,false);
+ renderer.shadowMap.enabled=true;
+ var scene=new THREE.Scene();
+ var camera=new THREE.PerspectiveCamera(34,w/h,0.1,50);
+ camera.position.set(0,1.38,4.6);camera.lookAt(0,1.02,0);
+ scene.add(new THREE.HemisphereLight(0xffffff,0xdde3ff,0.95));
+ var kl=new THREE.DirectionalLight(0xffffff,0.85);
+ kl.position.set(2.5,4.2,3);kl.castShadow=true;scene.add(kl);
+ var sh=new THREE.Mesh(new THREE.CircleGeometry(1.5,48),new THREE.ShadowMaterial({opacity:0.14}));
+ sh.rotation.x=-Math.PI/2;sh.position.y=0;sh.receiveShadow=true;scene.add(sh);
+ scene.add(av.g);
+ var t0=performance.now(),blinkAt=2,blinking=0,waveT=0,talking=false;
+ function tick(now){
+  var t=(now-t0)/1000;
+  av.g.position.y=0.10+Math.sin(t*1.7)*0.045;
+  av.g.rotation.y=Math.sin(t*0.5)*0.35;
+  if(t>blinkAt){blinkAt=t+2.2+Math.random()*2.8;blinking=0.13;}
+  if(blinking>0){blinking-=1/60;var s=Math.max(0.08,blinking/0.13);av.eL.scale.y=s;av.eR.scale.y=s;}
+  else{av.eL.scale.y=1;av.eR.scale.y=1;}
+  if(talking){av.mouth.scale.y=1+Math.abs(Math.sin(t*10.5))*2.4;}
+  else{av.mouth.scale.y+=(1-av.mouth.scale.y)*0.25;}
+  if(waveT>0){waveT-=1/60;av.aR.rotation.z=-2.1+Math.sin(t*13)*0.38;}
+  renderer.render(scene,camera);
+  requestAnimationFrame(tick);
+ }
+ requestAnimationFrame(tick);
+ return {
+  wave:function(){waveT=1.7;},
+  say:function(){
+   waveT=1.7;talking=true;
+   try{
+    var u=new SpeechSynthesisUtterance(GOS[key]);u.lang="id-ID";u.rate=1;
+    u.onend=function(){talking=false;};u.onerror=function(){talking=false;};
+    speechSynthesis.cancel();speechSynthesis.speak(u);
+    setTimeout(function(){talking=false;},6000);
+   }catch(e){talking=false;}
+  }
+ };
+}
+var html="";
+ORDER.forEach(function(k,i){
+ var a=window.AVATARS[k];
+ html+='<div class="mopt"><div class="tag"><span>'+(i+1)+' — '+a.name+'</span><small>3D</small></div>'
+ +'<canvas id="cv_'+k+'"></canvas>'
+ +'<div class="foot"><p>'+a.tag+'</p><button class="sapa" data-k="'+k+'">👋 Sapa</button></div></div>';
+});
+document.getElementById("list").innerHTML=html;
+var ctrls={};
+ORDER.forEach(function(k){ctrls[k]=preview(document.getElementById("cv_"+k),k);});
+document.querySelectorAll(".sapa").forEach(function(b){
+ b.onclick=function(){var c=ctrls[b.getAttribute("data-k")];if(c)c.say();};
+});
+</script>
+</body>
+</html>
