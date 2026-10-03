@@ -1,8 +1,9 @@
-/* SiASN — tema "Fokus": chunky, playful, tombol 3D. Light only. */
+/* SiASN — tema "Ombak Minimalis": putih bersih, biru laut, bayangan navy.
+   Catatan: --green dipakai sebagai skala biru laut (primary) agar semua komponen ikut. Light only. */
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
- --bg:#ffffff;--ink:#1f2937;--mut:#6b7280;
- --green:#58cc02;--green-d:#46a302;--green-soft:#e5ffb8;
+ --bg:#ffffff;--ink:#0b3d5c;--mut:#5b7a8c;
+ --green:#0096c7;--green-d:#0077a3;--green-soft:#e0f9ff;
  --blue:#1cb0f6;--blue-d:#1899d6;--blue-soft:#ddf4ff;
  --red:#ff4b4b;--red-d:#d33131;--red-soft:#ffe1e1;
  --yellow:#ffc800;--yellow-d:#d9a400;--yellow-soft:#fff3c4;
@@ -12,7 +13,7 @@
  --r:20px;
 }
 html{-webkit-text-size-adjust:100%}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-tap-highlight-color:transparent}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(circle at 88% 6%,#e3f2fd 0 90px,transparent 91px),radial-gradient(circle at 4% 94%,#e3f2fd 0 70px,transparent 71px),var(--bg);color:var(--ink);line-height:1.55;-webkit-tap-highlight-color:transparent}
 #app{max-width:920px;margin:0 auto;padding:0 14px 90px}
 
 /* ikon SVG */
@@ -23,7 +24,7 @@ h2 .icn svg{width:22px;height:22px}
 
 /* topbar */
 .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:12px 2px;background:var(--bg);border-bottom:var(--bd);margin:0 -14px;padding-left:16px;padding-right:16px}
-.logo{width:42px;height:42px;border-radius:14px;background:var(--green);border:var(--bd);box-shadow:var(--sh-sm);display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0}
+.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#00b4d8,#0077a3);border:var(--bd);box-shadow:var(--sh-sm);display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0}
 .logo svg{width:24px;height:24px}
 .brand b{font-size:19px;display:block;line-height:1.15;letter-spacing:-.3px}
 .brand span{font-size:12px;color:var(--mut);font-weight:600}
@@ -61,11 +62,11 @@ h2 .icn svg{width:22px;height:22px}
 .stat.g b{color:var(--green-d)}.stat.b b{color:var(--blue-d)}.stat.y b{color:var(--yellow-d)}.stat.p b{color:var(--purple-d)}
 
 /* hero */
-.hero{background:var(--green);border:var(--bd);border-radius:24px;padding:26px 22px;margin:16px 0;box-shadow:6px 6px 0 var(--ink);color:#fff;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-40px;top:-40px;width:170px;height:170px;border-radius:50%;background:rgba(255,255,255,.14)}
-.hero .eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;opacity:.92}
+.hero{background:#fff;border:var(--bd);border-radius:24px;padding:26px 22px;margin:16px 0;box-shadow:6px 6px 0 var(--ink);color:var(--ink);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-40px;top:-40px;width:170px;height:170px;border-radius:50%;background:#e0f9ff}
+.hero .eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--green-d)}
 .hero h1{font-size:30px;margin:8px 0 6px;letter-spacing:-.8px;line-height:1.15}
-.hero p{font-size:14px;max-width:560px;opacity:.95;font-weight:500}
+.hero p{font-size:14px;max-width:560px;color:var(--mut);font-weight:600}
 
 /* menu utama */
 .mmenu{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
@@ -164,7 +165,7 @@ summary::-webkit-details-marker{display:none}
 .tech li{margin-bottom:7px}
 .gtip{margin-top:8px;background:var(--blue-soft);border:var(--bd);border-radius:14px;padding:12px 14px;font-size:14px}
 .perfect{background:var(--green-soft);border:var(--bd);border-radius:16px;padding:16px;font-size:14px;box-shadow:var(--sh-sm)}
-.perfect p{margin:8px 0 0;color:#14532d;font-weight:600}
+.perfect p{margin:8px 0 0;color:#0b3d5c;font-weight:600}
 .learnbtn{border:var(--bd);background:var(--yellow);color:var(--ink);border-radius:99px;padding:6px 14px;font-size:12.5px;font-weight:800;cursor:pointer;white-space:nowrap;box-shadow:0 3px 0 var(--yellow-d);display:inline-flex;align-items:center;gap:6px;font-family:inherit}
 .learnbtn:active{transform:translateY(3px);box-shadow:none}
 .learnbtn .icn svg{width:15px;height:15px}
@@ -191,7 +192,7 @@ summary::-webkit-details-marker{display:none}
 .matbody code{background:#eef0f4;border:2px solid #e5e7eb;padding:1px 7px;border-radius:8px;font-size:13px;font-weight:700}
 
 /* mentor 3D */
-.m3dwrap{background:linear-gradient(160deg,#e8f9d4,#f0fdf4 55%,#ffffff);border:var(--bd);border-radius:24px;padding:8px 4px 16px;margin:14px 0;box-shadow:6px 6px 0 var(--ink);text-align:center;overflow:hidden}
+.m3dwrap{background:linear-gradient(160deg,#e0f9ff,#f0faff 55%,#ffffff);border:var(--bd);border-radius:24px;padding:8px 4px 16px;margin:14px 0;box-shadow:6px 6px 0 var(--ink);text-align:center;overflow:hidden}
 .m3dwrap canvas{width:100%;display:block;touch-action:pan-y}
 .narasay{position:relative;background:#fff;border:var(--bd);border-radius:18px;padding:12px 15px;margin:4px 14px 0;font-size:14px;line-height:1.55;box-shadow:var(--sh-sm);text-align:left;font-weight:500}
 .narasay::before{content:"";position:absolute;top:-11px;left:44px;width:16px;height:16px;background:#fff;border-left:var(--bd);border-top:var(--bd);transform:rotate(45deg)}
