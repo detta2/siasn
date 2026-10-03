@@ -43,7 +43,7 @@ function vDash(){
  }).join(""):'<div class="empty">Belum ada tryout. Yuk mulai yang pertama!</div>';
  return head(
   '<div class="hero"><h1>Siap jadi ASN? 🇮🇩</h1><p>Latihan soal TWK, TIU, TKP dimodelkan dari pola soal CPNS tahun-tahun sebelumnya, plus tryout persis format SKD asli: 110 soal, 100 menit.</p>'
-  +'<div class="cta"><button class="btn ghost" onclick="go(\'lat_cat\')">Latihan Soal</button><button class="btn ghost" onclick="go(\'quiz_cat\')">Kuis</button><button class="btn" style="background:#fff;color:#4f46e5" onclick="go(\'to_intro\')">Tryout SKD</button></div></div>'
+  +'<div class="cta"><button class="btn ghost" onclick="go(\'lat_cat\')">Latihan Soal</button><button class="btn" style="background:#fff;color:#4f46e5" onclick="go(\'to_intro\')">Tryout SKD</button></div></div>'
   +'<div class="card"><h2>📊 Progresmu</h2>'+cards+'</div>'
   +'<div class="card"><h2>📚 Bank Soal</h2>'+prog+'</div>'
   +'<div class="card"><h2>📝 Riwayat Tryout</h2>'+hist+'</div>'
@@ -114,72 +114,6 @@ window.nextLat=function(){
  L.answered=false;L.pick=-1;go("lat");
 };
 
-/* ---------- KUIS (jawab semua dulu, pembahasan di akhir) ---------- */
-function vQuizCat(){
- var h='<div class="grid3">';
- Object.keys(CATS).forEach(function(c){
-  h+='<div class="catchoice"><b>'+c+'</b><p>'+esc(CATS[c].full)+' • '+BANK[c].length+' soal</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">'
-   +[10,20,30,50].map(function(n){return '<button class="btn plain" style="padding:8px 14px;font-size:13px" onclick="startQuiz(\''+c+'\','+n+')">'+n+' soal</button>';}).join("")
-   +'</div></div>';
- });
- return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><h2>Kuis</h2><p style="color:#6b7280;font-size:14px;margin-bottom:14px">Pilih kategori & jumlah soal. Jawab semua dulu — pembahasan muncul setelah selesai.</p>'+h+'</div>');
-}
-window.startQuiz=function(c,n){
- var pool=BANK[c];if(!pool.length){alert("Bank soal "+c+" belum siap.");return;}
- if(pool.length<n)n=pool.length;
- var idx=shuffle(pool.map(function(_,i){return i;})).slice(0,n);
- S.quiz={cat:c,qs:idx.map(function(ii){return prepQ(c,ii);}),ans:new Array(idx.length).fill(-1),doubt:{},idx:0};
- go("quiz");
-};
-function vQuiz(){
- var Q=S.quiz,q=Q.qs[Q.idx],an=Q.ans[Q.idx];
- var opts=q.opts.map(function(o,i){
-  var txt=q.isTKP?o.t:o;
-  return '<button class="opt'+(an===i?" picked":"")+'" onclick="ansQuiz('+i+')"><span class="k">'+String.fromCharCode(65+i)+'</span><span>'+esc(txt)+'</span></button>';
- }).join("");
- var grid=Q.qs.map(function(_,i){
-  var cls="";if(Q.ans[i]>=0)cls="done";if(Q.doubt[i])cls="doubt";if(i===Q.idx)cls+=" cur";
-  return '<button class="'+cls+'" onclick="jumpQuiz('+i+')">'+(i+1)+'</button>';
- }).join("");
- return head('<div class="card"><div class="tobar"><button class="backlink" style="margin:0" onclick="abortQuiz()">✕ Batal</button>'
-  +'<span class="badge '+CATS[Q.cat].cls+'">Kuis '+Q.cat+'</span>'
-  +'<button class="btn" onclick="finishQuiz(true)">Selesai</button></div>'
-  +'<div class="qmeta"><span style="color:#6b7280;font-size:13px">Soal '+(Q.idx+1)+' / '+Q.qs.length+'</span></div>'
-  +'<div class="qtext">'+esc(q.q)+'</div><div class="opts">'+opts+'</div>'
-  +'<label class="doubtrow"><input type="checkbox" '+(Q.doubt[Q.idx]?"checked":"")+' onchange="togDoubtQ(this.checked)"> Ragu-ragu</label>'
-  +'<div class="qnav"><button class="btn plain" '+(Q.idx===0?"disabled":"")+' onclick="moveQuiz(-1)">← Sebelumnya</button>'
-  +'<button class="btn plain" '+(Q.idx===Q.qs.length-1?"disabled":"")+' onclick="moveQuiz(1)">Berikutnya →</button></div>'
-  +'<div class="numgrid">'+grid+'</div></div>');
-}
-window.ansQuiz=function(i){S.quiz.ans[S.quiz.idx]=i;render();};
-window.jumpQuiz=function(i){S.quiz.idx=i;render();window.scrollTo(0,0);};
-window.moveQuiz=function(d){S.quiz.idx=Math.min(S.quiz.qs.length-1,Math.max(0,S.quiz.idx+d));render();window.scrollTo(0,0);};
-window.togDoubtQ=function(v){if(v)S.quiz.doubt[S.quiz.idx]=1;else delete S.quiz.doubt[S.quiz.idx];};
-window.abortQuiz=function(){if(confirm("Batalkan kuis?")){S.quiz=null;go("dash");}};
-window.finishQuiz=function(ask){
- var Q=S.quiz;
- if(ask){var un=Q.ans.filter(function(a){return a<0;}).length;
-  if(!confirm(un?("Masih ada "+un+" soal belum dijawab. Selesaikan?"):"Selesaikan kuis?"))return;}
- var correct=0,score=0,max=0;
- Q.qs.forEach(function(q,i){
-  var an=Q.ans[i],good=false;
-  if(q.isTKP){max+=5;if(an>=0){score+=q.opts[an].s;good=q.opts[an].s>=4;}}
-  else{max+=5;if(an>=0&&an===q.a){correct++;score+=5;good=true;}}
-  ST.done[q.id]={c:Q.cat,ok:good?1:0};
- });
- save();
- S.qres={cat:Q.cat,qs:Q.qs,ans:Q.ans,correct:correct,score:score,max:max,n:Q.qs.length,isTKP:Q.qs[0].isTKP};
- S.quiz=null;go("quiz_result");
-};
-function vQuizResult(){
- var R=S.qres;
- var sum=R.isTKP?("Skor <b>"+R.score+"</b> / "+R.max):("Benar <b>"+R.correct+"</b> / "+R.n+" • Skor <b>"+R.score+"</b>");
- var acc=R.isTKP?Math.round(R.score/R.max*100):Math.round(R.correct/R.n*100);
- return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><h2>Hasil Kuis '+R.cat+'</h2>'
-  +'<div style="text-align:center;margin:12px 0;font-size:17px">'+sum+'</div>'
-  +'<div style="text-align:center;color:#6b7280">Akurasi: <b>'+acc+'%</b></div></div>'
-  +'<div class="card"><h2>Pembahasan</h2>'+reviewHtml(R.qs,R.ans)+'</div>');
-}
 function reviewHtml(qs,ans){
  return qs.map(function(q,i){
   var an=ans[i],uTxt=an<0?"(tidak dijawab)":(q.isTKP?q.opts[an].t:q.opts[an]);
@@ -286,9 +220,6 @@ function render(){
  else if(S.view==="to_intro")h=vToIntro();
  else if(S.view==="to")h=vTo();
  else if(S.view==="to_result")h=vToResult();
- else if(S.view==="quiz_cat")h=vQuizCat();
- else if(S.view==="quiz")h=vQuiz();
- else if(S.view==="quiz_result")h=vQuizResult();
  el.innerHTML=h;
 }
 render();
