@@ -166,6 +166,166 @@ jadi layak diselesaikan pada putaran kedua dengan kepala dingin.</li>
 <td>pengamatan</td></tr>
 <tr><td>opini</td>
 <td>pendapat</td></tr>
+<tr><td>kolusi</td>
+<td>persekongkolan</td></tr>
+<tr><td>nepotisme</td>
+<td>pilih kasih</td></tr>
+<tr><td>delusi</td>
+<td>khayalan</td></tr>
+<tr><td>stagnasi</td>
+<td>kemandekan</td></tr>
+<tr><td>fluktuasi</td>
+<td>naik turun</td></tr>
+<tr><td>akomodasi</td>
+<td>penyesuaian</td></tr>
+<tr><td>segregasi</td>
+<td>pemisahan</td></tr>
+<tr><td>divergen</td>
+<td>menyimpang</td></tr>
+<tr><td>ambigu</td>
+<td>bermakna ganda</td></tr>
+<tr><td>paradoks</td>
+<td>pernyataan bertentangan</td></tr>
+<tr><td>stigma</td>
+<td>cap buruk</td></tr>
+<tr><td>spekulasi</td>
+<td>dugaan</td></tr>
+<tr><td>diskursus</td>
+<td>perbincangan</td></tr>
+<tr><td>paradigma</td>
+<td>kerangka berpikir</td></tr>
+<tr><td>dilema</td>
+<td>serba salah</td></tr>
+<tr><td>apresiasi</td>
+<td>penghargaan</td></tr>
+<tr><td>kompilasi</td>
+<td>kumpulan</td></tr>
+<tr><td>esensi</td>
+<td>inti</td></tr>
+<tr><td>fenomena</td>
+<td>peristiwa</td></tr>
+<tr><td>tren</td>
+<td>kecenderungan</td></tr>
+<tr><td>prospek</td>
+<td>harapan</td></tr>
+<tr><td>evaluasi</td>
+<td>penilaian</td></tr>
+<tr><td>toleransi</td>
+<td>tenggang rasa</td></tr>
+<tr><td>empati</td>
+<td>ikut merasakan</td></tr>
+<tr><td>provokasi</td>
+<td>hasutan</td></tr>
+<tr><td>propaganda</td>
+<td>penyebaran paham</td></tr>
+<tr><td>retorika</td>
+<td>seni berbicara</td></tr>
+<tr><td>orasi</td>
+<td>pidato</td></tr>
+<tr><td>deskripsi</td>
+<td>penggambaran</td></tr>
+<tr><td>valid</td>
+<td>sah</td></tr>
+<tr><td>verifikasi</td>
+<td>pemeriksaan</td></tr>
+<tr><td>klarifikasi</td>
+<td>penjelasan</td></tr>
+<tr><td>konfirmasi</td>
+<td>penegasan</td></tr>
+<tr><td>rekonsiliasi</td>
+<td>perdamaian</td></tr>
+<tr><td>mediasi</td>
+<td>penengahan</td></tr>
+<tr><td>intervensi</td>
+<td>campur tangan</td></tr>
+<tr><td>koalisi</td>
+<td>gabungan</td></tr>
+<tr><td>afiliasi</td>
+<td>pertalian</td></tr>
+<tr><td>otoritas</td>
+<td>kewenangan</td></tr>
+<tr><td>prerogatif</td>
+<td>hak istimewa</td></tr>
+<tr><td>birokrasi</td>
+<td>sistem pemerintahan</td></tr>
+<tr><td>tirani</td>
+<td>kekuasaan lalim</td></tr>
+<tr><td>dominasi</td>
+<td>penguasaan</td></tr>
+<tr><td>sentralisasi</td>
+<td>pemusatan</td></tr>
+<tr><td>desentralisasi</td>
+<td>pelimpahan wewenang</td></tr>
+<tr><td>otonomi</td>
+<td>hak mengatur sendiri</td></tr>
+<tr><td>referendum</td>
+<td>pemungutan suara</td></tr>
+<tr><td>embargo</td>
+<td>larangan dagang</td></tr>
+<tr><td>sanksi</td>
+<td>hukuman</td></tr>
+<tr><td>amnesti</td>
+<td>pengampunan</td></tr>
+<tr><td>moratorium</td>
+<td>penangguhan</td></tr>
+<tr><td>kuota</td>
+<td>jatah</td></tr>
+<tr><td>subsidi</td>
+<td>bantuan</td></tr>
+<tr><td>inflasi</td>
+<td>kenaikan harga</td></tr>
+<tr><td>deflasi</td>
+<td>penurunan harga</td></tr>
+<tr><td>resesi</td>
+<td>kelesuan ekonomi</td></tr>
+<tr><td>depresi</td>
+<td>kemerosotan</td></tr>
+<tr><td>delegasi</td>
+<td>utusan</td></tr>
+<tr><td>duta</td>
+<td>utusan resmi</td></tr>
+<tr><td>etiket</td>
+<td>tata krama</td></tr>
+<tr><td>deduksi</td>
+<td>penarikan kesimpulan</td></tr>
+<tr><td>metafora</td>
+<td>kiasan</td></tr>
+<tr><td>satire</td>
+<td>sindiran</td></tr>
+<tr><td>pragmatis</td>
+<td>praktis</td></tr>
+<tr><td>skeptis</td>
+<td>ragu-ragu</td></tr>
+<tr><td>transparan</td>
+<td>terbuka</td></tr>
+<tr><td>urgen</td>
+<td>mendesak</td></tr>
+<tr><td>diagnosis</td>
+<td>penentuan penyakit</td></tr>
+<tr><td>terapi</td>
+<td>pengobatan</td></tr>
+<tr><td>rehabilitasi</td>
+<td>pemulihan</td></tr>
+<tr><td>imunisasi</td>
+<td>pengebalan</td></tr>
+<tr><td>pandemi</td>
+<td>wabah meluas</td></tr>
+<tr><td>epidemi</td>
+<td>wabah</td></tr>
+<tr><td>karantina</td>
+<td>isolasi</td></tr>
+<tr><td>kredibilitas</td>
+<td>dapat dipercaya</td></tr>
+<tr><td>reputasi</td>
+<td>nama baik</td></tr>
+<tr><td>prestise</td>
+<td>wibawa</td></tr>
+<tr><td>introspeksi</td>
+<td>mawas diri</td></tr>
+<tr><td>konsolidasi</td>
+<td>penguatan</td></tr>
+<tr><td>pemilu</td>
+<td>pemilihan umum</td></tr>
 </table>
 <p><b>Strategi menebak dari konteks:</b></p>
 <ul>
@@ -178,7 +338,7 @@ jadi layak diselesaikan pada putaran kedua dengan kepala dingin.</li>
 <li>Ketika benar-benar buntu, pilih opsi yang paling umum dipakai dalam bahasa sehari-hari.</li>
 </ul>
 <h3>Contoh + Pembahasan Langkah</h3>
-<p>Sepuluh contoh di bawah memakai kata yang berbeda-beda agar variasinya luas. Perhatikan cara mengartikan tiap opsi sebelum memilih.</p>
+<p>Lima belas contoh di bawah memakai kata yang berbeda-beda agar variasinya luas. Perhatikan cara mengartikan tiap opsi sebelum memilih.</p>
 <p><b>Contoh 1.</b> Sinonim kata "dedikasi" adalah ....</p>
 <p>a. pengabdian</p>
 <p>b. pengkhianatan</p>
@@ -288,6 +448,61 @@ jadi layak diselesaikan pada putaran kedua dengan kepala dingin.</li>
 <li>Opsi a "setia" sama maknanya dengan loyal.</li>
 <li>Opsi b "khianat" berlawanan makna; opsi c "acuh" artinya tidak peduli; opsi d "bimbang" artinya ragu-ragu.</li>
 <li>Jadi jawaban yang benar: <b>a. setia</b>.</li>
+</ol>
+<p><b>Contoh 11.</b> Sinonim kata "kolusi" adalah ....</p>
+<p>a. persekongkolan</p>
+<p>b. persaingan</p>
+<p>c. persatuan</p>
+<p>d. perpecahan</p>
+<ol>
+<li>"Kolusi" menurut KBBI berarti kerja sama rahasia untuk maksud yang tidak terpuji; persekongkolan.</li>
+<li>Opsi a "persekongkolan" memiliki arti yang sama persis dengan kolusi.</li>
+<li>Opsi b "persaingan" artinya perlombaan untuk menjadi yang terbaik; opsi c "persatuan" artinya gabungan menjadi satu; opsi d "perpecahan" artinya perpisahan — ketiganya tidak searti dengan kolusi.</li>
+<li>Jadi jawaban yang benar: <b>a. persekongkolan</b>.</li>
+</ol>
+<p><b>Contoh 12.</b> Sinonim kata "stagnasi" adalah ....</p>
+<p>a. kemandekan</p>
+<p>b. kemajuan</p>
+<p>c. percepatan</p>
+<p>d. perkembangan</p>
+<ol>
+<li>"Stagnasi" menurut KBBI berarti keadaan berhenti atau tidak maju; kemandekan.</li>
+<li>Opsi a "kemandekan" memiliki arti yang sama persis dengan stagnasi.</li>
+<li>Opsi b "kemajuan", opsi c "percepatan", dan opsi d "perkembangan" justru bermakna gerak maju, berlawanan dengan stagnasi.</li>
+<li>Jadi jawaban yang benar: <b>a. kemandekan</b>.</li>
+</ol>
+<p><b>Contoh 13.</b> Sinonim kata "paradigma" adalah ....</p>
+<p>a. kerangka berpikir</p>
+<p>b. prasangka</p>
+<p>c. dugaan</p>
+<p>d. khayalan</p>
+<ol>
+<li>"Paradigma" menurut KBBI berarti kerangka berpikir; model atau pola pikir yang menjadi acuan.</li>
+<li>Opsi a "kerangka berpikir" memiliki arti yang sama persis dengan paradigma.</li>
+<li>Opsi b "prasangka" artinya pendapat yang belum tentu benar; opsi c "dugaan" artinya sangkaan; opsi d "khayalan" artinya angan-angan — ketiganya bukan sinonim paradigma.</li>
+<li>Jadi jawaban yang benar: <b>a. kerangka berpikir</b>.</li>
+</ol>
+<p><b>Contoh 14.</b> Sinonim kata "dilema" adalah ....</p>
+<p>a. serba salah</p>
+<p>b. keputusan</p>
+<p>c. keberanian</p>
+<p>d. kemudahan</p>
+<ol>
+<li>"Dilema" menurut KBBI berarti situasi sulit yang mengharuskan orang menentukan pilihan antara dua kemungkinan yang sama-sama tidak menyenangkan; serba salah.</li>
+<li>Opsi a "serba salah" memiliki arti yang sama persis dengan dilema.</li>
+<li>Opsi b "keputusan" artinya ketetapan; opsi c "keberanian" berkaitan dengan nyali; opsi d "kemudahan" berkaitan dengan kelancaran — ketiganya tidak searti dengan dilema.</li>
+<li>Jadi jawaban yang benar: <b>a. serba salah</b>.</li>
+</ol>
+<p><b>Contoh 15.</b> Sinonim kata "rekonsiliasi" adalah ....</p>
+<p>a. perdamaian</p>
+<p>b. permusuhan</p>
+<p>c. perpecahan</p>
+<p>d. perselisihan</p>
+<ol>
+<li>"Rekonsiliasi" menurut KBBI berarti perbuatan memulihkan hubungan persahabatan menjadi baik kembali; perdamaian.</li>
+<li>Opsi a "perdamaian" memiliki arti yang sama persis dengan rekonsiliasi.</li>
+<li>Opsi b "permusuhan", opsi c "perpecahan", dan opsi d "perselisihan" justru bermakna pertikaian, berlawanan dengan rekonsiliasi.</li>
+<li>Jadi jawaban yang benar: <b>a. perdamaian</b>.</li>
 </ol>
 <h3>Trik Cepat</h3>
 <ul>
@@ -480,6 +695,166 @@ jadi layak diselesaikan pada putaran kedua dengan kepala dingin.</li>
 <td>horizontal</td></tr>
 <tr><td>waspada</td>
 <td>lengah</td></tr>
+<tr><td>agresif</td>
+<td>pasif</td></tr>
+<tr><td>amoral</td>
+<td>bermoral</td></tr>
+<tr><td>autentik</td>
+<td>palsu</td></tr>
+<tr><td>barbar</td>
+<td>beradab</td></tr>
+<tr><td>cerewet</td>
+<td>pendiam</td></tr>
+<tr><td>demokratis</td>
+<td>otoriter</td></tr>
+<tr><td>efisien</td>
+<td>boros</td></tr>
+<tr><td>eksklusif</td>
+<td>inklusif</td></tr>
+<tr><td>emosional</td>
+<td>rasional</td></tr>
+<tr><td>formal</td>
+<td>informal</td></tr>
+<tr><td>heterogen</td>
+<td>homogen</td></tr>
+<tr><td>ilegal</td>
+<td>legal</td></tr>
+<tr><td>imigran</td>
+<td>emigran</td></tr>
+<tr><td>impor</td>
+<td>ekspor</td></tr>
+<tr><td>individual</td>
+<td>kolektif</td></tr>
+<tr><td>induktif</td>
+<td>deduktif</td></tr>
+<tr><td>introver</td>
+<td>ekstrover</td></tr>
+<tr><td>khas</td>
+<td>umum</td></tr>
+<tr><td>kompleks</td>
+<td>sederhana</td></tr>
+<tr><td>konkret</td>
+<td>abstrak</td></tr>
+<tr><td>konvensional</td>
+<td>modern</td></tr>
+<tr><td>kualitatif</td>
+<td>kuantitatif</td></tr>
+<tr><td>laten</td>
+<td>nyata</td></tr>
+<tr><td>logis</td>
+<td>ilogis</td></tr>
+<tr><td>makro</td>
+<td>mikro</td></tr>
+<tr><td>maksimal</td>
+<td>minimal</td></tr>
+<tr><td>mayoritas</td>
+<td>minoritas</td></tr>
+<tr><td>monarki</td>
+<td>republik</td></tr>
+<tr><td>monogami</td>
+<td>poligami</td></tr>
+<tr><td>mutakhir</td>
+<td>kuno</td></tr>
+<tr><td>nisbi</td>
+<td>mutlak</td></tr>
+<tr><td>nominal</td>
+<td>riil</td></tr>
+<tr><td>normal</td>
+<td>abnormal</td></tr>
+<tr><td>ofensif</td>
+<td>defensif</td></tr>
+<tr><td>parsial</td>
+<td>total</td></tr>
+<tr><td>pesimis</td>
+<td>optimis</td></tr>
+<tr><td>plural</td>
+<td>tunggal</td></tr>
+<tr><td>positif</td>
+<td>negatif</td></tr>
+<tr><td>praktis</td>
+<td>teoritis</td></tr>
+<tr><td>primer</td>
+<td>sekunder</td></tr>
+<tr><td>privat</td>
+<td>publik</td></tr>
+<tr><td>radikal</td>
+<td>moderat</td></tr>
+<tr><td>rasional</td>
+<td>emosional</td></tr>
+<tr><td>regresif</td>
+<td>progresif</td></tr>
+<tr><td>relatif</td>
+<td>absolut</td></tr>
+<tr><td>retrospektif</td>
+<td>prospektif</td></tr>
+<tr><td>senior</td>
+<td>junior</td></tr>
+<tr><td>spesifik</td>
+<td>umum</td></tr>
+<tr><td>stagnan</td>
+<td>dinamis</td></tr>
+<tr><td>statis</td>
+<td>dinamis</td></tr>
+<tr><td>subjektif</td>
+<td>objektif</td></tr>
+<tr><td>superior</td>
+<td>inferior</td></tr>
+<tr><td>surut</td>
+<td>pasang</td></tr>
+<tr><td>teoretis</td>
+<td>praktis</td></tr>
+<tr><td>toleran</td>
+<td>intoleran</td></tr>
+<tr><td>tradisional</td>
+<td>modern</td></tr>
+<tr><td>unik</td>
+<td>umum</td></tr>
+<tr><td>valid</td>
+<td>invalid</td></tr>
+<tr><td>virtual</td>
+<td>nyata</td></tr>
+<tr><td>destruktif</td>
+<td>konstruktif</td></tr>
+<tr><td>kompetitif</td>
+<td>kooperatif</td></tr>
+<tr><td>boros</td>
+<td>hemat</td></tr>
+<tr><td>miskin</td>
+<td>kaya</td></tr>
+<tr><td>dusta</td>
+<td>jujur</td></tr>
+<tr><td>sakit</td>
+<td>sehat</td></tr>
+<tr><td>mundur</td>
+<td>maju</td></tr>
+<tr><td>pasif</td>
+<td>aktif</td></tr>
+<tr><td>bawah</td>
+<td>atas</td></tr>
+<tr><td>depan</td>
+<td>belakang</td></tr>
+<tr><td>kanan</td>
+<td>kiri</td></tr>
+<tr><td>masuk</td>
+<td>keluar</td></tr>
+<tr><td>datang</td>
+<td>pergi</td></tr>
+<tr><td>hidup</td>
+<td>mati</td></tr>
+<tr><td>menang</td>
+<td>kalah</td></tr>
+<tr><td>lama</td>
+<td>baru</td></tr>
+<tr><td>mahal</td>
+<td>murah</td></tr>
+<tr><td>lebar</td>
+<td>sempit</td></tr>
+<tr><td>dalam</td>
+<td>dangkal</td></tr>
+<tr><td>penuh</td>
+<td>kosong</td></tr>
+<tr><td>basah</td>
+<td>kering</td></tr>
 </table>
 <p><b>Strategi menebak dari konteks:</b></p>
 <ul>
@@ -492,7 +867,7 @@ jadi layak diselesaikan pada putaran kedua dengan kepala dingin.</li>
 <li>Jika dua opsi sama-sama tampak berlawanan, pilih yang perlawanannya paling penuh dan paling sepadan jenis katanya.</li>
 </ul>
 <h3>Contoh + Pembahasan Langkah</h3>
-<p>Sepuluh contoh di bawah memakai kata yang berbeda-beda agar variasinya luas. Perhatikan cara mengartikan tiap opsi sebelum memilih.</p>
+<p>Lima belas contoh di bawah memakai kata yang berbeda-beda agar variasinya luas. Perhatikan cara mengartikan tiap opsi sebelum memilih.</p>
 <p><b>Contoh 1.</b> Antonim kata "abadi" adalah ....</p>
 <p>a. fana</p>
 <p>b. kekal</p>
@@ -603,6 +978,61 @@ jadi layak diselesaikan pada putaran kedua dengan kepala dingin.</li>
 <li>Opsi b "laba", opsi c "hasil", dan opsi d "manfaat" semuanya searah makna dengan untung; ketiganya jebakan sinonim.</li>
 <li>Jadi jawaban yang benar: <b>a. rugi</b>.</li>
 </ol>
+<p><b>Contoh 11.</b> Antonim kata "demokratis" adalah ....</p>
+<p>a. otoriter</p>
+<p>b. bebas</p>
+<p>c. merdeka</p>
+<p>d. adil</p>
+<ol>
+<li>"Demokratis" menurut KBBI berarti bersifat demokrasi; berdasarkan kedaulatan rakyat.</li>
+<li>Opsi a "otoriter" berarti berkuasa sendiri dan sewenang-wenang — berlawanan penuh dengan demokratis.</li>
+<li>Opsi b "bebas", opsi c "merdeka", dan opsi d "adil" semuanya searah makna dengan demokratis; ketiganya bukan lawan kata.</li>
+<li>Jadi jawaban yang benar: <b>a. otoriter</b>.</li>
+</ol>
+<p><b>Contoh 12.</b> Antonim kata "ilegal" adalah ....</p>
+<p>a. legal</p>
+<p>b. haram</p>
+<p>c. curang</p>
+<p>d. gelap</p>
+<ol>
+<li>"Ilegal" menurut KBBI berarti tidak menurut hukum; tidak sah.</li>
+<li>Opsi a "legal" berarti sesuai dengan hukum; sah — berlawanan penuh dengan ilegal.</li>
+<li>Opsi b "haram" artinya terlarang menurut agama; opsi c "curang" artinya tidak jujur; opsi d "gelap" dalam konteks ini berarti tidak resmi — ketiganya bukan lawan kata ilegal.</li>
+<li>Jadi jawaban yang benar: <b>a. legal</b>.</li>
+</ol>
+<p><b>Contoh 13.</b> Antonim kata "subjektif" adalah ....</p>
+<p>a. objektif</p>
+<p>b. pribadi</p>
+<p>c. sepihak</p>
+<p>d. emosional</p>
+<ol>
+<li>"Subjektif" menurut KBBI berarti mengenai atau menurut pandangan (perasaan) sendiri; tidak mengenai pokok bendanya secara langsung.</li>
+<li>Opsi a "objektif" berarti mengenai keadaan yang sebenarnya tanpa dipengaruhi pandangan pribadi — berlawanan penuh dengan subjektif.</li>
+<li>Opsi b "pribadi", opsi c "sepihak", dan opsi d "emosional" semuanya bernada subjektif juga; ketiganya bukan lawan kata.</li>
+<li>Jadi jawaban yang benar: <b>a. objektif</b>.</li>
+</ol>
+<p><b>Contoh 14.</b> Antonim kata "virtual" adalah ....</p>
+<p>a. nyata</p>
+<p>b. maya</p>
+<p>c. digital</p>
+<p>d. semu</p>
+<ol>
+<li>"Virtual" menurut KBBI berarti tampak nyata padahal hanya merupakan tampilan (di layar komputer).</li>
+<li>Opsi a "nyata" berarti benar-benar ada dan sungguh-sungguh — berlawanan penuh dengan virtual.</li>
+<li>Opsi b "maya", opsi c "digital", dan opsi d "semu" semuanya searti dengan virtual; ketiganya jebakan sinonim.</li>
+<li>Jadi jawaban yang benar: <b>a. nyata</b>.</li>
+</ol>
+<p><b>Contoh 15.</b> Antonim kata "maksimal" adalah ....</p>
+<p>a. minimal</p>
+<p>b. optimal</p>
+<p>c. penuh</p>
+<p>d. total</p>
+<ol>
+<li>"Maksimal" menurut KBBI berarti sebanyak-banyaknya; setinggi-tingginya.</li>
+<li>Opsi a "minimal" berarti sedikit-dikitnya; serendah-rendahnya — berlawanan penuh dengan maksimal.</li>
+<li>Opsi b "optimal" artinya terbaik; opsi c "penuh" dan opsi d "total" searah makna dengan maksimal, bukan lawannya.</li>
+<li>Jadi jawaban yang benar: <b>a. minimal</b>.</li>
+</ol>
 <h3>Trik Cepat</h3>
 <ul>
 <li>Hafalkan pasangan klasik abadi–fana, aktif–pasif, konkret–abstrak, dinamis–statis, dan objektif–subjektif.</li>
@@ -648,7 +1078,7 @@ misalnya alat–fungsi dikacaukan dengan pelaku–alat.</li>
 lalu pilih dari sisa opsi yang paling sejajar dengan pola pasangan pertama.</li>
 </ol>
 <h3>Katalog Pola</h3>
-<p>Delapan belas tipe relasi di bawah ini mencakup hampir semua pola analogi yang keluar di TIU. Hafalkan nama tipenya beserta satu contohnya.</p>
+<p>Dua puluh delapan tipe relasi di bawah ini mencakup hampir semua pola analogi yang keluar di TIU. Hafalkan nama tipenya beserta satu contohnya.</p>
 <table>
 <tr><th>Tipe Relasi</th><th>Contoh Pasangan</th><th>Penjelasan</th></tr>
 <tr>
@@ -705,6 +1135,36 @@ lalu pilih dari sisa opsi yang paling sejajar dengan pola pasangan pertama.</li>
 <tr>
 <td>Kumpulan – anggota</td><td>kawanan : domba</td><td>Kelompok dan salah satu anggotanya</td>
 </tr>
+<tr>
+<td>Penyakit – obat</td><td>flu : parasetamol</td><td>Penyakit diobati dengan obat tersebut</td>
+</tr>
+<tr>
+<td>Negara – ibu kota</td><td>Indonesia : Jakarta</td><td>Kota yang menjadi pusat pemerintahan negara itu</td>
+</tr>
+<tr>
+<td>Negara – mata uang</td><td>Jepang : yen</td><td>Mata uang resmi yang berlaku di negara itu</td>
+</tr>
+<tr>
+<td>Hewan – suara khas</td><td>kucing : mengeong</td><td>Suara khas yang dikeluarkan oleh hewan itu</td>
+</tr>
+<tr>
+<td>Kendaraan – bahan bakar</td><td>mobil : bensin</td><td>Bahan bakar yang dipakai untuk menggerakkan kendaraan itu</td>
+</tr>
+<tr>
+<td>Alat musik – cara memainkan</td><td>gitar : dipetik</td><td>Cara khas memainkan alat musik tersebut</td>
+</tr>
+<tr>
+<td>Makanan – bahan utama</td><td>tempe : kedelai</td><td>Bahan utama yang dipakai untuk membuat makanan itu</td>
+</tr>
+<tr>
+<td>Ilmu – objek kajian</td><td>biologi : makhluk hidup</td><td>Cabang ilmu yang mempelajari objek tersebut</td>
+</tr>
+<tr>
+<td>Pemimpin – wilayah</td><td>gubernur : provinsi</td><td>Wilayah yang dipimpin oleh pejabat tersebut</td>
+</tr>
+<tr>
+<td>Tahapan – hasil akhir</td><td>kepompong : kupu-kupu</td><td>Tahapan awal yang berkembang menjadi hasil akhirnya</td>
+</tr>
 </table>
 <p><b>Cara memakai tabel:</b></p>
 <ol>
@@ -721,8 +1181,60 @@ misalnya bagian–keseluruhan dengan umum–khusus.</li>
 lalu uji kecocokannya dengan kalimat satu baris.</li>
 <li>Tandai tipe relasi yang paling sering membuatmu salah, lalu latih sepuluh soal khusus untuk tipe itu saja.</li>
 </ol>
+<h3>Latihan Tipe Relasi Baru</h3>
+<p>Kerjakan dua puluh mini-soal di bawah ini tanpa melihat tabel; tiap soal menguji satu tipe relasi baru dari katalog.</p>
+<p><b>1. Penyakit – obat</b></p>
+<ol>
+<li>Flu : parasetamol = diare : .... → <b>oralit</b> (oralit adalah obat untuk penyakit diare)</li>
+<li>Asma : inhaler = diabetes : .... → <b>insulin</b> (insulin adalah obat untuk penyakit diabetes)</li>
+</ol>
+<p><b>2. Negara – ibu kota</b></p>
+<ol>
+<li>Indonesia : Jakarta = Malaysia : .... → <b>Kuala Lumpur</b> (Kuala Lumpur adalah ibu kota negara Malaysia)</li>
+<li>Thailand : Bangkok = Vietnam : .... → <b>Hanoi</b> (Hanoi adalah ibu kota negara Vietnam)</li>
+</ol>
+<p><b>3. Negara – mata uang</b></p>
+<ol>
+<li>Jepang : yen = Inggris : .... → <b>pound sterling</b> (pound sterling adalah mata uang resmi negara Inggris)</li>
+<li>Amerika Serikat : dolar = Korea Selatan : .... → <b>won</b> (won adalah mata uang resmi negara Korea Selatan)</li>
+</ol>
+<p><b>4. Hewan – suara khas</b></p>
+<ol>
+<li>Kucing : mengeong = anjing : .... → <b>menggonggong</b> (menggonggong adalah suara khas hewan anjing)</li>
+<li>Ayam : berkokok = sapi : .... → <b>melenguh</b> (melenguh adalah suara khas hewan sapi)</li>
+</ol>
+<p><b>5. Kendaraan – bahan bakar</b></p>
+<ol>
+<li>Mobil : bensin = pesawat : .... → <b>avtur</b> (avtur adalah bahan bakar yang dipakai kendaraan pesawat)</li>
+<li>Sepeda motor : bensin = truk : .... → <b>solar</b> (solar adalah bahan bakar yang dipakai kendaraan truk)</li>
+</ol>
+<p><b>6. Alat musik – cara memainkan</b></p>
+<ol>
+<li>Gitar : dipetik = drum : .... → <b>dipukul</b> (dipukul adalah cara khas memainkan alat musik drum)</li>
+<li>Seruling : ditiup = biola : .... → <b>digesek</b> (digesek adalah cara khas memainkan alat musik biola)</li>
+</ol>
+<p><b>7. Makanan – bahan utama</b></p>
+<ol>
+<li>Tempe : kedelai = roti : .... → <b>gandum</b> (gandum adalah bahan utama makanan roti)</li>
+<li>Keju : susu = kecap : .... → <b>kedelai</b> (kedelai adalah bahan utama makanan kecap)</li>
+</ol>
+<p><b>8. Ilmu – objek kajian</b></p>
+<ol>
+<li>Biologi : makhluk hidup = astronomi : .... → <b>benda langit</b> (benda langit adalah objek yang dikaji ilmu astronomi)</li>
+<li>Geologi : bumi = linguistik : .... → <b>bahasa</b> (bahasa adalah objek yang dikaji ilmu linguistik)</li>
+</ol>
+<p><b>9. Pemimpin – wilayah</b></p>
+<ol>
+<li>Gubernur : provinsi = bupati : .... → <b>kabupaten</b> (kabupaten adalah wilayah yang dipimpin seorang bupati)</li>
+<li>Presiden : negara = wali kota : .... → <b>kota</b> (kota adalah wilayah yang dipimpin seorang wali kota)</li>
+</ol>
+<p><b>10. Tahapan – hasil akhir</b></p>
+<ol>
+<li>Kepompong : kupu-kupu = telur : .... → <b>ayam</b> (telur adalah tahapan awal yang berkembang menjadi ayam)</li>
+<li>Benih : padi = ulat : .... → <b>kepompong</b> (ulat adalah tahapan awal yang berkembang menjadi kepompong)</li>
+</ol>
 <h3>Contoh + Pembahasan Langkah</h3>
-<p>Sepuluh contoh di bawah memakai tipe relasi yang berbeda-beda. Perhatikan cara merumuskan relasi sebelum memilih opsi.</p>
+<p>Lima belas contoh di bawah memakai tipe relasi yang berbeda-beda. Perhatikan cara merumuskan relasi sebelum memilih opsi.</p>
 <p><b>Contoh 1.</b> Pena : menulis = kuas : ....</p>
 <p>a. melukis</p>
 <p>b. memotong</p>
@@ -857,6 +1369,74 @@ Opsi b "es" dan opsi d "salju" adalah benda yang dingin, bukan tingkatannya; ops
 <li>Pastikan arah intensitasnya sama: dari rendah ke tinggi pada kedua pasangan.</li>
 <li>Jadi jawaban yang benar: <b>a. beku</b>.</li>
 </ol>
+<p><b>Contoh 11.</b> Demam : ibuprofen = diare : ....</p>
+<p>a. oralit</p>
+<p>b. parasetamol</p>
+<p>c. vitamin C</p>
+<p>d. antibiotik</p>
+<ol>
+<li>Rumuskan relasi pasangan pertama dalam satu kalimat: ibuprofen adalah obat yang dipakai untuk meredakan demam.
+Tipenya penyakit–obat.</li>
+<li>Pasangan kedua harus mengikuti pola yang sama: yang dicari adalah obat yang dipakai untuk penyakit diare.</li>
+<li>Obat untuk diare adalah oralit.
+Opsi b "parasetamol" adalah obat untuk demam dan nyeri; opsi c "vitamin C" adalah suplemen, bukan obat penyakit; opsi d "antibiotik" adalah obat infeksi bakteri, bukan penawar diare.</li>
+<li>Waspadai opsi yang sama-sama obat tetapi untuk penyakit yang berbeda: yang dicari harus sejajar dengan penyakit pasangannya.</li>
+<li>Jadi jawaban yang benar: <b>a. oralit</b>.</li>
+</ol>
+<p><b>Contoh 12.</b> Indonesia : Jakarta = Jepang : ....</p>
+<p>a. Tokyo</p>
+<p>b. Osaka</p>
+<p>c. Kyoto</p>
+<p>d. Beijing</p>
+<ol>
+<li>Relasi pasangan pertama: Jakarta adalah ibu kota negara Indonesia. Tipenya negara–ibu kota.</li>
+<li>Pasangan kedua harus mengikuti pola yang sama: yang dicari adalah ibu kota negara Jepang.</li>
+<li>Ibu kota Jepang adalah Tokyo.
+Opsi b "Osaka" adalah kota besar tetapi bukan ibu kota; opsi c "Kyoto" adalah jebakan karena pernah menjadi ibu kota lama Jepang; opsi d "Beijing" adalah ibu kota negara lain, yaitu Tiongkok.</li>
+<li>Jangan tertukar dengan kota terkenal: yang dicari adalah status ibu kota, bukan sekadar kota populer di negara itu.</li>
+<li>Jadi jawaban yang benar: <b>a. Tokyo</b>.</li>
+</ol>
+<p><b>Contoh 13.</b> Kucing : mengeong = sapi : ....</p>
+<p>a. melenguh</p>
+<p>b. mengembik</p>
+<p>c. meringkik</p>
+<p>d. menggonggong</p>
+<ol>
+<li>Relasi pasangan pertama: mengeong adalah suara khas yang dikeluarkan kucing. Tipenya hewan–suara khas.</li>
+<li>Pasangan kedua harus mengikuti pola yang sama: yang dicari adalah suara khas yang dikeluarkan sapi.</li>
+<li>Suara khas sapi adalah melenguh.
+Opsi b "mengembik" adalah suara kambing dan domba; opsi c "meringkik" adalah suara kuda; opsi d "menggonggong" adalah suara anjing.</li>
+<li>Semua opsi adalah nama suara hewan sehingga tampak mirip; yang benar harus suara milik hewan pasangannya, bukan hewan lain.</li>
+<li>Jadi jawaban yang benar: <b>a. melenguh</b>.</li>
+</ol>
+<p><b>Contoh 14.</b> Gitar : dipetik = biola : ....</p>
+<p>a. digesek</p>
+<p>b. dipukul</p>
+<p>c. ditiup</p>
+<p>d. dipetik</p>
+<ol>
+<li>Relasi pasangan pertama: gitar adalah alat musik yang cara memainkannya dipetik.
+Tipenya alat musik–cara memainkan.</li>
+<li>Pasangan kedua harus mengikuti pola yang sama: yang dicari adalah cara memainkan alat musik biola.</li>
+<li>Biola dimainkan dengan cara digesek.
+Opsi b "dipukul" adalah cara memainkan drum; opsi c "ditiup" adalah cara memainkan seruling; opsi d "dipetik" mengulang cara memainkan gitar, bukan biola.</li>
+<li>Waspadai opsi yang mengulang kata dari pasangan pertama: jawaban harus berlaku untuk alat musik pasangannya sendiri.</li>
+<li>Jadi jawaban yang benar: <b>a. digesek</b>.</li>
+</ol>
+<p><b>Contoh 15.</b> Kepompong : kupu-kupu = berudu : ....</p>
+<p>a. katak</p>
+<p>b. ikan</p>
+<p>c. ular</p>
+<p>d. kadal</p>
+<ol>
+<li>Relasi pasangan pertama: kepompong adalah tahapan awal yang bermetamorfosis menjadi kupu-kupu.
+Tipenya tahapan–hasil akhir.</li>
+<li>Pasangan kedua harus mengikuti pola yang sama: yang dicari adalah hasil akhir metamorfosis dari berudu.</li>
+<li>Berudu (kecebong) bermetamorfosis menjadi katak.
+Opsi b "ikan" memang hidup di air seperti berudu, tetapi bukan hasil metamorfosisnya; opsi c "ular" dan opsi d "kadal" adalah hewan melata yang tidak berkaitan dengan siklus berudu.</li>
+<li>Jangan tertukar dengan relasi tempat–penghuni: yang dicari adalah hasil perubahan bentuk, bukan hewan yang hidup di habitat yang sama.</li>
+<li>Jadi jawaban yang benar: <b>a. katak</b>.</li>
+</ol>
 <h3>Trik Cepat</h3>
 <ul>
 <li>Rumuskan relasi dalam satu kalimat pendek sebelum melihat opsi; separuh soal selesai di langkah ini.</li>
@@ -982,6 +1562,36 @@ Jika satu pola tidak menjelaskan semua bingkai, cari pola kedua yang berjalan be
 <td>Pola berulang tiap 2 sampai 3 bingkai, atau dua pola berjalan bergantian</td>
 <td>Pisahkan bingkai ganjil dan genap menjadi dua deret, cari pola masing-masing</td>
 </tr>
+<tr>
+<td>Pola bilangan dalam gambar</td>
+<td>Beberapa angka tertulis di dalam atau sekitar bangun dan saling terkait lewat operasi hitung sederhana</td>
+<td>Coba operasikan angka-angka yang terlihat, misalnya dua angka kecil dijumlahkan atau dikalikan menjadi angka besar; uji rumusan itu pada semua bingkai sebelum menebak</td>
+</tr>
+<tr>
+<td>Pola matriks 3x3</td>
+<td>Sembilan kotak tersusun 3 baris dan 3 kolom; kotak ketiga tiap baris atau kolom adalah hasil operasi dua kotak sebelumnya</td>
+<td>Uji tiap baris dulu: apakah kotak 3 sama dengan kotak 1 ditambah atau dikali kotak 2; jika tidak cocok pada semua baris, ulangi pengujian per kolom</td>
+</tr>
+<tr>
+<td>Pola lipatan kertas</td>
+<td>Kertas dilipat satu atau dua kali lalu dilubangi; saat dibuka, lubang muncul simetris mengikuti garis lipatannya</td>
+<td>Bayangkan membuka lipatan satu per satu dari yang terakhir; setiap lubang tercermin ke sisi berlawanan dari tiap garis lipatan sehingga jumlahnya berlipat</td>
+</tr>
+<tr>
+<td>Pola bayangan</td>
+<td>Bangun disertai bayangan yang arah dan panjangnya konsisten dengan posisi sumber cahaya</td>
+<td>Tentukan dulu dari mana cahaya datang berdasarkan arah bayangan, lalu gambar bayangan bangun berikutnya dengan arah yang sama dan panjang yang sebanding</td>
+</tr>
+<tr>
+<td>Pola irama warna</td>
+<td>Warna unsur berubah mengikuti urutan berulang, misalnya merah, kuning, hijau, lalu kembali ke merah</td>
+<td>Catat urutan warna tiap bingkai, temukan panjang siklus pengulangannya, lalu lanjutkan urutan itu untuk menentukan warna bingkai berikutnya</td>
+</tr>
+<tr>
+<td>Pola jaring dadu lanjutan</td>
+<td>Jaring berbentuk tidak biasa seperti huruf T, zigzag, atau sayap ganda; sisi berlawanan tetap tidak pernah bersebelahan setelah dilipat</td>
+<td>Lipat jaring dalam pikiran selangkah demi selangkah, atau tandai dua sisi yang terpisah tepat satu kotak dalam satu barisan sebagai pasangan berlawanan</td>
+</tr>
 </table>
 <p>
 <b>Contoh pola rotasi 90 derajat:</b>
@@ -1088,6 +1698,82 @@ D yang tepat adalah apa?</p>
 <li>Enam kotak dalam satu baris lurus tidak bisa dilipat menjadi kubus karena sisi-sisinya akan bertumpuk, bukan menutup ruang.</li>
 <li>Bentuk salib, barisan empat dengan dua sayap berlawanan, dan bentuk tangga semuanya termasuk pola jaring-jaring kubus yang valid.</li>
 <li>Maka yang BUKAN jaring-jaring kubus adalah <b>(a) enam kotak dalam satu baris lurus</b>.</li>
+</ol>
+<p><b>Contoh 11.</b> Sebuah segitiga dibagi menjadi tiga bagian. Bagian kiri bawah bertuliskan angka 4, bagian kanan bawah bertuliskan angka 6, bagian atas bertuliskan angka 10. Pada gambar kedua, bagian kiri bawah bertuliskan angka 3, kanan bawah 7, atas 10. Pada gambar ketiga, bagian kiri bawah bertuliskan angka 5, kanan bawah 2.
+Angka berapa yang tepat di bagian atas gambar ketiga?</p>
+<ol>
+<li>Angka-angka dalam satu gambar saling terkait, jadi polanya adalah operasi hitung, bukan perubahan bentuk.</li>
+<li>Uji gambar pertama: 4 ditambah 6 sama dengan 10. Uji gambar kedua: 3 ditambah 7 sama dengan 10. Rumusan penjumlahan konsisten pada keduanya.</li>
+<li>Terapkan pada gambar ketiga: 5 ditambah 2 sama dengan <b>7</b>. Maka bagian atas gambar ketiga bertuliskan angka 7.</li>
+</ol>
+<p><b>Contoh 12.</b> Sebuah matriks 3 baris dan 3 kolom berisi angka. Baris 1: 2, 3, 5. Baris 2: 4, 1, 5. Baris 3: 6, 2, dan satu kotak kosong.
+Angka berapa yang tepat mengisi kotak kosong itu?</p>
+<ol>
+<li>Susunannya matriks 3x3, jadi uji hubungan antar kotak dalam satu baris terlebih dahulu.</li>
+<li>Baris 1: 2 ditambah 3 sama dengan 5. Baris 2: 4 ditambah 1 sama dengan 5. Pola penjumlahannya konsisten; pengujian per kolom tidak menghasilkan pola yang tetap.</li>
+<li>Terapkan pada baris 3: 6 ditambah 2 sama dengan <b>8</b>. Maka kotak kosong diisi angka 8.</li>
+</ol>
+<p><b>Contoh 13.</b> Selembar kertas persegi dilipat sekali secara vertikal sehingga menjadi persegi panjang tegak, lalu dilipat sekali lagi secara horizontal. Pada lipatan terakhir dibuat satu lubang di dekat tengah tepi kanannya.
+Setelah kertas dibuka kembali, berapa lubang yang terlihat dan di mana posisinya?</p>
+<ol>
+<li>Dua kali lipatan berarti kertas terlipat menjadi empat lapis, jadi satu lubang menembus empat lapis sekaligus.</li>
+<li>Buka lipatan terakhir (horizontal): lubang tercermin ke sisi atas lipatan, menjadi dua lubang berpasangan atas-bawah di sisi kanan.</li>
+<li>Buka lipatan pertama (vertikal): kedua lubang tercermin ke sisi kiri, menjadi <b>4 lubang yang tersebar simetris: dua di sisi kanan dan dua di sisi kiri, masing-masing berpasangan atas dan bawah</b>.</li>
+</ol>
+<p><b>Contoh 14.</b> Tiga gambar menunjukkan sebuah pohon beserta bayangannya. Gambar 1: matahari di kiri atas, bayangan pohon mengarah ke kanan bawah. Gambar 2: matahari di kanan atas, bayangan pohon mengarah ke kiri bawah. Gambar 3: matahari tepat di atas pohon.
+Ke arah mana bayangan pohon pada gambar 3?</p>
+<ol>
+<li>Bayangan selalu jatuh berlawanan arah dari sumber cahaya; gambar 1 dan 2 sama-sama mengikuti aturan ini.</li>
+<li>Pada gambar 3 sumber cahaya tepat di atas pohon, sehingga tidak ada arah miring yang bisa diikuti bayangan.</li>
+<li>Maka bayangan pohon jatuh <b>tepat di bawah pohon dan tampak sangat pendek</b>.</li>
+</ol>
+<p><b>Contoh 15.</b> Deret lima lingkaran: lingkaran 1 berwarna merah, lingkaran 2 kuning, lingkaran 3 hijau, lingkaran 4 merah, lingkaran 5 masih kosong.
+Warna apa yang tepat untuk lingkaran 5?</p>
+<ol>
+<li>Bentuk dan jumlah lingkaran tidak berubah, hanya warnanya yang berpola, jadi ini pola irama warna.</li>
+<li>Urutan warnanya: merah, kuning, hijau, merah. Siklus pengulangannya panjangnya tiga: merah, kuning, hijau, lalu kembali ke merah.</li>
+<li>Lingkaran 5 menempati posisi yang sama dengan lingkaran 2 dalam siklus, yaitu <b>kuning</b>.</li>
+</ol>
+<p><b>Contoh 16.</b> Sebuah jaring-jaring dadu berbentuk salib: satu kotak di tengah bertitik 1, satu kotak menempel di atasnya bertitik 3, satu di bawahnya, satu di kiri, satu di kanan bertitik 2, plus satu kotak tambahan menempel di bawah kotak yang paling bawah. Sisi manakah yang berlawanan dengan sisi bertitik 1 setelah dilipat menjadi dadu?</p>
+<ol>
+<li>Empat kotak yang menempel langsung di sisi tengah (atas, bawah, kiri, kanan) akan menjadi sisi-sisi yang bertetangga dengan sisi 1 setelah dilipat.</li>
+<li>Kotak tambahan yang paling ujung (di bawah kotak bawah) tidak bertetangga dengan sisi tengah pada jaringnya.</li>
+<li>Ketika dilipat, kotak bawah menjadi sisi bawah dadu, dan kotak tambahan yang menempel di tepi luarnya terlipat menjadi sisi belakang — tepat berlawanan dengan sisi depan (sisi 1).</li>
+<li>Jadi sisi yang berlawanan dengan sisi bertitik 1 adalah <b>kotak tambahan yang paling ujung</b>.</li>
+</ol>
+<p><b>Contoh 17.</b> Tiga lingkaran berderet. Lingkaran 1 berisi angka 2, 4, 6. Lingkaran 2 berisi angka 3, 6, 9. Lingkaran 3 berisi angka 4, 8, 12. Lingkaran 4 berisi angka 5, 10, dan satu bagian kosong. Angka berapa yang tepat mengisi bagian kosong itu?</p>
+<ol>
+<li>Perhatikan isi tiap lingkaran: lingkaran 1 memuat kelipatan 2 (2×1, 2×2, 2×3); lingkaran 2 memuat kelipatan 3 (3×1, 3×2, 3×3); lingkaran 3 memuat kelipatan 4 (4×1, 4×2, 4×3).</li>
+<li>Basis kelipatan bertambah 1 tiap lingkaran: 2, 3, 4 — maka lingkaran 4 memakai basis 5.</li>
+<li>Isi lingkaran 4 seharusnya kelipatan 5: 5×1=5, 5×2=10, 5×3=15.</li>
+<li>Bagian kosong = <b>15</b>.</li>
+</ol>
+<p><b>Contoh 18.</b> Sebuah matriks 3×3 berisi angka. Baris 1: 2, 4, 6. Baris 2: 3, 5, 8. Baris 3: 4, 1, dan satu kotak kosong. Angka berapa yang tepat mengisi kotak kosong itu?</p>
+<ol>
+<li>Uji hubungan per baris: baris 1 → 2+4=6; baris 2 → 3+5=8. Kolom ketiga adalah jumlah dua kolom sebelumnya.</li>
+<li>Terapkan ke baris 3: 4+1=5.</li>
+<li>Kotak kosong = <b>5</b>.</li>
+</ol>
+<p><b>Contoh 19.</b> Selembar kertas persegi dilipat dua ke kanan, lalu hasil lipatannya dilipat dua ke bawah sehingga menjadi seperempat ukuran semula. Tepat di tengah lipatan itu dilubangi satu titik dengan pembolong kertas. Setelah kertas dibuka kembali, seperti apa pola lubangnya?</p>
+<ol>
+<li>Satu lipatan ke kanan menggandakan lapisan menjadi 2; lipatan kedua ke bawah menggandakan lagi menjadi 4 lapis.</li>
+<li>Satu lubang menembus keempat lapis sekaligus.</li>
+<li>Saat dibuka, keempat lubang tersebar simetris: satu di tiap kuadran kertas, membentuk pola persegi.</li>
+<li>Jadi terlihat <b>empat lubang membentuk persegi, satu di tiap kuadran</b>.</li>
+</ol>
+<p><b>Contoh 20.</b> Tiga gambar berderet. Gambar 1: matahari di kanan atas pohon, bayangan pohon jatuh ke kiri bawah. Gambar 2: matahari di kiri atas pohon, bayangan pohon jatuh ke kanan bawah. Gambar 3: matahari tepat di atas pohon. Ke arah mana bayangan pohon pada gambar 3?</p>
+<ol>
+<li>Bayangan selalu jatuh berlawanan arah dengan posisi sumber cahaya terhadap objek.</li>
+<li>Pada gambar 1 dan 2, bayangan berlawanan arah diagonal dengan matahari — polanya konsisten.</li>
+<li>Pada gambar 3 matahari tepat di atas pohon, maka bayangan jatuh tepat di bawah pohon dan tampak pendek.</li>
+<li>Jadi bayangan pada gambar 3 <b>tepat di bawah pohon (pendek, vertikal)</b>.</li>
+</ol>
+<p><b>Contoh 21.</b> Lima lingkaran berderet: lingkaran 1 merah, lingkaran 2 kuning, lingkaran 3 hijau, lingkaran 4 merah, lingkaran 5 kuning. Warna apa yang tepat untuk lingkaran 6?</p>
+<ol>
+<li>Urutan warna membentuk irama berulang: merah, kuning, hijau, merah, kuning, ...</li>
+<li>Panjang satu siklus = 3 warna; posisi 1 dan 4 sama (merah), posisi 2 dan 5 sama (kuning).</li>
+<li>Maka posisi 6 sama dengan posisi 3.</li>
+<li>Lingkaran 6 = <b>hijau</b>.</li>
 </ol>
 <h3>Trik Cepat</h3>
 <ul>
@@ -1264,6 +1950,16 @@ Dari premis jika P maka Q, satu-satunya penegasan yang sah adalah P menghasilkan
 <td>Tidak P dan tidak Q</td>
 </tr>
 </table>
+<h3>Kata Kunci Kuantor</h3>
+<p>Soal negasi dan silogisme TIU selalu memakai kata kunci kuantor. Hafalkan pasangan kata kunci, simbol logikanya, dan negasinya agar tidak salah arah saat mengerjakan.</p>
+<table>
+<tr><th>Kata kunci</th><th>Simbol logika</th><th>Negasi (lawan yang benar)</th></tr>
+<tr><td>semua, setiap, seluruh</td><td>∀ (untuk semua)</td><td>ada yang tidak</td></tr>
+<tr><td>ada, terdapat, sebagian, beberapa</td><td>∃ (ada)</td><td>tidak ada</td></tr>
+<tr><td>tidak ada, tak satu pun</td><td>¬∃ (tidak ada)</td><td>ada</td></tr>
+<tr><td>tidak semua, tidak setiap</td><td>¬∀ (tidak untuk semua)</td><td>semua</td></tr>
+<tr><td>jika P maka Q</td><td>→ (implikasi)</td><td>P dan tidak Q</td></tr>
+</table>
 <h3>Contoh + Pembahasan Langkah</h3>
 <p><b>Contoh 1.</b> Premis 1: Semua buku di rak A berbahasa Indonesia. Premis 2: Kamus X tersimpan di rak A.
 Manakah kesimpulan yang paling tepat? (a) Kamus X berbahasa Indonesia. (b) Semua kamus berbahasa Indonesia. (c) Kamus X bukan buku. (d) Tidak ada buku berbahasa Inggris di rak A.</p>
@@ -1386,6 +2082,126 @@ Opsi (b) tepat: ia datang (P) dan acara tidak dimulai (tidak Q).</li>
 Opsi (a) adalah kebalikan yang tidak setara; opsi (c) salah menempatkan negasi; opsi (d) adalah bentuk negasi dari P dan Q, bukan dari implikasi.</li>
 <li>
 Jawaban yang benar adalah <b>(b) Ia datang dan acara tidak dimulai</b>.</li>
+</ol>
+<p><b>Contoh 11.</b> Premis 1: Semua anggota tim basket bertinggi badan di atas 180 cm. Premis 2: Andi adalah anggota tim basket.
+Manakah kesimpulan yang paling tepat? (a) Andi bertinggi badan di atas 180 cm. (b) Semua orang yang bertinggi badan di atas 180 cm adalah anggota tim basket. (c) Andi bukan anggota tim basket. (d) Tidak ada kesimpulan yang valid.</p>
+<ol>
+<li>
+Opsi (a): Andi termasuk anggota tim basket menurut premis 2, dan semua anggota tim basket bertinggi badan di atas 180 cm menurut premis 1, jadi kesimpulan ini mengikuti premis secara sah.</li>
+<li>
+Opsi (b): membalik arah premis 1; dari semua A adalah B tidak boleh disimpulkan semua B adalah A.</li>
+<li>
+Opsi (c): bertentangan langsung dengan premis 2.</li>
+<li>
+Opsi (d): salah, karena ada kesimpulan sah yang bisa ditarik.</li>
+<li>
+Jawaban yang benar adalah <b>(a) Andi bertinggi badan di atas 180 cm</b>.</li>
+</ol>
+<p><b>Contoh 12.</b> Premis 1: Semua hewan berkantung adalah mamalia. Premis 2: Kangguru adalah hewan berkantung.
+Manakah kesimpulan yang paling tepat? (a) Kangguru adalah mamalia. (b) Semua mamalia adalah hewan berkantung. (c) Kangguru bukan mamalia. (d) Tidak ada kesimpulan yang valid.</p>
+<ol>
+<li>
+Opsi (a): premis 2 menempatkan kangguru di dalam kelompok hewan berkantung, dan premis 1 menyatakan seluruh kelompok itu adalah mamalia, jadi kangguru adalah mamalia mengikuti premis secara sah.</li>
+<li>
+Opsi (b): membalik arah premis 1; keanggotaan kelompok tidak bisa dibalik begitu saja.</li>
+<li>
+Opsi (c): bertentangan langsung dengan gabungan kedua premis.</li>
+<li>
+Opsi (d): salah, karena kesimpulannya sah dan bisa ditarik.</li>
+<li>
+Jawaban yang benar adalah <b>(a) Kangguru adalah mamalia</b>.</li>
+</ol>
+<p><b>Contoh 13.</b> Premis 1: Sebagian siswa kelas XII mengikuti bimbel. Premis 2: Sebagian peserta bimbel lolos SNBP.
+Manakah kesimpulan yang paling tepat? (a) Sebagian siswa kelas XII lolos SNBP. (b) Semua siswa kelas XII lolos SNBP. (c) Tidak ada siswa kelas XII yang lolos SNBP. (d) Tidak ada kesimpulan yang valid.</p>
+<ol>
+<li>
+Kedua premis partikular (diawali kata sebagian); menurut aturan 5, dua premis partikular tidak menghasilkan kesimpulan yang valid.</li>
+<li>
+Opsi (a), (b), dan (c) semuanya melompat ke kesimpulan tentang siswa kelas XII tanpa dasar yang sah; bisa saja peserta bimbel yang lolos SNBP bukan berasal dari kelas XII.</li>
+<li>
+Jawaban yang benar adalah <b>(d) Tidak ada kesimpulan yang valid</b>.</li>
+</ol>
+<p><b>Contoh 14.</b> Premis 1: Semua dokumen rahasia disimpan di brankas. Premis 2: Sebagian arsip kantor adalah dokumen rahasia.
+Manakah kesimpulan yang paling tepat? (a) Sebagian arsip kantor disimpan di brankas. (b) Semua arsip kantor disimpan di brankas. (c) Semua yang disimpan di brankas adalah arsip kantor. (d) Tidak ada kesimpulan yang valid.</p>
+<ol>
+<li>
+Term tengah dokumen rahasia menjadi subjek premis universal (premis 1) sehingga terdistribusi; syarat aturan 3 terpenuhi.</li>
+<li>
+Premis 2 partikular afirmatif, maka menurut aturan 6 dan 7 kesimpulannya partikular afirmatif: sebagian arsip kantor disimpan di brankas.</li>
+<li>
+Opsi (b) melebarkan distribusi dari sebagian menjadi semua; opsi (c) membalik arah premis 1; opsi (d) salah karena ada kesimpulan sah.</li>
+<li>
+Jawaban yang benar adalah <b>(a) Sebagian arsip kantor disimpan di brankas</b>.</li>
+</ol>
+<p><b>Contoh 15.</b> Premis: Jika server mati, maka situs tidak bisa diakses. Fakta: Server mati.
+Manakah kesimpulan yang paling tepat? (a) Situs tidak bisa diakses. (b) Situs masih bisa diakses. (c) Server tidak mati. (d) Tidak ada kesimpulan yang valid.</p>
+<ol>
+<li>
+Ini pola modus ponens: jika P maka Q, dan P benar, maka Q benar.</li>
+<li>
+Opsi (a) tepat mengikuti pola tersebut: server mati (P benar) sehingga situs tidak bisa diakses (Q benar).</li>
+<li>
+Opsi (b) dan (c) bertentangan dengan fakta dan premis; opsi (d) salah karena ada kesimpulan sah yang bisa ditarik.</li>
+<li>
+Jawaban yang benar adalah <b>(a) Situs tidak bisa diakses</b>.</li>
+</ol>
+<p><b>Contoh 16.</b> Premis: Jika Sinta belajar tekun, maka ia lulus ujian. Fakta: Sinta tidak lulus ujian.
+Manakah kesimpulan yang paling tepat? (a) Sinta belajar tekun. (b) Sinta tidak belajar tekun. (c) Sinta lulus ujian dengan cara lain. (d) Tidak ada kesimpulan yang valid.</p>
+<ol>
+<li>
+Ini pola modus tollens: jika P maka Q, dan Q salah (tidak Q), maka P salah (tidak P).</li>
+<li>
+Opsi (b) tepat: Sinta tidak lulus ujian (tidak Q) sehingga ia tidak belajar tekun (tidak P).</li>
+<li>
+Opsi (a) membalik logika; opsi (c) mengarang fakta baru di luar premis; opsi (d) salah karena ada kesimpulan sah.</li>
+<li>
+Jawaban yang benar adalah <b>(b) Sinta tidak belajar tekun</b>.</li>
+</ol>
+<p><b>Contoh 17.</b> Premis: Jika mesin kekurangan oli, maka lampu indikator menyala. Fakta: Lampu indikator menyala.
+Manakah kesimpulan yang paling tepat? (a) Mesin kekurangan oli. (b) Mesin tidak kekurangan oli. (c) Lampu indikator tidak menyala. (d) Tidak ada kesimpulan yang valid.</p>
+<ol>
+<li>
+Fakta hanya menegaskan konsekuen (Q benar); menurut aturan, penegasan konsekuen tidak menghasilkan kesimpulan yang sah — lampu indikator bisa menyala karena sebab lain.</li>
+<li>
+Opsi (a) adalah sesat pikir menegaskan konsekuen; opsi (b) dan (c) sama-sama tidak didukung premis.</li>
+<li>
+Jawaban yang benar adalah <b>(d) Tidak ada kesimpulan yang valid</b>.</li>
+</ol>
+<p><b>Contoh 18.</b> Negasi yang tepat dari pernyataan Ada burung yang tidak bisa terbang adalah ...
+(a) Semua burung bisa terbang. (b) Tidak ada burung yang bisa terbang. (c) Ada burung yang bisa terbang. (d) Semua burung tidak bisa terbang.</p>
+<ol>
+<li>
+Negasi dari ada A yang bukan B adalah semua A adalah B; untuk menyangkal klaim ada, seluruh kelompok harus ditegaskan memilikinya.</li>
+<li>
+Opsi (a) tepat: semua burung bisa terbang.</li>
+<li>
+Opsi (b) dan (d) justru memperkuat sisi negatif, bukan menyangkal pernyataan asal; opsi (c) sejalan dengan pernyataan asal, bukan negasinya.</li>
+<li>
+Jawaban yang benar adalah <b>(a) Semua burung bisa terbang</b>.</li>
+</ol>
+<p><b>Contoh 19.</b> Negasi yang tepat dari pernyataan Rudi membeli motor atau mobil adalah ...
+(a) Rudi tidak membeli motor dan tidak membeli mobil. (b) Rudi tidak membeli motor atau tidak membeli mobil. (c) Rudi membeli motor dan mobil. (d) Rudi membeli motor atau mobil.</p>
+<ol>
+<li>
+Negasi dari P atau Q adalah tidak P dan tidak Q; untuk menyangkal disjungsi, kedua pilihannya harus gugur.</li>
+<li>
+Opsi (a) tepat: Rudi tidak membeli motor dan tidak membeli mobil.</li>
+<li>
+Opsi (b) adalah bentuk negasi dari P dan Q, bukan dari P atau Q; opsi (c) mengubah atau menjadi dan tanpa menegasikan; opsi (d) hanya mengulang pernyataan asal.</li>
+<li>
+Jawaban yang benar adalah <b>(a) Rudi tidak membeli motor dan tidak membeli mobil</b>.</li>
+</ol>
+<p><b>Contoh 20.</b> Negasi yang tepat dari pernyataan Ani rajin dan pandai adalah ...
+(a) Ani tidak rajin dan tidak pandai. (b) Ani tidak rajin atau tidak pandai. (c) Ani rajin atau pandai. (d) Ani malas dan bodoh.</p>
+<ol>
+<li>
+Negasi dari P dan Q adalah tidak P atau tidak Q; cukup satu bagian yang gugur untuk menyangkal konjungsi.</li>
+<li>
+Opsi (b) tepat: Ani tidak rajin atau tidak pandai.</li>
+<li>
+Opsi (a) terlalu kuat — ia menyangkal kedua bagian sekaligus, padahal satu bagian yang gugur sudah cukup; opsi (c) mengubah dan menjadi atau tanpa menegasikan bagiannya; opsi (d) mengarang kata baru yang tidak setara dengan negasi logisnya.</li>
+<li>
+Jawaban yang benar adalah <b>(b) Ani tidak rajin atau tidak pandai</b>.</li>
 </ol>
 <h3>Trik Cepat</h3>
 <ul>
@@ -1593,9 +2409,81 @@ Aturan emas silogisme: term tengah wajib terdistribusi minimal sekali, dua premi
 </ul>
 </td>
 </tr>
+<tr>
+<td>×n±m bertingkat</td>
+<td>Tiap suku = suku sebelumnya dikali n, lalu ditambah m yang membesar 1 setiap langkah.</td>
+<td>
+<ul>
+<li>3, 7, 16, 35, 74 → <b>153</b>
+(×2 dengan tambahan bertingkat: 3×2+1=7, 7×2+2=16, 16×2+3=35, 35×2+4=74; berikut 74×2+5=153)</li>
+<li>4, 9, 20, 43, 90 → <b>185</b>
+(×2 dengan tambahan bertingkat: 4×2+1=9, 9×2+2=20, 20×2+3=43, 43×2+4=90; berikut 90×2+5=185)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Gabungan 3 deret</td>
+<td>Suku posisi 1-4-7, 2-5-8, dan 3-6-9 masing-masing membentuk deret sendiri.</td>
+<td>
+<ul>
+<li>2, 5, 10, 4, 7, 12, 6, 9 → <b>14</b>
+(posisi 1,4,7: 2, 4, 6 → +2; posisi 2,5,8: 5, 7, 9 → +2; posisi 3,6: 10, 12 → +2; suku ke-9 = 12+2=14)</li>
+<li>1, 2, 100, 3, 4, 98, 5, 6 → <b>96</b>
+(posisi 1,4,7: 1, 3, 5 → +2; posisi 2,5,8: 2, 4, 6 → +2; posisi 3,6: 100, 98 → −2; suku ke-9 = 98−2=96)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Bilangan romawi</td>
+<td>Ubah huruf romawi ke nilainya, lalu perlakukan seperti deret angka biasa.</td>
+<td>
+<ul>
+<li>I, V, X, L, C → <b>D</b>
+(nilainya 1, 5, 10, 50, 100; pola ×5, ×2 berulang: 1×5=5, 5×2=10, 10×5=50, 50×2=100; berikut 100×5=500 = D)</li>
+<li>II, IV, VI, VIII, X → <b>XII</b>
+(nilainya 2, 4, 6, 8, 10; selisih +2 tetap; berikut 10+2=12 = XII)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Perkalian silang</td>
+<td>Tiap suku = hasil kali dua suku sebelumnya.</td>
+<td>
+<ul>
+<li>2, 3, 6, 18, 108 → <b>1944</b>
+(2×3=6, 3×6=18, 6×18=108; berikut 18×108=1944)</li>
+<li>1, 2, 2, 4, 8 → <b>32</b>
+(1×2=2, 2×2=4, 2×4=8; berikut 4×8=32)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Digit-sum</td>
+<td>Tiap suku = suku sebelumnya ditambah jumlah digit-digitnya.</td>
+<td>
+<ul>
+<li>12, 15, 21, 24, 30 → <b>33</b>
+(12+3=15, 15+6=21, 21+3=24, 24+6=30; berikut 30+3=33)</li>
+<li>23, 28, 38, 49 → <b>62</b>
+(23+5=28, 28+10=38, 38+11=49; berikut 49+13=62)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Pangkat selang-seling</td>
+<td>Suku posisi ganjil dan posisi genap berpola perkalian yang berbeda.</td>
+<td>
+<ul>
+<li>2, 9, 4, 27, 8, 81 → <b>16</b>
+(posisi ganjil: 2, 4, 8 → ×2; posisi genap: 9, 27, 81 → ×3; suku ke-7 ganjil = 8×2=16)</li>
+<li>5, 4, 25, 8, 125, 16 → <b>625</b>
+(posisi ganjil: 5, 25, 125 → ×5; posisi genap: 4, 8, 16 → ×2; suku ke-7 ganjil = 125×5=625)</li>
+</ul>
+</td>
+</tr>
 </table>
 <h3>Contoh + Pembahasan Langkah</h3>
-<p>Sepuluh soal mini dengan pembahasan angka langkah demi langkah. Angkanya sengaja divariasikan dari katalog agar latihanmu lebih kaya.</p>
+<p>Lima belas soal mini dengan pembahasan angka langkah demi langkah. Angkanya sengaja divariasikan dari katalog agar latihanmu lebih kaya.</p>
 <p><b>Contoh 1.</b> Tentukan suku berikutnya dari deret 3, 6, 11, 18, 27, ...</p>
 <ol>
 <li>Hitung selisih berurutan: 6−3=3, 11−6=5, 18−11=7, 27−18=9.</li>
@@ -1672,6 +2560,83 @@ Aturan emas silogisme: term tengah wajib terdistribusi minimal sekali, dua premi
 <li>Operasi berikutnya setelah ×2 adalah +4 → 32+4 = 36.</li>
 </ol>
 <p><b>Jawaban: 36</b></p>
+<p><b>Contoh 11.</b> Tentukan suku berikutnya dari deret 2, 7, 22, 67, ...</p>
+<ol>
+<li>Hitung selisih berurutan: 7−2=5, 22−7=15, 67−22=45.</li>
+<li>Selisih (5, 15, 45) berlipat tiga — curigai pola ×n+m.</li>
+<li>Uji ×3+1: 2×3+1=7, 7×3+1=22, 22×3+1=67. Semua cocok.</li>
+<li>Suku berikutnya = 67×3+1 = 201+1 = 202.</li>
+</ol>
+<p><b>Jawaban: 202</b></p>
+<p><b>Contoh 12.</b> Tentukan suku berikutnya dari deret 50, 41, 34, 29, 26, ...</p>
+<ol>
+<li>Hitung selisih berurutan: 41−50=−9, 34−41=−7, 29−34=−5, 26−29=−3.</li>
+<li>Selisih (−9, −7, −5, −3) belum tetap → hitung selisih tingkat 2: −7−(−9)=+2, −5−(−7)=+2, −3−(−5)=+2. Tetap.</li>
+<li>Selisih berikutnya = −3+2 = −1.</li>
+<li>Suku berikutnya = 26−1 = 25.</li>
+</ol>
+<p><b>Jawaban: 25</b></p>
+<p><b>Contoh 13.</b> Tentukan suku berikutnya dari deret 31, 29, 23, 19, ...</p>
+<ol>
+<li>Selisih berurutan: −2, −6, −4 — tidak membentuk pola selisih yang rapi; angkanya ganjil berurutan tak beraturan, curigai bilangan prima.</li>
+<li>Cek keprimaan: 31 prima, 29 prima, 23 prima, 19 prima. Semua prima dan menurun berurutan.</li>
+<li>Bilangan prima sebelum 19 (menurun) adalah 17.</li>
+</ol>
+<p><b>Jawaban: 17</b></p>
+<p><b>Contoh 14.</b> Tentukan suku berikutnya dari deret 3, 9, 6, 18, 15, ...</p>
+<ol>
+<li>Selisih berurutan: 9−3=6, 6−9=−3, 18−6=12, 15−18=−3. Tidak tetap dan tidak bertingkat rapi → uji pola campuran dua operasi bergantian.</li>
+<li>Uji ×3, −3 berulang: 3×3=9, 9−3=6, 6×3=18, 18−3=15. Semua cocok.</li>
+<li>Operasi berikutnya setelah −3 adalah ×3 → 15×3 = 45.</li>
+</ol>
+<p><b>Jawaban: 45</b></p>
+<p><b>Contoh 15.</b> Tentukan suku berikutnya dari deret 3, 4, 12, 48, ...</p>
+<ol>
+<li>Selisih: 1, 8, 36 — membesar sangat cepat, curigai pola perkalian silang seperti fibonacci.</li>
+<li>Uji suku = hasil kali dua suku sebelumnya: 3×4=12, 4×12=48. Semua cocok.</li>
+<li>Suku berikutnya = 12×48 = 576.</li>
+</ol>
+<p><b>Jawaban: 576</b></p>
+<p><b>Contoh 16.</b> Tentukan suku berikutnya dari deret 1, 2, 6, 24, 120, ...</p>
+<ol>
+<li>Hitung pengali berurutan: 2÷1=2, 6÷2=3, 24÷6=4, 120÷24=5.</li>
+<li>Pengali membentuk pola 2, 3, 4, 5 — bertambah 1 tiap langkah (pola faktorial).</li>
+<li>Pengali berikutnya = 6.</li>
+<li>Suku berikutnya = 120×6 = 720.</li>
+</ol>
+<p><b>Jawaban: 720</b></p>
+<p><b>Contoh 17.</b> Tentukan suku berikutnya dari deret 90, 81, 73, 66, 60, ...</p>
+<ol>
+<li>Hitung selisih berurutan: 81−90=−9, 73−81=−8, 66−73=−7, 60−66=−6.</li>
+<li>Selisih membentuk pola −9, −8, −7, −6 — berkurang 1 (makin kecil) tiap langkah.</li>
+<li>Selisih berikutnya = −5.</li>
+<li>Suku berikutnya = 60−5 = 55.</li>
+</ol>
+<p><b>Jawaban: 55</b></p>
+<p><b>Contoh 18.</b> Tentukan suku berikutnya dari deret 5, 25, 7, 35, 9, ...</p>
+<ol>
+<li>Pisahkan posisi ganjil dan genap: ganjil → 5, 7, 9 (selisih +2 tetap); genap → 25, 35 (selisih +10 tetap).</li>
+<li>Suku yang ditanya adalah posisi genap berikutnya (posisi 6).</li>
+<li>Suku genap berikutnya = 35+10 = 45.</li>
+<li>Cek: deret lengkap 5, 25, 7, 35, 9, 45 — kedua pola konsisten.</li>
+</ol>
+<p><b>Jawaban: 45</b></p>
+<p><b>Contoh 19.</b> Tentukan suku berikutnya dari deret 16, 8, 24, 12, 36, ...</p>
+<ol>
+<li>Hitung operasi berurutan: 8÷16=÷2, 24÷8=×3, 12÷24=÷2, 36÷12=×3.</li>
+<li>Operasi bergantian ÷2, ×3, ÷2, ×3 — polanya konsisten.</li>
+<li>Operasi berikutnya = ÷2.</li>
+<li>Suku berikutnya = 36÷2 = 18.</li>
+</ol>
+<p><b>Jawaban: 18</b></p>
+<p><b>Contoh 20.</b> Tentukan suku berikutnya dari deret 7, 14, 13, 26, 25, ...</p>
+<ol>
+<li>Hitung operasi berurutan: 14÷7=×2, 14−13=1 (kurang 1), 26÷13=×2, 26−25=1 (kurang 1).</li>
+<li>Operasi bergantian ×2, −1, ×2, −1 — polanya konsisten.</li>
+<li>Operasi berikutnya = ×2.</li>
+<li>Suku berikutnya = 25×2 = 50.</li>
+</ol>
+<p><b>Jawaban: 50</b></p>
 <h3>Trik Cepat</h3>
 <ul>
 <li>Selalu hitung selisih dulu sebelum mencoba pola lain — lebih dari separuh soal deret TIU selesai di langkah ini.</li>
@@ -1822,9 +2787,57 @@ Bruto = 98 + 2 = <b>100 kg</b>.</li>
 </ul>
 </td>
 </tr>
+<tr>
+<td>Skala dan peta</td>
+<td>skala = jarak pada peta ÷ jarak sebenarnya; jarak sebenarnya = jarak peta × penyebut skala</td>
+<td>
+<ul>
+<li>Sebuah peta berskala 1:500.000. Jarak dua kota pada peta 8 cm.
+Jarak sebenarnya = 8 × 500.000 = 4.000.000 cm; ubah ke km: 4.000.000 ÷ 100.000 = <b>40 km</b>.</li>
+<li>Jarak sebenarnya dua desa 120 km digambar pada peta berskala 1:2.000.000.
+Ubah ke cm: 120 km = 12.000.000 cm; jarak pada peta = 12.000.000 ÷ 2.000.000 = <b>6 cm</b>.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Debit</td>
+<td>debit = volume ÷ waktu; volume = debit × waktu (samakan satuan waktu dulu)</td>
+<td>
+<ul>
+<li>Sebuah keran mengalirkan 120 liter air dalam 4 menit.
+Debit = 120 ÷ 4 = <b>30 liter/menit</b>.</li>
+<li>Sebuah pompa berdebit 2 liter/detik dijalankan selama 5 menit.
+Ubah waktu: 5 menit = 5 × 60 = 300 detik; volume = 2 × 300 = <b>600 liter</b>.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Aritmetika jam dan waktu</td>
+<td>lama = waktu tiba − waktu berangkat; 60 menit = 1 jam (pindahkan kelebihan menit ke jam)</td>
+<td>
+<ul>
+<li>Bus berangkat pukul 08.45 dan tiba pukul 11.20.
+Lama perjalanan = 11.20 − 08.45 = <b>2 jam 35 menit</b> (dari 08.45 ke 11.20 selisih 2 jam 35 menit).</li>
+<li>Andi belajar 3 jam 45 menit, lalu lanjut lagi 2 jam 50 menit.
+Jumlah menit = 45 + 50 = 95 menit = 1 jam 35 menit; jumlah jam = 3 + 2 = 5 jam; total = 5 jam + 1 jam 35 menit = <b>6 jam 35 menit</b>.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Konversi satuan</td>
+<td>1 km = 1.000 m; 1 jam = 60 menit; 1 menit = 60 detik</td>
+<td>
+<ul>
+<li>Seorang pelari menempuh jarak 2,5 km.
+Jarak = 2,5 × 1.000 = <b>2.500 m</b>.</li>
+<li>Sebuah film berdurasi 3 jam.
+Durasi = 3 × 60 = <b>180 menit</b>.</li>
+</ul>
+</td>
+</tr>
 </table>
 <h3>Contoh + Pembahasan Langkah</h3>
-<p>Sepuluh soal cerita mini dengan hitungan langkah demi langkah. Angkanya divariasikan dari katalog agar kamu terbiasa dengan banyak variasi angka.</p>
+<p>Lima belas soal cerita mini dengan hitungan langkah demi langkah. Angkanya divariasikan dari katalog agar kamu terbiasa dengan banyak variasi angka.</p>
 <p><b>Contoh 1.</b>
 Berapa 25% dari 840?</p>
 <ol>
@@ -1921,6 +2934,102 @@ Sekarung beras brutonya 120 kg dengan berat karung (tara) 3 kg. Berapa berat ber
 </ol>
 <p>
 <b>Jawaban: 117 kg</b></p>
+<p><b>Contoh 11.</b>
+Jarak dua kota pada peta 12 cm. Peta tersebut berskala 1:750.000. Berapa kilometer jarak sebenarnya kedua kota?</p>
+<ol>
+<li>Skala 1:750.000 berarti 1 cm pada peta mewakili 750.000 cm jarak sebenarnya.</li>
+<li>Jarak sebenarnya = 12 × 750.000 = 9.000.000 cm.</li>
+<li>Ubah ke km: 1 km = 100.000 cm, jadi 9.000.000 ÷ 100.000 = 90 km.</li>
+<li>Cek: 90 km = 9.000.000 cm; 9.000.000 ÷ 750.000 = 12 cm. Cocok.</li>
+</ol>
+<p>
+<b>Jawaban: 90 km</b></p>
+<p><b>Contoh 12.</b>
+Sebuah bak bervolume 200 liter diisi air dari keran berdebit 25 liter/menit. Berapa menit waktu yang dibutuhkan sampai bak penuh?</p>
+<ol>
+<li>Debit = volume ÷ waktu, maka waktu = volume ÷ debit.</li>
+<li>Waktu = 200 ÷ 25 = 8 menit.</li>
+<li>Cek: 25 liter/menit × 8 menit = 200 liter. Cocok.</li>
+</ol>
+<p>
+<b>Jawaban: 8 menit</b></p>
+<p><b>Contoh 13.</b>
+Kereta berangkat dari stasiun pukul 14.15 dan tiba di tujuan pukul 17.50. Berapa lama perjalanan kereta?</p>
+<ol>
+<li>Lama perjalanan = waktu tiba − waktu berangkat = 17.50 − 14.15.</li>
+<li>Selisih jam: 17 − 14 = 3 jam; selisih menit: 50 − 15 = 35 menit.</li>
+<li>Jadi lama perjalanan = 3 jam 35 menit.</li>
+<li>Cek: 14.15 + 3 jam 35 menit = 17.50. Cocok.</li>
+</ol>
+<p>
+<b>Jawaban: 3 jam 35 menit</b></p>
+<p><b>Contoh 14.</b>
+Pak Tono berlari sejauh 4,2 km setiap pagi. Berapa meter jarak yang ia tempuh?</p>
+<ol>
+<li>Samakan satuan: 1 km = 1.000 m.</li>
+<li>Jarak = 4,2 × 1.000 = 4.200 m.</li>
+<li>Cek: 4.200 ÷ 1.000 = 4,2 km. Cocok.</li>
+</ol>
+<p>
+<b>Jawaban: 4.200 m</b></p>
+<p><b>Contoh 15.</b>
+Sebuah denah rumah berskala 1:100. Panjang rumah pada denah 15 cm. Berapa meter panjang rumah sebenarnya?</p>
+<ol>
+<li>Skala 1:100 berarti 1 cm pada denah = 100 cm ukuran sebenarnya (campuran skala + konversi satuan).</li>
+<li>Panjang sebenarnya = 15 × 100 = 1.500 cm.</li>
+<li>Ubah ke meter: 1 m = 100 cm, jadi 1.500 ÷ 100 = 15 m.</li>
+<li>Cek: 15 m = 1.500 cm; 1.500 ÷ 100 = 15 cm pada denah. Cocok.</li>
+</ol>
+<p>
+<b>Jawaban: 15 m</b></p>
+<p><b>Contoh 16.</b>
+Jarak dua kota pada peta 12 cm. Peta tersebut berskala 1:250.000. Berapa kilometer jarak sebenarnya kedua kota?</p>
+<ol>
+<li>Skala 1:250.000 berarti 1 cm pada peta mewakili 250.000 cm jarak sebenarnya.</li>
+<li>Jarak sebenarnya = 12 × 250.000 = 3.000.000 cm.</li>
+<li>Ubah ke km: 1 km = 100.000 cm, jadi 3.000.000 ÷ 100.000 = 30 km.</li>
+<li>Cek: 30 km = 3.000.000 cm; 3.000.000 ÷ 250.000 = 12 cm. Cocok.</li>
+</ol>
+<p>
+<b>Jawaban: 30 km</b></p>
+<p><b>Contoh 17.</b>
+Sebuah bak bervolume 240 liter diisi air dengan debit 8 liter per menit. Berapa menit waktu yang dibutuhkan sampai bak penuh?</p>
+<ol>
+<li>Debit = volume ÷ waktu, maka waktu = volume ÷ debit.</li>
+<li>Waktu = 240 ÷ 8 = 30 menit.</li>
+<li>Cek: 8 liter/menit × 30 menit = 240 liter. Cocok.</li>
+</ol>
+<p>
+<b>Jawaban: 30 menit</b></p>
+<p><b>Contoh 18.</b>
+Rapat dimulai pukul 13:30 dan berlangsung selama 2 jam 45 menit. Pukul berapa rapat selesai?</p>
+<ol>
+<li>Tambahkan jam dengan jam, menit dengan menit: 13:30 + 2:45.</li>
+<li>Menit: 30 + 45 = 75 menit = 1 jam 15 menit.</li>
+<li>Jam: 13 + 2 + 1 (dari 75 menit) = 16, sisa 15 menit.</li>
+<li>Jadi rapat selesai pukul 16:15.</li>
+</ol>
+<p>
+<b>Jawaban: 16:15</b></p>
+<p><b>Contoh 19.</b>
+Ibu membeli 4,5 kg gula pasir lalu membeli lagi 750 gram. Berapa gram total gula yang dibeli ibu?</p>
+<ol>
+<li>Samakan satuan ke gram: 1 kg = 1.000 gram.</li>
+<li>4,5 kg = 4,5 × 1.000 = 4.500 gram.</li>
+<li>Total = 4.500 + 750 = 5.250 gram.</li>
+</ol>
+<p>
+<b>Jawaban: 5.250 gram</b></p>
+<p><b>Contoh 20.</b>
+Sebuah mobil menempuh 60 km dengan 5 liter bensin. Berapa km dapat ditempuh dengan 8 liter bensin (kecepatan sama)?</p>
+<ol>
+<li>Ini perbandingan senilai: jarak ÷ bensin selalu tetap.</li>
+<li>Jarak per liter = 60 ÷ 5 = 12 km/liter.</li>
+<li>Jarak dengan 8 liter = 12 × 8 = 96 km.</li>
+<li>Cek: 96 ÷ 8 = 12; 60 ÷ 5 = 12. Sama. Cocok.</li>
+</ol>
+<p>
+<b>Jawaban: 96 km</b></p>
 <h3>Trik Cepat</h3>
 <p>Delapan kebiasaan kecil yang memangkas waktu hitung secara drastis saat ujian.</p>
 <ul>

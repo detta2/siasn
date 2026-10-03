@@ -215,7 +215,74 @@ window.MAT_TWK = [
 <li><p><b>Soal:</b> "Mengembangkan sikap tidak semena-mena terhadap orang lain" adalah butir sila…</p><p><b>Jawaban: Sila ke-2.</b> Pembahasan: Butir ke-5 dari 10 butir sila Kemanusiaan yang adil dan beradab.</li>
 <li><p><b>Soal:</b> Nilai Pancasila yang terwujud dalam UUD 1945 disebut nilai…</p><p><b>Jawaban: Instrumental.</b> Pembahasan: Dasar = sila itu sendiri; instrumental = aturan; praksis = perilaku nyata.</li>
 <li><p><b>Soal:</b> Ciri ideologi terbuka yang membedakannya dari ideologi tertutup adalah…</p><p><b>Jawaban: Aktual, dinamis, dan antisipatif terhadap perkembangan zaman.</b> Pembahasan: Ideologi terbuka digali dari budaya bangsa dan tidak kaku.</li>
+<ol>
+<li><p><b>Soal:</b> Anggota Panitia Sembilan yang berasal dari golongan Kristen adalah…</p><p><b>Jawaban: Mr. A.A. Maramis.</b> Pembahasan: Panitia Sembilan terdiri dari 4 nasionalis (Soekarno, Hatta, Soebardjo, Yamin), 4 golongan Islam (Wahid Hasjim, Kahar Moezakir, Abikoesno, Agus Salim), dan 1 Kristen (Maramis). Ia mewakili golongan Kristen Protestan dari Sulawesi dan juga anggota Panitia Kecil.</p></li>
+<li><p><b>Soal:</b> Panitia Kecil (Panitia Delapan) dibentuk pada tanggal… dengan tugas…</p><p><b>Jawaban: 1 Juni 1945; menampung dan mengkaji usulan-usulan dasar negara.</b> Pembahasan: 8 anggota diketuai Soekarno, dibentuk di akhir sidang I BPUPKI; karena tidak mencapai mufakat antara golongan nasionalis dan Islam, dibentuk Panitia Sembilan.</p></li>
+<li><p><b>Soal:</b> Ekasila menurut Soekarno adalah…</p><p><b>Jawaban: Gotong royong.</b> Pembahasan: Ekasila adalah pemerasan trisila menjadi satu kata; Soekarno menggambarkannya sebagai "satu karyo, satu gawe" — kerja bersama untuk kepentingan semua. Jangan dikecoh opsi "sila Ketuhanan".</p></li>
+<li><p><b>Soal:</b> Tiga unsur trisila yang diusulkan Soekarno adalah…</p><p><b>Jawaban: Sosio-nasionalisme, sosio-demokrasi, dan ketuhanan.</b> Pembahasan: Trisila adalah pemerasan lima sila menjadi tiga — sosio-nasionalisme (kebangsaan + internasionalisme), sosio-demokrasi (demokrasi + kesejahteraan sosial), dan ketuhanan. Bukan tiga sila pertama Pancasila.</p></li>
+<li><p><b>Soal:</b> Istilah <i>filosofische grondslag</i> yang dipakai Soekarno dalam pidato 1 Juni 1945 berarti…</p><p><b>Jawaban: Dasar filsafat negara.</b> Pembahasan: Soekarno menyebut Pancasila sebagai <i>filosofische grondslag</i> — fondasi filosofis bagi Indonesia Merdeka, digali dari budaya bangsa sendiri, bukan dipaksakan dari luar.</p></li>
+<li><p><b>Soal:</b> Tiga nama yang ditawarkan Soekarno untuk dasar negara dalam pidato 1 Juni 1945 adalah…</p><p><b>Jawaban: Pancasila, Trisila, dan Ekasila.</b> Pembahasan: BPUPKI memilih nama Pancasila; Soekarno tidak memaksakan ketiganya sekaligus. Nama "Pancasila" sendiri disarankan oleh ahli bahasa Mr. Muhammad Yamin.</p></li>
+<li><p><b>Soal:</b> Jumlah bulu pada leher burung Garuda Pancasila adalah 45 helai yang melambangkan…</p><p><b>Jawaban: Tahun 1945 (angka 45).</b> Pembahasan: 17 bulu tiap sayap (tanggal 17), 8 bulu ekor (bulan 8/Agustus), 19 bulu di bawah perisai dan 45 bulu leher (tahun 1945) — total 17-8-1945. Perisai di dada melambangkan pertahanan bangsa; pita di cengkeraman kaki bertuliskan Bhinneka Tunggal Ika.</p></li>
+<li><p><b>Soal:</b> Ketetapan MPR yang mencabut penataran P4 pada era Reformasi adalah…</p><p><b>Jawaban: Tap MPR XVIII/MPR/1998.</b> Pembahasan: Penataran P4 yang wajib di era Orde Baru dicabut tahun 1998; tap ini juga menegaskan kembali Pancasila sebagai dasar negara. Butir pengamalan lalu dirumuskan ulang menjadi 45 butir (Tap MPR I/MPR/2003).</p></li>
+<li><p><b>Soal:</b> Hubungan antara "Moh. Yamin" dan "Mr. Muhammad Yamin" adalah…</p><p><b>Jawaban: Orang yang sama.</b> Pembahasan: Ia berpidato mengusulkan dasar negara pada 29 Mei 1945 sekaligus ahli bahasa yang menyarankan nama "Pancasila" kepada Soekarno — bukan dua tokoh berbeda. Opsi yang memisahkan keduanya pasti salah.</p></li>
+<li><p><b>Soal:</b> Dalam rumusan <b>tertulis</b> Moh. Yamin, sila yang ditempatkan pertama adalah…</p><p><b>Jawaban: Ketuhanan Yang Maha Esa.</b> Pembahasan: Berbeda dengan rumusan lisannya yang diawali "Peri Kebangsaan"; versi tertulis yang diserahkan Yamin kepada BPUPKI berbunyi: Ketuhanan YME, Kebangsaan Persatuan Indonesia, rasa kemanusiaan yang adil dan beradab, kerakyatan yang dipimpin hikmat kebijaksanaan dalam permusyawaratan/perwakilan, keadilan sosial bagi seluruh rakyat Indonesia.</p></li>
 </ol>
+</ol>
+<h3>Tabel Fakta Kilat</h3>
+<table>
+<tr><th>Fakta</th><th>Isi</th></tr>
+<tr><td>Keanggotaan BPUPKI</td><td><b>62 orang</b>: ketua <b>Dr. K.R.T. Radjiman Wedyodiningrat</b>, wakil ketua <b>Ichibangase Yosio</b> (Jepang) dan <b>R.P. Suroso</b>; ditambah anggota istimewa dari Jepang <b>tanpa hak suara</b></td></tr>
+<tr><td>Keanggotaan PPKI</td><td>Awalnya <b>21 orang</b>, ditambah <b>6 orang tanpa sepengetahuan Jepang</b> (Achmad Soebardjo, Sayuti Melik, Ki Hadjar Dewantara, Wiranatakusumah, Kasman Singodimedjo, Iwa Koesoemasoemantri) menjadi <b>27 orang</b>; ketua <b>Ir. Soekarno</b>, wakil <b>Drs. Moh. Hatta</b></td></tr>
+<tr><td>Rumusan <b>tertulis</b> Moh. Yamin</td><td>1) Ketuhanan Yang Maha Esa; 2) Kebangsaan Persatuan Indonesia; 3) Rasa kemanusiaan yang adil dan beradab; 4) Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan; 5) Keadilan sosial bagi seluruh rakyat Indonesia</td></tr>
+<tr><td>Rumusan <b>lisan</b> Moh. Yamin (29 Mei 1945)</td><td>Peri Kebangsaan; Peri Kemanusiaan; Peri Ketuhanan; Peri Kerakyatan; Kesejahteraan Rakyat — bedakan dari versi tertulisnya!</td></tr>
+<tr><td>5 asas Mr. Soepomo (31 Mei 1945)</td><td>Persatuan; Kekeluargaan; Keseimbangan lahir dan batin; Musyawarah; Keadilan rakyat</td></tr>
+<tr><td>5 asas Ir. Soekarno (1 Juni 1945)</td><td>Kebangsaan Indonesia; Internasionalisme/peri kemanusiaan; Mufakat/demokrasi; Kesejahteraan sosial; Ketuhanan yang berkebudayaan</td></tr>
+<tr><td>Trisila</td><td>Pemerasan Pancasila oleh Soekarno menjadi tiga: <b>sosio-nasionalisme, sosio-demokrasi, ketuhanan</b></td></tr>
+<tr><td>Ekasila</td><td>Pemerasan trisila oleh Soekarno menjadi satu kata: <b>gotong royong</b></td></tr>
+<tr><td>Tiga nama usulan Soekarno</td><td>Soekarno menawarkan tiga nama untuk dasar negara — <b>Pancasila, Trisila, Ekasila</b> — dan BPUPKI memilih <b>Pancasila</b></td></tr>
+<tr><td>Panitia Kecil (Panitia Delapan)</td><td>Dibentuk <b>1 Juni 1945</b>, beranggotakan <b>8 orang</b> diketuai <b>Soekarno</b>; tugasnya <b>menampung dan mengkaji usulan-usulan dasar negara</b>; karena tidak mencapai mufakat, dibentuklah Panitia Sembilan</td></tr>
+<tr><td>Sembilan anggota Panitia Sembilan</td><td><b>Ir. Soekarno</b> (ketua), <b>Drs. Moh. Hatta</b>, <b>Mr. Achmad Soebardjo</b>, <b>Mr. Muhammad Yamin</b>, <b>K.H. Wahid Hasjim</b>, <b>Abdoel Kahar Moezakir</b>, <b>Mr. R. Abikoesno Tjokrosoejoso</b>, <b>H. Agus Salim</b>, <b>Mr. A.A. Maramis</b></td></tr>
+<tr><td>Keppres 24/2016</td><td>Ditandatangani Presiden <b>Joko Widodo</b> pada <b>1 Juni 2016</b>; menetapkan <b>1 Juni</b> sebagai <b>Hari Lahir Pancasila</b> sekaligus <b>hari libur nasional</b></td></tr>
+<tr><td>Judul pidato Soekarno</td><td>Pidato 1 Juni 1945 diberi judul <b>"Lahirnya Pancasila"</b> oleh <b>Radjiman Wedyodiningrat</b> dalam kata pengantar buku kumpulan pidato BPUPKI</td></tr>
+<tr><td>Tujuh Pahlawan Revolusi</td><td>Korban G30S/PKI yang diperingati setiap <b>1 Oktober</b> (Hari Kesaktian Pancasila): <b>Ahmad Yani, M.T. Haryono, D.I. Panjaitan, Sutoyo Siswomiharjo, S. Parman, Pierre Tendean, Karel Satsuit Tubun</b>; dimakamkan di <b>Lubang Buaya</b>, Monumen Pancasila Sakti</td></tr>
+<tr><td>Sila-sila dalam Pembukaan alinea IV</td><td>Tercantum <b>berurutan persis</b> seperti rumusan final: Ketuhanan Yang Maha Esa; kemanusiaan yang adil dan beradab; persatuan Indonesia; kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan; keadilan sosial bagi seluruh rakyat Indonesia</td></tr>
+<tr><td><i>Filosofische grondslag</i></td><td>Istilah yang dipakai <b>Soekarno</b> dalam pidato 1 Juni 1945: Pancasila sebagai <b>dasar filsafat negara</b></td></tr>
+<tr><td><i>Weltanschauung</i></td><td>Pandangan hidup; disebut Soekarno sebagai <b>dasar Indonesia Merdeka</b> dalam pidato 1 Juni 1945</td></tr>
+<tr><td><i>Volksgeist</i></td><td><b>Jiwa bangsa</b>; semangat hidup yang menjiwai bangsa Indonesia</td></tr>
+<tr><td>Moh. Yamin = Mr. Muhammad Yamin</td><td><b>Satu orang yang sama</b>: pengusul dasar negara 29 Mei 1945 sekaligus ahli bahasa yang menyarankan nama <b>"Pancasila"</b> kepada Soekarno</td></tr>
+<tr><td>Pembentukan BPUPKI</td><td>Diumumkan <b>1 Maret 1945</b> oleh Letjen <b>Kumakichi Harada</b>; diresmikan <b>29 April 1945</b> bertepatan dengan hari ulang tahun Kaisar Hirohito</td></tr>
+<tr><td>Gedung sidang BPUPKI</td><td>Sidang digelar di <b>Gedung Chuo Sangi In</b>, Jl. Pejambon No. 6 Jakarta (bekas gedung Volksraad) — kini dikenal sebagai <b>Gedung Pancasila</b></td></tr>
+<tr><td>Tempat rumusan Piagam Jakarta</td><td>Panitia Sembilan merumuskan Piagam Jakarta pada <b>22 Juni 1945</b> di <b>rumah kediaman Ir. Soekarno, Jl. Pegangsaan Timur No. 56 Jakarta</b></td></tr>
+<tr><td>Tiga keputusan sidang PPKI 18 Agustus 1945</td><td>1) <b>Mengesahkan UUD 1945</b> (termasuk Pancasila sebagai dasar negara); 2) <b>memilih Soekarno–Hatta</b> sebagai presiden dan wakil presiden; 3) <b>membentuk KNIP</b> (Komite Nasional Indonesia Pusat)</td></tr>
+<tr><td>Moh. Yamin dan Sumpah Pemuda</td><td>Selain perumus Pancasila, Yamin adalah <b>tokoh Kongres Pemuda II 1928</b> yang melahirkan Sumpah Pemuda; ia juga sastrawan dan sejarawan</td></tr>
+<tr><td>Lima sila versi Piagam Jakarta (22 Juni 1945)</td><td>1) Ketuhanan dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya; 2) Kemanusiaan yang adil dan beradab; 3) Persatuan Indonesia; 4) Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan perwakilan; 5) Keadilan sosial bagi seluruh rakyat Indonesia — tujuh kata pada sila 1 dihapus 18 Agustus 1945</td></tr>
+<tr><td>UU per sila — sila 1 (baru)</td><td><b>UU 1/PNPS/1965 jo. UU 5/1969</b> tentang pencegahan penyalahgunaan dan/atau penodaan agama</td></tr>
+<tr><td>UU per sila — sila 2 (baru)</td><td><b>UU 8/2016</b> tentang Penyandang Disabilitas; <b>UU 26/2000</b> tentang Pengadilan HAM</td></tr>
+<tr><td>UU per sila — sila 3 (baru)</td><td><b>UU 43/2008</b> tentang Wilayah Negara; <b>UU 17/1985</b> tentang pengesahan UNCLOS (hukum laut)</td></tr>
+<tr><td>UU per sila — sila 4 (baru)</td><td><b>UU 7/2017</b> tentang Pemilu; <b>UU 14/2008</b> tentang Keterbukaan Informasi Publik; <b>UU 9/1998</b> tentang Kemerdekaan Menyampaikan Pendapat di Muka Umum</td></tr>
+<tr><td>UU per sila — sila 5 (baru)</td><td><b>UU 11/2009</b> tentang Kesejahteraan Sosial; <b>UU 13/2011</b> tentang Penanganan Fakir Miskin; <b>UU 8/1999</b> tentang Perlindungan Konsumen; <b>UU 40/2004</b> tentang SJSN; <b>UU 24/2011</b> tentang BPJS</td></tr>
+</table>
+<h3>Istilah & Tokoh Kunci</h3>
+<ul>
+<li><b>Filosofische grondslag</b> — dasar filsafat negara; sebutan Soekarno untuk Pancasila dalam pidato 1 Juni 1945.</li>
+<li><b>Weltanschauung</b> — pandangan hidup; disebut Soekarno sebagai dasar Indonesia Merdeka.</li>
+<li><b>Volksgeist</b> — jiwa bangsa; semangat hidup yang menjiwai bangsa Indonesia.</li>
+<li><b>Ekasila</b> — satu sila hasil pemerasan trisila oleh Soekarno: gotong royong.</li>
+<li><b>Trisila</b> — tiga sila hasil pemerasan Pancasila oleh Soekarno: sosio-nasionalisme, sosio-demokrasi, ketuhanan.</li>
+<li><b>Sosio-nasionalisme</b> — nasionalisme yang berperikemanusiaan; pemerasan sila kebangsaan dan internasionalisme.</li>
+<li><b>Sosio-demokrasi</b> — demokrasi politik yang disertai keadilan sosial; demokrasi dengan kesejahteraan.</li>
+<li><b>Ketuhanan yang berkebudayaan</b> — rumusan sila kelima Soekarno 1 Juni 1945: ketuhanan yang saling menghormati keyakinan lain.</li>
+<li><b>Panitia Kecil (Panitia Delapan)</b> — 8 anggota yang dibentuk 1 Juni 1945 di bawah Soekarno; menampung usulan dasar negara.</li>
+<li><b>Piagam Jakarta</b> — naskah 22 Juni 1945 karya Panitia Sembilan; dinamai "Piagam Jakarta" oleh Moh. Yamin.</li>
+<li><b>Ki Bagus Hadikusumo</b> — ketua PP Muhammadiyah; anggota Panitia Kecil dari golongan Islam (1945).</li>
+<li><b>Mr. Soetardjo Kartohadikusumo</b> — pengusul Petisi Soetardjo 1936; anggota BPUPKI.</li>
+<li><b>Mr. Soekiman Wirjosandjojo</b> — tokoh Islam anggota BPUPKI; ikut merumuskan dasar negara.</li>
+<li><b>R.A.A. Wiranatakusumah</b> — salah satu dari 6 anggota tambahan PPKI (1945).</li>
+<li><b>Otto Iskandardinata</b> — pengusul pemilihan Soekarno–Hatta sebagai presiden dan wakil presiden pada sidang PPKI 18 Agustus 1945.</li>
+<li><b>Prof. Notonagoro</b> — pakar filsafat Pancasila UGM; merumuskan teori tiga nilai: dasar, instrumental, praksis.</li>
+<li><b>Sayuti Melik</b> — pengetik naskah Proklamasi; salah satu dari 6 anggota tambahan PPKI.</li>
+<li><b>Ki Hadjar Dewantara</b> — Bapak Pendidikan Nasional; salah satu dari 6 anggota tambahan PPKI.</li>
+</ul>
 <div class="warn">⚠️ <b>Jebakan umum:</b><ol>
 <li><b>Sidang BPUPKI I vs II:</b> I (29 Mei–1 Juni 1945) = dasar negara; II (10–17 Juli 1945) = rancangan UUD. Jangan tertukar!</li>
 <li><b>Urutan pidato:</b> Yamin (29 Mei) → Soepomo (31 Mei) → Soekarno (1 Juni). Pengecoh sering menukar Yamin dan Soepomo.</li>
@@ -223,6 +290,10 @@ window.MAT_TWK = [
 <li><b>Komposisi 7-10-7-10-11:</b> pengecoh umum "sila 3 = 10 butir" atau "sila 5 = 10 butir".</li>
 <li><b>Piagam Jakarta</b> dirumuskan Panitia Sembilan 22 Juni 1945 — bukan oleh BPUPKI langsung.</li>
 <li><b>Instrumental vs praksis:</b> "UUD 1945" = instrumental; "ikut kerja bakti" = praksis. Opsi sering menukar keduanya.</li>
+<li><b>Moh. Yamin vs Mr. Muhammad Yamin:</b> keduanya <b>satu orang yang sama</b>. Opsi yang memisahkan mereka sebagai dua tokoh berbeda pasti salah.</li>
+<li><b>Ekasila vs Trisila:</b> ekasila = <b>gotong royong</b> (bukan "sila Ketuhanan"); trisila = sosio-nasionalisme, sosio-demokrasi, ketuhanan (bukan "tiga sila pertama Pancasila"). Pengecoh sering menukar definisi keduanya.</li>
+<li><b>1 Juni vs 1 Oktober:</b> 1 Juni = <b>Hari Lahir Pancasila</b>; 1 Oktober = <b>Hari Kesaktian Pancasila</b>. Opsi yang menukar keduanya adalah jebakan klasik.</li>
+<li><b>62 vs 27:</b> BPUPKI beranggotakan <b>62 orang</b>, PPKI beranggotakan <b>27 orang</b> (21 + 6 tambahan). Pengecoh: menukar angka, atau menyebut PPKI 21 orang (itu jumlah awal sebelum ditambah 6).</li>
 </ol></div>
 <div class="key">🔑 <b>Hafalan cepat:</b> <b>7-10-7-10-11</b> (butir per sila). <b>"Ya-Soe-Kar 29-31-1"</b> (Yamin–Soepomo–Soekarno + tanggal pidato). Nilai: <b>D</b>asar = sila, <b>I</b>nstrumental = aturan (<b>I</b> = <b>I</b>kut aturan), <b>P</b>raksis = <b>p</b>erilaku. Tujuh kata dihapus <b>18-8-45</b> (PPKI).</div>
 `},
@@ -384,7 +455,73 @@ window.MAT_TWK = [
 <li><p><b>Soal:</b> Lembaga yang berwenang menguji undang-undang terhadap UUD 1945 adalah…</p><p><b>Jawaban: Mahkamah Konstitusi (Pasal 24C).</b> Pembahasan: MA hanya menguji peraturan <i>di bawah</i> UU terhadap UU — jangan tertukar!</li>
 <li><p><b>Soal:</b> Syarat perubahan UUD menurut Pasal 37 adalah…</p><p><b>Jawaban: Diusulkan sekurang-kurangnya 1/3 anggota MPR, dihadiri 2/3 anggota, disetujui 50%+1 dari seluruh anggota.</b> Pembahasan: Tiga angka kunci 1/3 – 2/3 – 50%+1.</li>
 <li><p><b>Soal:</b> Pasal yang menjadi dasar kewajiban bela negara adalah…</p><p><b>Jawaban: Pasal 30 ayat (1) dan (2).</b> Pembahasan: "Tiap-tiap warga negara berhak dan wajib ikut serta dalam usaha pertahanan dan keamanan negara."</li>
+<ol>
+<li><p><b>Soal:</b> Dewan yang dibentuk Presiden untuk memberikan nasihat dan pertimbangan kepadanya menurut Pasal 16 UUD 1945 adalah…</p><p><b>Jawaban: Dewan Pertimbangan Presiden (Wantimpres).</b> Pembahasan: Wantimpres (Pasal 16) menggantikan fungsi DPA yang dihapus pada amandemen IV; diatur lebih lanjut dengan UU 19/2006. Jangan dikecoh opsi "DPA masih ada".</p></li>
+<li><p><b>Soal:</b> Menurut Pasal 6A ayat 3, pasangan calon Presiden/Wapres dinyatakan menang bila…</p><p><b>Jawaban: Meraih lebih dari 50% suara sah dengan sebaran sedikitnya 20% di lebih dari separuh jumlah provinsi.</b> Pembahasan: Aturan ini hasil amandemen III (2001); bila tidak ada pasangan yang memenuhi, diadakan putaran kedua antara dua pasangan suara terbanyak.</p></li>
+<li><p><b>Soal:</b> Jika Presiden mangkat dalam masa jabatannya, menurut Pasal 8 ia digantikan oleh…</p><p><b>Jawaban: Wakil Presiden, sampai habis masa jabatannya.</b> Pembahasan: Bukan pemilu ulang; bila Presiden dan Wapres berhalangan bersamaan, tugas kepresidenan dilaksanakan Menlu, Mendagri, dan Menhan bersama-sama, lalu MPR memilih pengganti paling lambat 30 hari.</p></li>
+<li><p><b>Soal:</b> Pejabat yang berwenang menyatakan keadaan bahaya menurut UUD 1945 adalah…</p><p><b>Jawaban: Presiden (Pasal 12).</b> Pembahasan: Syarat-syarat dan akibat keadaan bahaya ditetapkan dengan undang-undang (UU 23/Prp/1959); contoh keadaan bahaya adalah pemberontakan atau bencana besar.</p></li>
+<li><p><b>Soal:</b> Pemberian gelar, tanda jasa, dan tanda kehormatan oleh Presiden diatur dalam…</p><p><b>Jawaban: Pasal 15 UUD 1945.</b> Pembahasan: Presiden memberi gelar, tanda jasa, dan lain-lain tanda kehormatan sebagaimana diatur dengan UU; contohnya Bintang Mahaputera.</p></li>
+<li><p><b>Soal:</b> Pasal UUD 1945 yang mengatur tentang bank sentral adalah…</p><p><b>Jawaban: Pasal 23D.</b> Pembahasan: Negara memiliki bank sentral (Bank Indonesia, UU 23/1999 jo. UU 6/2009) yang independen; susunan, kedudukan, kewenangan, dan tanggung jawabnya diatur dengan UU.</p></li>
+<li><p><b>Soal:</b> "NKRI adalah negara kepulauan yang berciri Nusantara" merupakan bunyi…</p><p><b>Jawaban: Pasal 25A UUD 1945.</b> Pembahasan: Batas-batas dan hak-hak wilayah ditetapkan dengan UU; pasal ini (hasil amandemen II/2000) menjadi dasar konstitusional wawasan nusantara.</p></li>
+<li><p><b>Soal:</b> Asas demokrasi ekonomi dalam penyelenggaraan perekonomian nasional diatur dalam…</p><p><b>Jawaban: Pasal 33 ayat 4 UUD 1945.</b> Pembahasan: Prinsipnya kebersamaan, efisiensi berkeadilan, berkelanjutan, berwawasan lingkungan, dan kemandirian; ayat ini (hasil amandemen IV/2002) melengkapi ayat 1–3 tentang ekonomi kerakyatan.</p></li>
+<li><p><b>Soal:</b> Ketentuan lebih lanjut mengenai bendera, bahasa, lambang negara, dan lagu kebangsaan diatur dengan UU menurut…</p><p><b>Jawaban: Pasal 36C UUD 1945.</b> Pembahasan: Ditindaklanjuti dengan UU 24/2009 tentang Bendera, Bahasa, dan Lambang Negara serta Lagu Kebangsaan, yang juga mengatur tata cara penggunaannya.</p></li>
+<li><p><b>Soal:</b> Tanggal 18 Agustus diperingati sebagai Hari Konstitusi berdasarkan…</p><p><b>Jawaban: Keppres 18/2008.</b> Pembahasan: Ditandatangani Presiden Susilo Bambang Yudhoyono pada 10 September 2008; Hari Konstitusi bukan hari libur nasional — jangan dikecoh dengan Hari Lahir Pancasila (1 Juni, hari libur).</p></li>
 </ol>
+</ol>
+<h3>Tabel Fakta Kilat</h3>
+<table>
+<tr><th>Pasal</th><th>Isi pokok</th></tr>
+<tr><td>2 ayat 2</td><td>MPR bersidang <b>sedikitnya sekali dalam 5 tahun</b> di ibukota negara</td></tr>
+<tr><td>2 ayat 3</td><td>Segala putusan MPR ditetapkan dengan <b>suara yang terbanyak</b></td></tr>
+<tr><td>5 ayat 2</td><td>Presiden menetapkan <b>Peraturan Pemerintah (PP)</b> untuk menjalankan UU sebagaimana mestinya</td></tr>
+<tr><td>6</td><td>Syarat Presiden/Wapres: <b>WNI sejak lahir</b>, tidak pernah menerima kewarganegaraan lain, tidak pernah mengkhianati negara, mampu secara rohani dan jasmani</td></tr>
+<tr><td>6A ayat 3</td><td>Pasangan menang bila meraih <b>lebih dari 50%</b> suara sah dengan sebaran <b>sedikitnya 20% di lebih dari separuh provinsi</b>; bila tidak ada yang memenuhi, diadakan <b>putaran kedua</b> antara dua suara terbanyak</td></tr>
+<tr><td>8</td><td>Presiden mangkat/berhenti/diberhentikan/tidak dapat bertugas → <b>digantikan Wapres sampai habis masa jabatan</b>; bila keduanya berhalangan → <b>Menlu, Mendagri, Menhan</b> bersama-sama; MPR memilih pengganti <b>paling lambat 30 hari</b></td></tr>
+<tr><td>9</td><td>Presiden/Wapres bersumpah/berjanji sebelum memangku jabatan; bila MPR/DPR tak dapat bersidang, sumpah diucapkan <b>di hadapan pimpinan MPR</b> dengan disaksikan <b>pimpinan MA</b></td></tr>
+<tr><td>12</td><td>Presiden <b>menyatakan keadaan bahaya</b>; syarat dan akibatnya ditetapkan dengan UU</td></tr>
+<tr><td>13</td><td>Presiden mengangkat <b>duta dan konsul</b>; mengangkat duta <b>memperhatikan pertimbangan DPR</b>; menerima penempatan duta negara lain <b>memperhatikan pertimbangan DPR</b></td></tr>
+<tr><td>15</td><td>Presiden memberi <b>gelar, tanda jasa, dan tanda kehormatan</b> lain yang diatur dengan UU</td></tr>
+<tr><td>16</td><td>Presiden membentuk <b>dewan pertimbangan</b> (Wantimpres) yang bertugas memberi <b>nasihat dan pertimbangan</b> kepada Presiden</td></tr>
+<tr><td>17</td><td>Presiden <b>dibantu menteri-menteri</b>; menteri <b>diangkat dan diberhentikan Presiden</b>; pembentukan, pengubahan, dan pembubaran kementerian diatur UU</td></tr>
+<tr><td>19</td><td>Anggota <b>DPR dipilih melalui pemilu</b>; DPR bersidang sedikitnya sekali dalam setahun; susunan DPR diatur UU</td></tr>
+<tr><td>20</td><td><b>DPR memegang kekuasaan membentuk UU</b>; RUU dibahas DPR dan Presiden untuk <b>persetujuan bersama</b>; bila tak disetujui bersama, <b>tak boleh diajukan lagi dalam masa sidang itu</b>; bila Presiden tak mengesahkan dalam <b>30 hari</b>, RUU <b>sah menjadi UU</b></td></tr>
+<tr><td>20A</td><td>Tiga fungsi DPR: <b>legislasi, anggaran, pengawasan</b>; DPR juga menyerap dan menindaklanjuti aspirasi masyarakat</td></tr>
+<tr><td>21</td><td>Anggota DPR <b>berhak mengajukan usul RUU</b> (hak inisiatif)</td></tr>
+<tr><td>22A</td><td>Tata cara pembentukan UU <b>diatur dengan UU</b> (UU 12/2011 jo. UU 15/2019)</td></tr>
+<tr><td>22C</td><td>Anggota DPD dari setiap provinsi <b>jumlahnya sama</b> dan keseluruhannya <b>tidak lebih dari 1/3 jumlah anggota DPR</b>; DPD bersidang sedikitnya sekali setahun</td></tr>
+<tr><td>23A</td><td><b>Pajak dan pungutan</b> lain yang bersifat memaksa untuk keperluan negara <b>diatur dengan UU</b></td></tr>
+<tr><td>23D</td><td>Negara memiliki suatu <b>bank sentral</b> (Bank Indonesia); susunan, kedudukan, kewenangan, tanggung jawab, dan <b>independensinya</b> diatur dengan UU</td></tr>
+<tr><td>24 ayat 1</td><td>Kekuasaan kehakiman adalah <b>kekuasaan yang merdeka</b> untuk menyelenggarakan peradilan guna menegakkan hukum dan keadilan</td></tr>
+<tr><td>25A</td><td>NKRI adalah <b>negara kepulauan yang berciri Nusantara</b>; batas-batas dan hak-hak wilayahnya ditetapkan dengan UU (wawasan nusantara)</td></tr>
+<tr><td>27 ayat 3</td><td>Setiap warga negara <b>berhak dan wajib</b> ikut serta dalam <b>upaya pembelaan negara</b></td></tr>
+<tr><td>30 ayat 3–5</td><td><b>TNI</b> (AD, AL, AU) alat negara bidang <b>pertahanan</b>; <b>Polri</b> alat negara bidang <b>keamanan dan ketertiban masyarakat</b>; susunan, kedudukan, dan hubungan kewenangan keduanya diatur UU</td></tr>
+<tr><td>31 ayat 3</td><td>Pemerintah mengusahakan dan menyelenggarakan <b>satu sistem pendidikan nasional</b> yang meningkatkan <b>keimanan, ketakwaan, dan akhlak mulia</b></td></tr>
+<tr><td>31 ayat 5</td><td>Pemerintah <b>memajukan ilmu pengetahuan dan teknologi</b> dengan menjunjung tinggi nilai agama dan persatuan bangsa</td></tr>
+<tr><td>32 ayat 2</td><td>Negara <b>menghormati dan memelihara bahasa daerah</b> sebagai kekayaan budaya nasional</td></tr>
+<tr><td>33 ayat 4</td><td>Perekonomian nasional berdasar <b>demokrasi ekonomi</b>: kebersamaan, efisiensi berkeadilan, berkelanjutan, berwawasan lingkungan, kemandirian</td></tr>
+<tr><td>34 ayat 2–3</td><td>Negara mengembangkan <b>sistem jaminan sosial</b> bagi seluruh rakyat dan bertanggung jawab atas <b>fasilitas pelayanan kesehatan dan pelayanan umum yang layak</b></td></tr>
+<tr><td>36C</td><td>Ketentuan lebih lanjut mengenai <b>bendera, bahasa, lambang negara, dan lagu kebangsaan</b> diatur dengan UU (UU 24/2009)</td></tr>
+</table>
+<h3>Istilah & Tokoh Kunci</h3>
+<ul>
+<li><b>Konstitusi</b> — hukum dasar tertulis yang tertinggi kedudukannya di suatu negara (di Indonesia: UUD 1945).</li>
+<li><b>Konstitusionalisme</b> — paham bahwa kekuasaan pemerintah harus dibatasi oleh konstitusi; di Indonesia diwujudkan lewat pembatasan masa jabatan presiden, pemisahan kekuasaan, dan jaminan HAM.</li>
+<li><b>Amandemen</b> — perubahan UUD; terjadi 4 kali (1999, 2000, 2001, 2002) dengan kesepakatan Pembukaan tidak diubah, NKRI tetap, dan sistem presidensial dipertahankan.</li>
+<li><b>Judicial review</b> — pengujian peraturan terhadap peraturan yang lebih tinggi: MK menguji UU terhadap UUD, MA menguji peraturan di bawah UU terhadap UU.</li>
+<li><b>Impeachment</b> — mekanisme pemberhentian Presiden: DPR mengusulkan, MK memeriksa dan memutus, MPR memutuskan dalam sidang yang dihadiri 3/4 anggota dengan persetujuan 2/3 yang hadir.</li>
+<li><b>Desentralisasi</b> — penyerahan urusan pemerintahan kepada daerah otonom.</li>
+<li><b>Dekonsentrasi</b> — pelimpahan wewenang pemerintah pusat kepada gubernur sebagai wakilnya di daerah.</li>
+<li><b>Tugas pembantuan</b> — penugasan dari pemerintah pusat kepada daerah untuk melaksanakan sebagian urusan pemerintahan.</li>
+<li><b>LUBER JURDIL</b> — Langsung, Umum, Bebas, Rahasia, Jujur, Adil; asas pemilu menurut Pasal 22E.</li>
+<li><b>Negara hukum</b> — Pasal 1 ayat 3 (hasil amandemen III/2001): Indonesia adalah negara hukum; segala kekuasaan tunduk pada hukum.</li>
+<li><b>Wantimpres</b> — Dewan Pertimbangan Presiden (Pasal 16); pengganti fungsi DPA yang dihapus amandemen IV.</li>
+<li><b>Hari Konstitusi</b> — 18 Agustus (Keppres 18/2008), diperingati setiap tahun; bukan hari libur nasional.</li>
+<li><b>Prof. Dr. Mr. Soepomo</b> — ketua Panitia Perancang UUD pada sidang II BPUPKI; arsitek naskah UUD 1945.</li>
+<li><b>Jimly Asshiddiqie</b> — ketua Mahkamah Konstitusi pertama (2003–2008).</li>
+<li><b>Amien Rais</b> — Ketua MPR 1999–2004; memimpin sidang-sidang amandemen UUD 1945.</li>
+<li><b>Ir. Soekarno</b> — mengeluarkan Dekrit Presiden 5 Juli 1959 yang memberlakukan kembali UUD 1945.</li>
+<li><b>Susilo Bambang Yudhoyono</b> — menandatangani Keppres 18/2008 tentang Hari Konstitusi (10 September 2008).</li>
+</ul>
 <div class="warn">⚠️ <b>Jebakan umum:</b><ol>
 <li><b>MA vs MK:</b> MK menguji <b>UU terhadap UUD</b>; MA menguji <b>peraturan di bawah UU terhadap UU</b>. Ini jebakan paling sering keluar!</li>
 <li><b>Grasi vs amnesti:</b> grasi = pengampunan dari Presiden <b>dengan pertimbangan MA</b>; amnesti/abolisi = <b>dengan pertimbangan DPR</b>. Opsi sering menukar MA dan DPR.</li>
@@ -392,6 +529,10 @@ window.MAT_TWK = [
 <li><b>Amandemen II vs III:</b> HAM & otonomi daerah = <b>II (2000)</b>; DPD & pemilu langsung = <b>III (2001)</b>.</li>
 <li><b>Pembukaan tidak boleh diubah</b> — opsi yang menyebut amandemen mengubah Pembukaan pasti salah.</li>
 <li><b>Bentuk negara vs bentuk pemerintahan:</b> Indonesia = negara <b>kesatuan</b>, pemerintahan <b>republik</b> (Pasal 1 ayat 1). Jangan tertukar!</li>
+<li><b>Pasal 8:</b> Wapres menggantikan Presiden yang berhalangan <b>sampai habis masa jabatan</b>. Pengecoh umum: "diadakan pemilu ulang" atau "MPR langsung memilih presiden baru". Ingat juga: bila kursi Wapres lowong, MPR memilih dari 2 calon yang diusulkan Presiden (Pasal 8 ayat 2).</li>
+<li><b>Wantimpres vs DPA:</b> yang memberi nasihat kepada Presiden saat ini adalah <b>Wantimpres (Pasal 16)</b>; <b>DPA sudah dihapus</b> pada amandemen IV. DPA adalah lembaga era pra-amandemen; kini nasihat kepada Presiden murni lewat Wantimpres. Opsi "DPA memberi pertimbangan kepada Presiden" pasti salah.</li>
+<li><b>Pasal 20 ayat 3 vs ayat 5:</b> RUU yang <b>tidak disetujui bersama</b> → <b>tidak boleh diajukan lagi dalam masa sidang itu</b>; RUU yang sudah disetujui bersama tetapi <b>tidak disahkan Presiden dalam 30 hari</b> → <b>sah menjadi UU</b>. Hafalkan pasangannya: "tidak disetujui = tidak diajukan lagi" vs "tidak disahkan = sah jadi UU". Jangan tertukar!</li>
+<li><b>Pasal 23 ayat 3:</b> bila DPR <b>tidak menyetujui RAPBN</b>, pemerintah menjalankan <b>APBN tahun lalu</b>. Pengecoh: "pemerintah berhenti beroperasi" atau "Presiden membubarkan DPR". Ini berbeda dengan Perppu (Pasal 22) yang justru memberi jalan keluar darurat bagi Presiden bila ada kegentingan yang memaksa.</li>
 </ol></div>
 <div class="key">🔑 <b>Hafalan cepat:</b> Amandemen <b>99-00-01-02</b>. Fungsi DPR: <b>"LAP"</b> (<b>L</b>egislasi, <b>A</b>nggaran, <b>P</b>engawasan). Hak DPR: <b>"IAO"</b> (<b>I</b>nterpelasi, <b>A</b>ngket, <b>O</b>pini/menyatakan pendapat). Syarat ubah UUD: <b>1/3 – 2/3 – 50%+1</b>. Ekonomi: <b>33</b> (kekeluargaan, dikuasai negara). Pendidikan: <b>31</b> (20% APBN). Pertahanan: <b>30</b> (hak & wajib).</div>
 `},
@@ -525,7 +666,68 @@ window.MAT_TWK = [
 <li><p><b>Soal:</b> "Menolak paham komunisme karena bertentangan dengan Pancasila" mencerminkan nilai dasar bela negara…</p><p><b>Jawaban: Setia pada Pancasila sebagai ideologi negara.</b> Pembahasan: Nilai ke-3 dari 5 nilai dasar (Permenhan 32/2016).</li>
 <li><p><b>Soal:</b> Serangan siber terhadap infrastruktur vital dan penyebaran hoaks untuk memecah belah bangsa termasuk ancaman…</p><p><b>Jawaban: Nonmiliter.</b> Pembahasan: Ancaman nonmiliter meliputi ideologi, politik, ekonomi, sosial budaya, dan teknologi/informasi.</li>
 <li><p><b>Soal:</b> Sistem pertahanan Indonesia yang melibatkan seluruh rakyat, wilayah, dan sumber daya nasional disebut…</p><p><b>Jawaban: Sishankamrata.</b> Pembahasan: Sistem Pertahanan dan Keamanan Rakyat Semesta — bersifat semesta, total, dan terpadu.</li>
+<ol>
+<li><p><b>Soal:</b> Menurut UU 3/2002, tujuan penyelenggaraan pertahanan negara adalah…</p><p><b>Jawaban: Menjaga dan melindungi kedaulatan negara, keutuhan wilayah NKRI, dan keselamatan segenap bangsa.</b> Pembahasan: Tiga sasaran ini adalah rumusan baku tujuan pertahanan negara dalam UU 3/2002.</p></li>
+<li><p><b>Soal:</b> TNI yang terlatih, terdidik, tidak berpolitik praktis, dan tidak berbisnis mencerminkan jati diri TNI sebagai…</p><p><b>Jawaban: Tentara profesional.</b> Pembahasan: Jati diri TNI (UU 34/2004 Pasal 2): tentara rakyat, tentara pejuang, tentara nasional, dan tentara profesional.</p></li>
+<li><p><b>Soal:</b> Panglima TNI diangkat dan diberhentikan oleh…</p><p><b>Jawaban: Presiden setelah mendapat persetujuan DPR.</b> Pembahasan: UU 34/2004 Pasal 13; jabatannya dijabat bergantian oleh perwira tinggi aktif dari tiap matra.</p></li>
+<li><p><b>Soal:</b> Seorang prajurit TNI aktif ingin menjadi pengurus partai politik. Menurut UU 34/2004, hal ini…</p><p><b>Jawaban: Dilarang.</b> Pembahasan: Pasal 39 melarang prajurit menjadi anggota parpol, berpolitik praktis, dipilih jadi anggota legislatif/pejabat politis, dan berbisnis.</p></li>
+<li><p><b>Soal:</b> Batas usia pensiun prajurit TNI berpangkat perwira menurut UU 34/2004 adalah…</p><p><b>Jawaban: 58 tahun.</b> Pembahasan: Pasal 53 UU 34/2004: 58 tahun bagi perwira, 53 tahun bagi bintara dan tamtama.</p></li>
+<li><p><b>Soal:</b> Mobilisasi Komponen Cadangan ditetapkan oleh…</p><p><b>Jawaban: Presiden.</b> Pembahasan: UU 23/2019 Pasal 63: mobilisasi saat keadaan darurat militer/keadaan perang; komando di bawah Panglima TNI. Demobilisasinya butuh persetujuan DPR.</p></li>
+<li><p><b>Soal:</b> Urutan tingkatan keadaan bahaya menurut UU 23/1959 dari yang terendah adalah…</p><p><b>Jawaban: Darurat sipil – darurat militer – keadaan perang.</b> Pembahasan: Tiga tingkatan bersifat hierarkis; darurat sipil menjaga supremasi sipil, darurat militer mengalihkan kendali ke militer, keadaan perang mengerahkan seluruh sumber daya nasional.</p></li>
+<li><p><b>Soal:</b> Negara asing mengerahkan pasukan ke perbatasan RI disertai serangan siber dan embargo ekonomi secara terkoordinasi. Ini termasuk ancaman…</p><p><b>Jawaban: Hibrida.</b> Pembahasan: Ancaman hibrida = gabungan ancaman militer dan nonmiliter yang terkoordinasi.</p></li>
+<li><p><b>Soal:</b> Operasi TNI membantu penanggulangan bencana alam dan pemberian bantuan kemanusiaan termasuk…</p><p><b>Jawaban: OMSP (Operasi Militer Selain Perang).</b> Pembahasan: UU 34/2004 Pasal 7 ayat (2): salah satu dari 14 tugas OMSP adalah membantu menanggulangi bencana, pengungsian, dan bantuan kemanusiaan.</p></li>
+<li><p><b>Soal:</b> Istilah Sishankamrata pertama kali dicetuskan oleh…</p><p><b>Jawaban: A.H. Nasution.</b> Pembahasan: Dalam bukunya <i>Pokok-Pokok Gerilya</i> (1953) yang ditulis dari pengalamannya memimpin perang gerilya 1945–1949.</p></li>
 </ol>
+</ol>
+<h3>Tabel Fakta Kilat</h3>
+<table><tr><th>No</th><th>Fakta</th><th>Detail</th></tr>
+<tr><td>1</td><td><b>Sistem pertahanan semesta (UU 3/2002)</b></td><td>Sistem pertahanan yang bersifat semesta: melibatkan seluruh warga negara, wilayah, dan sumber daya nasional; dipersiapkan secara dini dan diselenggarakan secara <b>total, terpadu, terarah, berlanjut</b></td></tr>
+<tr><td>2</td><td><b>Tujuan pertahanan negara (UU 3/2002)</b></td><td>Menjaga dan melindungi <b>kedaulatan negara, keutuhan wilayah NKRI, dan keselamatan segenap bangsa</b> dari segala bentuk ancaman</td></tr>
+<tr><td>3</td><td><b>Jati diri TNI (UU 34/2004 Pasal 2)</b></td><td><b>Tentara rakyat</b> (anggotanya dari warga negara), <b>tentara pejuang</b> (tidak mengenal menyerah), <b>tentara nasional</b> (di atas suku/ras/golongan), <b>tentara profesional</b> (terlatih, tidak berpolitik praktis, tidak berbisnis)</td></tr>
+<tr><td>4</td><td><b>UUD 1945 Pasal 30 ayat (3) dan (4)</b></td><td>TNI = alat negara bidang <b>pertahanan</b> (AD, AL, AU); Polri = alat negara bidang <b>keamanan dan ketertiban masyarakat</b></td></tr>
+<tr><td>5</td><td><b>OMSP — 14 tugas (UU 34/2004 Pasal 7 ayat 2)</b></td><td>Atasi gerakan separatis bersenjata; atasi pemberontakan bersenjata; atasi terorisme; amankan perbatasan; amankan objek vital nasional; misi perdamaian dunia; amankan Presiden/Wapres; berdayakan wilayah pertahanan; bantu tugas pemerintahan daerah; bantu Polri (kamtibmas); bantu bencana/pengungsian/kemanusiaan; <i>search and rescue</i>; amankan pelayaran-penerbangan dari pembajakan/perompakan/penyelundupan</td></tr>
+<tr><td>6</td><td><b>Panglima TNI (UU 34/2004 Pasal 13)</b></td><td>Diangkat dan diberhentikan <b>Presiden setelah mendapat persetujuan DPR</b>; dijabat bergantian oleh perwira tinggi aktif dari tiap matra yang sedang/pernah menjadi Kepala Staf Angkatan</td></tr>
+<tr><td>7</td><td><b>Kapolri (UU 2/2002 Pasal 11)</b></td><td>Diangkat dan diberhentikan <b>Presiden dengan persetujuan DPR</b>; dalam tugasnya <b>bertanggung jawab kepada Presiden</b>; calonnya perwira tinggi Polri aktif</td></tr>
+<tr><td>8</td><td><b>Larangan prajurit TNI (UU 34/2004 Pasal 39)</b></td><td>Dilarang: menjadi <b>anggota partai politik</b>; <b>politik praktis</b>; dipilih jadi anggota legislatif/jabatan politis; <b>berbisnis</b>. TNI netral dalam pemilu</td></tr>
+<tr><td>9</td><td><b>Usia pensiun TNI (UU 34/2004 Pasal 53)</b></td><td><b>58 tahun</b> bagi perwira, <b>53 tahun</b> bagi bintara dan tamtama; catatan: revisi UU TNI 2025 mengubahnya bertingkat (55–65 tahun menurut pangkat/jabatan)</td></tr>
+<tr><td>10</td><td><b>Fungsi kepolisian (UU 2/2002 Pasal 2)</b></td><td>Pemeliharaan <b>kamtibmas</b>; penegakan hukum; <b>perlindungan, pengayoman, dan pelayanan</b> kepada masyarakat</td></tr>
+<tr><td>11</td><td><b>Pengemban fungsi kepolisian (UU 2/2002 Pasal 3)</b></td><td>Polri dibantu oleh: <b>kepolisian khusus</b>, <b>PPNS</b> (penyidik pegawai negeri sipil), dan <b>pengamanan swakarsa</b> (satpam, dsb.)</td></tr>
+<tr><td>12</td><td><b>Peradilan militer vs umum</b></td><td>Prajurit TNI tunduk pada <b>peradilan militer</b> (UU 31/1997); anggota Polri tunduk pada <b>peradilan umum</b> (UU 2/2002 Pasal 29)</td></tr>
+<tr><td>13</td><td><b>PP 3/2021</b></td><td>Peraturan pelaksanaan UU 23/2019 tentang Pengelolaan Sumber Daya Nasional untuk Pertahanan Negara; diteken Presiden <b>12 Januari 2021</b></td></tr>
+<tr><td>14</td><td><b>Permenhan 3/2021</b></td><td>Tentang <b>pembentukan, penetapan, dan pembinaan Komponen Cadangan</b> (ditetapkan 22 Februari 2021)</td></tr>
+<tr><td>15</td><td><b>Komcad (UU 23/2019 Pasal 28)</b></td><td>Terdiri atas: <b>warga negara, SDA, sumber daya buatan, sarana dan prasarana nasional</b>; keikutsertaan warga negara bersifat <b>sukarela</b></td></tr>
+<tr><td>16</td><td><b>Mobilisasi (UU 23/2019 Pasal 63)</b></td><td>Pengerahan Komcad saat negara dalam <b>keadaan darurat militer atau keadaan perang</b>; ditetapkan oleh <b>Presiden</b>; komando dan kendali di bawah <b>Panglima TNI</b></td></tr>
+<tr><td>17</td><td><b>Demobilisasi (UU 23/2019 Pasal 69–71)</b></td><td>Dinyatakan <b>Presiden dengan persetujuan DPR</b> setelah keadaan darurat teratasi; Komcad <b>dikembalikan ke fungsi dan status semula</b> dengan didahului <b>rehabilitasi</b></td></tr>
+<tr><td>18</td><td><b>Keadaan bahaya (Perppu/UU 23/1959)</b></td><td>Tiga tingkatan: <b>darurat sipil</b> (penguasa sipil), <b>darurat militer</b> (penguasa militer), <b>keadaan perang</b>; contoh: darurat sipil di Maluku &amp; Maluku Utara 2000–2003</td></tr>
+<tr><td>19</td><td><b>Bentuk-bentuk agresi militer</b></td><td><b>Invasi/serangan</b> angkatan bersenjata; <b>bombardemen</b>; <b>blokade</b> pelabuhan/pantai; serangan terhadap angkatan bersenjata; penggunaan pasukan di wilayah negara lain melanggar perjanjian; <b>pengiriman kelompok bersenjata/irregular</b></td></tr>
+<tr><td>20</td><td><b>Ancaman militer vs nirmiliter vs hibrida</b></td><td><b>Militer:</b> pakai kekuatan bersenjata (agresi, invasi) — dihadapi komponen utama (TNI). <b>Nirmiliter:</b> tanpa senjata (ideologi, ekonomi, siber, narkoba) — dihadapi kementerian/lembaga sesuai bidang. <b>Hibrida:</b> gabungan keduanya secara terkoordinasi — dihadapi terpadu</td></tr>
+<tr><td>21</td><td><b>Fungsi penangkal — contoh operasional</b></td><td>Gelar kekuatan TNI di wilayah rawan; patroli KRI di perbatasan laut; <b>diplomasi pertahanan</b> dan latihan militer gabungan (mis. Garuda Shield)</td></tr>
+<tr><td>22</td><td><b>Fungsi penindak — contoh operasional</b></td><td>Operasi militer menghadapi gerakan separatis bersenjata; operasi pembebasan sandera; penegakan kedaulatan di laut terhadap kapal asing ilegal</td></tr>
+<tr><td>23</td><td><b>Fungsi pemulih — contoh operasional</b></td><td>Bantuan TNI dalam penanggulangan bencana (mis. tsunami Aceh 2004); pemulihan keamanan pasca-konflik; rehabilitasi sarana wilayah terdampak</td></tr>
+<tr><td>24</td><td><b>Sishankamrata — asal &amp; ciri</b></td><td>Istilah dicetuskan <b>A.H. Nasution</b> dalam buku <i>Pokok-Pokok Gerilya</i> (1953); 3 ciri: <b>kerakyatan, kesemestaan, kewilayahan</b>; diselenggarakan secara total, terpadu, terarah, berlanjut</td></tr>
+</table>
+<h3>Istilah & Tokoh Kunci</h3>
+<ul>
+<li><b>Sishankamrata</b> — Sistem Pertahanan dan Keamanan Rakyat Semesta; istilah pertama dicetuskan A.H. Nasution dalam bukunya tahun 1953; landasan konstitusionalnya Pasal 30 UUD 1945.</li>
+<li><b>Komcad (Komponen Cadangan)</b> — warga negara yang dilatih kemiliteran dan disiapkan per matra (darat, laut, udara); dibentuk berdasarkan UU 23/2019 dan PP 3/2021; keikutsertaannya sukarela.</li>
+<li><b>Mobilisasi</b> — pengerahan/penggunaan Komcad secara aktif saat negara menghadapi keadaan darurat militer atau keadaan perang; ditetapkan Presiden; di bawah komando Panglima TNI.</li>
+<li><b>Demobilisasi</b> — pengembalian Komcad ke fungsi dan status semula setelah ancaman teratasi; dinyatakan Presiden dengan persetujuan DPR; didahului rehabilitasi.</li>
+<li><b>Darurat sipil</b> — tingkatan keadaan bahaya terendah (UU 23/1959); penguasa darurat sipil memegang kendali; contoh: Maluku dan Maluku Utara tahun 2000–2003.</li>
+<li><b>Darurat militer</b> — tingkatan menengah; kendali keamanan beralih ke penguasa darurat militer saat alat sipil (termasuk Polri) tidak lagi mampu mengatasi ancaman bersenjata.</li>
+<li><b>Keadaan perang</b> — tingkatan tertinggi; seluruh sumber daya nasional dikerahkan menghadapi perang; hanya dapat diakhiri dengan undang-undang.</li>
+<li><b>Proxy war (perang proksi)</b> — perang yang dilancarkan suatu negara melalui pihak ketiga/wakil, tanpa berhadapan langsung; termasuk ancaman nonmiliter berdimensi politik.</li>
+<li><b>Agresi</b> — penggunaan kekuatan bersenjata oleh suatu negara terhadap kedaulatan/wilayah negara lain; bentuknya: invasi, bombardemen, blokade, pengiriman kelompok bersenjata.</li>
+<li><b>Spionase</b> — kegiatan mata-mata: mencari dan membocorkan rahasia negara/militer kepada pihak asing; ancaman nonmiliter berdimensi keamanan.</li>
+<li><b>Sabotase</b> — perusakan atau penghancuran fasilitas, alutsista, dan objek vital untuk melemahkan pertahanan negara; beda dengan spionase yang mencuri informasi.</li>
+<li><b>Ketahanan nasional</b> — kondisi dinamis berisi keuletan dan ketangguhan bangsa menghadapi ancaman; dikembangkan Lemhannas; diukur lewat 8 gatra (trigatra: geografi, demografi, SDA; pancagatra: ideologi, politik, ekonomi, sosbud, hankam).</li>
+<li><b>Doktrin pertahanan semesta</b> — doktrin resmi Indonesia (UU 3/2002): seluruh warga, wilayah, dan sumber daya nasional dilibatkan dalam pertahanan yang total, terpadu, terarah, dan berlanjut.</li>
+<li><b>Perang rakyat semesta</b> — strategi perang Nasution: seluruh rakyat ikut berperang melawan agresor dengan taktik gerilya; lahir dari pengalaman perang kemerdekaan 1945–1949.</li>
+<li><b>Diplomasi pertahanan</b> — wujud fungsi penangkal lewat jalur diplomatik: kerja sama pertahanan, latihan militer gabungan, pertukaran perwira, forum pertahanan kawasan.</li>
+<li><b>A.H. Nasution (1918–2000)</b> — pencetus Sishankamrata; penulis <i>Pokok-Pokok Gerilya</i> (1953); KSAD dan Menhankam; perumus konsep dwifungsi ABRI; selamat dari percobaan penculikan G30S.</li>
+<li><b>Sudirman (1916–1950)</b> — Panglima Besar TKR/TNI pertama; memimpin perang gerilya saat Agresi Militer II (1948–1949) lewat Perintah Kilat; wafat 1950.</li>
+<li><b>Oerip Soemohardjo (1893–1948)</b> — Kepala Staf Umum TKR pertama; dijuluki <b>Bapak TNI</b>; perwira PETA/KNIL yang menjadi peletak dasar organisasi TNI.</li>
+<li><b>T.B. Simatupang (1920–1990)</b> — Kepala Staf Angkatan Perang pertama; tokoh restrukturisasi dan profesionalisasi TNI; dikenal sebagai pemikir militer modern Indonesia.</li>
+</ul>
 <div class="warn">⚠️ <b>Jebakan umum:</b><ol>
 <li><b>Bela negara ≠ wajib militer.</b> Opsi "semua warga wajib ikut latihan militer" adalah pengecoh — bela negara diwujudkan sesuai profesi.</li>
 <li><b>Komcad vs komponen utama:</b> Komcad = cadangan (warga terlatih); TNI = komponen utama. Jangan tertukar!</li>
@@ -533,6 +735,10 @@ window.MAT_TWK = [
 <li><b>Ancaman hibrida:</b> bukan "ancaman campuran biasa" — definisinya gabungan ancaman <b>militer + nonmiliter</b> yang terkoordinasi.</li>
 <li><b>5 nilai dasar:</b> urutan baku — cinta tanah air, kesadaran berbangsa-bernegara, setia Pancasila, rela berkorban, kemampuan awal. Pengecoh memasukkan "disiplin" atau "tanggung jawab" sebagai nilai dasar.</li>
 <li><b>Fungsi pertahanan:</b> penangkal–penindak–pemulih. Pengecoh: "pencegah–pelaku–penyembuh" dan sejenisnya.</li>
+<li><b>Mobilisasi ≠ wewenang Menhan.</b> Mobilisasi Komcad ditetapkan <b>Presiden</b> (UU 23/2019 Pasal 63), bukan Menteri Pertahanan atau KSAD. Demobilisasi malah butuh <b>persetujuan DPR</b> — jangan tertukar!</li>
+<li><b>TNI vs Polri — jangan tertukar UU-nya:</b> UU <b>34/2004</b> = TNI (pertahanan); UU <b>2/2002</b> = Polri (keamanan). Pengecoh umum menukar keduanya, termasuk soal pengangkatan Panglima TNI vs Kapolri.</li>
+<li><b>Peradilan militer vs peradilan umum:</b> prajurit TNI tunduk pada <b>peradilan militer</b>, sedangkan anggota Polri tunduk pada <b>peradilan umum</b>. Opsi pengecoh sering membaliknya.</li>
+<li><b>Spionase vs sabotase:</b> spionase = <b>mencuri/membocorkan informasi</b> (mata-mata); sabotase = <b>merusak/menghancurkan</b> fasilitas. Keduanya ancaman nonmiliter, bukan agresi militer.</li>
 </ol></div>
 <div class="key">🔑 <b>Hafalan cepat:</b> 5 nilai: <b>"Ci-Ka-Se-Re-Ka"</b> (<b>Ci</b>nta tanah air, <b>Ka</b>sadaran berbangsa, <b>Se</b>tia Pancasila, <b>Re</b>la berkorban, <b>Ka</b>mampuan awal). Komponen: <b>U-C-D</b> (<b>U</b>tama=TNI, <b>C</b>adangan=Komcad, <b>D</b>ukung=SD nasional). Fungsi: <b>"Tangkal–Tindak–Pulih"</b>. UU: <b>3/2002</b> pertahanan, <b>23/2019</b> Komcad.</div>
 `},
@@ -717,7 +923,67 @@ window.MAT_TWK = [
 <li><p><b>Soal:</b> Agresi Militer Belanda II (19 Desember 1948) memicu dibentuknya…</p><p><b>Jawaban: PDRI (Pemerintah Darurat RI) di Bukittinggi pimpinan Sjafruddin Prawiranegara.</b> Pembahasan: Dibentuk karena Soekarno–Hatta ditawan Belanda.</li>
 <li><p><b>Soal:</b> Dekrit Presiden 5 Juli 1959 berisi…</p><p><b>Jawaban: Pembubaran Konstituante, berlakunya kembali UUD 1945, dan pembentukan MPRS & DPAS.</b> Pembahasan: Dekrit mengakhiri Demokrasi Liberal dan memulai Demokrasi Terpimpin.</li>
 <li><p><b>Soal:</b> Serangan Umum 1 Maret 1949 dipimpin oleh…</p><p><b>Jawaban: Letkol Soeharto.</b> Pembahasan: Atas perintah Sri Sultan Hamengkubuwono IX; Yogyakarta direbut selama 6 jam untuk menunjukkan eksistensi RI kepada dunia.</li>
+<ol>
+<li><p><b>Soal:</b> Jalan Raya Pos Anyer–Panarukan sepanjang ±1.000 km dibangun pada masa Gubernur Jenderal…</p><p><b>Jawaban: Herman Willem Daendels (1808–1811).</b> Pembahasan: Dibangun dengan kerja rodi (kerja paksa); tujuan utamanya militer — mempertahankan Jawa dari serangan Inggris.</p></li>
+<li><p><b>Soal:</b> Trilogi politik etis yang dicanangkan tahun 1901 adalah…</p><p><b>Jawaban: Irigasi, emigrasi, edukasi.</b> Pembahasan: Dicetuskan C.Th. van Deventer (<i>Een Eereschuld</i>, 1899); dicanangkan resmi lewat pidato Ratu Wilhelmina 17 September 1901.</p></li>
+<li><p><b>Soal:</b> Volksraad yang dibentuk tahun 1918 pada hakikatnya adalah…</p><p><b>Jawaban: Lembaga penasihat Gubernur Jenderal, bukan parlemen berdaulat.</b> Pembahasan: Volksraad hanya boleh memberi nasihat/usul, tidak berhak mengambil keputusan — pengecoh umum menyebutnya "parlemen Hindia Belanda".</p></li>
+<li><p><b>Soal:</b> Kongres Pemuda I tahun 1926 diketuai oleh…</p><p><b>Jawaban: Mohammad Tabrani.</b> Pembahasan: Berlangsung 30 April–2 Mei 1926 di Jakarta; Tabrani adalah pengusul pertama istilah "Bahasa Indonesia".</p></li>
+<li><p><b>Soal:</b> Petisi Sutardjo (1936) menuntut… dan berakhir dengan…</p><p><b>Jawaban: Otonomi Indonesia dalam Kerajaan Belanda; ditolak Ratu Belanda pada 16 November 1938.</b> Pembahasan: Diajukan di Volksraad 15 Juli 1936; penolakannya memicu pembentukan GAPI (1939).</p></li>
+<li><p><b>Soal:</b> Organisasi militer bentukan Jepang pada 3 Oktober 1943 atas usul Gatot Mangkupraja adalah…</p><p><b>Jawaban: PETA (Pembela Tanah Air).</b> Pembahasan: Disahkan lewat Osamu Seirei No. 44; tentara sukarela berpimpinan pribumi yang kelak melahirkan perwira TNI.</p></li>
+<li><p><b>Soal:</b> BPUPKI dibentuk pada 29 April 1945 dan diketuai oleh…</p><p><b>Jawaban: Dr. K.R.T. Radjiman Wedyodiningrat.</b> Pembahasan: Nama Jepangnya <i>Dokuritsu Junbi Cosakai</i>; sidang I (29 Mei–1 Juni 1945) membahas dasar negara — 1 Juni 1945 Soekarno mengusulkan Pancasila.</p></li>
+<li><p><b>Soal:</b> Piagam Jakarta dirumuskan pada 22 Juni 1945 oleh…</p><p><b>Jawaban: Panitia Sembilan.</b> Pembahasan: 7 kata tentang kewajiban menjalankan syariat Islam di sila pertama dihapus pada 18 Agustus 1945 saat UUD 1945 disahkan PPKI.</p></li>
+<li><p><b>Soal:</b> Konferensi Asia-Afrika 1955 menghasilkan…</p><p><b>Jawaban: Dasasila Bandung.</b> Pembahasan: 18–24 April 1955 di Gedung Merdeka Bandung; 29 negara; 10 prinsip hubungan internasional; Indonesia diuntungkan dengan dukungan soal Irian Barat.</p></li>
+<li><p><b>Soal:</b> Perjanjian New York 15 Agustus 1962 mengatur…</p><p><b>Jawaban: Penyerahan Irian Barat dari Belanda ke Indonesia melalui UNTEA.</b> Pembahasan: UNTEA memegang Irian Barat lalu menyerahkannya ke Indonesia pada 1 Mei 1963; dikukuhkan lewat Pepera 1969.</p></li>
 </ol>
+</ol>
+<h3>Tabel Fakta Kilat</h3>
+<table><tr><th>Tahun</th><th>Peristiwa</th><th>Detail kunci</th></tr>
+<tr><td><b>1808–1811</b></td><td><b>Daendels</b> (Gubernur Jenderal, utusan Napoleon)</td><td>Bangun <b>Jalan Raya Pos (De Grote Postweg) Anyer–Panarukan ±1.000 km</b> dengan <b>kerja rodi</b>; tujuan militer (hadapi Inggris) &amp; logistik kopi Priangan</td></tr>
+<tr><td><b>1901</b></td><td><b>Politik Etis</b> (politik balas budi)</td><td>Dicanangkan <b>Ratu Wilhelmina 17 September 1901</b>; pencetus <b>C.Th. van Deventer</b> lewat artikel <i>Een Eereschuld</i> (1899); trilogi: <b>irigasi, emigrasi, edukasi</b></td></tr>
+<tr><td><b>1918</b></td><td><b>Volksraad</b> (Dewan Rakyat)</td><td>Resmi berdiri <b>18 Mei 1918</b>; hanya <b>lembaga penasihat</b> (bukan parlemen sungguhan); ketua pertama <b>Dr. J.C. Koningeberger</b>; bubar saat Jepang masuk 1942</td></tr>
+<tr><td><b>1926</b></td><td><b>Kongres Pemuda I</b> (30 Apr–2 Mei, Jakarta)</td><td>Ketua <b>Mohammad Tabrani</b>; membahas persatuan pemuda; Tabrani mengusulkan istilah <b>"Bahasa Indonesia"</b> sebagai bahasa persatuan</td></tr>
+<tr><td><b>1933</b></td><td><b>Peristiwa Kapal Tujuh Provinsi</b></td><td>Pemberontakan awak kapal perang Belanda <i>De Zeven Provincien</i> pada <b>5 Februari 1933</b> karena pemotongan gaji</td></tr>
+<tr><td><b>1936</b></td><td><b>Petisi Sutardjo</b></td><td>Diajukan <b>Sutardjo Kartohadikusumo</b> di Volksraad <b>15 Juli 1936</b>: menuntut <b>otonomi</b> Indonesia dalam Kerajaan Belanda; disetujui Volksraad (26 vs 20) tapi <b>ditolak Ratu Belanda 16 November 1938</b></td></tr>
+<tr><td><b>1939</b></td><td><b>GAPI</b> (Gabungan Politik Indonesia)</td><td>Dibentuk <b>21 Mei 1939</b> sebagai reaksi atas ditolaknya Petisi Sutardjo; tuntutan: <b>"Indonesia Berparlemen"</b></td></tr>
+<tr><td><b>1943</b></td><td><b>PETA</b> (Pembela Tanah Air)</td><td>Dibentuk <b>3 Oktober 1943</b> (Osamu Seirei No. 44) atas usul <b>Gatot Mangkupraja</b>; tentara sukarela pimpinan pribumi; tingkatan: Daidancho, Cudancho, Shodancho, Budancho, Giyuhei</td></tr>
+<tr><td><b>1943</b></td><td><b>Putera</b> (Pusat Tenaga Rakyat)</td><td>Dibentuk Jepang <b>16 April 1943</b>; dipimpin <b>Empat Serangkai</b>: Soekarno, Hatta, Ki Hajar Dewantara, K.H. Mas Mansur</td></tr>
+<tr><td><b>1944</b></td><td><b>Janji Kemerdekaan Koiso</b></td><td>PM Jepang <b>Kuniaki Koiso</b> menjanjikan kemerdekaan Indonesia pada <b>7 September 1944</b> (setelah kekalahan Jepang makin nyata)</td></tr>
+<tr><td><b>1945</b></td><td><b>Pemberontakan PETA Blitar</b></td><td><b>14 Februari 1945</b>; dipimpin <b>Shodanco Supriyadi</b>; pemberontakan bersenjata pribumi terbesar terhadap Jepang; Supriyadi menghilang dan diakui pahlawan nasional</td></tr>
+<tr><td><b>1945</b></td><td><b>BPUPKI</b> dibentuk</td><td><b>29 April 1945</b> (Jepang: <i>Dokuritsu Junbi Cosakai</i>); ketua <b>Radjiman Wedyodiningrat</b>; 62 anggota Indonesia + 7 anggota istimewa Jepang (tanpa hak suara)</td></tr>
+<tr><td><b>1945</b></td><td><b>Sidang BPUPKI I</b> (29 Mei–1 Juni)</td><td>Membahas dasar negara: <b>M. Yamin (29 Mei)</b>, <b>Soepomo (31 Mei)</b>, <b>Soekarno (1 Juni)</b> mengusulkan <b>Pancasila</b> — diperingati Hari Lahir Pancasila</td></tr>
+<tr><td><b>1945</b></td><td><b>Piagam Jakarta</b></td><td><b>22 Juni 1945</b> oleh <b>Panitia Sembilan</b>; memuat 7 kata "dengan kewajiban menjalankan syariat Islam" yang <b>dihapus pada 18 Agustus 1945</b></td></tr>
+<tr><td><b>1945</b></td><td><b>PPKI</b> dibentuk</td><td><b>7 Agustus 1945</b> (Jepang: <i>Dokuritsu Junbi Inkai</i>); tugas mempersiapkan kemerdekaan; sidang <b>18 Agustus</b>: mengesahkan UUD 1945 dan memilih Soekarno–Hatta</td></tr>
+<tr><td><b>1948</b></td><td><b>Pemberontakan PKI Madiun</b></td><td><b>18 September 1948</b>; dipimpin <b>Musso</b>; ditumpas TNI di bawah Nasution–Soedirman</td></tr>
+<tr><td><b>1954</b></td><td><b>Konferensi Kolombo</b></td><td>Pertemuan 5 negara (Indonesia, India, Pakistan, Sri Lanka, Burma) — cikal bakal Konferensi Asia-Afrika</td></tr>
+<tr><td><b>1955</b></td><td><b>KAA Bandung</b></td><td><b>18–24 April 1955</b> di Gedung Merdeka; <b>29 negara</b> Asia-Afrika; ketua <b>Ali Sastroamidjojo</b>; hasil: <b>Dasasila Bandung</b> (10 prinsip); Indonesia dapat dukungan soal Irian Barat</td></tr>
+<tr><td><b>1961</b></td><td><b>Trikora</b></td><td>Diumumkan Soekarno <b>19 Desember 1961</b>; Komando Mandala dibentuk <b>11 Januari 1962</b> dipimpin <b>Mayjen Soeharto</b></td></tr>
+<tr><td><b>1962</b></td><td><b>Pertempuran Laut Aru</b></td><td><b>15 Januari 1962</b>; <b>KRI Macan Tutul</b> ditenggelamkan Belanda; gugur <b>Komodor Yos Sudarso</b> ("Kobarkan semangat pertempuran")</td></tr>
+<tr><td><b>1962</b></td><td><b>Perjanjian New York</b></td><td><b>15 Agustus 1962</b>; Belanda menyerahkan Irian Barat lewat <b>UNTEA</b>; <b>1 Mei 1963</b> diserahkan ke Indonesia; Pepera 1969 mengukuhkan integrasi</td></tr>
+<tr><td><b>1999</b></td><td><b>Referendum Timor Timur</b></td><td><b>30 Agustus 1999</b>; mayoritas memilih merdeka dari Indonesia</td></tr>
+<tr><td><b>2002</b></td><td><b>Timor Leste merdeka</b></td><td><b>20 Mei 2002</b>; presiden pertama <b>Xanana Gusmao</b>; menjadi negara termuda Asia Tenggara</td></tr>
+</table>
+<h3>Istilah & Tokoh Kunci</h3>
+<ul>
+<li><b>Politik etis</b> — politik balas budi Belanda (1901); trilogi irigasi, emigrasi, edukasi; pencetusnya C.Th. van Deventer lewat tulisan <i>Een Eereschuld</i> (1899).</li>
+<li><b>Volksraad</b> — Dewan Rakyat Hindia Belanda (1918–1942); hanya badan penasihat Gubernur Jenderal, bukan parlemen berdaulat; dimanfaatkan kaum kooperatif (Sutardjo, Thamrin, Agus Salim).</li>
+<li><b>Romusha</b> — pekerja paksa sipil pada masa Jepang; ribuan tewas karena kerja berat tanpa upah layak (mis. membangun kubu pertahanan, rel kereta).</li>
+<li><b>Heiho</b> — prajurit pembantu tentara Jepang dari kalangan pribumi; beda dengan romusha (sipil) dan PETA (tentara sukarela berpimpinan pribumi).</li>
+<li><b>PETA (Pembela Tanah Air)</b> — tentara sukarela bentukan Jepang (3 Oktober 1943) atas usul Gatot Mangkupraja; kelak menjadi cikal bakal perwira TNI.</li>
+<li><b>Petisi Sutardjo</b> — usulan otonomi Indonesia dalam Kerajaan Belanda (1936); ditolak 1938; memicu lahirnya GAPI dan tuntutan "Indonesia Berparlemen".</li>
+<li><b>BPUPKI</b> — Badan Penyelidik Usaha-Usaha Persiapan Kemerdekaan Indonesia (Jepang: <i>Dokuritsu Junbi Cosakai</i>); tugasnya menyelidiki dan mempersiapkan dasar negara.</li>
+<li><b>PPKI</b> — Panitia Persiapan Kemerdekaan Indonesia (Jepang: <i>Dokuritsu Junbi Inkai</i>); tugasnya mempersiapkan dan melaksanakan kemerdekaan (mengesahkan UUD, memilih presiden).</li>
+<li><b>Piagam Jakarta</b> — rumusan dasar negara hasil Panitia Sembilan (22 Juni 1945); sila pertama aslinya memuat 7 kata tentang syariat Islam, dihapus sehari setelah proklamasi.</li>
+<li><b>Dasasila Bandung</b> — 10 prinsip hubungan internasional hasil KAA 1955: hormati kedaulatan, tidak intervensi, selesaikan sengketa damai, kerja sama ekonomi-sosial-budaya, hormati HAM sesuai Piagam PBB.</li>
+<li><b>Perjanjian New York</b> — kesepakatan Indonesia-Belanda (15 Agustus 1962) dengan penengah AS (Ellsworth Bunker); mengatur penyerahan Irian Barat via UNTEA ke Indonesia (1 Mei 1963).</li>
+<li><b>C.Th. van Deventer (1860–1927)</b> — tokoh Belanda pencetus politik etis; artikelnya <i>Een Eereschuld</i> (1899) menagih "utang kehormatan" Belanda kepada pribumi.</li>
+<li><b>Sutardjo Kartohadikusumo (1892–1976)</b> — anggota Volksraad pengusul Petisi Sutardjo (1936); tokoh kaum kooperatif; kelak menjadi pejabat pada masa Jepang dan RI.</li>
+<li><b>Mohammad Tabrani (1904–1984)</b> — ketua Kongres Pemuda I (1926); wartawan yang pertama mengusulkan istilah "Bahasa Indonesia" (1925).</li>
+<li><b>Radjiman Wedyodiningrat (1879–1952)</b> — ketua BPUPKI; dokter dan tokoh Budi Utomo; anggota PPKI.</li>
+<li><b>Muhammad Yamin (1903–1962)</b> — pengusul rumusan dasar negara pada sidang BPUPKI <b>29 Mei 1945</b>; juga tokoh Sumpah Pemuda dan perumus bahasa.</li>
+<li><b>Soepomo (1903–1958)</b> — pengusul dasar negara pada sidang BPUPKI <b>31 Mei 1945</b>; arsitek UUD 1945; Menteri Kehakiman pertama.</li>
+<li><b>Ahmad Soebardjo (1896–1978)</b> — anggota PPKI; ikut merumuskan teks proklamasi; <b>Menteri Luar Negeri pertama RI</b>.</li>
+<li><b>Supriyadi (1923–1945?)</b> — Shodanco PETA pemimpin pemberontakan Blitar 14 Februari 1945; menghilang tanpa jejak; diakui pahlawan nasional (Keppres 63/1975).</li>
+</ul>
 <div class="warn">⚠️ <b>Jebakan umum:</b><ol>
 <li><b>Tahun VOC vs Belanda tiba:</b> Belanda tiba 1596 (de Houtman); <b>VOC berdiri 1602</b>. Opsi sering menukar keduanya.</li>
 <li><b>Sarekat Islam:</b> berdiri 1911 sebagai Sarekat Dagang Islam, menjadi Sarekat Islam 1912. Pengecoh: "1908" atau "1905".</li>
@@ -725,6 +991,10 @@ window.MAT_TWK = [
 <li><b>10 November vs 5 Oktober:</b> 10 Nov 1945 = Pertempuran Surabaya (Hari Pahlawan); 5 Okt 1945 = TKR dibentuk (Hari TNI). Sering ditukar!</li>
 <li><b>RIS vs NKRI:</b> 27 Des 1949 = pengakuan kedaulatan & RIS; 17 Agt 1950 = kembali ke NKRI. Jangan tertukar tahunnya.</li>
 <li><b>Supersemar:</b> 11 Maret 1966 (Surat Perintah Sebelas Maret) — pengecoh umum "11 Maret 1965" atau "1 Maret 1966".</li>
+<li><b>Daendels vs Raffles:</b> Daendels = 1808–1811 (Jalan Raya Pos Anyer–Panarukan, kerja rodi); Raffles = 1811–1816 (Inggris, <i>History of Java</i>). Pengecoh menukar tahun dan kebijakannya.</li>
+<li><b>PETA vs Heiho vs Romusha:</b> PETA = tentara sukarela pimpinan pribumi; Heiho = prajurit pembantu tentara Jepang; Romusha = pekerja paksa sipil. Tiga-tiganya bentukan Jepang — perannya wajib dibedakan!</li>
+<li><b>BPUPKI vs PPKI:</b> BPUPKI = menyelidiki/mempersiapkan <b>dasar negara</b> (29 April 1945); PPKI = mempersiapkan dan melaksanakan <b>kemerdekaan</b> (7 Agustus 1945, mengesahkan UUD). Tugasnya sering tertukar.</li>
+<li><b>Piagam Jakarta 22 Juni 1945 ≠ UUD 1945:</b> pengecoh menyatakan "7 kata Piagam Jakarta tetap tercantum dalam UUD 1945" — salah, 7 kata tersebut <b>dihapus pada 18 Agustus 1945</b>.</li>
 </ol></div>
 <div class="key">🔑 <b>Hafalan cepat:</b> Asing: <b>"P-V-I-J"</b> (<b>P</b>ortugis 1511, <b>V</b>OC 1602, <b>I</b>nggris 1811, <b>J</b>epang 1942). Organisasi: <b>"BU-SI-IP-PNI"</b> (1908-1911/12-1912-1927). Proklamasi: <b>16</b> Rengasdengklok → <b>17</b> proklamasi → <b>18</b> PPKI. Agresi: <b>21-7-47</b> & <b>19-12-48</b>. Era: <b>OrLa 45–66, OrBa 66–98, Reformasi 98–now</b>.</div>
 `},
@@ -861,7 +1131,66 @@ window.MAT_TWK = [
 <li><p><b>Soal:</b> Gatra yang termasuk trigatra adalah…</p><p><b>Jawaban: Geografi, demografi, dan sumber daya alam.</b> Pembahasan: Trigatra = 3 gatra alamiah; pancagatra = 5 gatra sosial (ideologi, politik, ekonomi, sosbud, hankam).</li>
 <li><p><b>Soal:</b> Pulau Sipadan dan Ligitan lepas ke Malaysia berdasarkan…</p><p><b>Jawaban: Putusan Mahkamah Internasional (ICJ) 17 Desember 2002.</b> Pembahasan: Indonesia kalah dalam sengketa di ICJ.</li>
 <li><p><b>Soal:</b> Perbedaan geopolitik dan geostrategi adalah…</p><p><b>Jawaban: Geopolitik = ilmu/kajian hubungan geografi dan politik kekuasaan; geostrategi = strategi pelaksanaannya untuk mencapai tujuan nasional.</b> Pembahasan: Wawasan Nusantara adalah geopolitik Indonesia.</li>
+<ol>
+<li><p><b>Soal:</b> Dasar hukum kegiatan sosialisasi Empat Pilar MPR RI adalah…</p><p><b>Jawaban: UU 17/2014 jo UU 42/2014 (UU MD3).</b> Pembahasan: Empat pilar adalah program sosialisasi MPR RI, bukan Tap MPR — opsi "Tap MPR" adalah pengecoh.</p></li>
+<li><p><b>Soal:</b> UNCLOS 1982 diratifikasi Indonesia dengan…</p><p><b>Jawaban: UU 17/1985.</b> Pembahasan: UNCLOS ditandatangani di Montego Bay, Jamaika (1982), lalu diratifikasi Indonesia tiga tahun kemudian.</p></li>
+<li><p><b>Soal:</b> Di Zona Ekonomi Eksklusif (ZEE) Indonesia memiliki…</p><p><b>Jawaban: Hak berdaulat (sovereign rights) atas eksplorasi dan eksploitasi SDA, bukan kedaulatan penuh.</b> Pembahasan: Kedaulatan penuh hanya berlaku di laut teritorial 12 mil.</p></li>
+<li><p><b>Soal:</b> Negara yang berbatasan darat langsung dengan Indonesia adalah…</p><p><b>Jawaban: Malaysia, Papua Nugini, dan Timor Leste.</b> Pembahasan: Hanya tiga negara; selebihnya berbatasan laut (total 10 negara tetangga laut).</p></li>
+<li><p><b>Soal:</b> MoU Helsinki (15 Agustus 2005) mengakhiri konflik…</p><p><b>Jawaban: Konflik Aceh antara pemerintah RI dan GAM.</b> Pembahasan: GAM didirikan Hasan di Tiro (1976); jangan tertukar dengan OPM atau RMS.</p></li>
+<li><p><b>Soal:</b> Jumlah provinsi di Indonesia saat ini adalah…</p><p><b>Jawaban: 38 provinsi.</b> Pembahasan: Bertambah 4 DOB di Papua pada 2022 (Papua Selatan, Papua Tengah, Papua Pegunungan, Papua Barat Daya); bukan 34 lagi.</p></li>
+<li><p><b>Soal:</b> Gubernur menerima pelimpahan wewenang sebagai wakil pemerintah pusat di daerah. Asas ini disebut…</p><p><b>Jawaban: Dekonsentrasi.</b> Pembahasan: Dekonsentrasi = pelimpahan ke gubernur selaku wakil pusat; desentralisasi = penyerahan urusan ke daerah otonom.</p></li>
+<li><p><b>Soal:</b> Sumpah Palapa diucapkan Gajah Mada pada tahun…</p><p><b>Jawaban: 1336.</b> Pembahasan: Sumpah untuk tidak menikmati palapa sebelum Nusantara bersatu di bawah Majapahit.</p></li>
+<li><p><b>Soal:</b> Zona tambahan (contiguous zone) selebar 24 mil diukur dari…</p><p><b>Jawaban: Garis pangkal kepulauan.</b> Pembahasan: Bukan 24 mil di luar batas teritorial — pengukurannya tetap dari garis pangkal.</p></li>
+<li><p><b>Soal:</b> Perbedaan mendasar negara kesatuan dan negara serikat (federal) adalah…</p><p><b>Jawaban: Negara kesatuan hanya punya satu konstitusi; negara serikat tiap negara bagiannya punya konstitusi sendiri.</b> Pembahasan: Indonesia pernah berbentuk serikat (RIS, 1949–1950) sebelum kembali ke NKRI.</p></li>
 </ol>
+</ol>
+<h3>Tabel Fakta Kilat — Tambahan</h3>
+<table><tr><th>Fakta</th><th>Detail</th></tr>
+<tr><td><b>Dasar hukum 4 pilar</b></td><td>Program <b>sosialisasi MPR RI</b>; dasar hukum <b>UU 17/2014 jo UU 42/2014</b> (UU MD3) + <b>Inpres 6/2005</b> — <b>BUKAN Tap MPR</b>, waspadai pengecoh</td></tr>
+<tr><td><b>UNCLOS 1982</b></td><td>Konvensi PBB tentang Hukum Laut; ditandatangani di <b>Montego Bay, Jamaika</b>; diratifikasi Indonesia dengan <b>UU 17/1985</b></td></tr>
+<tr><td><b>Laut teritorial 12 mil</b></td><td>Berlaku <b>kedaulatan PENUH</b> Indonesia; diukur dari <b>garis pangkal kepulauan</b> (konsep Deklarasi Djuanda)</td></tr>
+<tr><td><b>Zona tambahan 24 mil</b></td><td>Bukan kedaulatan; untuk <b>pengawasan bea cukai, fiskal, imigrasi, dan sanitasi</b>; diukur dari garis pangkal</td></tr>
+<tr><td><b>ZEE 200 mil</b></td><td>Indonesia hanya punya <b>HAK BERDAULAT</b> (<i>sovereign rights</i>) atas eksplorasi & eksploitasi SDA — bukan kedaulatan penuh</td></tr>
+<tr><td><b>Landas kontinen</b></td><td>Hingga <b>200 mil</b> dari garis pangkal; dapat diperpanjang sampai <b>350 mil</b></td></tr>
+<tr><td><b>Jumlah pulau</b></td><td><b>17.380 pulau</b> (data BIG 2024; bertambah 63 dari 17.374 pada 2023); <b>16.056</b> pulau disubmisi ke PBB (2018)</td></tr>
+<tr><td><b>Jumlah provinsi</b></td><td><b>38 provinsi</b> (sejak 2022; bertambah 4 DOB di Papua: Papua Selatan, Papua Tengah, Papua Pegunungan, Papua Barat Daya)</td></tr>
+<tr><td><b>Suku & bahasa</b></td><td><b>1.340 suku bangsa</b> (BPS); <b>729 bahasa daerah</b> (Badan Bahasa, per Agustus 2026) — terbanyak ke-2 di dunia setelah Papua Nugini</td></tr>
+<tr><td><b>Tetangga darat</b></td><td><b>3 negara</b>: Malaysia (Kalimantan), Papua Nugini, Timor Leste</td></tr>
+<tr><td><b>Tetangga laut</b></td><td><b>10 negara</b>: India, Thailand, Malaysia, Singapura, Vietnam, Filipina, Palau, Papua Nugini, Australia, Timor Leste</td></tr>
+<tr><td><b>Garis pangkal kepulauan</b></td><td>Garis dasar penarikan batas laut; menghubungkan titik-titik terluar pulau-pulau Indonesia (konsep Deklarasi Djuanda)</td></tr>
+<tr><td><b>OPM</b></td><td><b>Organisasi Papua Merdeka</b>; gerakan separatis di Papua sejak <b>1965</b></td></tr>
+<tr><td><b>RMS</b></td><td><b>Republik Maluku Selatan</b>; diproklamasikan <b>25 April 1950</b> oleh dr. Chr. Soumokil; ditumpas pada 1950</td></tr>
+<tr><td><b>GAM</b></td><td><b>Gerakan Aceh Merdeka</b>; didirikan <b>4 Desember 1976</b> oleh Hasan di Tiro; berakhir lewat <b>MoU Helsinki 15 Agustus 2005</b></td></tr>
+<tr><td><b>Astagatra (ringkas)</b></td><td><b>8 gatra</b> ketahanan nasional: 3 trigatra alamiah (geografi, demografi, SDA) + 5 pancagatra sosial (ideologi, politik, ekonomi, sosbud, hankam); model <b>Lemhannas RI</b></td></tr>
+<tr><td><b>Negara kesatuan</b></td><td><b>Satu konstitusi</b>, satu kepala negara, satu pemerintahan pusat; daerah berotonomi tetapi <b>tidak berdaulat</b></td></tr>
+<tr><td><b>Negara serikat/federal</b></td><td>Anggota (negara bagian) punya <b>konstitusi & pemerintahan sendiri</b>; contoh: AS, Malaysia; Indonesia pernah: <b>RIS 1949–1950</b></td></tr>
+<tr><td><b>Konfederasi</b></td><td>Gabungan <b>negara-negara berdaulat</b> yang bekerja sama; tiap anggota tetap berdaulat penuh — berbeda dari federasi</td></tr>
+<tr><td><b>Desentralisasi</b></td><td>Penyerahan urusan pemerintahan dari pusat kepada <b>daerah otonom</b> (UU 23/2014); memperkuat NKRI, <b>bukan</b> federalisme</td></tr>
+<tr><td><b>Dekonsentrasi</b></td><td>Pelimpahan wewenang pemerintah pusat kepada <b>gubernur sebagai WAKIL pemerintah pusat</b> di daerah</td></tr>
+<tr><td><b>Tugas pembantuan</b></td><td>Penugasan dari pemerintah (pusat/provinsi) kepada daerah untuk melaksanakan <b>sebagian urusan pemerintahan</b></td></tr>
+<tr><td><b>DOB</b></td><td><b>Daerah Otonom Baru</b>; hasil pemekaran wilayah dengan syarat UU 23/2014 (contoh: 4 provinsi baru di Papua)</td></tr>
+<tr><td><b>Kedaulatan vs hak berdaulat</b></td><td><b>Kedaulatan penuh</b> hanya di laut teritorial 12 mil; di ZEE Indonesia hanya punya <b>hak berdaulat</b> atas SDA</td></tr>
+</table>
+<h3>Istilah & Tokoh Kunci — Tambahan</h3>
+<ul>
+<li><b>Nasionalisme</b> — paham cinta tanah air; menempatkan kepentingan bangsa di atas kepentingan pribadi/golongan.</li>
+<li><b>Chauvinisme</b> — nasionalisme BERLEBIHAN yang merendahkan bangsa lain; lawan dari nasionalisme yang sehat.</li>
+<li><b>Separatisme</b> — gerakan sekelompok orang untuk memisahkan diri dari NKRI (contoh: OPM, RMS, GAM).</li>
+<li><b>Integrasi nasional</b> — proses penyatuan berbagai kelompok sosial-budaya menjadi satu kesatuan bangsa yang utuh.</li>
+<li><b>Desentralisasi</b> — penyerahan wewenang/urusan pemerintahan dari pemerintah pusat kepada daerah otonom.</li>
+<li><b>Dekonsentrasi</b> — pelimpahan wewenang pemerintah pusat kepada gubernur selaku wakil pemerintah pusat di daerah.</li>
+<li><b>Tugas pembantuan</b> (<i>medebewind</i>) — penugasan pusat kepada daerah (atau provinsi ke kab/kota) untuk melaksanakan sebagian urusan pemerintahan.</li>
+<li><b>Archipelagic state</b> — negara kepulauan; status Indonesia yang diakui UNCLOS 1982 berkat perjuangan diplomasi sejak Deklarasi Djuanda.</li>
+<li><b>Sumpah Palapa</b> — sumpah Gajah Mada (<b>1336</b>) untuk tidak menikmati <i>palapa</i> (kesenangan) sebelum Nusantara bersatu di bawah Majapahit.</li>
+<li><b>Bhinneka Tunggal Ika</b> — pecahan kata: <i>bhinneka</i> (beraneka), <i>tunggal</i> (satu), <i>ika</i> (itu); semboyan negara (Pasal 36A UUD 1945).</li>
+<li><b>Kedaulatan</b> (<i>sovereignty</i>) — kekuasaan penuh atas wilayah; bedakan dengan <b>hak berdaulat</b> (<i>sovereign rights</i>) yang hanya atas SDA di ZEE.</li>
+<li><b>Konfederasi</b> — perserikatan negara-negara berdaulat; tiap anggota mempertahankan kedaulatannya, berbeda dari negara federal.</li>
+<li><b>Otonomi daerah</b> — hak, wewenang, dan kewajiban daerah otonom mengatur urusan pemerintahannya sendiri (UU 23/2014); wujud desentralisasi dalam NKRI.</li>
+<li><b>Wawasan kebangsaan</b> — cara pandang bangsa Indonesia tentang jati diri dan lingkungannya; diwujudkan lewat pengamalan 4 pilar kebangsaan.</li>
+<li><b>Ir. Djuanda Kartawidjaja</b> — Perdana Menteri pencetus <b>Deklarasi Djuanda (13 Desember 1957)</b>; Hari Nusantara diperingati setiap 13 Desember.</li>
+<li><b>Mochtar Kusumaatmadja</b> — Menteri Luar Negeri (<b>1978–1988</b>); tokoh diplomasi perjuangan konsep negara kepulauan di forum hukum laut internasional.</li>
+<li><b>Hasjim Djalal</b> — diplomat Indonesia; perunding utama Indonesia dalam Konferensi PBB tentang Hukum Laut (UNCLOS III) hingga lahirnya UNCLOS 1982.</li>
+</ul>
 <div class="warn">⚠️ <b>Jebakan umum:</b><ol>
 <li><b>Trigatra vs pancagatra:</b> trigatra = alamiah (geografi, demografi, SDA); pancagatra = sosial. Pengecoh memasukkan "politik" ke trigatra.</li>
 <li><b>Deklarasi Djuanda:</b> 13 Desember <b>1957</b> — pengecoh "1955" atau "1945". Tokohnya <b>Djuanda Kartawidjaja</b>, bukan Soekarno.</li>
@@ -869,6 +1198,10 @@ window.MAT_TWK = [
 <li><b>Sipadan–Ligitan:</b> sudah <b>lepas</b> (2002), bukan "masih disengketakan". Yang masih sengketa = <b>Ambalat</b>.</li>
 <li><b>Bhinneka Tunggal Ika</b> dari Kitab <b>Sutasoma</b> (Mpu Tantular) — bukan Negarakertagama (itu karya Mpu Prapanca).</li>
 <li><b>NKRI "harga mati"</b> — bentuk negara kesatuan <b>tidak dapat diubah</b> bahkan lewat amandemen (kesepakatan dasar amandemen).</li>
+<li><b>Empat pilar:</b> pengecoh "ditetapkan Tap MPR I/2003" — tidak ada Tap MPR semacam itu; empat pilar adalah <b>program sosialisasi MPR RI</b> berdasarkan <b>UU 17/2014</b>.</li>
+<li><b>ZEE 200 mil = hak berdaulat, BUKAN kedaulatan penuh.</b> Kedaulatan penuh hanya di laut teritorial <b>12 mil</b>. Opsi yang menyamakan keduanya adalah salah.</li>
+<li><b>38 provinsi, bukan 34.</b> Empat DOB Papua (2022): Papua Selatan, Papua Tengah, Papua Pegunungan, Papua Barat Daya — soal terbaru memakai angka 38.</li>
+<li><b>MoU Helsinki 2005 = GAM/Aceh.</b> Jangan tertukar: OPM = Papua (sejak 1965), RMS = Maluku (1950, Soumokil) — ketiganya kasus berbeda.</li>
 </ol></div>
 <div class="key">🔑 <b>Hafalan cepat:</b> 4 pilar: <b>"P-U-N-B"</b> (<b>P</b>ancasila, <b>U</b>UD 1945, <b>N</b>KRI, <b>B</b>hinneka). Trigatra: <b>"GDS"</b> (<b>G</b>eografi, <b>D</b>emografi, <b>S</b>DA). Pancagatra: <b>"I-P-E-S-H"</b> (<b>I</b>deologi, <b>P</b>olitik, <b>E</b>konomi, <b>S</b>osbud, <b>H</b>ankam). Djuanda: <b>13-12-57</b> (ingat <b>Hari Nusantara 13 Desember</b>). Sipadan-Ligitan lepas <b>2002</b>.</div>
 `},
@@ -1056,7 +1389,105 @@ window.MAT_TWK = [
 <li><p><b>Soal:</b> Kalimat tidak efektif: "Para guru-guru menghadiri seminar." Perbaikannya…</p><p><b>Jawaban: "Para guru menghadiri seminar."</b> Pembahasan: "Para" sudah bermakna jamak; penambahan ulang "-guru" melanggar kehematan.</li>
 <li><p><b>Soal:</b> Kongres Bahasa Indonesia pertama diadakan di…</p><p><b>Jawaban: Solo, 25–27 Juni 1938.</b> Pembahasan: Kongres diadakan tiap 5 tahun; yang kedua di Medan (1954), selebihnya di Jakarta.</li>
 <li><p><b>Soal:</b> Bentuk imbuhan yang benar: "memukul" berasal dari kata dasar…</p><p><b>Jawaban: pukul + me- (p luluh menjadi m).</b> Pembahasan: Aturan peluluhan: me- + pukul → memukul (bukan "mempukul"); me- + sapu → menyapu.</li>
+<ol>
+<li><p><b>Soal:</b> Permendikbud Nomor 50 Tahun 2015 menetapkan…</p><p><b>Jawaban: Nama EYD diganti menjadi Ejaan Bahasa Indonesia (EBI/PUEBI).</b> Pembahasan: Pada 2022 nama EYD dikembalikan lewat EYD Edisi V; EBI dihitung sebagai EYD edisi keempat.</p></li>
+<li><p><b>Soal:</b> EYD Edisi V mulai berlaku pada tahun…</p><p><b>Jawaban: 2022.</b> Pembahasan: Ditetapkan lewat Keputusan Kepala Badan Bahasa No. 0424/I/BS.00.01/2022; mengembalikan nama EBI menjadi EYD.</p></li>
+<li><p><b>Soal:</b> KBBI edisi ketiga diterbitkan pada tahun…</p><p><b>Jawaban: 2000.</b> Pembahasan: Waspadai pengecoh 2001; urutan edisi: I 1988, II 1991, III 2000, IV 2008, V 2016, VI 2023.</p></li>
+<li><p><b>Soal:</b> Kamus rujukan bahasa Indonesia yang baku sebelum KBBI terbit adalah…</p><p><b>Jawaban: Kamus Umum Bahasa Indonesia (KUBI, 1953) karya W.J.S. Poerwadarminta.</b> Pembahasan: KUBI dianggap tonggak awal leksikografi bahasa Indonesia.</p></li>
+<li><p><b>Soal:</b> Diftong dalam bahasa Indonesia berjumlah…</p><p><b>Jawaban: 4, yaitu ai, au, ei, oi.</b> Pembahasan: Contoh: pandai, kerbau, survei, amboi; bedakan dengan gugus konsonan (kh, ng, ny, sy).</p></li>
+<li><p><b>Soal:</b> Penulisan yang baku adalah…</p><p><b>Jawaban: Wali kota (dipisah).</b> Pembahasan: Bentuk "walikota" tidak baku; demikian pula "merek" (bukan merk) dan "cinderamata" (bukan cenderamata).</p></li>
+<li><p><b>Soal:</b> Pola kalimat "Dia membaca buku di perpustakaan" adalah…</p><p><b>Jawaban: S-P-O-K.</b> Pembahasan: Dia = subjek, membaca = predikat, buku = objek, di perpustakaan = keterangan.</p></li>
+<li><p><b>Soal:</b> Ungkapan "bagai pinang dibelah dua" termasuk majas…</p><p><b>Jawaban: Simile.</b> Pembahasan: Simile memakai kata pembanding (bagai, seperti, laksana); tanpa kata pembanding menjadi metafora.</p></li>
+<li><p><b>Soal:</b> Gurindam dan karmina termasuk puisi lama yang…</p><p><b>Jawaban: Terdiri atas 2 baris (karmina disebut pantun kilat).</b> Pembahasan: Gurindam bersajak a-a; bedakan dengan pantun (4 baris) dan talibun (6/8/10 baris).</p></li>
+<li><p><b>Soal:</b> "Trigatra Bangun Bahasa" mencakup tiga kebijakan, yaitu…</p><p><b>Jawaban: Mengutamakan bahasa Indonesia, melestarikan bahasa daerah, dan menguasai bahasa asing.</b> Pembahasan: Kebijakan pelindungan bahasa tahun 2026.</p></li>
 </ol>
+</ol>
+<h3>Tabel Fakta Kilat — Tambahan</h3>
+<table><tr><th>Fakta</th><th>Detail</th></tr>
+<tr><td><b>EYD 1987</b></td><td>Penyempurnaan EYD (<b>edisi kedua</b>); Kepmendikbud <b>0543a/U/1987</b></td></tr>
+<tr><td><b>EYD 2009</b></td><td><b>EYD edisi ketiga</b>; Permendiknas <b>46/2009</b> tentang Pedoman Umum EYD</td></tr>
+<tr><td><b>EBI 2015</b></td><td><b>Permendikbud 50/2015</b> mengganti nama EYD menjadi <b>Ejaan Bahasa Indonesia (PUEBI)</b></td></tr>
+<tr><td><b>EYD Edisi V 2022</b></td><td><b>Kembali bernama EYD</b> (berlaku Agustus 2022); EBI dihitung sebagai <b>EYD edisi keempat</b></td></tr>
+<tr><td><b>UU 24/2009</b></td><td>UU Bendera, Bahasa, Lambang Negara, dan Lagu Kebangsaan; bahasa Indonesia <b>WAJIB</b> dipakai dalam dokumen resmi negara & perjanjian dengan pihak asing (harus ada versi bahasa Indonesia)</td></tr>
+<tr><td><b>KUBI 1953</b></td><td><b>Kamus Umum Bahasa Indonesia</b> karya <b>W.J.S. Poerwadarminta</b>; kamus rujukan baku sebelum KBBI terbit</td></tr>
+<tr><td><b>KBBI I 1988</b></td><td>Diluncurkan pada <b>Kongres Bahasa Indonesia V, 28 Oktober 1988</b>; memuat sekitar <b>62.000 lema</b></td></tr>
+<tr><td><b>KBBI II 1991</b></td><td>Sekitar <b>72.000 lema</b></td></tr>
+<tr><td><b>KBBI III 2000</b></td><td>Sekitar <b>78.000 lema</b> — waspadai pengecoh <b>2001</b></td></tr>
+<tr><td><b>KBBI IV 2008</b></td><td>Lebih dari <b>90.000 lema</b></td></tr>
+<tr><td><b>KBBI V 2016</b></td><td>Diluncurkan Mendikbud <b>Muhadjir Effendy, 28 Oktober 2016</b>; sekitar <b>112.000 lema</b>; tersedia daring</td></tr>
+<tr><td><b>KBBI VI 2023</b></td><td>Diluncurkan <b>28 Oktober 2023</b>; sepenuhnya <b>daring</b>; <b>120.465 lema</b>; target edisi cetak 200.000 lema</td></tr>
+<tr><td><b>Huruf</b></td><td><b>26 huruf</b> latin: <b>5 vokal</b> (a, i, u, e, o) + <b>21 konsonan</b></td></tr>
+<tr><td><b>Diftong</b></td><td><b>4</b>: <b>ai, au, ei, oi</b> (contoh: pandai, kerbau, survei, amboi)</td></tr>
+<tr><td><b>Gugus konsonan</b></td><td><b>4</b>: <b>kh, ng, ny, sy</b> (contoh: khusus, nganga, nyata, syarat)</td></tr>
+<tr><td><b>Trigatra Bangun Bahasa</b></td><td>Kebijakan 2026: <b>utamakan bahasa Indonesia, lestarikan bahasa daerah, kuasai bahasa asing</b></td></tr>
+<tr><td><b>Bahasa daerah</b></td><td><b>729 bahasa</b> (Badan Bahasa, Agustus 2026); terbanyak ke-2 di dunia setelah Papua Nugini</td></tr>
+<tr><td><b>Pola kalimat</b></td><td><b>S-P</b> (Dia tertawa), <b>S-P-O</b> (Dia membaca buku), <b>S-P-K</b> (Dia belajar di kamar), <b>S-P-O-K</b> (Dia membaca buku di perpustakaan), <b>S-P-Pel</b> (Dia menjadi guru)</td></tr>
+<tr><td><b>Paragraf ineratif</b></td><td>Kalimat utama di <b>tengah</b> paragraf; melengkapi deduktif (awal), induktif (akhir), dan campuran</td></tr>
+<tr><td><b>Jenis paragraf (isi)</b></td><td><b>Narasi</b> (kisah), <b>deskripsi</b> (gambaran), <b>eksposisi</b> (penjelasan), <b>argumentasi</b> (pendapat + bukti), <b>persuasi</b> (bujukan)</td></tr>
+<tr><td><b>Puisi lama</b></td><td><b>Pantun</b> (4 baris, sampiran-isi, rima a-b-a-b), <b>syair</b> (4 baris isi semua, rima a-a-a-a), <b>gurindam</b> (2 baris), <b>talibun</b> (6/8/10 baris genap), <b>karmina</b> (pantun kilat 2 baris), <b>mantra</b>, <b>seloka</b> (pantun berkait)</td></tr>
+<tr><td><b>Prosa lama</b></td><td><b>Hikayat</b> (kisah rekaan/kenabian), <b>dongeng</b>, <b>mite</b> (makhluk halus/dewa), <b>legenda</b> (asal-usul tempat), <b>fabel</b> (binatang), <b>sage</b> (kepahlawanan)</td></tr>
+<tr><td><b>Tanda baca (lanjutan)</b></td><td><b>Elipsis (...)</b> untuk kalimat terputus; <b>petik tunggal</b> ('...') untuk makna khusus/terjemahan; <b>kurung siku</b> ([...]) untuk koreksi dalam kutipan; <b>apostrof</b> (') untuk penghilangan huruf</td></tr>
+<tr><td><b>Bilangan</b></td><td>Awal kalimat ditulis dengan <b>huruf</b> (<i>Tiga puluh siswa hadir</i>); tingkat: <b>ke-2</b>, <b>abad ke-21</b>; tahun tanpa titik (<b>2026</b>); uang: <b>Rp5.000,00</b></td></tr>
+</table>
+<h3>Majas — 20 Jenis + Contoh</h3>
+<table><tr><th>Majas</th><th>Contoh</th></tr>
+<tr><td><b>Personifikasi</b></td><td>Angin berbisik di telingaku</td></tr>
+<tr><td><b>Metafora</b></td><td>Dia bintang kelas (perbandingan langsung)</td></tr>
+<tr><td><b>Simile</b></td><td>Bagai pinang dibelah dua</td></tr>
+<tr><td><b>Hiperbola</b></td><td>Seribu kali kukatakan padamu</td></tr>
+<tr><td><b>Litotes</b></td><td>Mampirlah ke gubukku yang tak seberapa ini</td></tr>
+<tr><td><b>Ironi</b></td><td>Pintar sekali kamu, sampai dapat nilai nol</td></tr>
+<tr><td><b>Sarkasme</b></td><td>Otakmu encer sekali sampai tumpah ke mana-mana</td></tr>
+<tr><td><b>Sinisme</b></td><td>Wah, rajin sekali kamu belajar... untuk ujian saja</td></tr>
+<tr><td><b>Eufemisme</b></td><td>Tuna karya (penghalusan kata pengangguran)</td></tr>
+<tr><td><b>Paradoks</b></td><td>Sepi di tengah keramaian kota</td></tr>
+<tr><td><b>Oksimoron</b></td><td>Kebisingan yang sunyi</td></tr>
+<tr><td><b>Metonimia</b></td><td>Ia gemar membaca Chairil Anwar (maksudnya karyanya)</td></tr>
+<tr><td><b>Sinekdoke pars pro toto</b></td><td>Batang hidungnya tak tampak (sebagian untuk seluruh)</td></tr>
+<tr><td><b>Sinekdoke totum pro parte</b></td><td>Indonesia menang 2-0 (seluruh untuk sebagian: timnya)</td></tr>
+<tr><td><b>Alegori</b></td><td>Hidup bagaikan roda yang berputar</td></tr>
+<tr><td><b>Repetisi</b></td><td>Dia pergi, dia pergi, dia tak kembali</td></tr>
+<tr><td><b>Anafora</b></td><td>Kami yang lapar, kami yang haus, kami yang menuntut</td></tr>
+<tr><td><b>Pleonasme</b></td><td>Maju ke depan, mundur ke belakang (berlebihan)</td></tr>
+<tr><td><b>Elipsis</b></td><td>Saya makan nasi, adik (makan) roti</td></tr>
+<tr><td><b>Retoris</b></td><td>Siapa yang tidak ingin bahagia? (tak butuh jawaban)</td></tr>
+</table>
+<h3>Kelas Kata — 10 Jenis + Contoh</h3>
+<table><tr><th>Kelas kata</th><th>Contoh</th></tr>
+<tr><td><b>Nomina</b> (kata benda)</td><td>buku, rumah, kejujuran</td></tr>
+<tr><td><b>Verba</b> (kata kerja)</td><td>membaca, berlari, menulis</td></tr>
+<tr><td><b>Adjektiva</b> (kata sifat)</td><td>cantik, tinggi, rajin</td></tr>
+<tr><td><b>Adverbia</b> (kata keterangan)</td><td>sangat, segera, di sini</td></tr>
+<tr><td><b>Pronomina</b> (kata ganti)</td><td>saya, mereka, beliau</td></tr>
+<tr><td><b>Numeralia</b> (kata bilangan)</td><td>satu, kedua, puluhan</td></tr>
+<tr><td><b>Preposisi</b> (kata depan)</td><td>di, ke, dari, pada</td></tr>
+<tr><td><b>Konjungsi</b> (kata sambung)</td><td>dan, atau, tetapi, karena</td></tr>
+<tr><td><b>Interjeksi</b> (kata seru)</td><td>wah, aduh, ayo</td></tr>
+<tr><td><b>Artikula</b> (kata sandang)</td><td>si, sang, para, kaum</td></tr>
+</table>
+<h3>Istilah & Tokoh Kunci — Tambahan</h3>
+<ul>
+<li><b>Fonem</b> — satuan bunyi terkecil yang membedakan makna (contoh: bunyi p dan b pada <i>paku</i>–<i>baku</i>).</li>
+<li><b>Morfem</b> — satuan makna terkecil (contoh: <i>ber-</i> + <i>main</i> = bermain; <i>buku-buku</i>).</li>
+<li><b>Frasa</b> — gabungan dua kata atau lebih yang <b>tidak</b> berpola S-P (contoh: <i>rumah besar</i>, <i>sedang membaca</i>).</li>
+<li><b>Klausa</b> — gabungan kata berpola minimal S-P; dapat berdiri sendiri (klausa bebas) atau tidak (klausa terikat).</li>
+<li><b>Relasi makna</b> — sinonim (persamaan: <i>mati</i> = <i>wafat</i>), antonim (lawan: <i>tinggi</i>–<i>rendah</i>), homonim (sama bunyi/tulis, beda makna: <i>bisa</i> = dapat / <i>bisa</i> = racun), homofon (sama bunyi beda tulis: <i>bang</i>–<i>bank</i>), homograf (sama tulis beda bunyi: <i>apel</i> buah / <i>apel</i> upacara), polisemi (satu kata banyak makna: <i>kepala</i>).</li>
+<li><b>Akronim</b> — singkatan yang dilafalkan sebagai kata: <i>pemilu, rudal, ABRI</i> (tanpa titik; bedakan dengan singkatan <i>S.E.</i>).</li>
+<li><b>Empat pola kata serapan</b> — <b>adopsi</b> (diambil utuh: <i>robot, internet</i>), <b>adaptasi</b> (disesuaikan ejaan: <i>system</i> menjadi <i>sistem</i>), <b>penerjemahan</b> (diterjemahkan: <i>download</i> menjadi <i>unduh</i>), <b>kreasi</b> (diciptakan baru khas Indonesia: <i>gawai</i> untuk <i>gadget</i>).</li>
+<li><b>Kata baku</b> — kata yang sesuai kaidah bahasa Indonesia (lihat tabel kata baku); lawannya kata tidak baku. Tambahan favorit soal: <b>merek</b> (bukan <i>merk</i>), <b>wali kota</b> (dipisah, bukan <i>walikota</i>), <b>cinderamata</b> (bukan <i>cenderamata</i>), <b>khusyuk</b> (bukan <i>khusuk</i>), <b>duta besar</b> (dipisah).</li>
+<li><b>Kalimat efektif</b> — kalimat yang memenuhi 5 syarat: kesepadanan, kehematan, kesejajaran, ketegasan, kelogisan (lihat tabel perbaikan kalimat).</li>
+<li><b>Sutan Takdir Alisjahbana (1908–1994)</b> — sastrawan & pembaharu bahasa; pendiri majalah <b>Pujangga Baru (1933)</b>.</li>
+<li><b>Armijn Pane (1908–1970)</b> — sastrawan Pujangga Baru; roman <b>Belenggu (1940)</b>.</li>
+<li><b>Amir Hamzah (1911–1946)</b> — dijuluki <b>Raja Penyair Pujangga Baru</b>.</li>
+<li><b>Chairil Anwar (1922–1949)</b> — pelopor <b>Angkatan 45</b>; sajak <b>Aku (1943)</b>.</li>
+<li><b>Marah Rusli (1889–1968)</b> — roman <b>Siti Nurbaya (1922)</b>; pelopor roman modern Indonesia.</li>
+<li><b>Abdul Muis (1883–1959)</b> — roman <b>Salah Asuhan (1928)</b>.</li>
+<li><b>Pramoedya Ananta Toer (1925–2006)</b> — novelis; <b>Tetralogi Buru</b> (<i>Bumi Manusia</i>).</li>
+<li><b>W.S. Rendra (1935–2009)</b> — penyair & dramawan; dijuluki <b>Burung Merak</b>.</li>
+<li><b>Gorys Keraf (1936–1997)</b> — ahli bahasa; karya <b>Komposisi</b> serta <b>Diksi dan Gaya Bahasa</b>.</li>
+<li><b>Anton M. Moeliono (1929–2011)</b> — ahli bahasa; ketua tim penyusun <b>KBBI edisi pertama (1988)</b>.</li>
+<li><b>Mohammad Tabrani (1904–1984)</b> — pencetus istilah <b>Bahasa Indonesia</b> pada <b>Kongres Pemuda I (1926)</b>.</li>
+</ul>
 <div class="warn">⚠️ <b>Jebakan umum:</b><ol>
 <li><b>"di" dipisah vs "di-" dirangkai:</b> "di rumah" (kata depan) vs "dibaca" (imbuhan). Trik: kalau bisa diganti "ke/dari", itu kata depan → dipisah.</li>
 <li><b>Kata baku favorit pengecoh:</b> apotek (bukan apotik), risiko (bukan resiko), nasihat (bukan nasehat), izin (bukan ijin), mengubah (bukan merubah).</li>
@@ -1064,6 +1495,10 @@ window.MAT_TWK = [
 <li><b>Tahun EYD:</b> 1972 (bukan 1975/1974). Ejaan Republik: 1947. Van Ophuijsen: 1901.</li>
 <li><b>Kongres I di Solo 1938</b> — pengecoh umum "Jakarta 1938" atau "Medan 1938". Medan = Kongres II (1954).</li>
 <li><b>Pasal 36 UUD 1945</b> = bahasa negara. Pengecoh: Pasal 35 (bendera) atau Pasal 32 (budaya).</li>
+<li><b>KBBI Edisi III = 2000, bukan 2001.</b> Ini pengecoh paling umum; hafalkan urutan: 1988 – 1991 – 2000 – 2008 – 2016 – 2023.</li>
+<li><b>EBI (2015–2022) adalah nama lain EYD edisi keempat.</b> EYD Edisi V (2022) mengembalikan nama EYD — opsi "EYD sudah tidak berlaku sejak 2015" adalah salah kaprah.</li>
+<li><b>Kata baku baru favorit pengecoh:</b> wali kota (dipisah, bukan walikota), merek (bukan merk), cinderamata (bukan cenderamata), khusyuk (bukan khusuk).</li>
+<li><b>Bilangan di awal kalimat ditulis dengan huruf</b> ("Tiga puluh siswa hadir", bukan "30 siswa hadir"); tahun ditulis <b>tanpa</b> titik pemisah (2026, bukan 2.026).</li>
 </ol></div>
 <div class="key">🔑 <b>Hafalan cepat:</b> Ejaan: <b>"V-S-E"</b> (<b>V</b>an Ophuijsen 1901, <b>S</b>oewandi 1947, <b>E</b>YD 1972 → Edisi V 2022). Kongres: <b>I Solo 1938, II Medan 1954</b>, sisanya Jakarta tiap 5 tahun. Baku killer: <b>"ARIAN"</b> (<b>A</b>potek, <b>R</b>isiko, <b>I</b>zin, <b>A</b>sas, <b>N</b>asihat). Kalimat efektif: <b>"Ha-Ka-Ke-Ke-Ke"</b> (<b>ha</b>emat, <b>ka</b>sepadan, <b>ke</b>sejajaran, <b>ke</b>tegasan, <b>ke</b>logisan).</div>
 `}
