@@ -22,7 +22,7 @@ var S={view:"dash"};
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
 function fmtT(s){s=Math.max(0,s);var m=Math.floor(s/60),h=Math.floor(m/60);m=m%60;var ss=s%60;function p(x){return(x<10?"0":"")+x;}return(h>0?p(h)+":":"")+p(m)+":"+p(ss);}
-function head(inner){return '<div class="topbar"><div class="logo">A</div><div class="brand"><b>SiASN</b><span>Latihan SKD CPNS</span></div></div>'+inner;}
+function head(inner){return '<div class="topbar"><div class="logo">'+ICONS.grad+'</div><div class="brand"><b>SiASN</b><span>Latihan SKD CPNS</span></div></div>'+inner;}
 function go(v){
  if(window.Mentor3D&&Mentor3D.active()){
   var cur=(S.view||"").indexOf("mentor")===0,nxt=(v||"").indexOf("mentor")===0;
@@ -32,6 +32,34 @@ function go(v){
 }
 window.go=go;
 
+/* ---------- IKON SVG ---------- */
+var ICONS={
+ pencil:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>',
+ stopwatch:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6M12 2v3"/></svg>',
+ book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>',
+ robot:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="3"/><path d="M12 10V4"/><circle cx="12" cy="3" r="1.2"/><path d="M9.5 14.5h.01M14.5 14.5h.01M9.5 17.5h5"/></svg>',
+ flag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4c4-2.5 8 2.5 12 0v9c-4 2.5-8-2.5-12 0"/></svg>',
+ zap:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>',
+ users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.5c2.6.6 4.5 2.5 5 5.5"/></svg>',
+ chart:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21v-7M11 21V8M16 21v-11M21 21V4"/></svg>',
+ layers:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>',
+ doc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>',
+ bulb:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.4 1 2.3h6c0-.9.4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg>',
+ target:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>',
+ speaker:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>',
+ stop:'<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2.5"/></svg>',
+ chat:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 8.6 8.6 0 0 1-3.8-.9L3 21l2-5.4a8.3 8.3 0 0 1-1-4A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/></svg>',
+ grad:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg>',
+ back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>',
+ check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+ x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>',
+ clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+ flame:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c4.4 0 8-3.2 8-7.5 0-3.2-2.2-5.4-3.8-7C14.6 5.9 13.5 4.5 13 2c-3.2 2-5.2 4.6-5.8 7.2C5.7 10.4 4 12.6 4 14.5 4 18.8 7.6 22 12 22z"/><path d="M12 22c-2 0-3.5-1.4-3.5-3.2 0-1.5 1-2.4 1.9-3.3.7 1 1.6 1.7 1.6 3.3"/></svg>',
+ trophy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 6H4.5A2.5 2.5 0 0 0 7 11M17 6h2.5A2.5 2.5 0 0 1 17 11"/></svg>',
+ chev:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>'
+};
+function ic(n){return '<span class="icn">'+ICONS[n]+'</span>';}
+
 /* ---------- DASHBOARD ---------- */
 function vDash(){
  var done=Object.keys(ST.done),nDone=done.length,ok=0;
@@ -40,10 +68,10 @@ function vDash(){
  var nTo=ST.tryouts.length,best=0;
  ST.tryouts.forEach(function(t){if(t.total>best)best=t.total;});
  var cards='<div class="grid4">'
-  +'<div class="stat"><b>'+nDone+'</b><span>Soal dikerjakan</span></div>'
-  +'<div class="stat"><b>'+acc+'%</b><span>Akurasi latihan</span></div>'
-  +'<div class="stat"><b>'+nTo+'</b><span>Tryout</span></div>'
-  +'<div class="stat"><b>'+best+'</b><span>Skor terbaik</span></div></div>';
+  +'<div class="stat g"><b>'+nDone+'</b><span>Soal dikerjakan</span></div>'
+  +'<div class="stat b"><b>'+acc+'%</b><span>Akurasi latihan</span></div>'
+  +'<div class="stat y"><b>'+nTo+'</b><span>Tryout</span></div>'
+  +'<div class="stat p"><b>'+best+'</b><span>Skor terbaik</span></div></div>';
  var prog="";
  Object.keys(CATS).forEach(function(c){
   var tot=BANK[c].length,dn=0;
@@ -55,15 +83,16 @@ function vDash(){
   return '<div class="hist"><span>'+esc(t.d)+'</span><span><b>'+t.total+'</b> '+(t.pass?'<span class="pill ok">LULUS</span>':'<span class="pill no">GAGAL</span>')+'</span></div>';
  }).join(""):'<div class="empty">Belum ada tryout. Yuk mulai yang pertama!</div>';
  return head(
-  '<div class="hero"><h1>Siap jadi ASN? 🇮🇩</h1><p>Latihan soal TWK, TIU, TKP dimodelkan dari pola soal CPNS tahun-tahun sebelumnya, plus tryout persis format SKD asli: 110 soal, 100 menit.</p>'
-  +'<div class="cta"><button class="btn ghost" onclick="go(\'lat_cat\')">Latihan Soal</button><button class="btn" style="background:#fff;color:#4f46e5" onclick="go(\'to_intro\')">Tryout SKD</button></div></div>'
-  +'<div class="card"><h2>📊 Progresmu</h2>'+cards+'</div>'
-  +'<div class="card"><h2>📚 Bank Soal</h2>'+prog+'</div>'
-  +'<div class="card"><h2>📖 Materi Pembelajaran</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px">Ringkasan padat per topik — langsung ke intinya.</p><div class="grid3">'
-  +Object.keys(CATS).map(function(c){return '<div class="catchoice" onclick="openMatList(\''+c+'\')"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p><span class="badge '+CATS[c].cls+'">'+MAT[c].length+' topik</span></div>';}).join("")
-  +'</div></div>'
-  +'<div class="card mentor-card" onclick="go(\'mentor\')"><h2>🤖 Mentor 3D — Nara</h2><p style="color:#6b7280;font-size:14px;margin:0">Tanya soal & materi, dijelasin pakai suara oleh avatar 3D.</p></div>'
-  +'<div class="card"><h2>📝 Riwayat Tryout</h2>'+hist+'</div>'
+  '<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal • 100 menit</span><h1>Siap jadi ASN?</h1><p>5.400 soal TWK, TIU, TKP dimodelkan dari pola soal CPNS tahun-tahun sebelumnya, plus tryout persis format SKD asli.</p></div>'
+  +'<div class="mmenu">'
+  +'<button class="mitem" onclick="go(\'lat_cat\')"><span class="mtile blue">'+ICONS.pencil+'</span><span><b>Latihan Soal</b><span>Koreksi + pembahasan</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
+  +'<button class="mitem" onclick="go(\'to_intro\')"><span class="mtile red">'+ICONS.stopwatch+'</span><span><b>Tryout SKD</b><span>Simulasi ujian asli</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
+  +'<button class="mitem" onclick="openMatList(\'TWK\')"><span class="mtile purple">'+ICONS.book+'</span><span><b>Materi</b><span>19 topik padat</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
+  +'<button class="mitem" onclick="go(\'mentor\')"><span class="mtile green">'+ICONS.robot+'</span><span><b>Mentor 3D</b><span>Tanya Nara</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
+  +'</div>'
+  +'<div class="card"><h2>'+ic("chart")+'Progresmu</h2>'+cards+'</div>'
+  +'<div class="card"><h2>'+ic("layers")+'Bank Soal</h2>'+prog+'</div>'
+  +'<div class="card"><h2>'+ic("doc")+'Riwayat Tryout</h2>'+hist+'</div>'
   +'<div class="info"><b>Format SKD asli:</b> TWK 30 soal (PG 65) • TIU 35 soal (PG 80) • TKP 45 soal (PG 166) • Total 110 soal, 100 menit. Lulus = ketiga komponen mencapai passing grade masing-masing.</div>'
   +'<div class="footer">SiASN • soal latihan dimodelkan dari kisi-kisi & pola soal CPNS sebelumnya</div>'
  );
@@ -216,14 +245,14 @@ function analyzeWeak(items){
 }
 function techPanelHtml(items){
  var rows=analyzeWeak(items);
- var h='<div class="card"><h2>💡 Teknik Belajar Buatmu</h2>';
+ var h='<div class="card"><h2>'+ic("bulb")+'Teknik Belajar Buatmu</h2>';
  if(!rows.length){
-  h+='<div class="perfect">🎯 <b>Sempurna — tidak ada topik lemah!</b><p>Pertahankan dengan review berkala: tanpa pengulangan, 70% materi hilang dalam 24 jam. Tantangan berikutnya: tryout 110 soal dengan timer 100 menit.</p></div>';
+  h+='<div class="perfect">'+ic("target")+' <b>Sempurna — tidak ada topik lemah!</b><p>Pertahankan dengan review berkala: tanpa pengulangan, 70% materi hilang dalam 24 jam. Tantangan berikutnya: tryout 110 soal dengan timer 100 menit.</p></div>';
  }else{
   h+='<p style="color:#6b7280;font-size:14px;margin-bottom:12px">Fokus ke topik dengan salah terbanyak dulu — itu yang paling cepat mendongkrak skormu.</p>';
   rows.forEach(function(r){
    var tips=TECH[r.topic]||[];
-   h+='<div class="tech"><div class="theader"><span class="badge '+CATS[r.cat].cls+'">'+r.cat+'</span><b>'+esc(r.topic)+'</b><span class="wpill">'+r.weak+' salah / '+r.total+'</span><button class="learnbtn" onclick="openMat(\''+r.cat+'\',\''+esc(r.topic)+'\')">📖 Pelajari</button></div><ul>'
+   h+='<div class="tech"><div class="theader"><span class="badge '+CATS[r.cat].cls+'">'+r.cat+'</span><b>'+esc(r.topic)+'</b><span class="wpill">'+r.weak+' salah / '+r.total+'</span><button class="learnbtn" onclick="openMat(\''+r.cat+'\',\''+esc(r.topic)+'\')">'+ic("book")+'Pelajari</button></div><ul>'
     +tips.map(function(t){return '<li><b>'+esc(t.t)+':</b> '+esc(t.d)+'</li>';}).join("")+'</ul></div>';
   });
  }
@@ -234,12 +263,14 @@ function techPanelHtml(items){
 /* ---------- LATIHAN ---------- */
 function vLatCat(){
  var h='<div class="grid3">';
+ var tiles={TWK:['flag','c0'],TIU:['zap','c1'],TKP:['users','c2']},ti=0;
  Object.keys(CATS).forEach(function(c){
   var tot=BANK[c].length,dn=0;
   Object.keys(ST.done).forEach(function(k){if(ST.done[k].c===c)dn++;});
-  h+='<div class="catchoice" onclick="startLat(\''+c+'\')"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p><span class="badge '+CATS[c].cls+'">'+dn+'/'+tot+' dikerjakan</span></div>';
+  var t=tiles[c]||['book','c'+(ti%3)];ti++;
+  h+='<div class="catchoice" onclick="startLat(\''+c+'\')"><span class="ctile '+t[1]+'">'+ICONS[t[0]]+'</span><span style="flex:1"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p><span class="badge '+CATS[c].cls+'">'+dn+'/'+tot+' dikerjakan</span></span></div>';
  });
- return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><h2>Latihan Soal</h2><p style="color:#6b7280;font-size:14px;margin-bottom:14px">Pilih kategori. Jawaban langsung dikoreksi + pembahasan.</p>'+h+'</div>');
+ return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>'+ic("pencil")+'Latihan Soal</h2><p style="color:#6b7280;font-size:14px;margin-bottom:14px;font-weight:600">Pilih kategori. Jawaban langsung dikoreksi + pembahasan.</p>'+h+'</div>');
 }
 window.startLat=function(c){
  if(!BANK[c].length){alert("Bank soal "+c+" belum siap.");return;}
@@ -272,12 +303,12 @@ function vLat(){
  var fb="";
  if(L.answered){
   var good=q.isTKP?q.opts[L.pick].s===5:L.pick===q.a;
-  fb='<div class="explain"><b>'+(good?"✅ Tepat!":"❌ Kurang tepat.")+'</b> '+esc(q.ex)+'</div>';
+  fb='<div class="explain"><div class="fb '+(good?"ok\">"+ic("check")+"Tepat!":"no\">"+ic("x")+"Kurang tepat.")+'</div> '+esc(q.ex)+'</div>';
  }
- return head('<button class="backlink" onclick="go(\'lat_cat\')">← Kategori</button><div class="card">'
+ return head('<button class="backlink" onclick="go(\'lat_cat\')">'+ic("back")+'Kategori</button><div class="card">'
   +'<div class="qmeta"><span class="badge '+CATS[L.cat].cls+'">'+L.cat+'</span><span style="color:#6b7280;font-size:13px">Soal '+(L.pos+1)+' / '+total+'</span></div>'
   +'<div class="qtext">'+esc(q.q)+'</div><div class="opts">'+opts+'</div>'+fb
-  +(L.answered?'<div class="qnav"><button class="btn plain" onclick="endLat()">Selesai</button><button class="btn" onclick="nextLat()">Lanjut →</button></div>':"")
+  +(L.answered?'<div class="qnav"><button class="btn plain" onclick="endLat()">Selesai</button><button class="btn" onclick="nextLat()">"+ic("chev")+"</button></div>':"")
   +'</div>');
 }
 window.ansLat=function(i){
@@ -300,7 +331,7 @@ function vLatResult(){
  hist.forEach(function(x){if(x.ok)ok++;});
  var acc=n?Math.round(ok/n*100):0;
  var items=hist.map(function(x){return{cat:x.cat,q:x.q,weak:!x.ok};});
- return head('<button class="backlink" onclick="go(\'lat_cat\')">← Kategori</button><div class="card"><h2>Hasil Sesi Latihan</h2>'
+ return head('<button class="backlink" onclick="go(\'lat_cat\')">"+ic("back")+"Kategori</button><div class="card"><h2>Hasil Sesi Latihan</h2>'
   +'<div class="grid4"><div class="stat"><b>'+n+'</b><span>Soal dijawab</span></div><div class="stat"><b>'+ok+'</b><span>Tepat</span></div><div class="stat"><b>'+acc+'%</b><span>Akurasi</span></div><div class="stat"><b>'+L.cat+'</b><span>Kategori</span></div></div>'
   +'<button class="btn big" onclick="startLat(\''+L.cat+'\')">Latihan Lagi</button></div>'
   +techPanelHtml(items));
@@ -321,7 +352,7 @@ function reviewHtml(qs,ans){
 
 /* ---------- TRYOUT ---------- */
 function vToIntro(){
- return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><h2>Tryout SKD</h2>'
+ return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><h2>Tryout SKD</h2>'
   +'<div class="info"><b>Simulasi persis ujian asli:</b><br>• 110 soal: TWK 30 • TIU 35 • TKP 45<br>• Waktu 100 menit (otomatis selesai saat habis)<br>• TWK/TIU: benar 5, salah 0 • TKP: skala 1–5<br>• Passing grade: TWK 65, TIU 80, TKP 166</div>'
   +'<button class="btn big" onclick="startTo()">Mulai Tryout</button></div>');
 }
@@ -337,8 +368,8 @@ window.startTo=function(){
  S.to.timer=setInterval(function(){
   if(S.view!=="to"||!S.to){clearInterval(S.to.timer);return;}
   S.to.left--;
-  var el=document.getElementById("tmr");
-  if(el){el.textContent=fmtT(S.to.left);if(S.to.left<300)el.classList.add("low");}
+  var el=document.getElementById("tmrT");
+  if(el){el.textContent=fmtT(S.to.left);if(S.to.left<300)document.getElementById("tmr").classList.add("low");}
   if(S.to.left<=0)finishTo();
  },1000);
 };
@@ -357,14 +388,14 @@ function vTo(){
  }).join("");
  var secTtl="";
  if(T.idx===0||T.qs[T.idx-1].cat!==q.cat)secTtl='<div class="secttl">'+q.cat+' — '+esc(CATS[q.cat].full)+'</div>';
- return head('<div class="card"><div class="tobar"><button class="backlink" style="margin:0" onclick="abortTo()">✕ Batal</button>'
-  +'<span class="timer" id="tmr">'+fmtT(T.left)+'</span>'
+ return head('<div class="card"><div class="tobar"><button class="backlink" style="margin:0" onclick="abortTo()">"+ic("x")+"Batal</button>'
+  +'<span class="timer" id="tmr">"+ic("clock")+"<span id="tmrT">'+fmtT(T.left)+'</span></span>'
   +'<button class="btn" onclick="finishTo(true)">Selesai</button></div>'
   +'<div class="qmeta"><span class="badge '+CATS[q.cat].cls+'">'+q.cat+'</span><span style="color:#6b7280;font-size:13px">Soal '+(T.idx+1)+' / '+T.qs.length+'</span></div>'
   +secTtl+'<div class="qtext">'+esc(q.q)+'</div><div class="opts">'+opts+'</div>'
   +'<label class="doubtrow"><input type="checkbox" '+(T.doubt[T.idx]?"checked":"")+' onchange="togDoubt(this.checked)"> Ragu-ragu</label>'
-  +'<div class="qnav"><button class="btn plain" '+(T.idx===0?"disabled":"")+' onclick="moveTo(-1)">← Sebelumnya</button>'
-  +'<button class="btn plain" '+(T.idx===T.qs.length-1?"disabled":"")+' onclick="moveTo(1)">Berikutnya →</button></div>'
+  +'<div class="qnav"><button class="btn plain" '+(T.idx===0?"disabled":"")+' onclick="moveTo(-1)">"+ic("back")+" Sebelumnya</button>'
+  +'<button class="btn plain" '+(T.idx===T.qs.length-1?"disabled":"")+' onclick="moveTo(1)">Berikutnya "+ic("chev")+"</button></div>'
   +'<div class="numgrid">'+grid+'</div></div>');
 }
 window.ansTo=function(i){S.to.ans[S.to.idx]=i;render();};
@@ -403,7 +434,7 @@ function vToResult(){
   else weak=an!==q.a;
   return{cat:q.cat,q:q.q,weak:weak};
  });
- return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><h2>Hasil Tryout '+(res.pass?"🎉":"😔")+'</h2>'
+ return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><h2>Hasil Tryout '+(res.pass?"🎉":"😔")+'</h2>'
   +'<div style="text-align:center;margin:10px 0"><span class="pill '+(res.pass?"ok":"no")+'" style="font-size:16px;padding:8px 24px">'+(res.pass?"LULUS PASSING GRADE":"BELUM LULUS")+'</span></div>'
   +'<div class="resgrid">'+rc("TWK","twk","TWK") +rc("TIU","tiu","TIU")+rc("TKP","tkp","TKP")+'</div>'
   +'<div style="text-align:center;color:#6b7280">Total skor: <b style="font-size:20px;color:#1e2433">'+res.total+'</b> / 550</div></div>'
@@ -424,18 +455,18 @@ function vMatList(){
  var h=arr.map(function(t,i){
   return '<div class="mattopic" onclick="openMat(\''+c+'\',\''+esc(t.topic)+'\')"><span class="mn">'+(i+1)+'</span><span>'+esc(t.topic)+'</span><span class="mgo">→</span></div>';
  }).join("");
- return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><h2>📖 Materi '+c+'</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px">'+esc(CATS[c].full)+'</p>'+(h||'<div class="empty">Materi belum tersedia.</div>')+'</div>');
+ return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><h2>"+ic("book")+"Materi '+c+'</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px">'+esc(CATS[c].full)+'</p>'+(h||'<div class="empty">Materi belum tersedia.</div>')+'</div>');
 }
 function vMatView(){
  var M=S.mat,arr=MAT[M.cat]||[],t=arr[M.idx];
- if(!t)return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><div class="empty">Materi tidak ditemukan.</div></div>');
+ if(!t)return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><div class="empty">Materi tidak ditemukan.</div></div>');
  var prev=M.idx>0,next=M.idx<arr.length-1;
- return head('<button class="backlink" onclick="go(\'mat_list\')">← Daftar Materi</button><div class="card">'
+ return head('<button class="backlink" onclick="go(\'mat_list\')">"+ic("back")+"Daftar Materi</button><div class="card">'
   +'<div class="qmeta"><span class="badge '+CATS[M.cat].cls+'">'+M.cat+'</span><span style="color:#6b7280;font-size:13px">Topik '+(M.idx+1)+' / '+arr.length+'</span></div>'
   +'<h2 style="margin:10px 0 14px;font-size:19px">'+esc(t.topic)+'</h2>'
   +'<div class="matbody">'+t.html+'</div>'
-  +'<div class="qnav">'+(prev?'<button class="btn plain" onclick="matMove(-1)">← Sebelumnya</button>':"<span></span>")
-  +(next?'<button class="btn" onclick="matMove(1)">Berikutnya →</button>':"")+'</div></div>');
+  +'<div class="qnav">'+(prev?'<button class="btn plain" onclick="matMove(-1)">"+ic("back")+"Sebelumnya</button>':"<span></span>")
+  +(next?'<button class="btn" onclick="matMove(1)">Berikutnya "+ic("chev")+"</button>':"")+'</div></div>');
 }
 
 /* ---------- MENTOR 3D ---------- */
@@ -468,7 +499,7 @@ function openMentorQ(id){
 window.openMentorQ=openMentorQ;
 function stopExplain(){
  if(window.Mentor3D)Mentor3D.stop();
- naraSay("Oke, berhenti dulu. Tekan 🔊 kalau mau diulang.");
+ naraSay("Oke, berhenti dulu. Tekan Jelaskan kalau mau diulang.");
 }
 window.stopExplain=stopExplain;
 function replayExplain(){startExplain();}
@@ -515,16 +546,16 @@ function vMentor(){
  var chips=["Rumus matematika","Deret angka","Sejarah proklamasi","Sinonim antonim","UUD 1945","Pelayanan publik"].map(function(c){
   return '<button class="chip" onclick="naraAsk(\''+c+'\')">'+c+'</button>';
  }).join("");
- return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button>'
- +'<div class="m3dwrap"><canvas id="m3d"></canvas><div class="narasay" id="naraSay">Halo! Aku <b>Nara</b> 🤖</div></div>'
- +'<div class="card"><h2>💬 Tanya Nara</h2>'
+ return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button>'
+ +'<div class="m3dwrap"><canvas id="m3d"></canvas><div class="narasay" id="naraSay">Halo! Aku <b>Nara</b>, mentor belajarmu!</div></div>'
+ +'<div class="card"><h2>"+ic("chat")+"Tanya Nara</h2>'
  +'<div class="msearch"><input id="naraQ" placeholder="cth: rumus deret angka…" onkeydown="if(event.key===\'Enter\')askNara()"><button class="btn" onclick="askNara()">Tanya</button></div>'
  +'<div class="chips">'+chips+'</div></div>'
- +'<div class="card"><h2>🎓 Soal yang pernah kamu salah</h2>'+whtml+'</div>');
+ +'<div class="card"><h2>"+ic("grad")+"Soal yang pernah kamu salah</h2>'+whtml+'</div>');
 }
 function vMentorEx(){
  var Mc=S.mentor;
- if(!Mc)return head('<button class="backlink" onclick="go(\'mentor\')">← Mentor</button><div class="card"><div class="empty">Pilih dulu yang mau dijelasin.</div></div>');
+ if(!Mc)return head('<button class="backlink" onclick="go(\'mentor\')">"+ic("back")+"Mentor</button><div class="card"><div class="empty">Pilih dulu yang mau dijelasin.</div></div>');
  var body="";
  if(Mc.kind==="topic"){
   var t=null,arr=MAT[Mc.cat]||[],i;
@@ -534,9 +565,9 @@ function vMentorEx(){
   var q=window.Mentor3D?Mentor3D.getQ(Mc.cat,Mc.idx):null;
   body=q?mentorQHtml(Mc.cat,q):'<div class="empty">Soal tidak ditemukan.</div>';
  }
- return head('<button class="backlink" onclick="go(\'mentor\')">← Mentor</button>'
+ return head('<button class="backlink" onclick="go(\'mentor\')">"+ic("back")+"Mentor</button>'
  +'<div class="m3dwrap small"><canvas id="m3d2"></canvas><div class="narasay" id="naraSay">Siap ngejelasin…</div></div>'
- +'<div class="card"><div id="naraCtl"><button class="btn" onclick="replayExplain()">🔊 Jelaskan</button> <button class="btn plain" onclick="stopExplain()">⏹ Berhenti</button></div>'
+ +'<div class="card"><div id="naraCtl"><button class="btn" onclick="replayExplain()">"+ic("speaker")+"Jelaskan</button> <button class="btn plain" onclick="stopExplain()">"+ic("stop")+"Berhenti</button></div>'
  +'<div class="naraText" id="naraText"></div></div>'
  +'<div class="card">'+body+'</div>');
 }
