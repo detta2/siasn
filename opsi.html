@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Opsi Tampilan Baru SiASN</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#0e1120;color:#eef0ff;min-height:100vh;padding:36px 18px 60px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:26px;font-weight:800;letter-spacing:-.5px;text-align:center}
+.sub{text-align:center;color:#9aa3c7;font-size:14px;margin:10px 0 34px}
+.opts{display:flex;flex-wrap:wrap;gap:34px;justify-content:center}
+.opt{width:320px}
+.phone{width:300px;height:640px;background:#0b0d18;border-radius:46px;padding:11px;margin:0 auto;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.scr{width:100%;height:100%;border-radius:36px;overflow:hidden;position:relative;padding:14px 14px 18px}
+.notch{position:absolute;top:22px;left:50%;transform:translateX(-50%);width:96px;height:24px;background:#0b0d18;border-radius:99px;z-index:5}
+.ah{display:flex;align-items:center;gap:10px;margin:26px 0 12px}
+.logo{width:38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;flex-shrink:0}
+.ah b{display:block;font-size:15px}
+.ah span{font-size:11px;opacity:.65}
+.streak{margin-left:auto;font-size:12px;font-weight:700;padding:6px 11px;border-radius:99px;white-space:nowrap}
+.hero{border-radius:var(--radius,20px);padding:18px;margin-bottom:12px}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.hero h3{font-size:23px;font-weight:800;letter-spacing:-.4px;margin:6px 0 4px}
+.hero p{font-size:12.5px;opacity:.8;margin-bottom:12px;line-height:1.5}
+.hero button{border:none;width:100%;padding:12px;border-radius:14px;font-size:14px;font-weight:800;cursor:pointer}
+.stats{display:flex;gap:8px;margin-bottom:12px}
+.stats>div{flex:1;border-radius:14px;padding:10px 6px;text-align:center}
+.stats b{display:block;font-size:17px}
+.stats span{font-size:10.5px;opacity:.65}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.mi{border-radius:16px;padding:13px 12px}
+.mi .ic{font-size:21px;margin-bottom:7px}
+.mi b{display:block;font-size:13.5px}
+.mi span{font-size:10.5px;opacity:.65}
+.cont{border-radius:16px;padding:13px}
+.crow{display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;margin-bottom:8px}
+.bar{height:8px;border-radius:99px;overflow:hidden;background:rgba(0,0,0,.08)}
+.bar i{display:block;height:100%;border-radius:99px}
+.opt h2{font-size:17px;font-weight:800;margin:18px 0 6px;text-align:center}
+.opt>p{font-size:13px;color:#9aa3c7;line-height:1.6;text-align:center}
+.num{display:inline-flex;width:26px;height:26px;border-radius:99px;background:#4f46e5;color:#fff;font-size:14px;font-weight:800;align-items:center;justify-content:center;margin-right:6px;vertical-align:2px}
+
+/* ===== TEMA 1: Simpel Bersih ===== */
+.theme-a{--radius:18px;background:#f4f5fa;color:#191b2e;--shadow:0 6px 18px rgba(25,27,46,.07)}
+.theme-a .logo{background:#4f46e5;color:#fff}
+.theme-a .streak{background:#fff;border:1px solid #e5e7f5;color:#191b2e}
+.theme-a .hero{background:#fff;box-shadow:var(--shadow)}
+.theme-a .hero .eyebrow{color:#4f46e5}
+.theme-a .hero button{background:#4f46e5;color:#fff}
+.theme-a .stats>div{background:#fff;box-shadow:var(--shadow)}
+.theme-a .mi{background:#fff;box-shadow:var(--shadow)}
+.theme-a .mi .ic{background:#eef0ff;width:38px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:19px}
+.theme-a .cont{background:#fff;box-shadow:var(--shadow)}
+.theme-a .bar i{background:#4f46e5}
+
+/* ===== TEMA 2: Ceria ===== */
+.theme-b{--radius:24px;background:#fff7ea;color:#292019}
+.theme-b .logo{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff}
+.theme-b .streak{background:#fff;border:1px solid #f5e3c2;color:#292019}
+.theme-b .hero{background:linear-gradient(135deg,#6366f1,#a855f7 60%,#ec4899);color:#fff;box-shadow:0 12px 26px rgba(168,85,247,.35)}
+.theme-b .hero button{background:#fff;color:#7c3aed}
+.theme-b .stats>div{background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+.theme-b .mi.c1{background:#eff6ff}.theme-b .mi.c2{background:#f0fdf4}.theme-b .mi.c3{background:#fffbeb}.theme-b .mi.c4{background:#f5f3ff}
+.theme-b .cont{background:#fff;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+.theme-b .bar i{background:linear-gradient(90deg,#6366f1,#ec4899)}
+
+/* ===== TEMA 3: Fokus (game) ===== */
+.theme-c{--radius:20px;background:#fff;color:#1f2937}
+.theme-c .logo{background:#58cc02;color:#fff;border:2px solid #1f2937}
+.theme-c .streak{background:#fff;border:2px solid #1f2937;color:#1f2937;box-shadow:2px 2px 0 #1f2937}
+.theme-c .hero{background:#58cc02;color:#fff;border:2px solid #1f2937;box-shadow:4px 4px 0 #1f2937}
+.theme-c .hero .eyebrow{color:#fff}
+.theme-c .hero button{background:#fff;color:#1f2937;border:2px solid #1f2937;box-shadow:3px 3px 0 #1f2937}
+.theme-c .hero button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #1f2937}
+.theme-c .stats>div{background:#fff;border:2px solid #1f2937;box-shadow:3px 3px 0 #1f2937}
+.theme-c .mi{background:#fff;border:2px solid #1f2937;box-shadow:3px 3px 0 #1f2937}
+.theme-c .cont{background:#fff;border:2px solid #1f2937;box-shadow:3px 3px 0 #1f2937}
+.theme-c .bar{background:#e5e7eb;border:1px solid #1f2937}
+.theme-c .bar i{background:#58cc02}
+
+/* ===== TEMA 4: Editorial ===== */
+.theme-d{--radius:6px;background:#faf9f6;color:#1c1917}
+.theme-d .scr{padding:14px 18px 18px}
+.theme-d .logo{background:#1c1917;color:#faf9f6;border-radius:6px}
+.theme-d .streak{background:transparent;border:1px solid #d6d0c4;color:#1c1917}
+.theme-d .hero{background:transparent;padding:6px 0 14px;border-bottom:2px solid #1c1917}
+.theme-d .hero .eyebrow{color:#0f766e}
+.theme-d .hero h3{font-size:27px}
+.theme-d .hero button{background:#1c1917;color:#faf9f6;border-radius:6px;margin-top:4px}
+.theme-d .stats{display:flex;gap:0;border-bottom:1px solid #e3ddd0;margin-bottom:0}
+.theme-d .stats>div{background:transparent;border-radius:0;padding:12px 4px}
+.theme-d .stats>div+div{border-left:1px solid #e3ddd0}
+.theme-d .menu{display:block;margin:0}
+.theme-d .mi{display:flex;align-items:center;gap:12px;background:transparent;border-radius:0;padding:13px 2px;border-bottom:1px solid #e3ddd0}
+.theme-d .mi .idx{font-size:11px;font-weight:800;color:#0f766e;width:22px}
+.theme-d .mi .ic{margin:0;font-size:19px}
+.theme-d .mi b{font-size:14px}
+.theme-d .cont{background:transparent;padding:13px 2px}
+.theme-d .bar i{background:#0f766e}
+
+/* ===== TEMA 5: Lembut ===== */
+.theme-e{--radius:24px;background:linear-gradient(180deg,#dfe6ff 0%,#f3e4ff 52%,#ffe9d6 100%);color:#2b2a4a}
+.theme-e .logo{background:rgba(255,255,255,.7);backdrop-filter:blur(8px);color:#7c3aed;border:1px solid rgba(255,255,255,.9)}
+.theme-e .streak{background:rgba(255,255,255,.65);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.9);color:#2b2a4a}
+.theme-e .hero{background:rgba(255,255,255,.6);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.9);box-shadow:0 12px 30px rgba(124,58,237,.14)}
+.theme-e .hero .eyebrow{color:#7c3aed}
+.theme-e .hero button{background:linear-gradient(135deg,#8b5cf6,#d946ef);color:#fff;box-shadow:0 8px 18px rgba(139,92,246,.35)}
+.theme-e .stats>div{background:rgba(255,255,255,.6);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.9)}
+.theme-e .mi{background:rgba(255,255,255,.6);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.9)}
+.theme-e .cont{background:rgba(255,255,255,.6);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.9)}
+.theme-e .bar{background:rgba(255,255,255,.7)}
+.theme-e .bar i{background:linear-gradient(90deg,#8b5cf6,#ec4899)}
+.howto{max-width:640px;margin:44px auto 0;background:#171b31;border:1px solid #262c52;border-radius:18px;padding:22px;text-align:center}
+.howto b{color:#fff}
+.howto p{color:#9aa3c7;font-size:13.5px;margin-top:8px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>🎨 5 Opsi Tampilan Baru SiASN</h1>
+<p class="sub">Mockup dashboard — gaya yang dipilih dipakai ke seluruh aplikasi (latihan, tryout, materi, mentor).</p>
+<div class="opts">
+
+<div class="opt">
+<div class="phone"><div class="scr theme-a"><div class="notch"></div>
+<div class="ah"><div class="logo">S</div><div><b>SiASN</b><span>Latihan CPNS</span></div><div class="streak">🔥 12</div></div>
+<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal</span><h3>Siap jadi ASN?</h3><p>5.400 soal + pembahasan lengkap menantimu.</p><button>Mulai Latihan</button></div>
+<div class="stats"><div><b>120</b><span>Soal</span></div><div><b>78%</b><span>Benar</span></div><div><b>2</b><span>Tryout</span></div></div>
+<div class="menu"><div class="mi"><div class="ic">📝</div><b>Latihan</b><span>Per kategori</span></div><div class="mi"><div class="ic">⏱️</div><b>Tryout</b><span>Simulasi asli</span></div><div class="mi"><div class="ic">📖</div><b>Materi</b><span>19 topik</span></div><div class="mi"><div class="ic">🤖</div><b>Mentor 3D</b><span>Tanya Nara</span></div></div>
+<div class="cont"><div class="crow"><span>Lanjutkan: TWK</span><span>65%</span></div><div class="bar"><i style="width:65%"></i></div></div>
+</div></div>
+<h2><span class="num">1</span>Simpel Bersih</h2><p>Evolusi dari tampilan sekarang — dirapikan total. Putih, rapi, tombol jelas. Aman dan nyaman dipakai lama.</p>
+</div>
+
+<div class="opt">
+<div class="phone"><div class="scr theme-b"><div class="notch"></div>
+<div class="ah"><div class="logo">S</div><div><b>SiASN</b><span>Latihan CPNS</span></div><div class="streak">🔥 12</div></div>
+<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal</span><h3>Siap jadi ASN? 🚀</h3><p>5.400 soal + pembahasan lengkap menantimu.</p><button>Mulai Latihan</button></div>
+<div class="stats"><div><b>120</b><span>Soal</span></div><div><b>78%</b><span>Benar</span></div><div><b>2</b><span>Tryout</span></div></div>
+<div class="menu"><div class="mi c1"><div class="ic">📝</div><b>Latihan</b><span>Per kategori</span></div><div class="mi c2"><div class="ic">⏱️</div><b>Tryout</b><span>Simulasi asli</span></div><div class="mi c3"><div class="ic">📖</div><b>Materi</b><span>19 topik</span></div><div class="mi c4"><div class="ic">🤖</div><b>Mentor 3D</b><span>Tanya Nara</span></div></div>
+<div class="cont"><div class="crow"><span>Lanjutkan: TWK</span><span>65%</span></div><div class="bar"><i style="width:65%"></i></div></div>
+</div></div>
+<h2><span class="num">2</span>Ceria</h2><p>Playful dan berwarna — tiap menu punya warna sendiri, hero gradien berani. Belajar berasa main.</p>
+</div>
+
+<div class="opt">
+<div class="phone"><div class="scr theme-c"><div class="notch"></div>
+<div class="ah"><div class="logo">S</div><div><b>SiASN</b><span>Latihan CPNS</span></div><div class="streak">🔥 12</div></div>
+<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal</span><h3>Siap jadi ASN?</h3><p>5.400 soal + pembahasan lengkap menantimu.</p><button>Mulai Latihan</button></div>
+<div class="stats"><div><b>120</b><span>Soal</span></div><div><b>78%</b><span>Benar</span></div><div><b>2</b><span>Tryout</span></div></div>
+<div class="menu"><div class="mi"><div class="ic">📝</div><b>Latihan</b><span>Per kategori</span></div><div class="mi"><div class="ic">⏱️</div><b>Tryout</b><span>Simulasi asli</span></div><div class="mi"><div class="ic">📖</div><b>Materi</b><span>19 topik</span></div><div class="mi"><div class="ic">🤖</div><b>Mentor 3D</b><span>Tanya Nara</span></div></div>
+<div class="cont"><div class="crow"><span>Lanjutkan: TWK</span><span>65%</span></div><div class="bar"><i style="width:65%"></i></div></div>
+</div></div>
+<h2><span class="num">3</span>Fokus</h2><p>Gaya aplikasi game belajar — tombol tebal menonjol, berasa dipencet. Bikin nagih ngerjain soal.</p>
+</div>
+
+<div class="opt">
+<div class="phone"><div class="scr theme-d"><div class="notch"></div>
+<div class="ah"><div class="logo">S</div><div><b>SiASN</b><span>Latihan CPNS</span></div><div class="streak">🔥 12</div></div>
+<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal</span><h3>Siap jadi ASN?</h3><p>5.400 soal + pembahasan lengkap.</p><button>Mulai Latihan →</button></div>
+<div class="stats"><div><b>120</b><span>Soal</span></div><div><b>78%</b><span>Benar</span></div><div><b>2</b><span>Tryout</span></div></div>
+<div class="menu"><div class="mi"><span class="idx">01</span><div class="ic">📝</div><div><b>Latihan Soal</b><span>Per kategori</span></div></div><div class="mi"><span class="idx">02</span><div class="ic">⏱️</div><div><b>Tryout SKD</b><span>Simulasi asli</span></div></div><div class="mi"><span class="idx">03</span><div class="ic">📖</div><div><b>Materi</b><span>19 topik</span></div></div><div class="mi"><span class="idx">04</span><div class="ic">🤖</div><div><b>Mentor 3D</b><span>Tanya Nara</span></div></div></div>
+<div class="cont"><div class="crow"><span>Lanjutkan: TWK</span><span>65%</span></div><div class="bar"><i style="width:65%"></i></div></div>
+</div></div>
+<h2><span class="num">4</span>Editorial</h2><p>Serius kayak buku persiapan ujian — tanpa kartu, garis tipis, teks jadi raja. Kesan pintar & dewasa.</p>
+</div>
+
+<div class="opt">
+<div class="phone"><div class="scr theme-e"><div class="notch"></div>
+<div class="ah"><div class="logo">S</div><div><b>SiASN</b><span>Latihan CPNS</span></div><div class="streak">🔥 12</div></div>
+<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal</span><h3>Siap jadi ASN?</h3><p>5.400 soal + pembahasan lengkap menantimu.</p><button>Mulai Latihan</button></div>
+<div class="stats"><div><b>120</b><span>Soal</span></div><div><b>78%</b><span>Benar</span></div><div><b>2</b><span>Tryout</span></div></div>
+<div class="menu"><div class="mi"><div class="ic">📝</div><b>Latihan</b><span>Per kategori</span></div><div class="mi"><div class="ic">⏱️</div><b>Tryout</b><span>Simulasi asli</span></div><div class="mi"><div class="ic">📖</div><b>Materi</b><span>19 topik</span></div><div class="mi"><div class="ic">🤖</div><b>Mentor 3D</b><span>Tanya Nara</span></div></div>
+<div class="cont"><div class="crow"><span>Lanjutkan: TWK</span><span>65%</span></div><div class="bar"><i style="width:65%"></i></div></div>
+</div></div>
+<h2><span class="num">5</span>Lembut</h2><p>Pastel + efek kaca buram, kalem dan modern. Beda dari aplikasi belajar kebanyakan.</p>
+</div>
+
+</div>
+<div class="howto"><b>Balas dengan angka 1–5</b><p>Contoh: <b>3</b> — nanti tampilan yang dipilih aku pasang ke seluruh SiASN (dashboard, latihan, tryout, materi, mentor).</p></div>
+</div>
+</body>
+</html>
