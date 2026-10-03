@@ -242,3 +242,22 @@ summary::-webkit-details-marker{display:none}
 .trikbody{padding:4px 15px 15px;font-size:14px}
 .trikbody p{margin:6px 0}
 .trikbody ul{margin:6px 0 6px 18px}
+
+/* Paket Tryout */
+.pkggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 16px}
+@media(max-width:640px){.pkggrid{grid-template-columns:repeat(2,1fr);gap:10px}}
+.pkgcard{background:#fff;border:var(--bd);border-radius:var(--r);box-shadow:var(--sh);padding:16px;display:flex;flex-direction:column;gap:8px}
+.pkghead{display:flex;justify-content:space-between;align-items:center}
+.pkghead b{font-size:17px;color:#0b3d5c}
+.pkgsub{font-size:12px;color:var(--mut);font-weight:700}
+.pkgscore{font-size:13px;font-weight:700;color:#0b3d5c}
+.pkgscore.dim{color:#9aa3b2;font-weight:600}
+.pkgcard .btn{margin-top:auto;align-self:flex-start}
+.pill.idle{background:#eef0f4;color:#9aa3b2}
+
+/* Motivasi tough-love */
+.motiv{background:#fef2f2;border-left:4px solid #dc2626;padding:10px 14px;margin-top:10px;border-radius:0 10px 10px 0;color:#7f1d1d;font-size:14px}
+.caracepat{background:#fffbeb;border-left:4px solid #f59e0b;padding:10px 14px;margin-top:10px;border-radius:0 10px 10px 0;color:#78350f;font-size:14px}
+.caracepat b{font-size:14px}
+.caracepat div p{margin:6px 0}
+.caracepat div ul{margin:6px 0 6px 18px}

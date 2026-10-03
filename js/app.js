@@ -17,7 +17,7 @@ var LS="siasn_v1";
 function load(){try{var s=JSON.parse(localStorage.getItem(LS));if(s&&s.done)return s;}catch(e){}return{done:{},tryouts:[]};}
 function save(){try{localStorage.setItem(LS,JSON.stringify(ST));}catch(e){}}
 var ST=load();
-window.SIASN={BANK:BANK,ST:ST,topicOf:topicOf,prepQ:prepQ};
+window.SIASN={BANK:BANK,ST:ST,topicOf:topicOf,prepQ:prepQ,pkgQuestions:pkgQuestions};
 var S={view:"dash"};
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
@@ -88,7 +88,7 @@ function vDash(){
   +pathBanner()
   +'<div class="mmenu">'
   +'<button class="mitem" onclick="go(\'lat_cat\')"><span class="mtile blue">'+ICONS.pencil+'</span><span><b>Latihan Soal</b><span>Koreksi + pembahasan</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
-  +'<button class="mitem" onclick="go(\'to_intro\')"><span class="mtile red">'+ICONS.stopwatch+'</span><span><b>Tryout SKD</b><span>Simulasi ujian asli</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
+  +'<button class="mitem" onclick="go(\'to_packs\')"><span class="mtile red">'+ICONS.stopwatch+'</span><span><b>Tryout SKD</b><span>12 paket simulasi</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
   +'<button class="mitem" onclick="openMatList(\'TWK\')"><span class="mtile purple">'+ICONS.book+'</span><span><b>Materi</b><span>Materi lengkap 19 topik</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
   +'<button class="mitem" onclick="go(\'mentor\')"><span class="mtile green">'+ICONS.robot+'</span><span><b>Mentor 3D</b><span>Tanya Nara</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
   +'</div>'
@@ -324,7 +324,8 @@ function vLat(){
  var fb="";
  if(L.answered){
   var good=q.isTKP?q.opts[L.pick].s===5:L.pick===q.a;
-  fb='<div class="explain"><div class="fb '+(good?"ok\">"+ic("check")+"Tepat!":"no\">"+ic("x")+"Kurang tepat.")+'</div> '+esc(q.ex)+'</div>';
+  fb='<div class="explain"><div class="fb '+(good?"ok\">"+ic("check")+"Tepat!":"no\">"+ic("x")+"Kurang tepat.")+'</div> '+esc(q.ex)+'</div>'
+   +(good?"":'<div class="motiv">🔥 <i>"'+esc(pickMotiv())+'"</i></div>'+trikBox(it.cat,q));
  }
  return head('<button class="backlink" onclick="go(\'lat_cat\')">'+ic("back")+'Kategori</button><div class="card">'
   +'<div class="qmeta"><span class="badge '+CATS[it.cat].cls+'">'+it.cat+'</span><span style="color:#6b7280;font-size:13px">Soal '+(L.pos+1)+' / '+total+'</span></div>'
@@ -376,20 +377,108 @@ function reviewHtml(qs,ans){
  }).join("");
 }
 
-/* ---------- TRYOUT ---------- */
-function vToIntro(){
- return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>Tryout SKD</h2>'
-  +'<div class="info"><b>Simulasi persis ujian asli:</b><br>• 110 soal: TWK 30 • TIU 35 • TKP 45<br>• Waktu 100 menit (otomatis selesai saat habis)<br>• TWK/TIU: benar 5, salah 0 • TKP: skala 1–5<br>• Passing grade: TWK 65, TIU 80, TKP 166</div>'
-  +'<button class="btn big" onclick="startTo()">Mulai Tryout</button></div>');
+/* ---------- MOTIVASI TOUGH-LOVE SAAT SALAH ---------- */
+var MOTIV=[
+"Salah lagi? Bangun. Ujian gak nunggu kamu siap.",
+"Soal kayak gini masih salah juga. Fokus, jangan asal tebak.",
+"Mau jadi ASN tapi males baca pembahasan? Lanjut mimpi aja.",
+"Topik yang sama, salah berkali-kali. Buka materinya. Sekarang.",
+"Kompetitormu lagi latihan soal yang sama. Kamu malah bengong.",
+"Ngantuk? Cuci muka, balik lagi. NIP gak samperin orang mager.",
+"Gini terus, yang lolos orang lain. Mau?",
+"Jangan salahkan soalnya. Salahkan jarimu yang kegatelan nebak.",
+"Otak dipakai, bukan dipajang. Baca pembahasannya sampai nempel.",
+"Berhenti cari alasan. Satu-satunya jalan: paham, bukan hafal.",
+"Soal ini barusan ngetawain kamu. Balas dendam: kuasai topiknya.",
+"Masih nebak-nebak? Itu namanya judi, bukan strategi.",
+"Capek? Pendaftar lain juga capek. Bedanya mereka terus jalan.",
+"Salah itu wajar. Salah di tempat yang sama tiga kali itu pilihan.",
+"Disiplin hari ini = nama di pengumuman besok. Titik.",
+"Salah di soal gampang? Itu tamparan. Jangan diulang.",
+"Baca soalnya pelan-pelan. Kebanyakan salah itu gara-gara ngebut.",
+"Kalau topik ini keluar di ujian dan kamu masih salah, siapa yang rugi?",
+"Latihan itu tempatnya salah. Tapi salah yang dipelajari, bukan diulang.",
+"Skor latihanmu cerminan usahamu. Jujur sama diri sendiri."
+];
+function pickMotiv(){
+ var i;
+ do{i=Math.floor(Math.random()*MOTIV.length);}while(MOTIV.length>1&&i===S.motivLast);
+ S.motivLast=i;
+ return MOTIV[i];
 }
-window.startTo=function(){
- var qs=[];
+/* Box "cara cepat": trik acak sesuai topik soal, fallback trik UMUM. Tanpa pindah view. */
+function trikBox(cat,q){
+ var TR=window.TRIK||[];
+ var topic=topicOf(cat,q.q);
+ var cands=TR.filter(function(t){return t.cat===cat&&t.topic===topic;});
+ if(!cands.length)cands=TR.filter(function(t){return t.cat==="UMUM";});
+ if(!cands.length)return "";
+ var t=cands[Math.floor(Math.random()*cands.length)];
+ return '<div class="caracepat"><b>⚡ Cara cepat: '+esc(t.judul)+'</b><div>'+t.isi+'</div></div>';
+}
+
+/* ---------- TRYOUT ---------- */
+var NPKG=12;
+function mulberry32(seed){var a=seed>>>0;return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function seededShuffle(a,seed){a=a.slice();var rnd=mulberry32(seed);for(var i=a.length-1;i>0;i--){var j=Math.floor(rnd()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+/* Paket p (1..NPKG): per kategori ambil n soal FIXED, deterministik, tanpa overlap antar paket. */
+function pkgQuestions(p){
+ var qs=[],ci=0;
  Object.keys(CATS).forEach(function(c){
-  var idx=shuffle(BANK[c].map(function(_,i){return i;})).slice(0,CATS[c].n);
-  idx.forEach(function(ii){qs.push(prepQ(c,ii));});
+  var n=CATS[c].n;
+  /* satu permutasi per kategori (seed hanya dari kategori) -> slice offset menjamin tanpa overlap */
+  var idx=seededShuffle(BANK[c].map(function(_,i){return i;}),ci*97+13);
+  var off=(p-1)*n;
+  for(var k=0;k<n;k++){qs.push(prepQ(c,idx[off+k]));}
+  ci++;
  });
+ return qs;
+}
+function bestPkg(p){
+ var b=null;
+ ST.tryouts.forEach(function(t){if(t.pkg===p&&(!b||t.total>b.total))b=t;});
+ return b;
+}
+function vToPacks(){
+ S.pkgIntro=null;
+ var cards="";
+ for(var p=1;p<=NPKG;p++){
+  var b=bestPkg(p);
+  var st=b?'<span class="pill '+(b.pass?"ok":"no")+'">'+(b.pass?"LULUS":"GAGAL")+'</span>':'<span class="pill idle">BELUM</span>';
+  cards+='<div class="pkgcard"><div class="pkghead"><b>Paket '+p+'</b>'+st+'</div>'
+   +'<div class="pkgsub">TWK 30 • TIU 35 • TKP 45 — 100 menit</div>'
+   +(b?'<div class="pkgscore">Skor terbaik: <b>'+b.total+'</b> / 550</div>':'<div class="pkgscore dim">Belum dikerjakan</div>')
+   +'<button class="btn '+(b?"plain":"")+'" onclick="startToPkg('+p+')">'+(b?"Ulangi":"Mulai")+'</button></div>';
+ }
+ return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button>'
+  +'<div class="card"><h2>'+ic("stopwatch")+'Paket Tryout</h2>'
+  +'<p style="color:#6b7280;font-size:14px;font-weight:600;margin:0">12 paket simulasi ujian SKD asli — masing-masing 110 soal dengan susunan tetap. Kumpulkan skor terbaik di tiap paket!</p></div>'
+  +'<div class="pkggrid">'+cards+'</div>');
+}
+window.startToPkg=function(p){S.pkgIntro=p;go("to_intro");};
+function vToIntro(){
+ var p=S.pkgIntro;
+ if(!(p&&p>=1&&p<=NPKG))p=null;
+ var backTo=p?"to_packs":"dash";
+ var b=p?bestPkg(p):null;
+ return head('<button class="backlink" onclick="go(\''+backTo+'\')">'+ic("back")+(p?"Paket Tryout":"Dashboard")+'</button><div class="card"><h2>'+(p?("Tryout — Paket "+p):"Tryout SKD")+'</h2>'
+  +'<div class="info"><b>Simulasi persis ujian asli:</b><br>• 110 soal: TWK 30 • TIU 35 • TKP 45<br>• Waktu 100 menit (otomatis selesai saat habis)<br>• TWK/TIU: benar 5, salah 0 • TKP: skala 1–5<br>• Passing grade: TWK 65, TIU 80, TKP 166</div>'
+  +(p&&b?'<div class="hist"><span>Skor terbaik Paket '+p+'</span><span><b>'+b.total+'</b> '+(b.pass?'<span class="pill ok">LULUS</span>':'<span class="pill no">GAGAL</span>')+'</span></div>':"")
+  +'<button class="btn big" onclick="startTo('+(p?p:"")+')">Mulai Tryout</button></div>');
+}
+window.startTo=function(pkg){
+ var qs=[];
+ if(pkg&&pkg>=1&&pkg<=NPKG){
+  qs=pkgQuestions(pkg);
+ }else{
+  pkg=null;
+  Object.keys(CATS).forEach(function(c){
+   var idx=shuffle(BANK[c].map(function(_,i){return i;})).slice(0,CATS[c].n);
+   idx.forEach(function(ii){qs.push(prepQ(c,ii));});
+  });
+ }
  if(qs.length<110){alert("Bank soal belum lengkap untuk tryout (butuh 110, ada "+qs.length+").");return;}
- S.to={qs:qs,ans:new Array(qs.length).fill(-1),doubt:{},idx:0,left:6000,timer:null};
+ S.to={qs:qs,ans:new Array(qs.length).fill(-1),doubt:{},idx:0,left:6000,timer:null,pkg:pkg};
  go("to");
  S.to.timer=setInterval(function(){
   if(S.view!=="to"||!S.to){clearInterval(S.to.timer);return;}
@@ -428,7 +517,7 @@ window.ansTo=function(i){S.to.ans[S.to.idx]=i;render();};
 window.jumpTo=function(i){S.to.idx=i;render();window.scrollTo(0,0);};
 window.moveTo=function(d){S.to.idx=Math.min(S.to.qs.length-1,Math.max(0,S.to.idx+d));render();window.scrollTo(0,0);};
 window.togDoubt=function(v){if(v)S.to.doubt[S.to.idx]=1;else delete S.to.doubt[S.to.idx];};
-window.abortTo=function(){if(confirm("Batalkan tryout? Progres hilang.")){clearInterval(S.to.timer);S.to=null;go("dash");}};
+window.abortTo=function(){if(confirm("Batalkan tryout? Progres hilang.")){var pk=S.to&&S.to.pkg?S.to.pkg:null;clearInterval(S.to.timer);S.to=null;go(pk?"to_packs":"dash");}};
 window.finishTo=function(ask){
  if(ask){var un=S.to.ans.filter(function(a){return a<0;}).length;
   if(!confirm(un?("Masih ada "+un+" soal belum dijawab. Selesaikan?"):"Selesaikan tryout?"))return;}
@@ -442,7 +531,8 @@ window.finishTo=function(ask){
  res.total=res.twk+res.tiu+res.tkp;
  res.pass=res.twk>=65&&res.tiu>=80&&res.tkp>=166;
  var d=new Date(),ds=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
- ST.tryouts.push({d:ds,twk:res.twk,tiu:res.tiu,tkp:res.tkp,total:res.total,pass:res.pass?1:0});
+ var pkg=S.to.pkg||null;
+ ST.tryouts.push({d:ds,twk:res.twk,tiu:res.tiu,tkp:res.tkp,total:res.total,pass:res.pass?1:0,pkg:pkg});
  save();
  if(window.PathLib){
   T.qs.forEach(function(q,i){
@@ -454,7 +544,7 @@ window.finishTo=function(ask){
   });
   PathLib.completeTryout();
  }
- S.res={res:res,qs:T.qs,ans:T.ans};
+ S.res={res:res,qs:T.qs,ans:T.ans,pkg:pkg};
  S.to=null;go("to_result");
 };
 function vToResult(){
@@ -470,8 +560,9 @@ function vToResult(){
   else weak=an!==q.a;
   return{cat:q.cat,q:q.q,weak:weak};
  });
- return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>Hasil Tryout '+(res.pass?"🎉":"😔")+'</h2>'
+ return head('<button class="backlink" onclick="go(\''+(R.pkg?"to_packs":"dash")+'\')">'+ic("back")+(R.pkg?"Paket Tryout":"Dashboard")+'</button><div class="card"><h2>Hasil Tryout '+(R.pkg?("— Paket "+R.pkg):"")+' '+(res.pass?"🎉":"😔")+'</h2>'
   +'<div style="text-align:center;margin:10px 0"><span class="pill '+(res.pass?"ok":"no")+'" style="font-size:16px;padding:8px 24px">'+(res.pass?"LULUS PASSING GRADE":"BELUM LULUS")+'</span></div>'
+  +(res.pass?"":'<div class="motiv">🔥 <i>"'+esc(pickMotiv())+'"</i></div>')
   +'<div class="resgrid">'+rc("TWK","twk","TWK") +rc("TIU","tiu","TIU")+rc("TKP","tkp","TKP")+'</div>'
   +'<div style="text-align:center;color:#6b7280">Total skor: <b style="font-size:20px;color:#1e2433">'+res.total+'</b> / 550</div></div>'
   +techPanelHtml(items)
@@ -803,6 +894,7 @@ function render(){
  else if(S.view==="lat")h=vLat();
  else if(S.view==="lat_result")h=vLatResult();
  else if(S.view==="to_intro")h=vToIntro();
+ else if(S.view==="to_packs")h=vToPacks();
  else if(S.view==="to")h=vTo();
  else if(S.view==="to_result")h=vToResult();
  else if(S.view==="mat_list")h=vMatList();
