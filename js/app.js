@@ -12,6 +12,7 @@ var BANK={TWK:[],TIU:[],TKP:[]};
  for(var b=2;b<=11;b++){arr=arr.concat(window["QB_"+c+"_B"+b]||[]);}
  BANK[c]=arr;
 });
+var MAT={TWK:window.MAT_TWK||[],TIU:window.MAT_TIU||[],TKP:window.MAT_TKP||[]};
 var LS="siasn_v1";
 function load(){try{var s=JSON.parse(localStorage.getItem(LS));if(s&&s.done)return s;}catch(e){}return{done:{},tryouts:[]};}
 function save(){try{localStorage.setItem(LS,JSON.stringify(ST));}catch(e){}}
@@ -51,6 +52,9 @@ function vDash(){
   +'<div class="cta"><button class="btn ghost" onclick="go(\'lat_cat\')">Latihan Soal</button><button class="btn" style="background:#fff;color:#4f46e5" onclick="go(\'to_intro\')">Tryout SKD</button></div></div>'
   +'<div class="card"><h2>📊 Progresmu</h2>'+cards+'</div>'
   +'<div class="card"><h2>📚 Bank Soal</h2>'+prog+'</div>'
+  +'<div class="card"><h2>📖 Materi Pembelajaran</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px">Ringkasan padat per topik — langsung ke intinya.</p><div class="grid3">'
+  +Object.keys(CATS).map(function(c){return '<div class="catchoice" onclick="openMatList(\''+c+'\')"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p><span class="badge '+CATS[c].cls+'">'+MAT[c].length+' topik</span></div>';}).join("")
+  +'</div></div>'
   +'<div class="card"><h2>📝 Riwayat Tryout</h2>'+hist+'</div>'
   +'<div class="info"><b>Format SKD asli:</b> TWK 30 soal (PG 65) • TIU 35 soal (PG 80) • TKP 45 soal (PG 166) • Total 110 soal, 100 menit. Lulus = ketiga komponen mencapai passing grade masing-masing.</div>'
   +'<div class="footer">SiASN • soal latihan dimodelkan dari kisi-kisi & pola soal CPNS sebelumnya</div>'
@@ -211,7 +215,7 @@ function techPanelHtml(items){
   h+='<p style="color:#6b7280;font-size:14px;margin-bottom:12px">Fokus ke topik dengan salah terbanyak dulu — itu yang paling cepat mendongkrak skormu.</p>';
   rows.forEach(function(r){
    var tips=TECH[r.topic]||[];
-   h+='<div class="tech"><div class="theader"><span class="badge '+CATS[r.cat].cls+'">'+r.cat+'</span><b>'+esc(r.topic)+'</b><span class="wpill">'+r.weak+' salah / '+r.total+'</span></div><ul>'
+   h+='<div class="tech"><div class="theader"><span class="badge '+CATS[r.cat].cls+'">'+r.cat+'</span><b>'+esc(r.topic)+'</b><span class="wpill">'+r.weak+' salah / '+r.total+'</span><button class="learnbtn" onclick="openMat(\''+r.cat+'\',\''+esc(r.topic)+'\')">📖 Pelajari</button></div><ul>'
     +tips.map(function(t){return '<li><b>'+esc(t.t)+':</b> '+esc(t.d)+'</li>';}).join("")+'</ul></div>';
   });
  }
@@ -399,6 +403,33 @@ function vToResult(){
   +'<div class="card"><h2>Pembahasan</h2>'+reviewHtml(R.qs,R.ans)+'</div>');
 }
 
+/* ---------- MATERI ---------- */
+window.openMatList=function(c){S.mat={cat:c,idx:0};go("mat_list");};
+window.openMat=function(c,t){
+ var arr=MAT[c]||[],idx=0;
+ for(var i=0;i<arr.length;i++){if(arr[i].topic===t){idx=i;break;}}
+ S.mat={cat:c,idx:idx};go("mat_view");
+};
+window.matMove=function(d){S.mat.idx+=d;go("mat_view");};
+function vMatList(){
+ var c=S.mat.cat,arr=MAT[c]||[];
+ var h=arr.map(function(t,i){
+  return '<div class="mattopic" onclick="openMat(\''+c+'\',\''+esc(t.topic)+'\')"><span class="mn">'+(i+1)+'</span><span>'+esc(t.topic)+'</span><span class="mgo">→</span></div>';
+ }).join("");
+ return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><h2>📖 Materi '+c+'</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px">'+esc(CATS[c].full)+'</p>'+(h||'<div class="empty">Materi belum tersedia.</div>')+'</div>');
+}
+function vMatView(){
+ var M=S.mat,arr=MAT[M.cat]||[],t=arr[M.idx];
+ if(!t)return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><div class="empty">Materi tidak ditemukan.</div></div>');
+ var prev=M.idx>0,next=M.idx<arr.length-1;
+ return head('<button class="backlink" onclick="go(\'mat_list\')">← Daftar Materi</button><div class="card">'
+  +'<div class="qmeta"><span class="badge '+CATS[M.cat].cls+'">'+M.cat+'</span><span style="color:#6b7280;font-size:13px">Topik '+(M.idx+1)+' / '+arr.length+'</span></div>'
+  +'<h2 style="margin:10px 0 14px;font-size:19px">'+esc(t.topic)+'</h2>'
+  +'<div class="matbody">'+t.html+'</div>'
+  +'<div class="qnav">'+(prev?'<button class="btn plain" onclick="matMove(-1)">← Sebelumnya</button>':"<span></span>")
+  +(next?'<button class="btn" onclick="matMove(1)">Berikutnya →</button>':"")+'</div></div>');
+}
+
 /* ---------- RENDER ---------- */
 function render(){
  var el=document.getElementById("app"),h="";
@@ -409,6 +440,8 @@ function render(){
  else if(S.view==="to_intro")h=vToIntro();
  else if(S.view==="to")h=vTo();
  else if(S.view==="to_result")h=vToResult();
+ else if(S.view==="mat_list")h=vMatList();
+ else if(S.view==="mat_view")h=vMatView();
  el.innerHTML=h;
 }
 render();
