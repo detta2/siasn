@@ -12,7 +12,7 @@ var ORDER=[
 ];
 var STEPS=[];
 ORDER.forEach(function(o,i){
- var c=o[0],t=o[1];
+ var c=o[0].toUpperCase(),t=o[1];
  STEPS.push({id:"f1-"+c+"-"+i+"-m",fase:1,kind:"materi",cat:c,topic:t});
  STEPS.push({id:"f1-"+c+"-"+i+"-l",fase:1,kind:"latihan",cat:c,topic:t,n:15});
 });
