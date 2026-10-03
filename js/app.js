@@ -329,7 +329,7 @@ function vLat(){
  return head('<button class="backlink" onclick="go(\'lat_cat\')">'+ic("back")+'Kategori</button><div class="card">'
   +'<div class="qmeta"><span class="badge '+CATS[it.cat].cls+'">'+it.cat+'</span><span style="color:#6b7280;font-size:13px">Soal '+(L.pos+1)+' / '+total+'</span></div>'
   +'<div class="qtext">'+esc(q.q)+'</div><div class="opts">'+opts+'</div>'+fb
-  +(L.answered?'<div class="qnav"><button class="btn plain" onclick="endLat()">Selesai</button><button class="btn" onclick="nextLat()">"+ic("chev")+"</button></div>':"")
+  +(L.answered?'<div class="qnav"><button class="btn plain" onclick="endLat()">Selesai</button><button class="btn" onclick="nextLat()">'+ic("chev")+'</button></div>':"")
   +'</div>');
 }
 window.ansLat=function(i){
@@ -357,7 +357,7 @@ function vLatResult(){
  var acc=n?Math.round(ok/n*100):0;
  var items=hist.map(function(x){return{cat:x.cat,q:x.q,weak:!x.ok};});
  var clabel=L.mix?"Campuran":L.cat;
- return head('<button class="backlink" onclick="go(\'lat_cat\')">"+ic("back")+"Kategori</button><div class="card"><h2>Hasil Sesi Latihan</h2>'
+ return head('<button class="backlink" onclick="go(\'lat_cat\')">'+ic("back")+'Kategori</button><div class="card"><h2>Hasil Sesi Latihan</h2>'
   +'<div class="grid4"><div class="stat"><b>'+n+'</b><span>Soal dijawab</span></div><div class="stat"><b>'+ok+'</b><span>Tepat</span></div><div class="stat"><b>'+acc+'%</b><span>Akurasi</span></div><div class="stat"><b>'+clabel+'</b><span>Kategori</span></div></div>'
   +'<button class="btn big" onclick="restartLat()">Latihan Lagi</button></div>'
   +techPanelHtml(items));
@@ -378,7 +378,7 @@ function reviewHtml(qs,ans){
 
 /* ---------- TRYOUT ---------- */
 function vToIntro(){
- return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><h2>Tryout SKD</h2>'
+ return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>Tryout SKD</h2>'
   +'<div class="info"><b>Simulasi persis ujian asli:</b><br>• 110 soal: TWK 30 • TIU 35 • TKP 45<br>• Waktu 100 menit (otomatis selesai saat habis)<br>• TWK/TIU: benar 5, salah 0 • TKP: skala 1–5<br>• Passing grade: TWK 65, TIU 80, TKP 166</div>'
   +'<button class="btn big" onclick="startTo()">Mulai Tryout</button></div>');
 }
@@ -414,14 +414,14 @@ function vTo(){
  }).join("");
  var secTtl="";
  if(T.idx===0||T.qs[T.idx-1].cat!==q.cat)secTtl='<div class="secttl">'+q.cat+' — '+esc(CATS[q.cat].full)+'</div>';
- return head('<div class="card"><div class="tobar"><button class="backlink" style="margin:0" onclick="abortTo()">"+ic("x")+"Batal</button>'
-  +'<span class="timer" id="tmr">"+ic("clock")+"<span id="tmrT">'+fmtT(T.left)+'</span></span>'
+ return head('<div class="card"><div class="tobar"><button class="backlink" style="margin:0" onclick="abortTo()">'+ic("x")+'Batal</button>'
+  +'<span class="timer" id="tmr">'+ic("clock")+'<span id="tmrT">'+fmtT(T.left)+'</span></span>'
   +'<button class="btn" onclick="finishTo(true)">Selesai</button></div>'
   +'<div class="qmeta"><span class="badge '+CATS[q.cat].cls+'">'+q.cat+'</span><span style="color:#6b7280;font-size:13px">Soal '+(T.idx+1)+' / '+T.qs.length+'</span></div>'
   +secTtl+'<div class="qtext">'+esc(q.q)+'</div><div class="opts">'+opts+'</div>'
   +'<label class="doubtrow"><input type="checkbox" '+(T.doubt[T.idx]?"checked":"")+' onchange="togDoubt(this.checked)"> Ragu-ragu</label>'
-  +'<div class="qnav"><button class="btn plain" '+(T.idx===0?"disabled":"")+' onclick="moveTo(-1)">"+ic("back")+" Sebelumnya</button>'
-  +'<button class="btn plain" '+(T.idx===T.qs.length-1?"disabled":"")+' onclick="moveTo(1)">Berikutnya "+ic("chev")+"</button></div>'
+  +'<div class="qnav"><button class="btn plain" '+(T.idx===0?"disabled":"")+' onclick="moveTo(-1)">'+ic("back")+' Sebelumnya</button>'
+  +'<button class="btn plain" '+(T.idx===T.qs.length-1?"disabled":"")+' onclick="moveTo(1)">Berikutnya '+ic("chev")+'</button></div>'
   +'<div class="numgrid">'+grid+'</div></div>');
 }
 window.ansTo=function(i){S.to.ans[S.to.idx]=i;render();};
@@ -470,7 +470,7 @@ function vToResult(){
   else weak=an!==q.a;
   return{cat:q.cat,q:q.q,weak:weak};
  });
- return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><h2>Hasil Tryout '+(res.pass?"🎉":"😔")+'</h2>'
+ return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>Hasil Tryout '+(res.pass?"🎉":"😔")+'</h2>'
   +'<div style="text-align:center;margin:10px 0"><span class="pill '+(res.pass?"ok":"no")+'" style="font-size:16px;padding:8px 24px">'+(res.pass?"LULUS PASSING GRADE":"BELUM LULUS")+'</span></div>'
   +'<div class="resgrid">'+rc("TWK","twk","TWK") +rc("TIU","tiu","TIU")+rc("TKP","tkp","TKP")+'</div>'
   +'<div style="text-align:center;color:#6b7280">Total skor: <b style="font-size:20px;color:#1e2433">'+res.total+'</b> / 550</div></div>'
@@ -491,11 +491,11 @@ function vMatList(){
  var h=arr.map(function(t,i){
   return '<div class="mattopic" onclick="openMat(\''+c+'\',\''+esc(t.topic)+'\')"><span class="mn">'+(i+1)+'</span><span>'+esc(t.topic)+'</span><span class="mgo">→</span></div>';
  }).join("");
- return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><h2>"+ic("book")+"Materi '+c+'</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px">'+esc(CATS[c].full)+'</p>'+(h||'<div class="empty">Materi belum tersedia.</div>')+'</div>');
+ return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>'+ic("book")+'Materi '+c+'</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px">'+esc(CATS[c].full)+'</p>'+(h||'<div class="empty">Materi belum tersedia.</div>')+'</div>');
 }
 function vMatView(){
  var M=S.mat,arr=MAT[M.cat]||[],t=arr[M.idx];
- if(!t)return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button><div class="card"><div class="empty">Materi tidak ditemukan.</div></div>');
+ if(!t)return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><div class="empty">Materi tidak ditemukan.</div></div>');
  var prev=M.idx>0,next=M.idx<arr.length-1;
  var readBtn="";
  if(window.PathLib){
@@ -505,13 +505,13 @@ function vMatView(){
    ?'<button class="btn plain" style="width:100%;margin-top:14px" disabled>'+ic("check")+'Sudah dibaca ✓</button>'
    :'<button class="btn" style="width:100%;margin-top:14px" onclick="markMatRead()">'+ic("check")+'Tandai sudah dibaca</button>';
  }
- return head('<button class="backlink" onclick="go(\'mat_list\')">"+ic("back")+"Daftar Materi</button><div class="card">'
+ return head('<button class="backlink" onclick="go(\'mat_list\')">'+ic("back")+'Daftar Materi</button><div class="card">'
   +'<div class="qmeta"><span class="badge '+CATS[M.cat].cls+'">'+M.cat+'</span><span style="color:#6b7280;font-size:13px">Topik '+(M.idx+1)+' / '+arr.length+'</span></div>'
   +'<h2 style="margin:10px 0 14px;font-size:19px">'+esc(t.topic)+'</h2>'
   +'<div class="matbody">'+t.html+'</div>'
   +readBtn
-  +'<div class="qnav">'+(prev?'<button class="btn plain" onclick="matMove(-1)">"+ic("back")+"Sebelumnya</button>':"<span></span>")
-  +(next?'<button class="btn" onclick="matMove(1)">Berikutnya "+ic("chev")+"</button>':"")+'</div></div>');
+  +'<div class="qnav">'+(prev?'<button class="btn plain" onclick="matMove(-1)">'+ic("back")+'Sebelumnya</button>':"<span></span>")
+  +(next?'<button class="btn" onclick="matMove(1)">Berikutnya '+ic("chev")+'</button>':"")+'</div></div>');
 }
 window.markMatRead=function(){
  var M=S.mat,arr=MAT[M.cat]||[],t=arr[M.idx];
@@ -596,16 +596,16 @@ function vMentor(){
  var chips=["Rumus matematika","Deret angka","Sejarah proklamasi","Sinonim antonim","UUD 1945","Pelayanan publik"].map(function(c){
   return '<button class="chip" onclick="naraAsk(\''+c+'\')">'+c+'</button>';
  }).join("");
- return head('<button class="backlink" onclick="go(\'dash\')">"+ic("back")+"Dashboard</button>'
+ return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button>'
  +'<div class="m3dwrap"><canvas id="m3d"></canvas><div class="narasay" id="naraSay">Halo! Aku <b>Nara</b>, mentor belajarmu!</div></div>'
- +'<div class="card"><h2>"+ic("chat")+"Tanya Nara</h2>'
+ +'<div class="card"><h2>'+ic("chat")+'Tanya Nara</h2>'
  +'<div class="msearch"><input id="naraQ" placeholder="cth: rumus deret angka…" onkeydown="if(event.key===\'Enter\')askNara()"><button class="btn" onclick="askNara()">Tanya</button></div>'
  +'<div class="chips">'+chips+'</div></div>'
- +'<div class="card"><h2>"+ic("grad")+"Soal yang pernah kamu salah</h2>'+whtml+'</div>');
+ +'<div class="card"><h2>'+ic("grad")+'Soal yang pernah kamu salah</h2>'+whtml+'</div>');
 }
 function vMentorEx(){
  var Mc=S.mentor;
- if(!Mc)return head('<button class="backlink" onclick="go(\'mentor\')">"+ic("back")+"Mentor</button><div class="card"><div class="empty">Pilih dulu yang mau dijelasin.</div></div>');
+ if(!Mc)return head('<button class="backlink" onclick="go(\'mentor\')">'+ic("back")+'Mentor</button><div class="card"><div class="empty">Pilih dulu yang mau dijelasin.</div></div>');
  var body="";
  if(Mc.kind==="topic"){
   var t=null,arr=MAT[Mc.cat]||[],i;
@@ -615,9 +615,9 @@ function vMentorEx(){
   var q=window.Mentor3D?Mentor3D.getQ(Mc.cat,Mc.idx):null;
   body=q?mentorQHtml(Mc.cat,q):'<div class="empty">Soal tidak ditemukan.</div>';
  }
- return head('<button class="backlink" onclick="go(\'mentor\')">"+ic("back")+"Mentor</button>'
+ return head('<button class="backlink" onclick="go(\'mentor\')">'+ic("back")+'Mentor</button>'
  +'<div class="m3dwrap small"><canvas id="m3d2"></canvas><div class="narasay" id="naraSay">Siap ngejelasin…</div></div>'
- +'<div class="card"><div id="naraCtl"><button class="btn" onclick="replayExplain()">"+ic("speaker")+"Jelaskan</button> <button class="btn plain" onclick="stopExplain()">"+ic("stop")+"Berhenti</button></div>'
+ +'<div class="card"><div id="naraCtl"><button class="btn" onclick="replayExplain()">'+ic("speaker")+'Jelaskan</button> <button class="btn plain" onclick="stopExplain()">'+ic("stop")+'Berhenti</button></div>'
  +'<div class="naraText" id="naraText"></div></div>'
  +'<div class="card">'+body+'</div>');
 }
