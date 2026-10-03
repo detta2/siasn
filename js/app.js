@@ -57,6 +57,168 @@ function vDash(){
  );
 }
 
+/* ---------- TOPIK & TEKNIK BELAJAR ---------- */
+var TOPIC_RULES={
+ TWK:[
+  ["Pancasila",/pancasila|sila|bpupki|ppki|piagam jakarta|garuda/i],
+  ["UUD 1945",/uud ?1945|amandemen|pasal \d|mpr\b|dpr\b|dpd\b|mahkamah|konstitusi|perpu/i],
+  ["Bela Negara",/bela negara|sishankamrata|komponen cadangan|komponen pendukung|ketahanan nasional|proxy war|ancaman/i],
+  ["Sejarah Nasional",/proklamasi|kemerdekaan|revolusi|orde |reformasi|voc|penjajah|pergerakan|sumpah pemuda|agresi|linggarjati|renville|kmb|jepang|belanda/i],
+  ["NKRI & Kebangsaan",/nkri|bhinneka|nusantara|wawasan|djuanda|perbatasan|pulau|asean|deklarasi/i],
+  ["Bahasa Indonesia",/kata baku|kalimat|ejaan|tanda baca|huruf kapital|penulisan|paragraf|serapan|imbuhan/i]
+ ],
+ TIU:[
+  ["Sinonim",/sinonim/i],
+  ["Antonim",/antonim/i],
+  ["Analogi",/=| : /],
+  ["Figural",/gambar|pola|bangun|kubus|dadu|lipat|cermin|rotasi|simetri|panah|titik|sudut|segitiga|persegi|lingkaran|kotak/i],
+  ["Penalaran Logis",/kesimpulan|silogisme|premis|jika .* maka|semua |sebagian |tidak ada |implikasi/i],
+  ["Deret Angka",/^[\dA-Z,\s.\-–()]+$/],
+  ["Aritmetika",/./]
+ ],
+ TKP:[
+  ["Anti-Radikalisme",/radikal|ekstrem|teror|intoleran|khilafah/i],
+  ["TIK & Digital",/digital|siber|internet|hoaks|phising|phishing|media sosial|whatsapp|aplikasi|data pribadi|ransomware/i],
+  ["Sosial Budaya",/adat|agama|toleransi|suku|budaya|ibadah|keyakinan/i],
+  ["Kerjasama Tim",/rekan|kerjasama|koordinasi|konflik|\btim\b|musyawarah|rapat/i],
+  ["Profesionalisme & Integritas",/atasan|integritas|gratifikasi|korupsi|pungli|netralitas|disiplin|whistleblow|inspektorat|\bwbs\b/i],
+  ["Pelayanan Publik",/./]
+ ]
+};
+function topicOf(cat,qtext){
+ var rules=TOPIC_RULES[cat]||[],t=qtext||"";
+ for(var i=0;i<rules.length;i++){
+  if(rules[i][0]==="Deret Angka"){if(/,/.test(t)&&rules[i][1].test(t))return rules[i][0];continue;}
+  if(rules[i][1].test(t))return rules[i][0];
+ }
+ return "Umum";
+}
+var TECH={
+ "Pancasila":[
+  {t:"Active recall per sila",d:"Tutup catatan, sebutkan bunyi + contoh pengamalan tiap sila dari ingatan. Yang macet = yang diulang besok."},
+  {t:"Rangkai jadi cerita",d:"BPUPKI → Piagam Jakarta → PPKI dalam satu alur cerita, jangan hafal tanggal lepas-lepas."},
+  {t:"Spaced repetition",d:"Soal yang salah hari ini diulang besok, lalu 3 hari kemudian. Jangan diulang di hari yang sama saja."}
+ ],
+ "UUD 1945":[
+  {t:"Peta pasal",d:"Bikin mind map per bab (mis. Pasal 20–22 = DPR & UU). Visual lebih nempel daripada teks panjang."},
+  {t:"Flashcard bolak-balik",d:"Depan kartu = topik ('syarat presiden'), belakang = nomor pasal + isinya."},
+  {t:"Fokus pola 'kecuali'",d:"Soal UUD sering tanya pengecualian — latih dengan sengaja mencari opsi yang BUKAN."}
+ ],
+ "Bela Negara":[
+  {t:"Tabel perbandingan",d:"Jajarkan komponen utama / cadangan / pendukung + sishankamrata dalam satu tabel. Bedakan, jangan hafal lepas."},
+  {t:"Kaitkan UU dengan berita",d:"Tiap pasal UU 23/2019 cari contoh beritanya — konteks bikin hafalan tahan lama."},
+  {t:"Bedakan istilah mirip",d:"Tulis perbedaan sishankamrata vs ketahanan nasional vs wawasan nusantara. Soal suka mengecoh di sini."}
+ ],
+ "Sejarah Nasional":[
+  {t:"Timeline sendiri",d:"Gambar garis waktu 1908–1998 versi kamu: tahun + tokoh + dampak. Tempel di dinding."},
+  {t:"Rantai sebab-akibat",d:"Tiap peristiwa jawab 'kenapa terjadi?' dan 'apa akibatnya?' — soal suka tanya hubungan, bukan tahun doang."},
+  {t:"Kartu tokoh",d:"Satu tokoh satu kartu: peran + peristiwa terkait. Acak kartunya tiap review."}
+ ],
+ "NKRI & Kebangsaan":[
+  {t:"Peta konsep",d:"Hubungkan wawasan nusantara → astagatra → trigatra dalam satu bagan."},
+  {t:"Jembatan keledai",d:"Untuk daftar (pulau terdepan, 4 pilar, dsb.) bikin singkatan lucu yang gampang diingat."},
+  {t:"Kaitkan ke berita",d:"Baca berita perbatasan/geopolitik, hubungkan ke konsep yang dipelajari."}
+ ],
+ "Bahasa Indonesia":[
+  {t:"Drill 20 soal pola",d:"Kerjakan 20 soal kata baku sekaligus, yang salah masuk daftar pribadi."},
+  {t:"Daftar kata jebakan",d:"Kumpulkan kata yang sering salah (mis. 'apotek' bukan 'apotik'), review tiap pagi 5 menit."},
+  {t:"Pahami kaidahnya",d:"Baca pembahasan sampai paham ATURANNYA, bukan cuma jawabannya."}
+ ],
+ "Sinonim":[
+  {t:"10 kata per hari",d:"Ambil 10 kata dari soal yang salah, bikin flashcard + contoh kalimat sendiri."},
+  {t:"Pahami nuansa",d:"Sinonim bukan arti kembar — cek KBBI, perhatikan konteks pemakaiannya."},
+  {t:"Kelompokkan per tema",d:"Kata sifat, kata kerja, istilah serapan dipisah — lebih gampang diingat."}
+ ],
+ "Antonim":[
+  {t:"Kartu pasangan",d:"Satu kartu = satu pasangan lawan kata. Bolak-balik sampai lancar tanpa mikir."},
+  {t:"Waspadai jebakan",d:"Lawan kata kadang tidak mutlak — baca SEMUA opsi dulu sebelum mengunci."},
+  {t:"Ulangi yang salah",d:"Antonim yang pernah salah 90% muncul lagi dalam bentuk lain. Catat!"}
+ ],
+ "Analogi":[
+  {t:"Sebutkan relasinya dulu",d:"Sebelum lihat opsi, ucapkan hubungannya ('alat untuk...'). Baru cocokkan ke opsi."},
+  {t:"Uji tiap opsi",d:"Pasang tiap opsi ke pola yang sama — yang paling paralel = jawaban."},
+  {t:"Kumpulkan tipe relasi",d:"Sebab-akibat, alat-fungsi, bagian-keseluruhan — kenali polanya biar cepat."}
+ ],
+ "Deret Angka":[
+  {t:"Tulis pola yang kamu tahu",d:"Selisih, ×2±n, kuadrat, prima, selang-seling — cek satu-satu tiap soal."},
+  {t:"Kerjakan 2 arah",d:"Coba dari depan DAN dari belakang — kadang polanya kebaca dari belakang."},
+  {t:"Drill 60 detik",d:"Latih kecepatan: di ujian tiap soal cuma ~1 menit. Timer nyala tiap latihan."}
+ ],
+ "Aritmetika":[
+  {t:"Error log",d:"Catat TIPE soal yang salah (diskon? perbandingan? kecepatan?) + rumusnya. Review tiap minggu."},
+  {t:"Tulis langkahnya",d:"Jangan hitung di kepala — tulis biar ketahuan salahnya di langkah mana."},
+  {t:"Tanpa kalkulator",d:"Biasakan hitung manual dari sekarang biar cepat di hari-H."}
+ ],
+ "Penalaran Logis":[
+  {t:"Gambar diagram Venn",d:"Untuk silogisme, gambar lebih cepat daripada mikir abstrak."},
+  {t:"Uji kontraposisi",d:"'Jika A maka B' setara 'jika bukan B maka bukan A' — jebakan favorit soal."},
+  {t:"Waspadai 'tidak dapat disimpulkan'",d:"Kalau ragu, cek: apakah kesimpulan BENAR-BENAR mengikuti premis?"}
+ ],
+ "Figural":[
+  {t:"Sketsa ulang",d:"Gambar ulang polanya di kertas, putar/cerminkan manual pakai tangan."},
+  {t:"Cari yang berubah",d:"Tiap langkah tanya: apa yang berubah? Bentuk? Arah? Jumlah?"},
+  {t:"Hafalkan pola umum",d:"Rotasi 90°, cermin, lipat kertas, dadu berlawanan — itu-itu saja polanya."}
+ ],
+ "Pelayanan Publik":[
+  {t:"Empati dulu, prosedur jalan",d:"Opsi terbaik = peduli warga + tetap ikut aturan. Bukan salah satu."},
+  {t:"Cari yang paling proaktif",d:"Skor 5 selalu yang 'menjemput bola', bukan yang pasif menunggu."},
+  {t:"Bayangkan jadi warga",d:"Kalau kamu yang dilayani, perlakuan mana yang kamu mau? Itu biasanya skor 5."}
+ ],
+ "Profesionalisme & Integritas":[
+  {t:"Tolak + lapor jalur resmi",d:"Gratifikasi/korupsi = tolak, catat, lapor inspektorat/WBS. Bukan diviralkan."},
+  {t:"Atasan salah ≠ ikut salah",d:"Perintah yang melanggar aturan tetap ditolak dengan sopan."},
+  {t:"Ingat urutannya",d:"Integritas > loyalitas buta > kenyamanan pribadi."}
+ ],
+ "Kerjasama Tim":[
+  {t:"Tim di atas ego",d:"Opsi terbaik = koordinasi & musyawarah, bukan jalan sendiri."},
+  {t:"Konflik = mediasi",d:"Dengarkan semua pihak, cari jalan tengah, libatkan atasan bila perlu."},
+  {t:"Jangan menunda",d:"Pekerjaan tim yang macet = segera komunikasikan, bukan didiamkan."}
+ ],
+ "Sosial Budaya":[
+  {t:"Hormati + jalan tengah",d:"Adat/agama dihormati, solusi dicari bersama tetua/tokoh setempat."},
+  {t:"Jangan menghakimi",d:"Beda keyakinan/budaya = pahami dulu, bukan ceramahi."},
+  {t:"Libatkan yang dipercaya",d:"Tokoh adat/agama sebagai jembatan — dilibatkan, bukan dilangkahi."}
+ ],
+ "TIK & Digital":[
+  {t:"Data warga = amanah",d:"Tolak akses data untuk kepentingan pribadi, apapun alasannya."},
+  {t:"Verifikasi dulu",d:"Hoaks/phishing = klarifikasi resmi + edukasi warga, bukan ikut menyebar."},
+  {t:"Siapkan cadangan",d:"Sistem down = alihkan ke manual yang tertib. Pelayanan jangan berhenti."}
+ ],
+ "Anti-Radikalisme":[
+  {t:"Lapor aparat",d:"Konten/kelompok ekstrem = amankan bukti + lapor BNPT/aparat. Bukan main hakim sendiri."},
+  {t:"Narasi persatuan",d:"Lawan propaganda dengan fakta + ajak tokoh lintas agama bersuara."},
+  {t:"Waspadai rekrutmen halus",d:"Bantuan bersyarat ikut kajian ideologi = tolak polanya, penuhi kebutuhan via jalur resmi."}
+ ]
+};
+function analyzeWeak(items){
+ var map={};
+ items.forEach(function(it){
+  var tp=topicOf(it.cat,it.q),key=it.cat+"|"+tp;
+  if(!map[key])map[key]={cat:it.cat,topic:tp,weak:0,total:0};
+  map[key].total++;
+  if(it.weak)map[key].weak++;
+ });
+ return Object.keys(map).map(function(k){return map[k];})
+  .filter(function(m){return m.weak>0;})
+  .sort(function(a,b){return b.weak-a.weak;});
+}
+function techPanelHtml(items){
+ var rows=analyzeWeak(items);
+ var h='<div class="card"><h2>💡 Teknik Belajar Buatmu</h2>';
+ if(!rows.length){
+  h+='<div class="perfect">🎯 <b>Sempurna — tidak ada topik lemah!</b><p>Pertahankan dengan review berkala: tanpa pengulangan, 70% materi hilang dalam 24 jam. Tantangan berikutnya: tryout 110 soal dengan timer 100 menit.</p></div>';
+ }else{
+  h+='<p style="color:#6b7280;font-size:14px;margin-bottom:12px">Fokus ke topik dengan salah terbanyak dulu — itu yang paling cepat mendongkrak skormu.</p>';
+  rows.forEach(function(r){
+   var tips=TECH[r.topic]||[];
+   h+='<div class="tech"><div class="theader"><span class="badge '+CATS[r.cat].cls+'">'+r.cat+'</span><b>'+esc(r.topic)+'</b><span class="wpill">'+r.weak+' salah / '+r.total+'</span></div><ul>'
+    +tips.map(function(t){return '<li><b>'+esc(t.t)+':</b> '+esc(t.d)+'</li>';}).join("")+'</ul></div>';
+  });
+ }
+ h+='<div class="gtip">⏱️ <b>Tips umum:</b> ulangi soal yang salah minggu ini (spaced repetition mengalahkan belajar marathon), dan biasakan latihan pakai timer — kecepatan sama pentingnya dengan ketepatan.</div></div>';
+ return h;
+}
+
 /* ---------- LATIHAN ---------- */
 function vLatCat(){
  var h='<div class="grid3">';
@@ -69,7 +231,7 @@ function vLatCat(){
 }
 window.startLat=function(c){
  if(!BANK[c].length){alert("Bank soal "+c+" belum siap.");return;}
- S.lat={cat:c,order:shuffle(BANK[c].map(function(_,i){return i;})),pos:0,answered:false,pick:-1};
+ S.lat={cat:c,order:shuffle(BANK[c].map(function(_,i){return i;})),pos:0,answered:false,pick:-1,hist:[]};
  go("lat");
 };
 function prepQ(cat,qi){
@@ -103,13 +265,15 @@ function vLat(){
  return head('<button class="backlink" onclick="go(\'lat_cat\')">← Kategori</button><div class="card">'
   +'<div class="qmeta"><span class="badge '+CATS[L.cat].cls+'">'+L.cat+'</span><span style="color:#6b7280;font-size:13px">Soal '+(L.pos+1)+' / '+total+'</span></div>'
   +'<div class="qtext">'+esc(q.q)+'</div><div class="opts">'+opts+'</div>'+fb
-  +(L.answered?'<div class="qnav"><span></span><button class="btn" onclick="nextLat()">Lanjut →</button></div>':"")
+  +(L.answered?'<div class="qnav"><button class="btn plain" onclick="endLat()">Selesai</button><button class="btn" onclick="nextLat()">Lanjut →</button></div>':"")
   +'</div>');
 }
 window.ansLat=function(i){
  var L=S.lat;if(L.answered)return;
  L.answered=true;L.pick=i;
  var q=L.cur,good=q.isTKP?q.opts[i].s===5:i===q.a;
+ var weak=q.isTKP?q.opts[i].s<=3:i!==q.a;
+ L.hist.push({id:q.id,cat:L.cat,q:q.q,ok:!weak});
  ST.done[q.id]={c:L.cat,ok:good?1:0};save();
  render();
 };
@@ -118,6 +282,17 @@ window.nextLat=function(){
  if(L.pos>=L.order.length){L.order=shuffle(L.order);L.pos=0;}
  L.answered=false;L.pick=-1;go("lat");
 };
+window.endLat=function(){go("lat_result");};
+function vLatResult(){
+ var L=S.lat,hist=L.hist||[],n=hist.length,ok=0;
+ hist.forEach(function(x){if(x.ok)ok++;});
+ var acc=n?Math.round(ok/n*100):0;
+ var items=hist.map(function(x){return{cat:x.cat,q:x.q,weak:!x.ok};});
+ return head('<button class="backlink" onclick="go(\'lat_cat\')">← Kategori</button><div class="card"><h2>Hasil Sesi Latihan</h2>'
+  +'<div class="grid4"><div class="stat"><b>'+n+'</b><span>Soal dijawab</span></div><div class="stat"><b>'+ok+'</b><span>Tepat</span></div><div class="stat"><b>'+acc+'%</b><span>Akurasi</span></div><div class="stat"><b>'+L.cat+'</b><span>Kategori</span></div></div>'
+  +'<button class="btn big" onclick="startLat(\''+L.cat+'\')">Latihan Lagi</button></div>'
+  +techPanelHtml(items));
+}
 
 function reviewHtml(qs,ans){
  return qs.map(function(q,i){
@@ -209,10 +384,18 @@ function vToResult(){
   var sc=res[key],pg=CATS[c].pg,okp=sc>=pg;
   return '<div class="resc"><b>'+sc+'</b><small>'+label+'<br>PG '+pg+'</small><div style="margin-top:8px"><span class="pill '+(okp?"ok":"no")+'">'+(okp?"LULUS":"GAGAL")+'</span></div></div>';
  }
+ var items=R.qs.map(function(q,i){
+  var an=R.ans[i],weak;
+  if(an<0)weak=true;
+  else if(q.isTKP)weak=q.opts[an].s<=3;
+  else weak=an!==q.a;
+  return{cat:q.cat,q:q.q,weak:weak};
+ });
  return head('<button class="backlink" onclick="go(\'dash\')">← Dashboard</button><div class="card"><h2>Hasil Tryout '+(res.pass?"🎉":"😔")+'</h2>'
   +'<div style="text-align:center;margin:10px 0"><span class="pill '+(res.pass?"ok":"no")+'" style="font-size:16px;padding:8px 24px">'+(res.pass?"LULUS PASSING GRADE":"BELUM LULUS")+'</span></div>'
   +'<div class="resgrid">'+rc("TWK","twk","TWK") +rc("TIU","tiu","TIU")+rc("TKP","tkp","TKP")+'</div>'
   +'<div style="text-align:center;color:#6b7280">Total skor: <b style="font-size:20px;color:#1e2433">'+res.total+'</b> / 550</div></div>'
+  +techPanelHtml(items)
   +'<div class="card"><h2>Pembahasan</h2>'+reviewHtml(R.qs,R.ans)+'</div>');
 }
 
@@ -222,6 +405,7 @@ function render(){
  if(S.view==="dash")h=vDash();
  else if(S.view==="lat_cat")h=vLatCat();
  else if(S.view==="lat")h=vLat();
+ else if(S.view==="lat_result")h=vLatResult();
  else if(S.view==="to_intro")h=vToIntro();
  else if(S.view==="to")h=vTo();
  else if(S.view==="to_result")h=vToResult();
