@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pilih Tema Lautan — SiASN</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
+body{background:#eef2f7;padding:20px;max-width:520px;margin:0 auto}
+h1{text-align:center;font-size:22px;margin:8px 0 4px;color:#0b3d5c}
+.sub{text-align:center;color:#5b7a8c;font-size:14px;margin-bottom:20px}
+.opt{border-radius:20px;overflow:hidden;margin-bottom:26px;box-shadow:0 6px 24px rgba(0,40,70,.18);border:3px solid #fff}
+.opt .tag{background:#0b3d5c;color:#fff;font-weight:800;padding:10px 16px;font-size:16px;display:flex;justify-content:space-between;align-items:center}
+.opt .tag small{font-weight:600;opacity:.8;font-size:12px}
+.screen{padding:18px 16px 22px;min-height:340px}
+.hero{border-radius:16px;padding:18px;color:#fff;margin-bottom:14px}
+.hero b{font-size:20px;display:block}
+.hero span{font-size:13px;opacity:.92}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{border-radius:14px;padding:16px 12px;text-align:center;font-weight:700;font-size:14px}
+.tile .ic{font-size:30px;display:block;margin-bottom:6px}
+.tile small{display:block;font-weight:500;font-size:11px;margin-top:2px;opacity:.8}
+.bar{border-radius:12px;padding:10px 14px;margin-bottom:12px;font-size:13px;font-weight:700}
+
+/* ===== OPSI 1: Samudra Dalam ===== */
+.o1 .screen{background:linear-gradient(180deg,#041c33 0%,#062a4d 60%,#0a3a63 100%)}
+.o1 .hero{background:linear-gradient(135deg,#0e4d7a,#0a2f52);box-shadow:0 0 24px rgba(0,229,255,.25);border:1px solid rgba(0,229,255,.35)}
+.o1 .tile{background:rgba(255,255,255,.07);color:#dff6ff;border:1px solid rgba(0,229,255,.25)}
+.o1 .bar{background:rgba(0,229,255,.12);color:#aef3ff;border:1px solid rgba(0,229,255,.3)}
+.o1 .bub{position:relative}
+.o1 .bub::after{content:"🫧 🫧 🫧";position:absolute;top:8px;right:14px;opacity:.5;font-size:14px}
+
+/* ===== OPSI 2: Pantai Ceria ===== */
+.o2 .screen{background:linear-gradient(180deg,#bfefff 0%,#e0f9ff 55%,#fff7e6 100%)}
+.o2 .hero{background:linear-gradient(135deg,#00b4d8,#0096c7);box-shadow:0 4px 0 #0077a3}
+.o2 .tile{background:#fff;color:#0b3d5c;border:2px solid #90e0ef;box-shadow:0 3px 0 #90e0ef}
+.o2 .bar{background:#fff;border:2px dashed #00b4d8;color:#0077a3}
+
+/* ===== OPSI 3: Senja Bahari ===== */
+.o3 .screen{background:linear-gradient(180deg,#2b1a4d 0%,#7b2d5e 45%,#ff8c42 100%)}
+.o3 .hero{background:linear-gradient(135deg,#ff6b6b,#c94f7c);box-shadow:0 4px 18px rgba(255,140,66,.45)}
+.o3 .tile{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(2px)}
+.o3 .bar{background:rgba(255,255,255,.16);color:#ffe9d6;border:1px solid rgba(255,255,255,.35)}
+
+/* ===== OPSI 4: Ombak Minimalis ===== */
+.o4 .screen{background:#fff;background-image:radial-gradient(circle at 85% 12%,#e3f2fd 0 90px,transparent 91px),radial-gradient(circle at 8% 88%,#e3f2fd 0 70px,transparent 71px)}
+.o4 .hero{background:#fff;color:#0b3d5c;border:2px solid #0b3d5c;box-shadow:4px 4px 0 #0b3d5c}
+.o4 .hero span{color:#3d6b85}
+.o4 .tile{background:#f2f8fd;color:#0b3d5c;border:2px solid #bfe3f5}
+.o4 .tile .ic{filter:hue-rotate(0deg)}
+.o4 .bar{background:#eaf5fd;border:2px solid #0b3d5c;color:#0b3d5c;box-shadow:3px 3px 0 #0b3d5c}
+.wave{display:block;text-align:center;font-size:22px;letter-spacing:6px;margin-top:14px;opacity:.7}
+.note{background:#fff;border:2px solid #0b3d5c;border-radius:14px;padding:14px;font-size:13px;color:#33566b;margin-bottom:20px;box-shadow:3px 3px 0 #0b3d5c}
+</style>
+</head>
+<body>
+<h1>🌊 Pilih Tema Lautan</h1>
+<p class="sub">Mockup dashboard SiASN — balas dengan angka 1–4</p>
+
+<div class="note">Ini pratinjau aja. Nanti tema yang kamu pilih aku terapin ke <b>seluruh web</b> (dashboard, latihan, tryout, materi, mentor, jalur belajar) + ikon-ikonnya disesuaiin.</div>
+
+<!-- OPSI 1 -->
+<div class="opt o1">
+<div class="tag"><span>1 — Samudra Dalam</span><small>dark • misterius</small></div>
+<div class="screen">
+<div class="hero bub"><b>SiASN</b><span>Siap tempur SKD CPNS ⚓</span></div>
+<div class="bar">🛤️ Jalur Belajar — 12/43 langkah • 28%</div>
+<div class="grid">
+<div class="tile"><span class="ic">✏️</span>Latihan<small>koreksi + bahas</small></div>
+<div class="tile"><span class="ic">⏱️</span>Tryout<small>110 soal • 100 mnt</small></div>
+<div class="tile"><span class="ic">📖</span>Materi<small>19 topik</small></div>
+<div class="tile"><span class="ic">🤖</span>Mentor<small>tanya Nara</small></div>
+</div>
+</div>
+</div>
+
+<!-- OPSI 2 -->
+<div class="opt o2">
+<div class="tag"><span>2 — Pantai Ceria</span><small>terang • playful</small></div>
+<div class="screen">
+<div class="hero"><b>SiASN 🏝️</b><span>Belajar SKD senyaman liburan</span></div>
+<div class="bar">🛤️ Jalur Belajar — 12/43 langkah • 28%</div>
+<div class="grid">
+<div class="tile"><span class="ic">✏️</span>Latihan<small>koreksi + bahas</small></div>
+<div class="tile"><span class="ic">⏱️</span>Tryout<small>110 soal • 100 mnt</small></div>
+<div class="tile"><span class="ic">📖</span>Materi<small>19 topik</small></div>
+<div class="tile"><span class="ic">🤖</span>Mentor<small>tanya Nara</small></div>
+</div>
+<span class="wave">〜〜〜</span>
+</div>
+</div>
+
+<!-- OPSI 3 -->
+<div class="opt o3">
+<div class="tag"><span>3 — Senja Bahari</span><small>hangat • dramatis</small></div>
+<div class="screen">
+<div class="hero"><b>SiASN 🌅</b><span>Berlayar menuju NIP impian</span></div>
+<div class="bar">🛤️ Jalur Belajar — 12/43 langkah • 28%</div>
+<div class="grid">
+<div class="tile"><span class="ic">✏️</span>Latihan<small>koreksi + bahas</small></div>
+<div class="tile"><span class="ic">⏱️</span>Tryout<small>110 soal • 100 mnt</small></div>
+<div class="tile"><span class="ic">📖</span>Materi<small>19 topik</small></div>
+<div class="tile"><span class="ic">🤖</span>Mentor<small>tanya Nara</small></div>
+</div>
+</div>
+</div>
+
+<!-- OPSI 4 -->
+<div class="opt o4">
+<div class="tag"><span>4 — Ombak Minimalis</span><small>bersih • profesional</small></div>
+<div class="screen">
+<div class="hero"><b>SiASN</b><span>Latihan SKD CPNS — fokus & tenang</span></div>
+<div class="bar">🛤️ Jalur Belajar — 12/43 langkah • 28%</div>
+<div class="grid">
+<div class="tile"><span class="ic">✏️</span>Latihan<small>koreksi + bahas</small></div>
+<div class="tile"><span class="ic">⏱️</span>Tryout<small>110 soal • 100 mnt</small></div>
+<div class="tile"><span class="ic">📖</span>Materi<small>19 topik</small></div>
+<div class="tile"><span class="ic">🤖</span>Mentor<small>tanya Nara</small></div>
+</div>
+<span class="wave" style="color:#0b3d5c">〜〜〜</span>
+</div>
+</div>
+
+<p class="sub" style="margin-top:6px">Balas angka pilihannya ya 👆</p>
+</body>
+</html>
