@@ -302,6 +302,7 @@ function startLatPreset(p){
  S.lat={cat:p.cat||"MIX",order:idxs,pos:0,answered:false,pick:-1,hist:[],preset:p,mix:!!p.list,cur:null,curPos:-1};
  go("lat");
 }
+window.startLatPreset=startLatPreset;
 window.startLat=function(c){
  if(!BANK[c].length){alert("Bank soal "+c+" belum siap.");return;}
  startLatPreset({cat:c});
