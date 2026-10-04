@@ -9,7 +9,7 @@ var CATS={
 var BANK={TWK:[],TIU:[],TKP:[]};
 ["TWK","TIU","TKP"].forEach(function(c){
  var arr=window["QB_"+c]||[];
- for(var b=2;b<=33;b++){arr=arr.concat(window["QB_"+c+"_B"+b]||[]);}
+ for(var b=2;b<=40;b++){arr=arr.concat(window["QB_"+c+"_B"+b]||[]);}
  BANK[c]=arr;
 });
 var MAT={TWK:window.MAT_TWK||[],TIU:window.MAT_TIU||[],TKP:window.MAT_TKP||[]};
