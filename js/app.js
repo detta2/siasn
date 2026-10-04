@@ -267,10 +267,8 @@ function vLatCat(){
  var h='<div class="grid3">';
  var tiles={TWK:['flag','c0'],TIU:['zap','c1'],TKP:['users','c2']},ti=0;
  Object.keys(CATS).forEach(function(c){
-  var tot=BANK[c].length,dn=0;
-  Object.keys(ST.done).forEach(function(k){if(ST.done[k].c===c)dn++;});
   var t=tiles[c]||['book','c'+(ti%3)];ti++;
-  h+='<div class="catchoice" onclick="startLat(\''+c+'\')"><span class="ctile '+t[1]+'">'+ICONS[t[0]]+'</span><span style="flex:1"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p><span class="badge '+CATS[c].cls+'">'+dn+'/'+tot+' dikerjakan</span></span></div>';
+  h+='<div class="catchoice" onclick="startLat(\''+c+'\')"><span class="ctile '+t[1]+'">'+ICONS[t[0]]+'</span><span style="flex:1"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p></span></div>';
  });
  return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>'+ic("pencil")+'Latihan Soal</h2><p style="color:#6b7280;font-size:14px;margin-bottom:14px;font-weight:600">Pilih kategori. Jawaban langsung dikoreksi + pembahasan.</p>'+h+'</div>');
 }
