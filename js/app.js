@@ -268,9 +268,21 @@ function vLatCat(){
  var tiles={TWK:['flag','c0'],TIU:['zap','c1'],TKP:['users','c2']},ti=0;
  Object.keys(CATS).forEach(function(c){
   var t=tiles[c]||['book','c'+(ti%3)];ti++;
-  h+='<div class="catchoice" onclick="startLat(\''+c+'\')"><span class="ctile '+t[1]+'">'+ICONS[t[0]]+'</span><span style="flex:1"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p></span></div>';
+  h+='<div class="catchoice" onclick="openLatTopic(\''+c+'\')"><span class="ctile '+t[1]+'">'+ICONS[t[0]]+'</span><span style="flex:1"><b>'+c+'</b><p>'+esc(CATS[c].full)+'</p></span></div>';
  });
- return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>'+ic("pencil")+'Latihan Soal</h2><p style="color:#6b7280;font-size:14px;margin-bottom:14px;font-weight:600">Pilih kategori. Jawaban langsung dikoreksi + pembahasan.</p>'+h+'</div>');
+ return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button><div class="card"><h2>'+ic("pencil")+'Latihan Soal</h2><p style="color:#6b7280;font-size:14px;margin-bottom:14px;font-weight:600">Pilih kategori, lalu pilih topik. Jawaban langsung dikoreksi + pembahasan.</p>'+h+'</div>');
+}
+window.openLatTopic=function(c){S.latCat=c;go("lat_topic");};
+function vLatTopic(){
+ var c=S.latCat;
+ var counts={};
+ BANK[c].forEach(function(q){var t=topicOf(c,q.q);counts[t]=(counts[t]||0)+1;});
+ var topics=(TOPIC_RULES[c]||[]).map(function(r){return r[0];});
+ var h='<div class="mattopic" onclick="startLatPreset({cat:\''+c+'\'})"><span class="mn">★</span><span><b>Semua Topik</b> <small style="color:#6b7280">campuran • '+BANK[c].length+' soal</small></span><span class="mgo">'+ic("chev")+'</span></div>';
+ h+=topics.map(function(t,i){
+  return '<div class="mattopic" onclick="startLatPreset({cat:\''+c+'\',topic:\''+esc(t)+'\'})"><span class="mn">'+(i+1)+'</span><span>'+esc(t)+' <small style="color:#6b7280">• '+(counts[t]||0)+' soal</small></span><span class="mgo">'+ic("chev")+'</span></div>';
+ }).join("");
+ return head('<button class="backlink" onclick="go(\'lat_cat\')">'+ic("back")+'Kategori</button><div class="card"><h2>'+ic("pencil")+'Latihan '+c+'</h2><p style="color:#6b7280;font-size:14px;margin-bottom:12px;font-weight:600">'+esc(CATS[c].full)+' — pilih topik.</p>'+h+'</div>');
 }
 function startLatPreset(p){
  p=p||{};
@@ -889,6 +901,7 @@ function render(){
  var el=document.getElementById("app"),h="";
  if(S.view==="dash")h=vDash();
  else if(S.view==="lat_cat")h=vLatCat();
+ else if(S.view==="lat_topic")h=vLatTopic();
  else if(S.view==="lat")h=vLat();
  else if(S.view==="lat_result")h=vLatResult();
  else if(S.view==="to_intro")h=vToIntro();
