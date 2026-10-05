@@ -12,8 +12,11 @@
  --bd:2px solid var(--ink);--sh:4px 4px 0 var(--ink);--sh-sm:3px 3px 0 var(--ink);
  --r:20px;
 }
-html{-webkit-text-size-adjust:100%}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(circle at 88% 6%,#e3f2fd 0 90px,transparent 91px),radial-gradient(circle at 4% 94%,#e3f2fd 0 70px,transparent 71px),var(--bg);color:var(--ink);line-height:1.55;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(circle at 88% 6%,#e3f2fd 0 90px,transparent 91px),radial-gradient(circle at 4% 94%,#e3f2fd 0 70px,transparent 71px),var(--bg);color:var(--ink);line-height:1.55;-webkit-tap-highlight-color:transparent;overflow-x:clip}
+/* cegah grid/flex item melar melebihi kolom di layar kecil (min-width:auto bawaan browser) */
+.mmenu>*,.grid4>*,.grid3>*,.pkggrid>*,.numgrid>*,.resgrid>*{min-width:0}
+.mitem>*,.catchoice>*,.steprow>*{min-width:0}
 #app{max-width:920px;margin:0 auto;padding:0 14px 90px}
 
 /* ikon SVG */
