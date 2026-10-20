@@ -3,11 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SiASN — Latihan CPNS</title>
+<title>SiASN — Latihan Soal CPNS & Tryout SKD (TWK, TIU, TKP) Gratis</title>
+<meta name="description" content="SiASN — aplikasi latihan soal CPNS gratis 100% di browser: 19.900+ soal SKD (TWK, TIU, TKP), 12 paket tryout format ujian asli (110 soal, 100 menit, passing grade resmi), Bank Trik Cepat, materi, dan Jalur Belajar dari 0. Tanpa daftar, tanpa install — langsung latihan dari HP.">
+<meta name="keywords" content="latihan CPNS, soal SKD, tryout CPNS, TWK, TIU, TKP, bank soal CPNS, passing grade CPNS, belajar CPNS gratis">
+<meta name="author" content="Detta Pranata">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0096c7">
+<link rel="canonical" href="https://detta2.github.io/siasn/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230096c7'/%3E%3Ctext x='32' y='44' font-family='Arial, sans-serif' font-size='34' font-weight='bold' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<!-- OpenGraph: preview rapi saat link dibagikan ke WhatsApp/Telegram/dll -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SiASN">
+<meta property="og:title" content="SiASN — Latihan Soal CPNS & Tryout SKD Gratis">
+<meta property="og:description" content="19.900+ soal TWK, TIU, TKP + 12 paket tryout format ujian asli (110 soal, 100 menit). Gratis, tanpa daftar, langsung dari browser HP kamu.">
+<meta property="og:url" content="https://detta2.github.io/siasn/">
+<meta property="og:image" content="https://detta2.github.io/siasn/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SiASN — Latihan Soal CPNS dan Tryout SKD">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SiASN — Latihan Soal CPNS & Tryout SKD Gratis">
+<meta name="twitter:description" content="19.900+ soal TWK, TIU, TKP + 12 paket tryout format ujian asli. Gratis, tanpa daftar, langsung dari browser.">
+<meta name="twitter:image" content="https://detta2.github.io/siasn/og-image.png">
 <link rel="stylesheet" href="css/style.css?v=4">
+<style>
+/* === Initial loading state (statis, sebelum JS jalan) ===
+   Isi #app ini otomatis tertimpa saat app.js selesai render pertama. */
+.siasn-boot{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;text-align:center;background:#ffffff;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#0b2239}
+.siasn-boot-spinner{width:52px;height:52px;border-radius:50%;border:5px solid #d7eef7;border-top-color:#0096c7;animation:siasn-spin .8s linear infinite}
+@keyframes siasn-spin{to{transform:rotate(360deg)}}
+.siasn-boot-title{font-size:30px;font-weight:800;letter-spacing:.5px;color:#0096c7;margin-top:8px}
+.siasn-boot-text{font-size:16px;font-weight:600;margin:0}
+.siasn-boot-sub{font-size:13px;color:#5b7186;margin:0}
+.siasn-boot-slow{display:none;font-size:13px;color:#b45309;margin-top:10px}
+</style>
 </head>
 <body>
-<div id="app"></div>
+<noscript>
+  <div style="max-width:560px;margin:40px auto;padding:24px;border:2px solid #f59e0b;border-radius:14px;background:#fffbeb;color:#78350f;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;text-align:center">
+    <div style="font-size:28px">⚠️</div>
+    <h1 style="font-size:19px;margin:10px 0 6px">JavaScript Nonaktif</h1>
+    <p style="font-size:14px;line-height:1.55;margin:0">SiASN membutuhkan JavaScript untuk menampilkan soal latihan CPNS. Aktifkan JavaScript di pengaturan browser kamu, lalu muat ulang halaman ini.</p>
+  </div>
+</noscript>
+<div id="app">
+  <!-- Loading state statis: tertimpa otomatis oleh render pertama app.js -->
+  <div class="siasn-boot" role="status" aria-label="Memuat aplikasi SiASN">
+    <div class="siasn-boot-spinner" aria-hidden="true"></div>
+    <div class="siasn-boot-title">SiASN</div>
+    <p class="siasn-boot-text">Memuat Sistem SIASN...</p>
+    <p class="siasn-boot-sub">Menyiapkan 19.900+ soal TWK • TIU • TKP</p>
+    <p class="siasn-boot-slow" id="siasnBootSlow">Koneksi lambat? Tunggu sebentar lagi — atau <a href="" onclick="location.reload();return false;" style="color:#0096c7;font-weight:700">muat ulang halaman</a>.</p>
+  </div>
+</div>
+<script>
+/* Watchdog loading: kalau app belum render juga setelah 12 detik,
+   tampilkan petunjuk muat ulang (spinner saja bikin user bingung). */
+setTimeout(function(){var b=document.querySelector(".siasn-boot"),s=document.getElementById("siasnBootSlow");if(b&&s)s.style.display="block";},12000);
+</script>
 <script src="js/data/twk.js"></script>
 <script src="js/data/twk_b2.js"></script>
 <script src="js/data/twk_b3.js"></script>
