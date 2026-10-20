@@ -81,7 +81,6 @@ window.QB_TIU_B12 = [
 {id:"TIU-1880", q:"Tukang kayu : Gergaji = Tukang jahit : ....", opts:["Jarum","Benang","Mesin jahit","Kain","Gunting"], a:0, ex:"Tukang kayu menggunakan gergaji, seperti tukang jahit menggunakan jarum."},
 {id:"TIU-1881", q:"Lilin : Terang = Api : ....", opts:["Panas","Bara","Asap","Hangat","Nyala"], a:0, ex:"Lilin menghasilkan terang, seperti api menghasilkan panas."},
 {id:"TIU-1882", q:"Gema : Suara = Bayangan : ....", opts:["Cahaya","Gelap","Lampu","Sinar","Kaca"], a:0, ex:"Gema adalah pantulan suara, seperti bayangan adalah hasil terhalangnya cahaya."},
-{id:"TIU-1883", q:"Pena : Menulis = Kuas : ....", opts:["Melukis","Mengecat","Menggambar","Mewarnai","Menoreh"], a:0, ex:"Pena dipakai untuk menulis, seperti kuas dipakai untuk melukis."},
 {id:"TIU-1884", q:"Peternak : Ternak = Nelayan : ....", opts:["Ikan","Laut","Jala","Perahu","Pukat"], a:0, ex:"Peternak memelihara ternak, seperti nelayan menangkap ikan."},
 {id:"TIU-1885", q:"Sore : Senja = Pagi : ....", opts:["Fajar","Siang","Subuh","Terbit","Cerah"], a:0, ex:"Senja adalah bagian dari sore hari, seperti fajar adalah bagian dari pagi hari."},
 {id:"TIU-1886", q:"Es : Mencair = Air : ....", opts:["Menguap","Mendidih","Membeku","Mengalir","Menetes"], a:0, ex:"Es berubah wujud dengan mencair, seperti air berubah wujud dengan menguap."},
@@ -198,5 +197,5 @@ window.QB_TIU_B12 = [
 {id:"TIU-1997", q:"50% dari 300 adalah ....", opts:["150","151","149","152","148"], a:0, ex:"50% × 300 = 50/100 × 300 = 150."},
 {id:"TIU-1998", q:"Seorang pedagang membeli barang seharga Rp80.000 lalu menjualnya dengan keuntungan 50%. Harga jual barang tersebut adalah ....", opts:["Rp120.000","Rp120.001","Rp119.999","Rp120.002","Rp119.998"], a:0, ex:"Harga jual = Rp80.000 × (100+50)/100 = Rp120.000."},
 {id:"TIU-1999", q:"Dewi mulai berolahraga pukul 10.30 dan selesai pukul 13.30. Lama Dewi berolahraga adalah .... menit.", opts:["180","181","179","182","178"], a:0, ex:"Dari 10.30 ke 13.30 = 180 menit."},
-{id:"TIU-2000", q:"3/5 dari 175 adalah ....", opts:["105","106","104","107","103"], a:0, ex:"3/5 × 175 = 105."},
+{id:"TIU-2000", q:"3/5 dari 175 adalah ....", opts:["105","106","104","107","103"], a:0, ex:"3/5 × 175 = 105."}
 ];

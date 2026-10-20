@@ -24,7 +24,6 @@ window.QB_TIU_B39 = [
 {"id":"TIU-6640","q":"448, 224, 112, 56, 28, ...","opts":["14","15","13","16","12"],"a":0,"ex":"Pola: dibagi 2 tiap suku; suku berikutnya = 14."},
 {"id":"TIU-6641","q":"203, 232, 263, 296, 331, ...","opts":["368","369","367","370","366"],"a":0,"ex":"Pola: kuadrat +7; suku berikutnya = 368."},
 {"id":"TIU-6642","q":"21, 30, 41, 54, 69, ...","opts":["86","87","85","88","84"],"a":0,"ex":"Pola: kuadrat +5; suku berikutnya = 86."},
-{"id":"TIU-6643","q":"7, 28, 112, 448, 1792, ...","opts":["7168","7169","7167","7170","7166"],"a":0,"ex":"Pola: dikalikan 4 tiap suku; suku berikutnya = 7168."},
 {"id":"TIU-6644","q":"42, 57, 74, 93, 114, ...","opts":["137","138","136","139","135"],"a":0,"ex":"Pola: kuadrat -7; suku berikutnya = 137."},
 {"id":"TIU-6645","q":"79, 98, 119, 142, 167, ...","opts":["194","195","193","196","192"],"a":0,"ex":"Pola: kuadrat -2; suku berikutnya = 194."},
 {"id":"TIU-6646","q":"102, 123, 146, 171, 198, ...","opts":["227","228","226","229","225"],"a":0,"ex":"Pola: kuadrat +2; suku berikutnya = 227."},

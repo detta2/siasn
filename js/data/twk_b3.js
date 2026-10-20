@@ -145,7 +145,7 @@ window.QB_TWK_B3 = [
 {id:"TWK-324", q:"Kata baku dari 'himbau' adalah ....", opts:["imbaau","himbauan","himbau","imbau","himbaau"], a:3, ex:"Bentuk baku menurut KBBI adalah imbau (mengimbau)."},
 {id:"TWK-325", q:"Kata yang baku menurut KBBI adalah ....", opts:["ka'edah","kaidha","kaeddah","kaedah","kaidah"], a:4, ex:"Bentuk baku adalah kaidah, sedangkan kaedah tidak baku."},
 {id:"TWK-326", q:"Penulisan yang baku adalah ....", opts:["narasumber","nara-sumber","naraSumber","nara sumbr","nara sumber"], a:0, ex:"Bentuk baku ditulis serangkai: narasumber."},
-{id:"TWK-327", q:"Kata baku dari 'sistim' adalah ....", opts:["sistim","sistem","sistym","system","sistim"], a:1, ex:"Bentuk baku menurut KBBI adalah sistem."},
+{id:"TWK-327", q:"Kata baku dari 'sistim' adalah ....", opts:["sistim","sistem","sistym","system","systim"], a:1, ex:"Bentuk baku menurut KBBI adalah sistem."},
 {id:"TWK-328", q:"Kata baku dari 'tehnik' adalah ....", opts:["teknig","tehnik","teknik","tekhnik","teqnik"], a:2, ex:"Bentuk baku menurut KBBI adalah teknik."},
 {id:"TWK-329", q:"Kata baku dari 'merubah' adalah ....", opts:["mengubbah","merubah-rubah","merubah","mengubah","merobah"], a:3, ex:"Bentuk baku adalah mengubah (kata dasar ubah)."},
 {id:"TWK-330", q:"Kata baku dari 'sekedar' adalah ....", opts:["sekedarnya","skedar","sekaadar","sekedar","sekadar"], a:4, ex:"Bentuk baku menurut KBBI adalah sekadar."},

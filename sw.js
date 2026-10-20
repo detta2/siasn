@@ -14,7 +14,7 @@
    activate + semua cache versi lama DIHAPUS di activate.
    PENTING: naikkan SW_VERSION setiap rilis, samakan dengan APP_VERSION
    di js/app.js. */
-var SW_VERSION = "27";
+var SW_VERSION = "28";
 var CACHE = "siasn-v" + SW_VERSION;
 var CORE = [
   "./",

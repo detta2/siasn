@@ -68,7 +68,6 @@ window.QB_TIU_B11 = [
 {id:"TIU-1687", q:"6, 24, 60, 120, ....", opts:["180","200","210","216","240"], a:2, ex:"Pola n³ − n: 2³ − 2 = 6; 3³ − 3 = 24; 4³ − 4 = 60; 5³ − 5 = 120. Berikutnya: 6³ − 6 = 216 − 6 = 210."},
 {id:"TIU-1688", q:"5, 7, 11, 16, 23, 25, 47, ....", opts:["32","34","36","31","43"], a:1, ex:"Dua sub-deret berselang: posisi ganjil 5, 11, 23, 47 (×2 + 1); posisi genap 7, 16, 25 (+9). Suku berikutnya adalah posisi genap: 25 + 9 = 34."},
 {id:"TIU-1689", q:"4, 9, 19, 36, 62, ....", opts:["99","96","101","94","103"], a:0, ex:"Selisih tingkat 1: +5, +10, +17, +26. Selisih tingkat 2: +5, +7, +9 (deret ganjil, berikutnya +11). Selisih tingkat 1 berikutnya: 26 + 11 = 37. Suku berikutnya: 62 + 37 = 99."},
-{id:"TIU-1690", q:"Z, X, U, Q, L, ....", opts:["G","E","F","H","D"], a:2, ex:"Huruf mundur dengan lompatan membesar: Z −2 = X; X −3 = U; U −4 = Q; Q −5 = L. Berikutnya −6: L − 6 = F."},
 {id:"TIU-1691", q:"3, 7, 16, 35, ....", opts:["70","72","78","67","74"], a:4, ex:"Pola ×2 + n (n bertambah): 3 × 2 + 1 = 7; 7 × 2 + 2 = 16; 16 × 2 + 3 = 35. Berikutnya: 35 × 2 + 4 = 74."},
 {id:"TIU-1692", q:"7, 26, 63, 124, ....", opts:["210","216","224","215","200"], a:3, ex:"Pola n³ − 1: 2³ − 1 = 7; 3³ − 1 = 26; 4³ − 1 = 63; 5³ − 1 = 124. Berikutnya: 6³ − 1 = 216 − 1 = 215."},
 {id:"TIU-1693", q:"2B, 4D, 8G, 16K, ....", opts:["32O","32P","32Q","30P","36P"], a:1, ex:"Angka: 2, 4, 8, 16 (×2, berikutnya 32). Huruf: B, D, G, K (lompat +2, +3, +4, berikutnya +5 → P). Suku berikutnya: 32P."},

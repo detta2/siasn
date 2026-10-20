@@ -64,7 +64,6 @@ window.QB_TIU_B13 = [
 {id:"TIU-2503", q:"Penjahit : Baju = Tukang roti : ....", opts:["Roti","Tepung","Oven","Toko","Kue"], a:0, ex:"Penjahit membuat baju, seperti tukang roti membuat roti."},
 {id:"TIU-2504", q:"Matahari : Siang = Bulan : ....", opts:["Malam","Bintang","Gelap","Terang","Purnama"], a:0, ex:"Matahari identik dengan siang hari, seperti bulan identik dengan malam hari."},
 {id:"TIU-2505", q:"Daun : Fotosintesis = Paru-paru : ....", opts:["Bernapas","Oksigen","Udara","Darah","Jantung"], a:0, ex:"Daun berfungsi untuk fotosintesis, seperti paru-paru berfungsi untuk bernapas."},
-{id:"TIU-2506", q:"Buku : Dibaca = Lagu : ....", opts:["Didengar","Dinyanyikan","Dimainkan","Dinikmati","Direkam"], a:0, ex:"Buku dinikmati dengan cara dibaca, seperti lagu dinikmati dengan cara didengar."},
 {id:"TIU-2507", q:"Sopir : Mobil = Masinis : ....", opts:["Kereta","Rel","Stasiun","Gerbong","Lokomotif"], a:0, ex:"Sopir mengemudikan mobil, seperti masinis menjalankan kereta."},
 {id:"TIU-2508", q:"Semut : Gula = Rayap : ....", opts:["Kayu","Tanah","Daun","Kertas","Rumah"], a:0, ex:"Semut menyukai gula, seperti rayap memakan kayu."},
 {id:"TIU-2509", q:"Kelapa : Santan = Kacang tanah : ....", opts:["Minyak","Gorengan","Lemak","Bumbu","Sambal"], a:0, ex:"Kelapa diolah menjadi santan, seperti kacang tanah diolah menjadi minyak."},
@@ -198,5 +197,5 @@ window.QB_TIU_B13 = [
 {id:"TIU-2637", q:"Seorang pedagang membeli barang seharga Rp100.000 dan menjualnya kembali seharga Rp140.000. Keuntungan yang diperoleh adalah ....", opts:["Rp40.000","Rp40.001","Rp39.999","Rp40.002","Rp39.998"], a:0, ex:"Keuntungan = harga jual − harga beli = Rp140.000 − Rp100.000 = Rp40.000."},
 {id:"TIU-2638", q:"Perbandingan tinggi tiang A dan tiang B adalah 2 banding 1. Selisih tinggi keduanya 6 meter. Tinggi tiang A adalah .... meter.", opts:["12","13","11","14","10"], a:0, ex:"Selisih perbandingan = 1 setara 6 meter, maka 1 bagian = 6 meter. Tinggi A = 2 × 6 = 12 meter."},
 {id:"TIU-2639", q:"KPK dari 7 dan 8 adalah ....", opts:["56","57","55","58","54"], a:0, ex:"KPK(7, 8) = 7 × 8 / FPB(7, 8) = 56."},
-{id:"TIU-2640", q:"KPK dari 5 dan 25 adalah ....", opts:["25","26","24","27","23"], a:0, ex:"KPK(5, 25) = 5 × 25 / FPB(5, 25) = 25."},
+{id:"TIU-2640", q:"KPK dari 5 dan 25 adalah ....", opts:["25","26","24","27","23"], a:0, ex:"KPK(5, 25) = 5 × 25 / FPB(5, 25) = 25."}
 ];

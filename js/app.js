@@ -12,7 +12,7 @@ var CATS={
    dibuka) + bertahap di latar belakang. File yang hilang ditoleransi
    (onerror -> lanjut) — mis. batch TWK b15-b18 memang tidak pernah ada.
    APP_VERSION = cache-busting terpusat untuk semua file data. */
-var APP_VERSION="27";
+var APP_VERSION="28";
 var BANK={TWK:[],TIU:[],TKP:[]};
 var MAT={TWK:[],TIU:[],TKP:[]};
 var BANK_FILES={
@@ -39,10 +39,19 @@ function loadScript(src){
  _scriptPromises[src]=p;
  return p;
 }
+function validQ(q,c){
+ /* Perisai null-safety: soal korup (field hilang/salah tipe/kunci liar)
+    dilewati diam-diam agar aplikasi tidak pernah crash karenanya. */
+ if(!q||typeof q.q!=="string"||!q.q.trim()||!Array.isArray(q.opts)||q.opts.length<3)return false;
+ if(c==="TKP")return q.opts.every(function(o){return o&&typeof o.t==="string"&&o.t.trim()&&typeof o.s==="number"&&o.s>=1&&o.s<=5;});
+ return Number.isInteger(q.a)&&q.a>=0&&q.a<q.opts.length&&q.opts.every(function(o){return typeof o==="string"&&!!o.trim();});
+}
 function fillBank(c){
  var arr=window["QB_"+c]||[];
  for(var b=2;b<=40;b++){arr=arr.concat(window["QB_"+c+"_B"+b]||[]);}
- BANK[c]=arr;
+ var before=arr.length;
+ BANK[c]=arr.filter(function(q){return validQ(q,c);});
+ if(arr.length!==BANK[c].length&&window.console)console.warn("[SiASN] "+(before-BANK[c].length)+" soal "+c+" korup dilewati demi keamanan.");
 }
 function fillMat(){["TWK","TIU","TKP"].forEach(function(c){MAT[c]=window["MAT_"+c]||[];});}
 function loadMany(files,dir){
