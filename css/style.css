@@ -275,3 +275,8 @@ summary::-webkit-details-marker{display:none}
 .sesscard{border:2px solid #f59e0b;background:#fffbeb}
 .sessrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
 .sessrow .btn{min-height:44px}
+
+/* === Diagnostic Coach (Mentor) === */
+.diagrow{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px dashed #e2e8f0}
+.diagrow:last-of-type{border-bottom:none}
+.trikcard{margin-top:12px;border:2px solid #0096c7;background:#f0faff;border-radius:14px;padding:12px 14px}

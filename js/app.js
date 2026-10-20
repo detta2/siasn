@@ -12,7 +12,7 @@ var CATS={
    dibuka) + bertahap di latar belakang. File yang hilang ditoleransi
    (onerror -> lanjut) — mis. batch TWK b15-b18 memang tidak pernah ada.
    APP_VERSION = cache-busting terpusat untuk semua file data. */
-var APP_VERSION="25";
+var APP_VERSION="26";
 var BANK={TWK:[],TIU:[],TKP:[]};
 var MAT={TWK:[],TIU:[],TKP:[]};
 var BANK_FILES={
@@ -23,11 +23,12 @@ var BANK_FILES={
 var MAT_FILES=["materi_twk.js","materi_tiu.js","materi_tkp.js"];
 var DATA_STATE={banks:false,materi:false,trik:false,mentor:false};
 var DATA_COUNT={done:0,total:0};
-var _scriptCache={};
+var _scriptPromises={};
 function loadScript(src){
- return new Promise(function(resolve){
-  if(_scriptCache[src]){resolve();return;}
-  _scriptCache[src]=1;
+ /* Dedup in-flight: URL yang sama tidak pernah di-inject dua kali —
+    pemanggil bersamaan (background vs on-demand) berbagi 1 Promise. */
+ if(_scriptPromises[src])return _scriptPromises[src];
+ var p=new Promise(function(resolve){
   var s=document.createElement("script");
   s.src=src+"?v="+APP_VERSION;
   s.async=true;
@@ -35,6 +36,8 @@ function loadScript(src){
   s.onerror=function(){resolve();};
   document.head.appendChild(s);
  });
+ _scriptPromises[src]=p;
+ return p;
 }
 function fillBank(c){
  var arr=window["QB_"+c]||[];
@@ -833,6 +836,64 @@ function mentorQHtml(cat,q){
   +'<p style="font-size:15.5px;font-weight:600;margin:10px 0 12px;line-height:1.6">'+esc(q.q)+'</p>'+rows
   +'<div class="explain"><b>Pembahasan:</b> '+esc(q.ex)+'</div>';
 }
+/* ---------- DIAGNOSIS MENTOR (Diagnostic Coach) ---------- */
+function mentorDiagHtml(){
+ if(!window.Mentor3D||!Mentor3D.diagnose)return "";
+ var d=Mentor3D.diagnose();
+ var rows=["TWK","TIU","TKP"].map(function(c){
+  var x=d.cats[c];
+  var stat=x.avg===null?'<span class="pill idle">BELUM TRYOUT</span>':(x.gap<=0?'<span class="pill ok">RATA2 '+x.avg+' ≥ PG '+x.pg+'</span>':'<span class="pill no">RATA2 '+x.avg+' • KURANG '+x.gap+'</span>');
+  var wk=x.weakTopics.length?('<div style="font-size:12.5px;color:#6b7280;margin-top:3px">Sering salah: '+x.weakTopics.map(function(t){return esc(t.topic)+' ('+t.wrong+'×)';}).join(", ")+'</div>'):"";
+  return '<div class="diagrow"><span class="badge '+CATS[c].cls+'">'+c+'</span><span style="flex:1"><b>'+esc(CATS[c].full)+'</b>'+wk+'</span>'+stat+'</div>';
+ }).join("");
+ var cta="";
+ if(!d.hasTryout&&d.totalDone===0){
+  cta='<div class="sessrow"><button class="btn" onclick="startTo()">📝 Mulai Tryout Diagnostik</button><button class="btn plain" onclick="go(\'lat_cat\')">⚡ Latihan Perdana</button></div>';
+ }else if(d.critical){
+  var c=d.critical;
+  cta='<div class="sessrow"><button class="btn" onclick="startLatPreset({cat:\''+c+'\',n:10})">⚡ Latihan 10 Soal '+c+' Sekarang</button><button class="btn plain" onclick="go(\'jalur\')">🗺 Jalur Belajar</button></div>';
+ }
+ return '<div class="card"><h2>'+ic("chart")+'Diagnosis Nara</h2>'+rows
+  +'<p style="font-size:13px;color:#6b7280;margin-top:8px">'+(d.hasTryout?("Berdasarkan "+d.nTryout+" tryout & "+d.totalDone+" soal latihan yang tercatat di perangkat ini."):"Diagnosis lengkap aktif setelah tryout pertamamu.")+'</p>'
+  +cta
+  +'<div class="sessrow"><button class="btn plain" onclick="naraTrik()">💡 Kasih 1 Trik Cepat Hari Ini</button><button class="btn plain" onclick="naraBedah()">🔍 Bedah Kelemahanku</button></div>'
+  +'<div id="naraCard"></div></div>';
+}
+window.naraTrik=function(){
+ if(!DATA_STATE.trik){gateShow("trik");ensureData("trik").then(function(){gateHide();window.naraTrik();});return;}
+ if(!window.Mentor3D||!Mentor3D.trikHariIni)return;
+ var d=Mentor3D.diagnose();
+ var t=Mentor3D.trikHariIni(d.critical||null);
+ var el=document.getElementById("naraCard");
+ if(!t){if(el)el.innerHTML='<div class="empty">Data trik belum siap — coba lagi sebentar.</div>';return;}
+ var topikAttr=esc(t.topic).replace(/'/g,"\\'");
+ var latBtn=(["TWK","TIU","TKP"].indexOf(t.cat)>=0)?'<button class="btn" onclick="startLatPreset({cat:\''+t.cat+'\',topic:\''+topikAttr+'\',n:10})">⚡ Latihan Topik Ini</button>':'<button class="btn" onclick="startTo()">📝 Terapkan di Tryout</button>';
+ if(el)el.innerHTML='<div class="trikcard"><div style="font-weight:800;margin-bottom:4px">💡 '+esc(t.judul)+'</div><div style="font-size:12px;color:#6b7280;margin-bottom:6px">'+esc(t.cat)+' • '+esc(t.topic)+'</div><div class="trikbody">'+t.isi+'</div><div class="sessrow">'+latBtn+'<button class="btn plain" onclick="go(\'trik\')">📖 Semua Trik Cepat</button></div></div>';
+ naraSay("Ini trik buatmu hari ini: <b>"+esc(t.judul)+"</b>. Klik Latihan Topik Ini buat langsung praktik ya.");
+ Mentor3D.speak("Trik hari ini: "+t.judul);
+};
+window.naraBedah=function(){
+ if(!window.Mentor3D||!Mentor3D.diagnose)return;
+ var d=Mentor3D.diagnose();
+ var el=document.getElementById("naraCard");
+ var h='<div class="trikcard"><div style="font-weight:800;margin-bottom:4px">🔍 Bedah Kelemahan</div>';
+ var ada=false;
+ ["TWK","TIU","TKP"].forEach(function(c){
+  var x=d.cats[c];
+  if(x.weakTopics.length){
+   ada=true;
+   h+='<div style="margin-top:6px"><span class="badge '+CATS[c].cls+'">'+c+'</span> '+x.weakTopics.map(function(t){
+    var ta=esc(t.topic).replace(/'/g,"\\'");
+    return '<button class="chip" style="margin:4px 4px 0 0" onclick="startLatPreset({cat:\''+c+'\',topic:\''+ta+'\',n:10})">'+esc(t.topic)+' • '+t.wrong+'× salah — latih</button>';
+   }).join("")+'</div>';
+  }
+ });
+ if(!ada)h+='<div class="empty">Belum ada pola kesalahan yang terbaca. Kerjakan beberapa soal dulu ya.</div>';
+ h+='</div>';
+ if(el)el.innerHTML=h;
+ naraSay("Sudah kubedah — topik yang paling sering bikin kamu salah ada di kartu Diagnosis. Klik topiknya buat langsung latihan terfokus.");
+};
+
 function vMentor(){
  var wrong=window.Mentor3D?Mentor3D.wrongList(8):[];
  var whtml=wrong.length?wrong.map(function(w){
@@ -844,7 +905,8 @@ function vMentor(){
   return '<button class="chip" onclick="naraAsk(\''+c+'\')">'+c+'</button>';
  }).join("");
  return head('<button class="backlink" onclick="go(\'dash\')">'+ic("back")+'Dashboard</button>'
- +'<div class="m3dwrap"><canvas id="m3d"></canvas><div class="narasay" id="naraSay">Halo! Aku <b>Nara</b>, mentor belajarmu!</div></div>'
+ +'<div class="m3dwrap"><canvas id="m3d"></canvas><div class="narasay" id="naraSay">Halo! Aku <b>Nara</b> — kubacakan diagnosis belajarmu…</div></div>'
+ +mentorDiagHtml()
  +'<div class="card"><h2>'+ic("chat")+'Tanya Nara</h2>'
  +'<div class="msearch"><input id="naraQ" placeholder="cth: rumus deret angka…" onkeydown="if(event.key===\'Enter\')askNara()"><button class="btn" onclick="askNara()">Tanya</button></div>'
  +'<div class="chips">'+chips+'</div></div>'

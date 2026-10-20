@@ -153,6 +153,61 @@ function wrongList(n){
  return out.slice(-(n||12)).reverse();
 }
 
+/* ================= DIAGNOSTIC COACH =================
+   Analisis performa ASLI dari localStorage user (window.SIASN.ST):
+   rata-rata skor tryout per sub-tes, selisih dari passing grade resmi,
+   akurasi latihan, dan topik yang paling sering salah (via topicOf). */
+var PG={TWK:65,TIU:80,TKP:166};
+function stData(){return (window.SIASN&&window.SIASN.ST)||{done:{},tryouts:[]};}
+function diagnose(){
+ var S=stData(),tos=S.tryouts||[],done=S.done||{};
+ var cats={};
+ ["TWK","TIU","TKP"].forEach(function(c){
+  var scores=tos.map(function(t){return t[c.toLowerCase()];}).filter(function(x){return typeof x==="number";});
+  var avg=scores.length?Math.round(scores.reduce(function(a,b){return a+b;},0)/scores.length):null;
+  var dn=0,ok=0;
+  Object.keys(done).forEach(function(id){var d=done[id];if(d&&d.c===c){dn++;if(d.ok)ok++;}});
+  cats[c]={avg:avg,last:scores.length?scores[scores.length-1]:null,pg:PG[c],gap:avg===null?null:PG[c]-avg,done:dn,ok:ok,acc:dn?Math.round(ok/dn*100):null,weakTopics:[]};
+ });
+ var topicOf=(window.SIASN&&window.SIASN.topicOf)||null;
+ if(topicOf){
+  var tw={};
+  Object.keys(done).forEach(function(id){
+   var d=done[id];if(!d||d.ok)return;
+   var f=findQ(id);if(!f)return;
+   var q=getQ(f.cat,f.idx);if(!q)return;
+   var t=topicOf(f.cat,q.q),k=f.cat+"|"+t;
+   if(!tw[k])tw[k]={cat:f.cat,topic:t,wrong:0};
+   tw[k].wrong++;
+  });
+  Object.keys(tw).forEach(function(k){if(cats[tw[k].cat])cats[tw[k].cat].weakTopics.push(tw[k]);});
+  ["TWK","TIU","TKP"].forEach(function(c){cats[c].weakTopics.sort(function(a,b){return b.wrong-a.wrong;});cats[c].weakTopics=cats[c].weakTopics.slice(0,3);});
+ }
+ var crit=null,critGap=-1e9;
+ ["TWK","TIU","TKP"].forEach(function(c){var g=cats[c].gap;if(g!==null&&g>critGap){critGap=g;crit=c;}});
+ if(!crit){var ba=null;["TWK","TIU","TKP"].forEach(function(c){if(cats[c].done>=5&&(ba===null||cats[c].acc<cats[ba].acc))ba=c;});crit=ba;}
+ return {hasTryout:tos.length>0,nTryout:tos.length,totalDone:Object.keys(done).length,cats:cats,critical:crit};
+}
+function diagnosisText(){
+ var d;
+ try{d=diagnose();}catch(e){return "Halo! Aku Nara, mentor belajarmu. Ketik pertanyaan, atau pilih soal yang pernah kamu salah — aku jelasin pakai suara.";}
+ if(!d.hasTryout&&d.totalDone===0)return "Halo! Aku Nara, mentor belajarmu. Kamu belum punya data belajar sama sekali — mulai dengan Tryout Diagnostik atau Latihan Perdana ya, biar aku bisa membaca kekuatan dan kelemahanmu.";
+ if(!d.hasTryout)return "Halo! Aku Nara. Kamu sudah mengerjakan "+d.totalDone+" soal latihan, tapi belum pernah tryout penuh — jadi kesiapan passing grade-mu belum bisa kunilai. Coba satu tryout ya, setelah itu kubedah hasilmu di kartu Diagnosis.";
+ var s="Halo! Aku Nara. Dari "+d.nTryout+" tryout, rata-ratamu TWK "+d.cats.TWK.avg+", TIU "+d.cats.TIU.avg+", TKP "+d.cats.TKP.avg+". ";
+ var c=d.critical;
+ if(c&&d.cats[c].gap>0)s+="Yang paling kritis "+c+": masih kurang "+d.cats[c].gap+" poin dari passing grade "+d.cats[c].pg+". Kita fokus ke sana dulu — tombol latihannya ada di kartu Diagnosis.";
+ else s+="Semua sub-tes rata-ratanya sudah lewat passing grade. Pertahankan ritmenya, dan poles topik yang masih sering salah di kartu Diagnosis.";
+ return s;
+}
+function trikHariIni(catPref){
+ var arr=window.TRIK||[];
+ if(!arr.length)return null;
+ var pool=catPref?arr.filter(function(t){return t.cat===catPref;}):[];
+ if(!pool.length)pool=arr;
+ var day=Math.floor(Date.now()/86400000);
+ return pool[day%pool.length];
+}
+
 /* ================= SUARA ================= */
 var voice=null,speaking=false,stopFlag=false;
 function pickVoice(){
@@ -285,7 +340,8 @@ function init(canvas){
  var wrap=canvas.parentNode;
  var w=wrap?wrap.clientWidth:320;
  if(!w)w=320;
- var h=Math.round(Math.min(400,Math.max(300,w*0.92)));
+ var small=canvas.id==="m3d2";
+ var h=small?Math.round(Math.min(170,Math.max(140,w*0.42))):Math.round(Math.min(230,Math.max(185,w*0.58)));
  try{
   renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
  }catch(e){return false;}
@@ -335,7 +391,7 @@ function setTalking(b){talking=!!b;}
 function wave(){waveT=1.7;}
 function greet(sayFn){
  wave();
- var msg="Halo! Aku Nara, mentor belajarmu. Ketik pertanyaan, atau pilih soal yang pernah kamu salah — aku jelasin pakai suara.";
+ var msg=diagnosisText();
  sayFn&&sayFn(msg);
  speak(msg);
 }
@@ -345,6 +401,7 @@ window.Mentor3D={
  speak:speak,stop:stopSpeak,speaking:function(){return speaking;},hasSpeech:hasSpeech,
  setTalking:setTalking,wave:wave,greet:greet,
  sentences:sentences,plain:plain,materiSpeech:materiSpeech,soalSpeech:soalSpeech,
- searchMentor:searchMentor,wrongList:wrongList,findQ:findQ,getQ:getQ,sectionsOf:sectionsOf
+ searchMentor:searchMentor,wrongList:wrongList,findQ:findQ,getQ:getQ,sectionsOf:sectionsOf,
+ diagnose:diagnose,diagnosisText:diagnosisText,trikHariIni:trikHariIni
 };
 })();

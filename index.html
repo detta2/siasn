@@ -10,6 +10,12 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0096c7">
 <link rel="canonical" href="https://detta2.github.io/siasn/">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="SiASN">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230096c7'/%3E%3Ctext x='32' y='44' font-family='Arial, sans-serif' font-size='34' font-weight='bold' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 <!-- OpenGraph: preview rapi saat link dibagikan ke WhatsApp/Telegram/dll -->
 <meta property="og:type" content="website">
@@ -26,7 +32,7 @@
 <meta name="twitter:title" content="SiASN — Latihan Soal CPNS & Tryout SKD Gratis">
 <meta name="twitter:description" content="19.900+ soal TWK, TIU, TKP + 12 paket tryout format ujian asli. Gratis, tanpa daftar, langsung dari browser.">
 <meta name="twitter:image" content="https://detta2.github.io/siasn/og-image.png">
-<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="stylesheet" href="css/style.css?v=6">
 <style>
 /* === Initial loading state (statis, sebelum JS jalan) ===
    Isi #app ini otomatis tertimpa saat app.js selesai render pertama. */
@@ -63,6 +69,10 @@
 setTimeout(function(){var b=document.querySelector(".siasn-boot"),s=document.getElementById("siasnBootSlow");if(b&&s)s.style.display="block";},12000);
 </script>
 <script src="js/path.js?v=2"></script>
-<script src="js/app.js?v=25"></script>
+<script src="js/app.js?v=26"></script>
+<script>
+/* PWA: daftarkan Service Worker (dukungan offline penuh setelah bank terunduh) */
+if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}
+</script>
 </body>
 </html>
