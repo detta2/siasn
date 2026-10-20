@@ -84,7 +84,7 @@ function vDash(){
   return '<div class="hist"><span>'+esc(t.d)+'</span><span><b>'+t.total+'</b> '+(t.pass?'<span class="pill ok">LULUS</span>':'<span class="pill no">GAGAL</span>')+'</span></div>';
  }).join(""):'<div class="empty">Belum ada tryout. Yuk mulai yang pertama!</div>';
  return head(
-  '<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal • 100 menit</span><h1>Siap jadi ASN?</h1><p>5.400 soal TWK, TIU, TKP dimodelkan dari pola soal CPNS tahun-tahun sebelumnya, plus tryout persis format SKD asli.</p></div>'
+  '<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal • 100 menit</span><h1>Siap jadi ASN?</h1><p>'+(BANK.TWK.length+BANK.TIU.length+BANK.TKP.length).toLocaleString("id-ID")+' soal TWK, TIU, TKP dimodelkan dari pola soal CPNS tahun-tahun sebelumnya, plus tryout persis format SKD asli.</p></div>'
   +pathBanner()
   +'<div class="mmenu">'
   +'<button class="mitem" onclick="go(\'lat_cat\')"><span class="mtile blue">'+ICONS.pencil+'</span><span><b>Latihan Soal</b><span>Koreksi + pembahasan</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
