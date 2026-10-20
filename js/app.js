@@ -12,7 +12,7 @@ var CATS={
    dibuka) + bertahap di latar belakang. File yang hilang ditoleransi
    (onerror -> lanjut) — mis. batch TWK b15-b18 memang tidak pernah ada.
    APP_VERSION = cache-busting terpusat untuk semua file data. */
-var APP_VERSION="26";
+var APP_VERSION="27";
 var BANK={TWK:[],TIU:[],TKP:[]};
 var MAT={TWK:[],TIU:[],TKP:[]};
 var BANK_FILES={
