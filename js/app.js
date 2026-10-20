@@ -6,13 +6,104 @@ var CATS={
  TIU:{name:"TIU",full:"Tes Intelegensia Umum",n:35,pg:80,max:175,cls:"tiu"},
  TKP:{name:"TKP",full:"Tes Karakteristik Pribadi",n:45,pg:166,max:225,cls:"tkp"}
 };
+/* ================= DYNAMIC LOADER =================
+   Data soal/materi/trik TIDAK lagi dimuat lewat 110+ tag <script> sinkron
+   di index.html. UI utama render instan; data dimuat on-demand (saat menu
+   dibuka) + bertahap di latar belakang. File yang hilang ditoleransi
+   (onerror -> lanjut) — mis. batch TWK b15-b18 memang tidak pernah ada.
+   APP_VERSION = cache-busting terpusat untuk semua file data. */
+var APP_VERSION="25";
 var BANK={TWK:[],TIU:[],TKP:[]};
-["TWK","TIU","TKP"].forEach(function(c){
+var MAT={TWK:[],TIU:[],TKP:[]};
+var BANK_FILES={
+ TWK:["twk.js","twk_b2.js","twk_b3.js","twk_b4.js","twk_b5.js","twk_b6.js","twk_b7.js","twk_b8.js","twk_b9.js","twk_b10.js","twk_b11.js","twk_b12.js","twk_b13.js","twk_b14.js","twk_b19.js","twk_b20.js","twk_b21.js","twk_b22.js","twk_b23.js","twk_b24.js","twk_b25.js","twk_b26.js","twk_b27.js","twk_b28.js","twk_b29.js","twk_b30.js","twk_b31.js","twk_b32.js","twk_b33.js","twk_b34.js","twk_b35.js","twk_b36.js","twk_b37.js","twk_b38.js","twk_b39.js"],
+ TIU:["tiu.js","tiu_b2.js","tiu_b3.js","tiu_b4.js","tiu_b5.js","tiu_b6.js","tiu_b7.js","tiu_b8.js","tiu_b9.js","tiu_b10.js","tiu_b11.js","tiu_b12.js","tiu_b13.js","tiu_b14.js","tiu_b15.js","tiu_b16.js","tiu_b17.js","tiu_b18.js","tiu_b19.js","tiu_b20.js","tiu_b21.js","tiu_b22.js","tiu_b23.js","tiu_b24.js","tiu_b25.js","tiu_b26.js","tiu_b27.js","tiu_b28.js","tiu_b29.js","tiu_b30.js","tiu_b31.js","tiu_b32.js","tiu_b33.js","tiu_b34.js","tiu_b35.js","tiu_b36.js","tiu_b37.js","tiu_b38.js","tiu_b39.js","tiu_b40.js"],
+ TKP:["tkp.js","tkp_b2.js","tkp_b3.js","tkp_b4.js","tkp_b5.js","tkp_b6.js","tkp_b7.js","tkp_b8.js","tkp_b9.js","tkp_b10.js","tkp_b11.js","tkp_b12.js","tkp_b13.js","tkp_b14.js","tkp_b15.js","tkp_b16.js","tkp_b17.js","tkp_b18.js","tkp_b19.js","tkp_b20.js","tkp_b21.js","tkp_b22.js","tkp_b23.js","tkp_b24.js","tkp_b25.js","tkp_b26.js","tkp_b27.js","tkp_b28.js","tkp_b29.js","tkp_b30.js","tkp_b31.js","tkp_b32.js"]
+};
+var MAT_FILES=["materi_twk.js","materi_tiu.js","materi_tkp.js"];
+var DATA_STATE={banks:false,materi:false,trik:false,mentor:false};
+var DATA_COUNT={done:0,total:0};
+var _scriptCache={};
+function loadScript(src){
+ return new Promise(function(resolve){
+  if(_scriptCache[src]){resolve();return;}
+  _scriptCache[src]=1;
+  var s=document.createElement("script");
+  s.src=src+"?v="+APP_VERSION;
+  s.async=true;
+  s.onload=function(){resolve();};
+  s.onerror=function(){resolve();};
+  document.head.appendChild(s);
+ });
+}
+function fillBank(c){
  var arr=window["QB_"+c]||[];
  for(var b=2;b<=40;b++){arr=arr.concat(window["QB_"+c+"_B"+b]||[]);}
  BANK[c]=arr;
-});
-var MAT={TWK:window.MAT_TWK||[],TIU:window.MAT_TIU||[],TKP:window.MAT_TKP||[]};
+}
+function fillMat(){["TWK","TIU","TKP"].forEach(function(c){MAT[c]=window["MAT_"+c]||[];});}
+function loadMany(files,dir){
+ DATA_COUNT.total+=files.length;
+ var i=0;
+ function step(){
+  var batch=[];
+  for(var k=0;k<4&&i<files.length;k++,i++)batch.push(files[i]);
+  if(!batch.length)return Promise.resolve();
+  return Promise.all(batch.map(function(f){return loadScript(dir+f).then(function(){DATA_COUNT.done++;loadbarUpdate();});})).then(step);
+ }
+ return step();
+}
+var _ensureCache={};
+function ensureData(kind){
+ if(_ensureCache[kind])return _ensureCache[kind];
+ var p;
+ if(kind==="banks"){
+  p=Promise.all([loadMany(BANK_FILES.TWK,"js/data/"),loadMany(BANK_FILES.TIU,"js/data/"),loadMany(BANK_FILES.TKP,"js/data/")]).then(function(){fillBank("TWK");fillBank("TIU");fillBank("TKP");DATA_STATE.banks=true;loadbarUpdate();});
+ }else if(kind==="materi"){
+  p=loadMany(MAT_FILES,"js/data/").then(function(){fillMat();DATA_STATE.materi=true;loadbarUpdate();});
+ }else if(kind==="trik"){
+  p=loadMany(["trik.js"],"js/data/").then(function(){DATA_STATE.trik=true;loadbarUpdate();});
+ }else if(kind==="mentor"){
+  p=loadScript("js/vendor/three.min.js").then(function(){return loadScript("js/mentor.js");}).then(function(){DATA_STATE.mentor=true;});
+ }else{p=Promise.resolve();}
+ _ensureCache[kind]=p;
+ return p;
+}
+function loadbarEl(){
+ var el=document.getElementById("loadbar");
+ if(!el){el=document.createElement("div");el.id="loadbar";el.className="loadbar";document.body.appendChild(el);}
+ return el;
+}
+function loadbarUpdate(){
+ var el=loadbarEl();
+ if(DATA_STATE.banks&&DATA_STATE.materi&&DATA_STATE.trik){
+  el.textContent="✓ Bank soal siap — "+(BANK.TWK.length+BANK.TIU.length+BANK.TKP.length).toLocaleString("id-ID")+" soal";
+  el.classList.add("done");
+  setTimeout(function(){if(el.parentNode)el.parentNode.removeChild(el);},2400);
+  return;
+ }
+ el.textContent="⏳ Menyiapkan bank soal di latar belakang… "+DATA_COUNT.done+"/"+DATA_COUNT.total;
+}
+function scheduleBgLoad(){
+ var kick=function(){
+  var p=ensureData("banks");
+  loadbarUpdate();
+  p.then(function(){
+   if(["dash","lat_cat","lat_topic"].indexOf(S.view)>=0)render();
+   return ensureData("materi");
+  }).then(function(){return ensureData("trik");}).then(function(){loadbarUpdate();});
+ };
+ if(window.requestIdleCallback)requestIdleCallback(kick,{timeout:1500});
+ else setTimeout(kick,400);
+}
+function gateShow(kind){
+ var el=document.getElementById("gateov");
+ if(!el){el=document.createElement("div");el.id="gateov";el.className="gateov";el.innerHTML='<div class="siasn-boot-spinner"></div><p id="gateMsg">Menyiapkan…</p>';document.body.appendChild(el);}
+ var msg={banks:"Menyiapkan bank soal…",materi:"Menyiapkan materi…",trik:"Menyiapkan trik cepat…",mentor:"Menyiapkan Mentor Nara (memuat modul 3D)…"}[kind]||"Menyiapkan…";
+ var m=document.getElementById("gateMsg");if(m)m.textContent=msg;
+ el.style.display="flex";
+}
+function gateHide(){var el=document.getElementById("gateov");if(el)el.style.display="none";}
 var LS="siasn_v1";
 function load(){try{var s=JSON.parse(localStorage.getItem(LS));if(s&&s.done)return s;}catch(e){}return{done:{},tryouts:[]};}
 function save(){try{localStorage.setItem(LS,JSON.stringify(ST));}catch(e){}}
@@ -29,6 +120,8 @@ function go(v,arg){
   if(cur&&!nxt)Mentor3D.destroy();
  }
  if(v==="latihan"&&arg){startLatPreset(arg);return;}
+ var need=(v==="trik")?"trik":(v==="mat_list"||v==="mat_view")?"materi":(v.indexOf("mentor")===0)?"mentor":(v==="lat_cat"||v==="lat_topic")?"banks":null;
+ if(need&&!DATA_STATE[need]){gateShow(need);ensureData(need).then(function(){gateHide();go(v,arg);});return;}
  S.view=v;render();window.scrollTo(0,0);
 }
 window.go=go;
@@ -84,7 +177,8 @@ function vDash(){
   return '<div class="hist"><span>'+esc(t.d)+'</span><span><b>'+t.total+'</b> '+(t.pass?'<span class="pill ok">LULUS</span>':'<span class="pill no">GAGAL</span>')+'</span></div>';
  }).join(""):'<div class="empty">Belum ada tryout. Yuk mulai yang pertama!</div>';
  return head(
-  '<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal • 100 menit</span><h1>Siap jadi ASN?</h1><p>'+(BANK.TWK.length+BANK.TIU.length+BANK.TKP.length).toLocaleString("id-ID")+' soal TWK, TIU, TKP dimodelkan dari pola soal CPNS tahun-tahun sebelumnya, plus tryout persis format SKD asli.</p></div>'
+  '<div class="hero"><span class="eyebrow">Tryout SKD • 110 soal • 100 menit</span><h1>Siap jadi ASN?</h1><p>'+(DATA_STATE.banks?(BANK.TWK.length+BANK.TIU.length+BANK.TKP.length).toLocaleString("id-ID"):"\u2026")+' soal TWK, TIU, TKP dimodelkan dari pola soal CPNS tahun-tahun sebelumnya, plus tryout persis format SKD asli.</p></div>'
+  +sessBanner()
   +pathBanner()
   +'<div class="mmenu">'
   +'<button class="mitem" onclick="go(\'lat_cat\')"><span class="mtile blue">'+ICONS.pencil+'</span><span><b>Latihan Soal</b><span>Koreksi + pembahasan</span></span><span class="mgo">'+ICONS.chev+'</span></button>'
@@ -286,6 +380,7 @@ function vLatTopic(){
 }
 function startLatPreset(p){
  p=p||{};
+ if(!DATA_STATE.banks){gateShow("banks");ensureData("banks").then(function(){gateHide();startLatPreset(p);});return;}
  var idxs=[];
  if(p.list){
   p.list.forEach(function(it){
@@ -304,7 +399,7 @@ function startLatPreset(p){
 }
 window.startLatPreset=startLatPreset;
 window.startLat=function(c){
- if(!BANK[c].length){alert("Bank soal "+c+" belum siap.");return;}
+ if(!DATA_STATE.banks){gateShow("banks");ensureData("banks").then(function(){gateHide();window.startLat(c);});return;}
  startLatPreset({cat:c});
 };
 window.restartLat=function(){startLatPreset((S.lat&&S.lat.preset)||{cat:(S.lat&&S.lat.cat)||"TWK"});};
@@ -353,14 +448,17 @@ window.ansLat=function(i){
  ST.done[q.id]={c:it.cat,ok:good?1:0};save();
  if(weak&&window.PathLib)PathLib.srsWrong(q.id);
  render();
+ saveSession();
 };
 window.nextLat=function(){
  var L=S.lat;L.pos++;
  if(L.pos>=L.order.length){L.order=shuffle(L.order);L.pos=0;}
  L.answered=false;L.pick=-1;go("lat");
+ saveSession();
 };
 window.endLat=function(){
  if(window.PathLib&&S.lat&&S.lat.preset)PathLib.completeLatihan(S.lat.preset);
+ clearSession();
  go("lat_result");
 };
 function vLatResult(){
@@ -478,6 +576,7 @@ function vToIntro(){
   +'<button class="btn big" onclick="startTo('+(p?p:"")+')">Mulai Tryout</button></div>');
 }
 window.startTo=function(pkg){
+ if(!DATA_STATE.banks){gateShow("banks");ensureData("banks").then(function(){gateHide();window.startTo(pkg);});return;}
  var qs=[];
  if(pkg&&pkg>=1&&pkg<=NPKG){
   qs=pkgQuestions(pkg);
@@ -489,16 +588,61 @@ window.startTo=function(pkg){
   });
  }
  if(qs.length<110){alert("Bank soal belum lengkap untuk tryout (butuh 110, ada "+qs.length+").");return;}
- S.to={qs:qs,ans:new Array(qs.length).fill(-1),doubt:{},idx:0,left:6000,timer:null,pkg:pkg};
+ S.to={qs:qs,ans:new Array(qs.length).fill(-1),doubt:{},idx:0,left:6000,timer:null,pkg:pkg,endAt:Date.now()+6000*1000};
  go("to");
+ startToTimer();
+ saveSession();
+};
+/* Timer berbasis timestamp target selesai (endAt) — akurat walau layar HP
+   mati / tab di-background (setInterval biasa melambat & berhenti). */
+function startToTimer(){
+ if(!S.to)return;
+ if(S.to.timer)clearInterval(S.to.timer);
  S.to.timer=setInterval(function(){
-  if(S.view!=="to"||!S.to){clearInterval(S.to.timer);return;}
-  S.to.left--;
+  if(!S.to)return;
+  if(S.view!=="to"){clearInterval(S.to.timer);S.to.timer=null;return;}
+  S.to.left=Math.max(0,Math.round((S.to.endAt-Date.now())/1000));
   var el=document.getElementById("tmrT");
-  if(el){el.textContent=fmtT(S.to.left);if(S.to.left<300)document.getElementById("tmr").classList.add("low");}
+  if(el){el.textContent=fmtT(S.to.left);var tw=document.getElementById("tmr");if(tw&&S.to.left<300)tw.classList.add("low");}
+  if(S.to.left%15===0)saveSession();
   if(S.to.left<=0)finishTo();
  },1000);
+}
+/* ---------- SESI TERTUNDA (auto-save tryout & latihan) ---------- */
+var SESKEY="siasn_session_v1";
+function saveSession(){
+ try{
+  if(S.to&&S.view==="to"){localStorage.setItem(SESKEY,JSON.stringify({kind:"to",pkg:S.to.pkg,qs:S.to.qs,ans:S.to.ans,doubt:S.to.doubt,idx:S.to.idx,endAt:S.to.endAt,savedAt:Date.now()}));}
+  else if(S.lat&&S.view==="lat"&&(S.lat.hist||[]).length>0){localStorage.setItem(SESKEY,JSON.stringify({kind:"lat",lat:S.lat,savedAt:Date.now()}));}
+ }catch(e){}
+}
+function loadSession(){try{var s=JSON.parse(localStorage.getItem(SESKEY));return s&&s.kind?s:null;}catch(e){return null;}}
+function clearSession(){try{localStorage.removeItem(SESKEY);}catch(e){}}
+window.discardSession=function(){if(confirm("Buang sesi tertunda ini? Progresnya hilang.")){clearSession();render();}};
+window.resumeSession=function(){
+ var s=loadSession();if(!s)return;
+ if(s.kind==="to"){
+  S.to={qs:s.qs,ans:s.ans,doubt:s.doubt,idx:s.idx,pkg:s.pkg,timer:null,endAt:s.endAt,left:Math.max(0,Math.round((s.endAt-Date.now())/1000))};
+  if(S.to.left<=0){finishTo();return;}
+  go("to");startToTimer();
+ }else if(s.kind==="lat"&&s.lat){
+  S.lat=s.lat;go("lat");
+ }
 };
+function sessBanner(){
+ var s=loadSession();if(!s)return "";
+ if(s.kind==="to"){
+  var left=Math.max(0,Math.round((s.endAt-Date.now())/1000));
+  var info=s.pkg?("Paket "+s.pkg):"Tryout acak";
+  if(left<=0)return '<div class="card sesscard"><h2>'+ic("clock")+'Tryout Tertunda — Waktu Habis</h2><p>'+info+' • '+s.qs.length+' soal • kamu berhenti di soal '+(s.idx+1)+'. Waktunya habis saat kamu pergi — lihat hasil dari jawaban yang sempat terisi.</p><div class="sessrow"><button class="btn" onclick="resumeSession()">Lihat Hasil</button><button class="btn plain" onclick="discardSession()">Buang</button></div></div>';
+  return '<div class="card sesscard"><h2>'+ic("clock")+'Tryout Tertunda</h2><p>'+info+' • soal '+(s.idx+1)+' dari '+s.qs.length+' • sisa waktu <b>'+fmtT(left)+'</b>. Lanjutkan dari tempat terakhir?</p><div class="sessrow"><button class="btn" onclick="resumeSession()">▶ Lanjutkan Tryout</button><button class="btn plain" onclick="discardSession()">Buang</button></div></div>';
+ }
+ if(s.kind==="lat"&&s.lat){
+  var L=s.lat,n=(L.hist||[]).length;
+  return '<div class="card sesscard"><h2>'+ic("pencil")+'Latihan Tertunda</h2><p>'+(L.mix?"Campuran":L.cat)+' • '+n+' soal sudah dijawab • posisi soal '+(L.pos+1)+'. Lanjutkan sesi latihan ini?</p><div class="sessrow"><button class="btn" onclick="resumeSession()">▶ Lanjutkan Latihan</button><button class="btn plain" onclick="discardSession()">Buang</button></div></div>';
+ }
+ return "";
+}
 function vTo(){
  var T=S.to,q=T.qs[T.idx],an=T.ans[T.idx];
  var opts=q.opts.map(function(o,i){
@@ -524,15 +668,16 @@ function vTo(){
   +'<button class="btn plain" '+(T.idx===T.qs.length-1?"disabled":"")+' onclick="moveTo(1)">Berikutnya '+ic("chev")+'</button></div>'
   +'<div class="numgrid">'+grid+'</div></div>');
 }
-window.ansTo=function(i){S.to.ans[S.to.idx]=i;render();};
-window.jumpTo=function(i){S.to.idx=i;render();window.scrollTo(0,0);};
-window.moveTo=function(d){S.to.idx=Math.min(S.to.qs.length-1,Math.max(0,S.to.idx+d));render();window.scrollTo(0,0);};
-window.togDoubt=function(v){if(v)S.to.doubt[S.to.idx]=1;else delete S.to.doubt[S.to.idx];};
-window.abortTo=function(){if(confirm("Batalkan tryout? Progres hilang.")){var pk=S.to&&S.to.pkg?S.to.pkg:null;clearInterval(S.to.timer);S.to=null;go(pk?"to_packs":"dash");}};
+window.ansTo=function(i){S.to.ans[S.to.idx]=i;render();saveSession();};
+window.jumpTo=function(i){S.to.idx=i;render();window.scrollTo(0,0);saveSession();};
+window.moveTo=function(d){S.to.idx=Math.min(S.to.qs.length-1,Math.max(0,S.to.idx+d));render();window.scrollTo(0,0);saveSession();};
+window.togDoubt=function(v){if(v)S.to.doubt[S.to.idx]=1;else delete S.to.doubt[S.to.idx];render();saveSession();};
+window.abortTo=function(){if(confirm("Batalkan tryout? Progres hilang.")){var pk=S.to&&S.to.pkg?S.to.pkg:null;clearInterval(S.to.timer);S.to=null;clearSession();go(pk?"to_packs":"dash");}};
 window.finishTo=function(ask){
  if(ask){var un=S.to.ans.filter(function(a){return a<0;}).length;
   if(!confirm(un?("Masih ada "+un+" soal belum dijawab. Selesaikan?"):"Selesaikan tryout?"))return;}
  clearInterval(S.to.timer);
+ clearSession();
  var T=S.to,res={twk:0,tiu:0,tkp:0};
  T.qs.forEach(function(q,i){
   var an=T.ans[i];if(an<0)return;
@@ -924,4 +1069,5 @@ function render(){
  }
 }
 render();
+scheduleBgLoad();
 })();

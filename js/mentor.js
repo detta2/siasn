@@ -199,6 +199,8 @@ function stopSpeak(){
 
 /* ================= AVATAR 3D ================= */
 var renderer=null,scene=null,camera=null,av=null,rafId=0,t0=0,blinkAt=2,blinking=0,waveT=0,talking=false,active=false,mX=0,mY=0;
+var inView=true,ioObs=null,STATIC3D=false;
+try{STATIC3D=(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)||(navigator.deviceMemory&&navigator.deviceMemory<=1)||(navigator.connection&&/^(slow-2g|2g)$/.test(navigator.connection.effectiveType||""));}catch(e){}
 function M(color,rough){
  return new THREE.MeshStandardMaterial({color:color,roughness:rough==null?0.55:rough,metalness:0.08});
 }
@@ -254,6 +256,7 @@ function buildAvatar(){
 function tick(now){
  if(!active)return;
  rafId=requestAnimationFrame(tick);
+ if(document.hidden||!inView)return;
  var t=(now-t0)/1000;
  av.g.position.y=0.12+Math.sin(t*1.7)*0.045;
  av.g.rotation.y=Math.sin(t*0.45)*0.07+mX*0.18;
@@ -314,11 +317,14 @@ function init(canvas){
  canvas.onmousemove=function(e){onMove(e.clientX,e.clientY);};
  canvas.ontouchmove=function(e){if(e.touches&&e.touches[0])onMove(e.touches[0].clientX,e.touches[0].clientY);};
  active=true;t0=performance.now();blinkAt=2.2;
- rafId=requestAnimationFrame(tick);
+ if(window.IntersectionObserver&&canvas){try{ioObs=new IntersectionObserver(function(en){inView=!(en[0]&&en[0].isIntersecting===false);},{threshold:0.02});ioObs.observe(canvas);}catch(e){}}
+ if(STATIC3D){try{renderer.render(scene,camera);}catch(e){}}
+ else rafId=requestAnimationFrame(tick);
  return true;
 }
 function destroy(){
  active=false;
+ if(ioObs){try{ioObs.disconnect();}catch(e){}ioObs=null;}
  if(rafId)cancelAnimationFrame(rafId);
  rafId=0;
  stopSpeak();

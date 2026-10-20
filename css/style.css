@@ -103,9 +103,9 @@ h2 .icn svg{width:22px;height:22px}
 .badge{display:inline-flex;align-items:center;font-size:12px;font-weight:800;padding:5px 13px;border-radius:99px;background:var(--blue-soft);color:var(--blue-d);border:var(--bd)}
 .badge.tiu{background:var(--green-soft);color:var(--green-d)}
 .badge.tkp{background:var(--orange-soft);color:var(--orange-d)}
-.qtext{font-size:17px;font-weight:700;margin-bottom:16px;line-height:1.6;letter-spacing:-.2px}
+.qtext{font-size:17px;font-weight:700;margin-bottom:16px;line-height:1.6;letter-spacing:-.2px;min-height:64px}
 .opts{display:flex;flex-direction:column;gap:12px}
-.opt{border:var(--bd);background:#fff;border-radius:16px;padding:14px;font-size:15px;cursor:pointer;text-align:left;width:100%;display:flex;gap:12px;align-items:flex-start;box-shadow:0 3px 0 #dfe3ea;font-family:inherit;color:var(--ink);font-weight:600}
+.opt{min-height:52px;border:var(--bd);background:#fff;border-radius:16px;padding:14px;font-size:15px;cursor:pointer;text-align:left;width:100%;display:flex;gap:12px;align-items:flex-start;box-shadow:0 3px 0 #dfe3ea;font-family:inherit;color:var(--ink);font-weight:600}
 .opt:active:not(:disabled){transform:translateY(3px);box-shadow:0 0 0 #dfe3ea}
 .opt .k{flex:0 0 30px;height:30px;border-radius:10px;background:#eef0f4;border:var(--bd);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
 .opt.correct{border-color:var(--green-d);background:var(--green-soft);box-shadow:0 3px 0 var(--green-d)}
@@ -124,11 +124,11 @@ h2 .icn svg{width:22px;height:22px}
 .timer{font-size:19px;font-weight:800;font-variant-numeric:tabular-nums;background:#fff;border:var(--bd);border-radius:14px;padding:8px 16px;box-shadow:var(--sh-sm);display:inline-flex;align-items:center;gap:8px}
 .timer.low{color:var(--red-d);border-color:var(--red-d)}
 .tobar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
-.numgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:8px;margin:16px 0}
-@media(max-width:640px){.numgrid{grid-template-columns:repeat(8,1fr)}}
+.numgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:8px;margin:16px 0}
+@media(max-width:640px){.numgrid{grid-template-columns:repeat(auto-fill,minmax(44px,1fr))}}
 .numgrid button{aspect-ratio:1;border:var(--bd);background:#fff;border-radius:10px;font-size:12px;font-weight:800;cursor:pointer;box-shadow:0 2px 0 #dfe3ea;font-family:inherit;color:var(--ink)}
 .numgrid button:active{transform:translateY(2px);box-shadow:none}
-.numgrid button.done{background:var(--green);color:#fff;box-shadow:0 2px 0 var(--green-d)}
+.numgrid button.done{background:#16a34a;color:#fff;box-shadow:0 2px 0 #15803d}
 .numgrid button.doubt{background:var(--yellow);box-shadow:0 2px 0 var(--yellow-d)}
 .numgrid button.cur{outline:3px solid var(--blue);outline-offset:1px}
 details{border:var(--bd);border-radius:16px;margin-bottom:10px;background:#fff;box-shadow:var(--sh-sm)}
@@ -153,7 +153,7 @@ summary::-webkit-details-marker{display:none}
 .backlink .icn svg{width:17px;height:17px}
 .info{background:var(--blue-soft);border:var(--bd);border-radius:16px;padding:14px;font-size:14px;margin-bottom:16px;box-shadow:var(--sh-sm)}
 .info b{color:var(--blue-d)}
-.doubtrow{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:14px;font-weight:600}
+.doubtrow{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:14px;font-weight:600;min-height:44px;padding:6px 0;cursor:pointer}
 .doubtrow input{width:20px;height:20px;accent-color:var(--green)}
 .empty{color:var(--mut);font-size:14px;text-align:center;padding:22px;font-weight:600}
 .secttl{font-size:15px;font-weight:800;margin:20px 0 10px;display:flex;align-items:center;gap:8px}
@@ -264,3 +264,14 @@ summary::-webkit-details-marker{display:none}
 .caracepat b{font-size:14px}
 .caracepat div p{margin:6px 0}
 .caracepat div ul{margin:6px 0 6px 18px}
+
+/* === Komponen arsitektur baru (2026-10-20) === */
+/* Status bar pemuatan data latar belakang */
+.loadbar{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;z-index:60;background:#0b2239;color:#e6f6fb;font-size:12.5px;font-weight:600;padding:9px 16px;border-radius:999px;box-shadow:0 6px 20px rgba(2,32,54,.35);max-width:92vw;text-align:center}
+.loadbar.done{background:#0f7a3d;color:#eafff3}
+/* Overlay gerbang on-demand (bank/materi/trik/mentor sedang disiapkan) */
+.gateov{position:fixed;inset:0;z-index:70;background:rgba(255,255,255,.88);display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#0b2239;font-weight:600;font-size:15px}
+/* Kartu sesi tertunda di dashboard */
+.sesscard{border:2px solid #f59e0b;background:#fffbeb}
+.sessrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.sessrow .btn{min-height:44px}
